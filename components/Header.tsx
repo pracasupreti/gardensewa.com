@@ -29,15 +29,15 @@ export default function Header() {
             <i className="fa-solid fa-envelope"></i>
             <a
               className="hover:text-green-500"
-              href="mailto:info@kisanpedia.com"
+              href="mailto:info@gardensewa.com"
             >
-              info@kisanpedia.com
+              info@gardensewa.com
             </a>
           </div>
           <div className="contact flex items-center gap-1 text-[14px]">
             <i className="fa-solid fa-phone"></i>
-            <a className="hover:text-green-500" href="tel:+9779746608593">
-              +9779746608593
+            <a className="hover:text-green-500" href="tel:+977-9852025735">
+              +977-9852025735
             </a>
           </div>
         </div>
@@ -52,13 +52,13 @@ export default function Header() {
               <Link href="/" className="flex items-center">
                 <Image
                   className="cursor-pointer"
-                  src="/image/logo/kisanpedia-LOGO.png"
-                  alt="Kisanpedia"
+                  src="/image/logo/Gardensewa-LOGO.png"
+                  alt="Gardensewa"
                   width={75}
                   height={75}
                   priority
                 />
-                <p className="cursor-pointer text-[#008000] ml-2">Kisanpedia</p>
+                <p className="cursor-pointer text-[#008000] ml-2">Gardensewa</p>
               </Link>
             </div>
 
