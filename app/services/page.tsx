@@ -218,12 +218,14 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="relative w-[650px] h-[400px] rounded-2xl shadow-xl overflow-hidden">
+              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl shadow-xl overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
                   className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 650px"
+                  priority={index === 0}
                 />
               </div>
             </div>
@@ -256,12 +258,14 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="relative w-[650px] h-[400px] rounded-2xl shadow-xl overflow-hidden">
+              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl shadow-xl overflow-hidden">
                 <Image
                   src={nursery.image}
                   alt={nursery.title}
                   fill
                   className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 650px"
+                  priority={index === 0}
                 />
               </div>
             </div>

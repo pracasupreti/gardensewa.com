@@ -32,12 +32,16 @@ const page = () => {
                   eaque harum!
                 </p>
               </div>
-              <div className="relative w-[710px] h-[470px] rounded-3xl overflow-hidden">
+              <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[470px] rounded-3xl overflow-hidden">
                 <Image
-                  className="object-cover rounded-3xl"
                   src="/image/navbar/about/1.jpg"
-                  alt=""
+                  alt="About Image"
                   fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, 
+           (max-width: 1024px) 80vw, 
+           710px"
+                  priority
                 />
               </div>
             </div>
