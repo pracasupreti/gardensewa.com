@@ -218,7 +218,7 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl shadow-xl overflow-hidden">
+              <div className="relative w-full max-w-[650px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl shadow-xl overflow-hidden mx-auto">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -258,7 +258,7 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl shadow-xl overflow-hidden">
+              <div className="relative w-full max-w-[650px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl shadow-xl overflow-hidden mx-auto">
                 <Image
                   src={nursery.image}
                   alt={nursery.title}
