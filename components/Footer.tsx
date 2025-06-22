@@ -29,7 +29,7 @@ export default function Footer() {
             </form>
           </div>
 
-          <hr />
+          <div className="w-full h-[1px] bg-gray-200"></div>
 
           {/* Footer Sections */}
           <div className="footer-contents flex flex-col md:flex-row gap-y-6 items-center text-center lg:text-start justify-between py-5">
@@ -139,7 +139,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr />
+          <div className="w-full h-[1px] bg-gray-200"></div>
 
           {/* Bottom Copy */}
           <div className="footer-end">

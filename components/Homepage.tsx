@@ -270,7 +270,7 @@ const updates = [
     paragraphs: [
       "किसानपेडियाको प्राबिधिक सहयोगमा परम्परागत कृषिलाई आधुनिक कृषि प्रबिधिद्वारा विस्थापन गर्दै रंगेली नगरपालिकाका ब्यबसायिक कृषकहरु",
       "#Promotingmodernfarming",
-      "#Kisanpediaclient",
+      "#Gardensewaclient",
       "#RICEFARMING",
     ],
   },
@@ -295,7 +295,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Kisanpedia has significantly improved my farming business, and I strongly suggest their services to other farmers.",
+      "Gardensewa has significantly improved my farming business, and I strongly suggest their services to other farmers.",
     name: "Anu Poudel",
     location: "Biratnagar-3, Morang",
     img: "/image/home/testimonials/1.png",
@@ -311,7 +311,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "Kisanpedia's in-depth information and practical suggestions have changed our agricultural methods.",
+      "Gardensewa's in-depth information and practical suggestions have changed our agricultural methods.",
     name: "Hemlal Adhikari",
     location: "Duhabi-7, Sunsari",
     img: "/image/home/testimonials/3.png",
@@ -580,7 +580,7 @@ export default function HeroSlider() {
                   <h5 className="text-[18px] font-semibold">{video.title}</h5>
                   <p className="my-2 text-[14px]">{video.description}</p>
                   <Link
-                    href="https://www.youtube.com/@kisanpedia4489/videos"
+                    href="https://www.youtube.com/@Gardensewa4489/videos"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
