@@ -1,16 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
-import dynamic from "next/dynamic";
-
-// @ts-ignore
-import { initLightboxJS } from "lightbox.js-react";
-// @ts-ignore
-const SlideshowLightbox = dynamic(
-  () => import("lightbox.js-react").then((mod) => mod.SlideshowLightbox),
-  { ssr: false }
-) as any;
+import React, { useState } from "react";
 import Image from "next/image";
 
+// Gallery data arrays
 const trainings = [
   { id: "1", img: "/image/navbar/gallery/training/1.jpg" },
   { id: "2", img: "/image/navbar/gallery/training/6.jpg" },
@@ -20,7 +12,6 @@ const trainings = [
   { id: "6", img: "/image/navbar/gallery/training/2.jpg" },
   { id: "7", img: "/image/navbar/gallery/training/1.jpg" },
 ];
-
 const field = [
   { id: "1", img: "/image/navbar/gallery/field-visit/11.jpg" },
   { id: "2", img: "/image/navbar/gallery/field-visit/10.jpg" },
@@ -34,7 +25,6 @@ const field = [
   { id: "10", img: "/image/navbar/gallery/field-visit/2.jpg" },
   { id: "11", img: "/image/navbar/gallery/field-visit/1.jpg" },
 ];
-
 const events = [
   { id: "1", img: "/image/navbar/gallery/events/9 (1).jpg" },
   { id: "2", img: "/image/navbar/gallery/events/8.jpg" },
@@ -46,7 +36,6 @@ const events = [
   { id: "8", img: "/image/navbar/gallery/events/2.jpg" },
   { id: "9", img: "/image/navbar/gallery/events/1.jpg" },
 ];
-
 const modern = [
   { id: "1", img: "/image/navbar/gallery/modern-farmimg/11.jpg" },
   { id: "2", img: "/image/navbar/gallery/modern-farmimg/10.jpg" },
@@ -60,129 +49,123 @@ const modern = [
   { id: "10", img: "/image/navbar/gallery/modern-farmimg/2.jpg" },
   { id: "11", img: "/image/navbar/gallery/modern-farmimg/1.jpg" },
 ];
-const page = () => {
-  useEffect(() => {
-    initLightboxJS("", "fslightbox");
-  }, []);
+
+const Page = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImg, setSelectedImg] = useState("");
+
+  const openModal = (img: string) => {
+    setSelectedImg(img);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImg("");
+    setShowModal(false);
+  };
+
+  const renderGallery = (
+    title: string,
+    id: string,
+    data: { id: string; img: string }[]
+  ) => (
+    <section id={id} className="bg-[#f3f3f3] px-2 lg:px-0">
+      <h2 className="text-[40px] font-thin text-center text-[#008000] py-10 font-serif">
+        {title}
+      </h2>
+      <div className="container mx-auto max-w-[1200px]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-16 p-4">
+          {data.map((item) => (
+            <div
+              key={item.id}
+              className="relative w-full h-[300px] p-4 border border-gray-200 rounded-md cursor-pointer"
+              onClick={() => openModal(item.img)}
+            >
+              <Image
+                src={item.img}
+                alt="Gallery"
+                fill
+                className="object-cover rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
   return (
     <div>
-      <section className="gallery bg-[#f3f3f3]">
+      {/* Top Navigation */}
+      <section className="bg-[#f3f3f3]">
         <h1 className="text-[45px] font-bold text-center text-[#008000] py-10">
           Gallery
         </h1>
         <div className="w-full h-[1px] bg-gray-200"></div>
-
         <div className="container mx-auto max-w-[1200px]">
-          <div className="gallery-contents grid grid-cols-2 lg:grid-cols-4 px-2 lg:px-0 gap-y-4 gap-4 justify-between py-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 px-2 lg:px-0 gap-4 justify-between py-6">
             <a
               href="#training"
-              className="content-title flex gap-2 text-[green] bg-[#d1d5db] shadow rounded-lg py-1 px-4 cursor-pointer"
+              className="bg-gray-300 text-green-700 rounded-lg px-4 py-2 shadow text-center"
             >
-              <p className="lg:text-[20px] text-[18px] font-semibold">
-                Training
-              </p>
+              Training
             </a>
             <a
               href="#field"
-              className="content-title flex gap-2 text-[green] bg-[#d1d5db] shadow rounded-lg py-1 px-4 cursor-pointer"
+              className="bg-gray-300 text-green-700 rounded-lg px-4 py-2 shadow text-center"
             >
-              <p className="lg:text-[20px] text-[18px] font-semibold">
-                Field Visit
-              </p>
+              Field Visit
             </a>
             <a
               href="#events"
-              className="content-title flex gap-2 text-[green] bg-[#d1d5db] shadow rounded-lg py-1 px-4 cursor-pointer"
+              className="bg-gray-300 text-green-700 rounded-lg px-4 py-2 shadow text-center"
             >
-              <p className="lg:text-[20px] text-[18px] font-semibold">
-                Events / Programs
-              </p>
+              Events / Programs
             </a>
             <a
               href="#modern"
-              className="content-title flex gap-2 text-[green] bg-[#d1d5db] shadow rounded-lg py-1 px-4 cursor-pointer"
+              className="bg-gray-300 text-green-700 rounded-lg px-4 py-2 shadow text-center"
             >
-              <p className="lg:text-[20px] text-[18px] font-semibold">
-                Modern Farming
-              </p>
+              Modern Farming
             </a>
           </div>
           <div className="w-full h-[1px] bg-gray-200"></div>
         </div>
       </section>
 
-      <section id="training" className="training bg-[#f3f3f3] px-2 lg:px-0 ">
-        <h2 className="text-[40px] font-thin text-center text-[#008000] py-10 font-serif">
-          Training
-        </h2>
-        <div className="container mx-auto max-w-[1200px]">
-          <SlideshowLightbox className="gallery-image grid sm:grid-cols-2 lg:grid-cols-3 text-center items-center gap-y-6 gap-7 pb-16 p-4">
-            {trainings.map((a) => (
-              <img
-                className="object-cover p-4 border border-gray-200 cursor-pointer w-full h-[300px] rounded-md"
-                src={a.img}
-                alt=""
-              />
-            ))}
-          </SlideshowLightbox>
-        </div>
-      </section>
+      {/* Gallery Sections */}
+      {renderGallery("Training", "training", trainings)}
+      {renderGallery("Field Visit", "field", field)}
+      {renderGallery("Events / Programs", "events", events)}
+      {renderGallery("Modern Farming", "modern", modern)}
 
-      <section id="field" className="field-visit bg-[#f3f3f3] px-2 lg:px-0">
-        <h2 className="text-[40px] font-thin text-center text-[#008000] py-10 font-serif">
-          Field Visit
-        </h2>
-        <div className="container mx-auto max-w-[1200px]">
-          <SlideshowLightbox className="gallery-image grid sm:grid-cols-2 lg:grid-cols-3 text-center items-center gap-y-6 gap-7 pb-16 w-full p-4">
-            {field.map((b) => (
-              <img
-                className="object-cover p-4 border border-gray-200 cursor-pointer w-full h-[300px] rounded-md"
-                src={b.img}
-                alt=""
-              />
-            ))}
-          </SlideshowLightbox>
+      {/* Modal Lightbox */}
+      {showModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+          onClick={closeModal}
+        >
+          <div
+            className="relative w-[90vw] max-w-3xl h-[80vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={selectedImg}
+              alt="Full View"
+              fill
+              className="object-contain rounded-md"
+            />
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 text-white bg-black bg-opacity-60 px-2 py-1 rounded cursor-pointer"
+            >
+              ✕
+            </button>
+          </div>
         </div>
-      </section>
-
-      <section id="events" className="event bg-[#f3f3f3] px-2 lg:px-0">
-        <h2 className="text-[40px] font-thin text-center text-[#008000] py-10 font-serif">
-          Events / Programs
-        </h2>
-        <div className="container mx-auto max-w-[1200px]">
-          <SlideshowLightbox className="gallery-image grid sm:grid-cols-2 lg:grid-cols-3 text-center items-center gap-y-6 gap-7 pb-16 w-full p-4">
-            {events.map((c) => (
-              <img
-                className="object-cover shadow p-4 border border-gray-200 cursor-pointer w-full h-[300px] rounded-md"
-                src={c.img}
-                alt=""
-              />
-            ))}
-          </SlideshowLightbox>
-        </div>
-      </section>
-
-      <section
-        id="modern"
-        className="mordern-farming bg-[#f3f3f3] px-2 lg:px-0"
-      >
-        <h2 className="text-[40px] font-thin text-center text-[#008000] py-10 font-serif">
-          Modern Farming
-        </h2>
-        <div className="container mx-auto max-w-[1200px] pb-10">
-          <SlideshowLightbox className="gallery-image grid sm:grid-cols-2 lg:grid-cols-3 text-center items-center gap-y-6 gap-7 pb-16 w-full p-4">
-            {modern.map((d) => (
-              <img
-                className="object-cover border border-gray-200 shadow cursor-pointer w-full h-[300px] rounded-md p-4"
-                src={d.img}
-                alt=""
-              />
-            ))}
-          </SlideshowLightbox>
-        </div>
-      </section>
+      )}
     </div>
   );
 };
 
-export default page;
+export default Page;
