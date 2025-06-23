@@ -44,16 +44,16 @@ const heroimage = [
 ];
 const services = [
   {
-    title: "Agriculture Service",
+    title: "Garden Service",
     image: "/image/home/top-services/agriculture-service.jpg",
-    alt: "Agriculture Service",
-    href: "/agriculture-service",
+    alt: "Garden Service",
+    href: "/garden-service",
   },
   {
-    title: "Agriculture Training",
+    title: "Garden Training",
     image: "/image/home/top-services/agriculture-training.jpg",
-    alt: "Agriculture Training",
-    href: "/agriculture-training",
+    alt: "Garden Training",
+    href: "/garden-training",
   },
   {
     title: "Modern Service",

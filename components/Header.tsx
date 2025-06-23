@@ -83,7 +83,7 @@ export default function Header() {
             {/* Right Section (Hire Button + Mobile Menu Icon) */}
             <div className="flex items-center">
               <Link href="/hire">
-                <button className="hidden lg:block md:block bg-[#009000] hover:bg-green-800 text-white py-2 px-4 rounded-lg">
+                <button className="hidden cursor-pointer lg:block md:block bg-[#009000] hover:bg-green-800 text-white py-2 px-4 rounded-lg">
                   Hire a Consultant
                 </button>
               </Link>
