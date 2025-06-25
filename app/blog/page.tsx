@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Blog() {
   let post = [
@@ -158,25 +159,31 @@ function Blog() {
               key={a.id}
               className="blog-content max-h-[650px] border border-gray-200 lg:border-none rounded-xl"
             >
-              <img
-                className="object-cover w-full max-h-[500px] rounded-t-xl"
-                src={a.img}
-                alt=""
-              />
+              <div className="relative w-full max-h-[500px] h-[500px] rounded-t-xl overflow-hidden">
+                <Image
+                  src={a.img}
+                  alt={a.title}
+                  fill
+                  className="object-cover rounded-t-xl"
+                />
+              </div>
               <div className="blog-text py-2 px-2 text-gray-600">
                 <div className="title flex flex-col md:flex-row justify-between">
                   <h5 className="text-[20px] font-semibold text-[#008000] py-2">
                     {a.title}
                   </h5>
-                  <Link href="/blog/1">
-                    <button className="border hidden sm:block lg:block border-[#008000] text-[#008000] shadow mt-4 rounded-lg px-2 py-1 my-2 gap-2 hover:bg-green-700 hover:text-white">
+                  <Link
+                    href={`/blog/${a.id}`}
+                    className="hidden sm:block lg:block"
+                  >
+                    <button className="border border-[#008000] text-[#008000] shadow mt-4 rounded-lg px-2 py-1 my-2 gap-2 hover:bg-green-700 hover:text-white">
                       Read More
                     </button>
                   </Link>
                 </div>
                 <p>{a.description}</p>
-                <Link href="/blog/1">
-                  <button className="border block sm:hidden lg:hidden border-[#008000] text-[#008000] shadow mt-4 rounded-lg px-2 py-1 my-2 gap-2 hover:bg-green-700 hover:text-white">
+                <Link href={`/blog/${a.id}`}>
+                  <button className="border cursor-pointer block sm:hidden lg:hidden border-[#008000] text-[#008000] shadow mt-4 rounded-lg px-2 py-1 my-2 gap-2 hover:bg-green-700 hover:text-white">
                     Read More
                   </button>
                 </Link>
@@ -192,17 +199,20 @@ function Blog() {
               key={b.id}
               className="blog-content max-w-[590px] flex flex-wrap max-h-[545x] border border-gray-200 rounded-xl"
             >
-              <img
-                className="w-full lg:h-[310px] h-[210px] object-cover rounded-t-xl"
-                src={b.img}
-                alt=""
-              />
+              <div className="relative w-full h-[210px] lg:h-[310px] rounded-t-xl overflow-hidden">
+                <Image
+                  src={b.img}
+                  alt={b.title}
+                  fill
+                  className="object-cover rounded-t-xl"
+                />
+              </div>
               <div className="blog-text px-2 text-gray-600">
                 <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000] py-2">
                   {b.title}
                 </h5>
                 <p className="text-[15px]">{b.description}</p>
-                <Link href="/blog/1">
+                <Link href={`/blog/${b.id}`}>
                   <button className="border border-[#008000] mt-4 text-[#008000] shadow rounded-lg px-2 py-1 my-2 flex gap-2 hover:bg-green-700 hover:text-white">
                     Read More
                   </button>
@@ -223,17 +233,18 @@ function Blog() {
                     {c.title}
                   </h5>
                   <p className="">{c.description}</p>
-                  <Link href="/blog/1">
+                  <Link href={`/blog/${c.id}`}>
                     <button className="absolute bottom-[10px] border border-[#008000] mt-10 text-[#008000] px-2 py-1 rounded-lg my-1 flex items-center gap-1  hover:bg-green-700 hover:text-white">
                       Read More
                     </button>
                   </Link>
                 </div>
-                <div className="image">
-                  <img
-                    className="hidden lg:block md:block sm:block w-[385px] h-[258px] object-cover rounded-e-xl"
+                <div className="image relative hidden sm:block md:block lg:block w-[385px] h-[258px] rounded-e-xl overflow-hidden">
+                  <Image
                     src="/image/navbar/blog/2.jpg"
-                    alt=""
+                    alt="Description here"
+                    fill
+                    className="object-cover rounded-e-xl"
                   />
                 </div>
               </div>
@@ -250,17 +261,18 @@ function Blog() {
                     {d.title}
                   </h5>
                   <p className="">{d.description}</p>
-                  <Link href="/blog/1">
+                  <Link href={`/blog/${d.id}`}>
                     <button className="border absolute bottom-[10px] border-[#008000] mt-10 text-[#008000] px-2 py-1 rounded-lg flex items-center gap-1 hover:bg-green-700 hover:text-white">
                       Read More
                     </button>
                   </Link>
                 </div>
-                <div className="image">
-                  <img
-                    className="hidden lg:block md:block sm:block w-full h-[258px] object-cover rounded-e-xl"
+                <div className="image relative hidden sm:block md:block lg:block w-full h-[258px] rounded-e-xl overflow-hidden">
+                  <Image
                     src="/image/navbar/blog/3.jpg"
-                    alt=""
+                    alt="Description here"
+                    fill
+                    className="object-cover rounded-e-xl"
                   />
                 </div>
               </div>
@@ -275,17 +287,21 @@ function Blog() {
               key={e.id}
               className="blog-content w-full border border-gray-200 rounded-xl"
             >
-              <img
-                className="w-full object-cover lg:h-[280px] h-[210px] rounded-t-xl"
-                src={e.img}
-                alt=""
-              />
+              <div className="relative w-full lg:h-[280px] h-[210px] rounded-t-xl overflow-hidden">
+                <Image
+                  src={e.img}
+                  alt=""
+                  fill
+                  className="object-cover rounded-t-xl"
+                />
+              </div>
+
               <div className="blog-text py-2 px-2 text-gray-600">
                 <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000]">
                   {e.title}
                 </h5>
                 <p className="py-2 overflow-hidden">{e.description}</p>
-                <Link href="/blog/1">
+                <Link href={`/blog/${e.id}`}>
                   <button className="border shadow border-[#008000] text-[#008000] mt-8 rounded-lg px-2 py-1 flex gap-2 hover:bg-green-700 hover:text-white">
                     Read More
                   </button>
@@ -307,17 +323,18 @@ function Blog() {
                   {f.title}
                 </h5>
                 <p className="text-[15px]">{f.description}</p>
-                <Link href="/blog/1">
+                <Link href={`/blog/${f.id}`}>
                   <button className="border absolute bottom-2 border-[#008000] text-[#008000] mt-6 px-2 py-1 rounded-lg flex items-center gap-1 hover:bg-green-700 hover:text-white">
                     Read More
                   </button>
                 </Link>
               </div>
-              <div className="image">
-                <img
-                  className="hidden lg:block md:block sm:block w-[300px] h-[238px] object-cover rounded-e-xl"
+              <div className="image relative hidden lg:block md:block sm:block w-[300px] h-[238px] rounded-e-xl overflow-hidden">
+                <Image
                   src={f.img}
                   alt=""
+                  fill
+                  className="object-cover rounded-e-xl"
                 />
               </div>
             </div>
@@ -336,17 +353,18 @@ function Blog() {
                   {g.title}
                 </h5>
                 <p className="text-[15px]">{g.description}</p>
-                <Link href="/blog/1">
+                <Link href={`/blog/${g.id}`}>
                   <button className="border absolute bottom-2 border-[#008000] text-[#008000] px-2 py-1 rounded-lg flex items-center gap-1 hover:bg-green-700 hover:text-white">
                     Read More
                   </button>
                 </Link>
               </div>
-              <div className="image">
-                <img
-                  className="hidden lg:block md:block sm:block w-[300px]  h-[238px] object-cover rounded-e-xl"
+              <div className="image relative hidden lg:block md:block sm:block w-[300px] h-[238px] rounded-e-xl overflow-hidden">
+                <Image
                   src={g.img}
                   alt=""
+                  fill
+                  className="object-cover rounded-e-xl"
                 />
               </div>
             </div>
@@ -360,17 +378,21 @@ function Blog() {
               key={h.id}
               className="blog-content overflow-hidden w-full lg:h-[450px] h-[470px] items-center relative border border-gray-200 rounded-xl"
             >
-              <img
-                className="w-full lg:h-[170px] h-[210px] object-cover rounded-t-xl"
-                src={h.img}
-                alt=""
-              />
+              <div className="relative w-full lg:h-[170px] h-[210px] rounded-t-xl overflow-hidden">
+                <Image
+                  src={h.img}
+                  alt=""
+                  fill
+                  className="object-cover rounded-t-xl"
+                />
+              </div>
+
               <div className="blog-text py-2 px-2 text-gray-600">
                 <h5 className="text-[18px] lg:text-[16px] font-semibold text-[#008000] py-2">
                   {h.title}
                 </h5>
                 <p>{h.description}</p>
-                <Link href="/blog/1">
+                <Link href={`/blog/${h.id}`}>
                   <button className="border absolute bottom-[10px] border-[#008000] text-[#008000] shadow mt-8 rounded-lg px-2 py-1 flex gap-2 hover:bg-green-700 hover:text-white">
                     Read More
                   </button>
