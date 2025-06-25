@@ -93,7 +93,10 @@ function Products() {
         </h1>
         <div className="product-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center px-4 lg:px-0 gap-6 gap-y-6">
           {products.map((product) => (
-            <div className="image border border-gray-200 shadow-lg rounded-lg w-full h-[350px] overflow-hidden">
+            <div
+              key={product.id}
+              className="image border border-gray-200 shadow-lg rounded-lg w-full h-[350px] overflow-hidden"
+            >
               <div className="relative w-full h-[250px] shadow-sm rounded-t-md p-6 lg:p-0 overflow-hidden">
                 <Image
                   src={product.img}
