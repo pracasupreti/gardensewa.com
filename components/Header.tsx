@@ -79,34 +79,66 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-
-            {/* Right Section (Hire Button + Mobile Menu Icon) */}
-            <div className="flex items-center">
-              <Link href="/hire">
-                <button className="hidden cursor-pointer lg:block md:block bg-[#009000] hover:bg-green-800 text-white py-2 px-4 rounded-lg">
-                  Hire a Consultant
-                </button>
-              </Link>
-
-              {/* Mobile Hamburger */}
-              <div className="lg:hidden relative z-50">
+            <div className="flex items-center space-x-4">
+              <div className="hidden md:flex items-center space-x-1">
                 <button
-                  onClick={() => setMenuOpen(!menuOpen)}
-                  aria-label="Toggle Menu"
+                  aria-label="Search"
+                  className="p-2 hover:text-green-700 cursor-pointer"
                 >
                   <Image
-                    className="w-[25px] h-[25px]"
-                    src={
-                      menuOpen
-                        ? "/image/icons/cross-circle-svgrepo-com.svg"
-                        : "/image/icons/hamburger.svg"
-                    }
-                    alt={menuOpen ? "Close menu" : "Open menu"}
-                    width={25}
-                    height={25}
+                    src="/image/icons/search.png"
+                    alt="Search"
+                    width={24}
+                    height={24}
                     loading="lazy"
                   />
                 </button>
+                <button
+                  aria-label="Shopping Cart"
+                  className="relative p-2 hover:text-green-700 cursor-pointer"
+                >
+                  <Image
+                    src="/image/icons/cart.png"
+                    alt="Shopping Cart"
+                    width={24}
+                    height={24}
+                    loading="lazy"
+                  />
+                  {/* Optional: Badge for cart item count */}
+                  <span className="absolute w-4 h-4 top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-[#009000] bg-gray-200 rounded-full">
+                    3
+                  </span>
+                </button>
+              </div>
+
+              {/* Right Section (Hire Button + Mobile Menu Icon) */}
+              <div className="flex items-center">
+                <Link href="/hire">
+                  <button className="hidden cursor-pointer lg:block md:block bg-[#009000] hover:bg-green-800 text-white py-2 px-4 rounded-lg">
+                    Hire a Consultant
+                  </button>
+                </Link>
+
+                {/* Mobile Hamburger */}
+                <div className="lg:hidden relative z-50">
+                  <button
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle Menu"
+                  >
+                    <Image
+                      className="w-[25px] h-[25px]"
+                      src={
+                        menuOpen
+                          ? "/image/icons/cross-circle-svgrepo-com.svg"
+                          : "/image/icons/hamburger.svg"
+                      }
+                      alt={menuOpen ? "Close menu" : "Open menu"}
+                      width={25}
+                      height={25}
+                      loading="lazy"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
 

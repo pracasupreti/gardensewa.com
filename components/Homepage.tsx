@@ -11,34 +11,37 @@ import Link from "next/link";
 const heroimage = [
   {
     id: 1,
-    img: "/image/home/slider-image/1.jpg",
+    img: "/image/home/slider-image/1main.jpg",
     alt: "sliderimg1",
-    title: "Welcome",
-    title2: "to Gardensewa",
-    subtitle: "Agriculture Consulting in Nepal.",
+    title: "BEST SERVICES FOR GARDENING",
+    title2: "Welcome to Gardensewa",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi ipsum nostrum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi",
   },
   {
     id: 2,
-    img: "/image/home/slider-image/3.jpg",
+    img: "/image/home/slider-image/2main.jpg",
     alt: "sliderimg2",
-    title: "Welcome",
-    title2: "to Gardensewa",
-    subtitle: "Agriculture Consulting in Nepal.",
+    title: "BEST SERVICES FOR GARDENING",
+    title2: "Welcome to Gardensewa",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi ipsum nostrum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi",
   },
   {
     id: 3,
-    img: "/image/home/slider-image/4.jpg",
+    img: "/image/home/slider-image/3main.jpg",
     alt: "sliderimg3",
-    title: "Welcome",
-    title2: "to Gardensewa",
-    subtitle: "Agriculture Consulting in Nepal.",
+    title: "BEST SERVICES FOR GARDENING",
+    title2: "Welcome to Gardensewa",
+    subtitle:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi ipsum nostrum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi",
   },
   {
     id: 4,
-    img: "/image/home/slider-image/111.jpg",
+    img: "/image/home/slider-image/4main.jpg",
     alt: "sliderimg4",
-    title: "Welcome",
-    title2: "to Gardensewa",
+    title: "BEST SERVICES FOR GARDENING",
+    title2: "Welcome to Gardensewa",
     subtitle: "Agriculture Consulting in Nepal.",
   },
 ];
@@ -330,14 +333,27 @@ export default function HeroSlider() {
       >
         {heroimage.map((a) => (
           <SwiperSlide key={a.id} className="relative">
+            {/* Background Image */}
             <div className="relative w-full h-[600px]">
               <Image src={a.img} alt={a.alt} fill className="object-cover" />
             </div>
-            <div className="absolute top-[80%] right-10 items-center text-center text-white">
-              <h2 className="text-[25px] lg:text-[32px] font-bold">
-                {a.title} {a.title2}
-              </h2>
-              <h4 className="text-[20px] font-medium">{a.subtitle}</h4>
+
+            {/* Text Container */}
+            <div className="absolute top-1/2 w-full transform -translate-y-1/2">
+              <div className="container max-w-[1250px] mx-auto px-2 md:px-5 text-center md:text-left text-white">
+                <p className="text-sm md:text-base font-medium mb-2 uppercase tracking-widest">
+                  {a.title}
+                </p>
+                <h2 className="text-2xl md:text-6xl font-bold leading-tight mb-4">
+                  {a.title2}
+                </h2>
+                <p className="text-base md:text-lg font-normal max-w-xl mb-8">
+                  {a.subtitle}
+                </p>
+                <button className="bg-white text-[#009000] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition cursor-pointer">
+                  Read More
+                </button>
+              </div>
             </div>
           </SwiperSlide>
         ))}
@@ -402,77 +418,150 @@ export default function HeroSlider() {
           </div>
         </div>
       </section>
-      <section className="sustainable-development">
-        <div className="container max-w-[1200px] mx-auto px-4 lg:px-0 my-16">
-          <div className="un-goals text-center mb-16">
-            <h1 className="text-[33px] font-bold text-[green]">
-              Sustainable Development Goals of United Nations
-            </h1>
-            <p className="text-[18px] font-serif py-2">
-              Our work contributes to these 7 Sustainable Development Goals of
-              United Nation
-            </p>
-          </div>
+      <section className="text-green-600">
+        <div className="container max-w-[1200px] mx-auto px-4 lg:px-0">
+          <h2 className="py-6 text-center text-[32px] font-semibold">
+            What We Do
+          </h2>
 
-          <div className="un-Contents">
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-y-6 text-center items-center py-5">
-              {goals.slice(0, 4).map((goal, index) => (
-                <a
-                  key={index}
-                  href={goal.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={goal.src}
-                    alt={goal.alt}
-                    width={160}
-                    height={160}
-                    className="w-[160px] h-[160px] mx-auto cursor-pointer"
-                  />
-                </a>
-              ))}
-              {goals.slice(4).map((goal, index) => (
-                <a
-                  key={index + 4}
-                  href={goal.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block lg:hidden"
-                >
-                  <Image
-                    src={goal.src}
-                    alt={goal.alt}
-                    width={160}
-                    height={160}
-                    className="w-[160px] h-[160px] mx-auto cursor-pointer"
-                  />
-                </a>
-              ))}
+          {/* === Products Section Title === */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8 mb-12 text-left">
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Plants & Saplings"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">Plants & Saplings</h4>
+              <p className="text-sm text-gray-600">
+                Explore a wide variety of healthy plants and saplings perfect
+                for your home or farm.
+              </p>
             </div>
 
-            {/* Only for large screens */}
-            <div className="hidden lg:grid grid-cols-3 w-[900px] mx-auto gap-y-6 text-center">
-              {goals.slice(4).map((goal, index) => (
-                <a
-                  key={`lg-${index}`}
-                  href={goal.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={goal.src}
-                    alt={goal.alt}
-                    width={160}
-                    height={160}
-                    className="w-[160px] h-[160px] mx-auto cursor-pointer"
-                  />
-                </a>
-              ))}
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Fertilizers & Nutrients"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">
+                Fertilizers & Nutrients
+              </h4>
+              <p className="text-sm text-gray-600">
+                Boost growth with our certified organic and chemical fertilizers
+                suited for all crops.
+              </p>
+            </div>
+
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Seeds & Sapling Kits"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">
+                Seeds & Sapling Kits
+              </h4>
+              <p className="text-sm text-gray-600">
+                Get high-quality seed varieties and easy starter kits to nurture
+                your garden dreams.
+              </p>
+            </div>
+
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Gardening Tools"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">Gardening Tools</h4>
+              <p className="text-sm text-gray-600">
+                Shop essential tools for home gardening, landscaping, and crop
+                maintenance.
+              </p>
+            </div>
+          </div>
+
+          {/* === Services Section Title === */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8 text-left">
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Garden Maintenance"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">Garden Maintenance</h4>
+              <p className="text-sm text-gray-600">
+                Professional maintenance services to keep your garden lush,
+                clean, and thriving.
+              </p>
+            </div>
+
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Landscaping & Design"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">
+                Landscaping & Design
+              </h4>
+              <p className="text-sm text-gray-600">
+                Transform your space with custom landscape design and
+                installation services.
+              </p>
+            </div>
+
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Training & Workshops"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">
+                Training & Workshops
+              </h4>
+              <p className="text-sm text-gray-600">
+                Hands-on training sessions and gardening workshops for
+                individuals and groups.
+              </p>
+            </div>
+
+            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+              <Image
+                src="/image/home/featured/1.png"
+                alt="Consulting Services"
+                width={200}
+                height={180}
+                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+              />
+              <h4 className="text-lg font-semibold mb-2">
+                Consulting Services
+              </h4>
+              <p className="text-sm text-gray-600">
+                Get expert advice on crop planning, pest management, and modern
+                garden techniques.
+              </p>
             </div>
           </div>
         </div>
       </section>
+
       <section className="featured">
         <div className="container max-w-[1200px] mx-auto px-4 lg:px-0 gap-y-6 my-16 py-10">
           <div className="featured-title flex justify-between">
