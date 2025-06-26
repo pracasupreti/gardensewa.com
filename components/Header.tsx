@@ -52,13 +52,13 @@ export default function Header() {
               <Link href="/" className="flex items-center">
                 <Image
                   className="cursor-pointer"
-                  src="/image/logo/Gardensewa-LOGO.png"
+                  src="/image/logo/gardensewa.png"
                   alt="Gardensewa"
                   width={75}
                   height={75}
                   priority
                 />
-                <p className="cursor-pointer text-[#008000] ml-2">Gardensewa</p>
+                <p className="cursor-pointer text-[#008000] ml-2">GardenSewa</p>
               </Link>
             </div>
 
@@ -115,7 +115,7 @@ export default function Header() {
               <div className="flex items-center">
                 <Link href="/hire">
                   <button className="hidden cursor-pointer lg:block md:block bg-[#009000] hover:bg-green-800 text-white py-2 px-4 rounded-lg">
-                    Hire a Consultant
+                    Book a Service
                   </button>
                 </Link>
 

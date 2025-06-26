@@ -47,21 +47,21 @@ const heroimage = [
 ];
 const services = [
   {
-    title: "Garden Service",
-    image: "/image/home/top-services/agriculture-service.jpg",
-    alt: "Garden Service",
+    title: "Garden Cleaning",
+    image: "/image/home/top-services/cleaning.webp",
+    alt: "Garden Cleaning",
     href: "/garden-service",
   },
   {
     title: "Garden Training",
-    image: "/image/home/top-services/agriculture-training.jpg",
+    image: "/image/home/top-services/indoor.webp",
     alt: "Garden Training",
     href: "/garden-training",
   },
   {
-    title: "Modern Service",
-    image: "/image/home/top-services/modern-farming.jpg",
-    alt: "Modern Service",
+    title: "Private Garden",
+    image: "/image/home/top-services/private.webp",
+    alt: "Private Garden",
     href: "/modern-service",
   },
 ];
@@ -115,24 +115,24 @@ const goals = [
 ];
 const featuredProducts = [
   {
-    name: "HEXAMIN",
-    tagline: "Micro nutrients Power Pack",
-    src: "/image/home/featured/1.png",
+    name: "Adenia Glaucia",
+    tagline: "NPR 1200",
+    src: "/image/home/featured/adenia.webp",
   },
   {
-    name: "33 Karat",
-    tagline: "Agriculture can be better",
-    src: "/image/home/featured/2.png",
+    name: "Quadricolor Century Plant",
+    tagline: "NPR 1500",
+    src: "/image/home/featured/agave.webp",
   },
   {
-    name: "MCORAJA",
-    tagline: "Bio Fertilizer",
-    src: "/image/home/featured/3.png",
+    name: "Variegated Snake Plant",
+    tagline: "NPR 1600",
+    src: "/image/home/featured/snake.webp",
   },
   {
-    name: "Seedlings/Saplings",
-    tagline: "Nurture Your Garden dreams!",
-    src: "/image/home/featured/4.png",
+    name: "Chaparral Yucca",
+    tagline: "NPR 2000",
+    src: "/image/home/featured/yuca.webp",
   },
 ];
 
@@ -426,137 +426,223 @@ export default function HeroSlider() {
 
           {/* === Products Section Title === */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8 mb-12 text-left">
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
+                src="/image/navbar/services/garden.jpg"
                 alt="Plants & Saplings"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">Plants & Saplings</h4>
-              <p className="text-sm text-gray-600">
-                Explore a wide variety of healthy plants and saplings perfect
-                for your home or farm.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Gardening Services
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
-                alt="Fertilizers & Nutrients"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/hscaping.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">
-                Fertilizers & Nutrients
-              </h4>
-              <p className="text-sm text-gray-600">
-                Boost growth with our certified organic and chemical fertilizers
-                suited for all crops.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Landscaping Services
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
-                alt="Seeds & Sapling Kits"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/gardenconsultation.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">
-                Seeds & Sapling Kits
-              </h4>
-              <p className="text-sm text-gray-600">
-                Get high-quality seed varieties and easy starter kits to nurture
-                your garden dreams.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Turfing Services
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
-                alt="Gardening Tools"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/gardendesign.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">Gardening Tools</h4>
-              <p className="text-sm text-gray-600">
-                Shop essential tools for home gardening, landscaping, and crop
-                maintenance.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Gardening Makeovers
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* === Services Section Title === */}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8 text-left">
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
               <Image
-                src="/image/home/featured/1.png"
-                alt="Garden Maintenance"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/plantsales.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">Garden Maintenance</h4>
-              <p className="text-sm text-gray-600">
-                Professional maintenance services to keep your garden lush,
-                clean, and thriving.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Plants and Samplings
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
-                alt="Landscaping & Design"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/plantsales.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">
-                Landscaping & Design
-              </h4>
-              <p className="text-sm text-gray-600">
-                Transform your space with custom landscape design and
-                installation services.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Plants and Samplings
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
-                alt="Training & Workshops"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/plantsales.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">
-                Training & Workshops
-              </h4>
-              <p className="text-sm text-gray-600">
-                Hands-on training sessions and gardening workshops for
-                individuals and groups.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Plants and Samplings
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+            <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
+              {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/home/featured/1.png"
-                alt="Consulting Services"
-                width={200}
-                height={180}
-                className="mb-4 transition-transform duration-300 ease-in-out hover:scale-110"
+                src="/image/navbar/services/plantsales.jpg"
+                alt="Plants & Saplings"
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <h4 className="text-lg font-semibold mb-2">
-                Consulting Services
-              </h4>
-              <p className="text-sm text-gray-600">
-                Get expert advice on crop planning, pest management, and modern
-                garden techniques.
-              </p>
+
+              {/* Overlay Blur + Color */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text Content */}
+              <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
+                <h4 className="text-xl font-semibold text-center text-white">
+                  Plants and Samplings
+                </h4>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-white">
+                  Explore a wide variety of healthy plants and saplings perfect
+                  for your home or farm.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -566,7 +652,7 @@ export default function HeroSlider() {
         <div className="container max-w-[1200px] mx-auto px-4 lg:px-0 gap-y-6 my-16 py-10">
           <div className="featured-title flex justify-between">
             <h1 className="text-center text-[30px] font-semibold text-[rgb(0,128,0)]">
-              Featured Products
+              New Arrivals
             </h1>
             <Link
               href="/products"
@@ -579,7 +665,7 @@ export default function HeroSlider() {
           <div className="Contents text-center grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-16 mt-5">
             {featuredProducts.map((product, index) => (
               <div key={index} className="features">
-                <div className="mx-auto featured-content overflow-hidden w-full max-h-[300px] px-6 py-5 mb-5 bg-[#e5e7eb] rounded-lg">
+                <div className="mx-auto featured-content overflow-hidden w-full max-h-[300px] px-6 py-5 mb-5 rounded-lg">
                   <Image
                     src={product.src}
                     alt={product.name}
@@ -589,8 +675,8 @@ export default function HeroSlider() {
                   />
                 </div>
                 <div className="text-gray-400 text-[15px]">
-                  <p className="pt-2 font-semibold">{product.name}</p>
-                  <p className="text-[13px]">"{product.tagline}"</p>
+                  <p className=" font-semibold">{product.name}</p>
+                  <p className="text-[13px]">{product.tagline}</p>
                 </div>
               </div>
             ))}
