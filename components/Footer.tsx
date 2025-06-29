@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Newsletter */}
           <div className="footer-main py-2 flex flex-col md:flex-row text-center items-center gap-y-6 justify-between">
             <p className="text-[20px] font-semibold text-[#008000]">
-              Subscribe to Our Newsletter
+              Get Gardening Tips in Your Email
             </p>
             <form
               className="border border-[#009000] bg-white ps-2 rounded-lg"
@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="footer-contact text-[15px]">
               <Image
                 className="mx-auto"
-                src="/image/logo/Gardensewa-LOGO.png"
+                src="/image/logo/gardensewa.png"
                 alt="Gardensewa Logo"
                 width={75}
                 height={75}

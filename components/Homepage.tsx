@@ -7,11 +7,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Link from "next/link";
+import StarRating from "./StarRating";
 
 const heroimage = [
   {
     id: 1,
-    img: "/image/home/slider-image/1main.jpg",
+    img: "/image/home/slider-image/gardenslider1.webp",
     alt: "sliderimg1",
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
@@ -20,7 +21,7 @@ const heroimage = [
   },
   {
     id: 2,
-    img: "/image/home/slider-image/2main.jpg",
+    img: "/image/home/slider-image/gardenslider2.webp",
     alt: "sliderimg2",
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
@@ -29,7 +30,7 @@ const heroimage = [
   },
   {
     id: 3,
-    img: "/image/home/slider-image/3main.jpg",
+    img: "/image/home/slider-image/gardenslider3.jpg",
     alt: "sliderimg3",
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
@@ -38,7 +39,7 @@ const heroimage = [
   },
   {
     id: 4,
-    img: "/image/home/slider-image/4main.jpg",
+    img: "/image/home/slider-image/3main.jpg",
     alt: "sliderimg4",
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
@@ -158,16 +159,16 @@ const partners = [
 ];
 const videos = [
   {
-    title: "How to Use a Rice Transplanter: Step-by-Step Guide.",
+    title: "How to Pick the Right Plants for Your Garden",
     description:
       "Please visit our YouTube channel to see more videos with tips.",
-    src: "https://www.youtube.com/embed/PD-riaSBTQ8",
+    src: "https://www.youtube.com/embed/dslGiINx6IY?si=4QMA-_0QAmW9nWk7",
   },
   {
-    title: "Boost Lemon Size with Expert Tips",
+    title: "Secrets To Transforming A Tiny Backyard",
     description:
       "Please visit our YouTube channel to see more videos with tips.",
-    src: "https://www.youtube.com/embed/L7ITgLsXB0w",
+    src: "https://www.youtube.com/embed/31l0S0QEwVE?si=ZvHT_Du73X7qYKcZ",
   },
 ];
 const manureStages = [
@@ -268,7 +269,7 @@ const manureData = [
 const updates = [
   {
     id: 1,
-    img: "/image/home/latest-update/1.jpg",
+    img: "/image/home/latest-update/update1.webp",
     date: "21 March, 2025",
     paragraphs: [
       "किसानपेडियाको प्राबिधिक सहयोगमा परम्परागत कृषिलाई आधुनिक कृषि प्रबिधिद्वारा विस्थापन गर्दै रंगेली नगरपालिकाका ब्यबसायिक कृषकहरु",
@@ -279,15 +280,15 @@ const updates = [
   },
   {
     id: 2,
-    img: "/image/home/latest-update/2.jpg",
+    img: "/image/home/latest-update/update2.webp",
     date: "5 January, 2025",
     paragraphs: [
-      "कृषिप्रधान देश नेपालमा नेपाली किसानहरुले बर्षौ देखि भोग्दै आएका विविध समस्याहरु समाधान गर्दै आत्मनिर्भर कृषिको विकास गर्ने लक्ष्यका साथ संचालित किसानपेडिया सर्भिस प्रा.लि. ले कृषक, बजार ब्यबस्थापन, बैज्ञानिक प्रबिधिमैत्री कृषिलाई डिजिटल प्रविधि संग जोडन ई-कमर्स को उद्घाटन गरेको छ। र उक्त पोर्टलले आउने दिनमा किसानहरुलाई चाहिने सम्पूर्ण गुणस्तरीय कृषि सामग्रीहरु डिजिटलि उपलब्ध गराउनुको साथै कृषकहरुले उत्पादन गरेको कृषि उपजहरुको पनि उचित बजार ब्यबस्थापन गर्ने छ।",
+      "कृषिप्रधान देश नेपालमा नेपाली किसानहरुले बर्षौ देखि भोग्दै आएका विविध समस्याहरु समाधान गर्दै आत्मनिर्भर कृषिको विकास गर्ने लक्ष्यका साथ संचालित किसानपेडिया सर्भिस प्रा.लि. ले कृषक, बजार ब्यबस्थापन, बैज्ञानिक प्रबिधिमैत्री कृषिलाई डिजिटल प्रविधि संग जोडन ई-कमर्स को उद्घाटन गरेको छ। र उक्त पोर्टलले आउने दिनमा किसानहरुलाई चाहिने सम्पूर्ण गुणस्तरीय कृषि सामग्रीहरु डिजिटलि उपलब्ध गराउनुको साथै कृषकहरुले उत्पादन गरेको कृषि उपजहरुको पनि उचित बजार ब्यबस्थापन गर्ने छ। कृषिप्रधान देश नेपालमा नेपाली किसानहरुले बर्षौ देखि भोग्दै आएका विविध समस्याहरु समाधान गर्दै आत्मनिर्भर कृषिकोकृषिप्रधान देश नेपालमा नेपाली किसानहरुले बर्षौ देखि भोग्दै आएका विविध समस्याहरु समाधान गर्दै आत्मनिर्भर कृषिको",
     ],
   },
   {
     id: 3,
-    img: "/image/home/latest-update/3.jpg",
+    img: "/image/home/latest-update/update3.webp",
     date: "4 March, 2025",
     paragraphs: [
       "उर्लाबारी र हसन्दहमा राखिएको चैते धानको बिउ रोप्नको लागि तयारी अवस्थामा पाईयो ,उक्त बिउहरु अबको एक हप्ता भित्र रोपी सक्ने किसानहरुले जानकारी गराएको छ। साथ साथै मोरंग हसन्दहको किसान नन्दन थापाको मकै बालीमा देखिएको फौजी किरा नियन्त्रण गर्नको लागि Automobile मर्मत केन्द्रमा पाउने ग्रिज़ (grease) को प्रयोग गर्न हामीले सुझाब दिएका थियौ। उक्त सुझाब अनुसार उहाँले प्रयोग गर्नुभएको ग्रिज़ले फौजी किरा नियन्त्रण भएको उहाँको भनाई छ।",
@@ -300,7 +301,7 @@ const testimonials = [
     quote:
       "Gardensewa has significantly improved my farming business, and I strongly suggest their services to other farmers.",
     name: "Anu Poudel",
-    location: "Biratnagar-3, Morang",
+    location: "Kamalpokhari, Kathmandu",
     img: "/image/home/testimonials/1.png",
   },
   {
@@ -308,15 +309,15 @@ const testimonials = [
     quote:
       "Their expert advice on crop management and the timely sharing of technology has helped me increase my crop yield by 30%",
     name: "Ram Thapa",
-    location: "Rangeli-1, Morang",
+    location: "Balkumari, Lalitpur",
     img: "/image/home/testimonials/2.png",
   },
   {
     id: 3,
     quote:
-      "Gardensewa's in-depth information and practical suggestions have changed our agricultural methods.",
+      "Gardensewa's in-depth information and practical suggestions have changed our agricultural methods. have changed our agricultural.",
     name: "Hemlal Adhikari",
-    location: "Duhabi-7, Sunsari",
+    location: "Dhobighat, Lalitpur",
     img: "/image/home/testimonials/3.png",
   },
 ];
@@ -340,17 +341,17 @@ export default function HeroSlider() {
 
             {/* Text Container */}
             <div className="absolute top-1/2 w-full transform -translate-y-1/2">
-              <div className="container max-w-[1250px] mx-auto px-2 md:px-5 text-center md:text-left text-white">
+              <div className="container max-w-[1250px] mx-auto px-2 md:px-5 text-center md:text-left text-black">
                 <p className="text-sm md:text-base font-medium mb-2 uppercase tracking-widest">
                   {a.title}
                 </p>
-                <h2 className="text-2xl md:text-6xl font-bold leading-tight mb-4">
+                <h2 className="text-2xl md:text-6xl font-bold leading-tight mb-4 text-[#009000]">
                   {a.title2}
                 </h2>
                 <p className="text-base md:text-lg font-normal max-w-xl mb-8">
                   {a.subtitle}
                 </p>
-                <button className="bg-white text-[#009000] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition cursor-pointer">
+                <button className="bg-[#009000] text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition cursor-pointer">
                   Read More
                 </button>
               </div>
@@ -567,7 +568,7 @@ export default function HeroSlider() {
             <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
               {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/navbar/services/plantsales.jpg"
+                src="/image/navbar/services/fertilizers.webp"
                 alt="Plants & Saplings"
                 layout="fill"
                 objectFit="cover"
@@ -580,7 +581,7 @@ export default function HeroSlider() {
               {/* Text Content */}
               <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
                 <h4 className="text-xl font-semibold text-center text-white">
-                  Plants and Samplings
+                  Fertilizers and Compost
                 </h4>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -594,7 +595,7 @@ export default function HeroSlider() {
             <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
               {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/navbar/services/plantsales.jpg"
+                src="/image/navbar/services/pots.webp"
                 alt="Plants & Saplings"
                 layout="fill"
                 objectFit="cover"
@@ -607,7 +608,7 @@ export default function HeroSlider() {
               {/* Text Content */}
               <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
                 <h4 className="text-xl font-semibold text-center text-white">
-                  Plants and Samplings
+                  Pots and Planters
                 </h4>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -621,7 +622,7 @@ export default function HeroSlider() {
             <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xs h-64">
               {/* Background Image with Zoom Effect */}
               <Image
-                src="/image/navbar/services/plantsales.jpg"
+                src="/image/navbar/services/tools.webp"
                 alt="Plants & Saplings"
                 layout="fill"
                 objectFit="cover"
@@ -634,7 +635,7 @@ export default function HeroSlider() {
               {/* Text Content */}
               <div className="absolute bottom-20 left-0 right-0 px-6 text-[#009000] mb-30">
                 <h4 className="text-xl font-semibold text-center text-white">
-                  Plants and Samplings
+                  Gardening Tools
                 </h4>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -658,28 +659,42 @@ export default function HeroSlider() {
               href="/products"
               className="hidden lg:block md:block px-6 bg-[#009000] hover:bg-green-800 font-semibold text-white py-2 rounded-lg text-[16px]"
             >
-              View All Products
+              View All Plants
             </Link>
           </div>
 
           <div className="Contents text-center grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-16 mt-5">
             {featuredProducts.map((product, index) => (
-              <div key={index} className="features">
-                <div className="mx-auto featured-content overflow-hidden w-full max-h-[300px] px-6 py-5 mb-5 rounded-lg">
+              <div
+                key={index}
+                className="flex flex-col items-center w-full max-w-xs mx-auto"
+              >
+                {/* Card with Image and Hover Effects */}
+                <div className="relative group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 w-full h-64">
+                  {/* Background Image with Zoom */}
                   <Image
                     src={product.src}
                     alt={product.name}
-                    width={300}
-                    height={300}
-                    className="w-full bg-[#e5e7eb] rounded-lg"
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                <div className="text-gray-400 text-[15px]">
-                  <p className=" font-semibold">{product.name}</p>
-                  <p className="text-[13px]">{product.tagline}</p>
+
+                {/* Product Name and Tagline (Visible Always) */}
+                <div className="mt-6 text-gray-800">
+                  <p className="text-[16px] font-semibold text-[#009000]">
+                    {product.name}
+                  </p>
+                  <p className="text-[13px] text-gray-500">{product.tagline}</p>
                 </div>
               </div>
             ))}
+
+            {/* View All Products Button */}
             <Link
               href="/products"
               className="md:hidden lg:hidden block bg-[#009000] hover:bg-green-800 font-semibold text-white py-2 rounded-lg w-[200px] text-[16px] mx-auto"
@@ -769,114 +784,142 @@ export default function HeroSlider() {
           </div>
         </div>
       </section>
-      <section className="manure-uses">
-        <div className="container max-w-[1200px] mx-auto px-4 lg:px-0 my-16">
-          <h1 className="text-[35px] font-semibold text-center text-[green] max-md:mb-4">
-            Use of Manure in Rice
-          </h1>
 
-          <div className="manure-content flex flex-col md:flex-row text-center items-center gap-y-6 gap-3">
-            {manureData.map(
-              ({ src, alt, title, details, note, noteClass, imgClass }, i) => (
-                <div
-                  key={i}
-                  className="manure-contents w-[265px] max-md:w-full max-md:border py-2 max-md:py-0 max-md:rounded-lg"
-                >
-                  <div className="contents">
-                    <Image
-                      src={src}
-                      alt={alt}
-                      width={245}
-                      height={270}
-                      className={imgClass}
-                      priority={true}
-                    />
-                    <div className="font text-center max-md:py-3">
-                      <h5 className="font-semibold md:pt-4">{title}</h5>
-                      {details.map((detail, idx) => (
-                        <p key={idx}>{detail}</p>
-                      ))}
-                      {note && <p className={noteClass}>{note}</p>}
-                    </div>
-                  </div>
-                </div>
-              )
-            )}
-          </div>
-        </div>
-      </section>
       <section className="latest-update">
         <div className="container max-w-[1200px] px-4 lg:px-0 mx-auto items-center gap-y-6 my-10">
           <h1 className="text-center text-[35px] font-semibold py-5 my-5 text-[green]">
             Latest Updates
           </h1>
 
-          <div className="updated-contents grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-y-6 justify-between gap-5">
-            {updates.map((update) => (
-              <div
-                key={update.id}
-                className="updated-content rounded-lg border border-gray-200 hover:shadow-lg w-full md:h-[500px] md:px-4 md:py-4 overflow-hidden"
-              >
-                <div className="relative w-full md:h-[200px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Left column: First update */}
+            {updates[0] && (
+              <div className="rounded-xl border border-gray-200 hover:shadow-lg overflow-hidden h-full flex flex-col">
+                <div className="relative w-full h-[300px]">
                   <Image
-                    src={update.img}
-                    alt={`Update ${update.id}`}
+                    src={updates[0].img}
+                    alt={`Update ${updates[0].id}`}
                     fill
-                    className="object-cover md:rounded-lg"
+                    className="object-cover"
                   />
                 </div>
-                <div className="max-md:p-3">
-                  <p className="text-gray-400 text-[14px] my-4">
-                    {update.date}
-                  </p>
-                  {update.paragraphs.map((text, idx) => (
-                    <p
-                      key={idx}
-                      className={`text-[14px] text-gray-600 ${
-                        idx === 0 ? "mb-1" : ""
-                      } text-justify max-md:px-3 ${
-                        idx === update.paragraphs.length - 1
-                          ? "max-md:pb-3"
-                          : ""
-                      }`}
-                    >
-                      {text}
+                <div className="p-4 flex flex-col justify-between flex-1 relative">
+                  <div>
+                    <p className="text-gray-400 text-[14px] mb-2">
+                      {updates[0].date}
                     </p>
-                  ))}
+                    {updates[0].paragraphs.map((text, idx) => (
+                      <p
+                        key={idx}
+                        className={`text-[14px] text-gray-600 text-justify mb-1`}
+                      >
+                        {text}
+                      </p>
+                    ))}
+                  </div>
+                  <div className="mt-4">
+                    <Link href={`/blog/${updates[0].id}`}>
+                      <button className="border cursor-pointer border-green-700 text-green-700 px-3 py-1 rounded-lg hover:bg-green-700 hover:text-white">
+                        Read More
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            ))}
+            )}
+
+            {/* Right column: Stack 2 updates vertically */}
+            <div className="flex flex-col gap-4">
+              {[updates[1], updates[2]].map(
+                (update) =>
+                  update && (
+                    <div
+                      key={update.id}
+                      className="flex border border-gray-200 rounded-xl overflow-hidden text-gray-600 h-[260px]"
+                    >
+                      {/* Text side */}
+                      <div className="relative w-2/3 p-4 flex flex-col justify-between">
+                        <div>
+                          <p className="text-gray-400 text-[14px] mb-2">
+                            {update.date}
+                          </p>
+                          {update.paragraphs.map((text, idx) => (
+                            <p
+                              key={idx}
+                              className={`text-[14px] text-justify text-gray-600 mb-1 line-clamp-6`}
+                            >
+                              {text}
+                            </p>
+                          ))}
+                        </div>
+                        <div>
+                          <Link href={`/blog/${update.id}`}>
+                            <button className="mt-2 cursor-pointer border border-green-700 text-green-700 px-3 py-1 rounded-lg hover:bg-green-700 hover:text-white">
+                              Read More
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
+
+                      {/* Image side */}
+                      <div className="relative w-1/3 h-full hidden md:block">
+                        <Image
+                          src={update.img}
+                          alt={`Update ${update.id}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  )
+              )}
+            </div>
           </div>
         </div>
       </section>
+
       <section className="Testimonials">
-        <div className="container max-w-[1200px] mx-auto px-6 lg:px-0 text-center items-center gap-y-6 my-16">
-          <h1 className="my-5 pb-2 text-center text-[30px] font-bold text-[green]">
+        <div className="container max-w-[1200px] px-4 lg:px-0 mx-auto items-center gap-y-6 my-10">
+          <h1 className="text-center text-[35px] font-semibold py-5 my-5 text-[green]">
             Testimonials
           </h1>
 
-          <div className="testimonials grid sm:grid-cols-2 lg:grid-cols-3 text-center items-center gap-y-6 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-start gap-5 justify-between">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="testimonial-content w-full lg:h-[265px] border border-gray-200 px-3 lg:px-8 text-[15px] text-gray-500 py-6 lg:py-10 text-justify shadow-2xl rounded-xl overflow-hidden"
+                className="text-sm border border-gray-200 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden"
               >
-                <p className="mb-4">"{testimonial.quote}"</p>
-
-                <div className="profile flex-none lg:flex text-center lg:justify-start justify-center items-center lg:my-5 gap-5">
-                  <div className="relative w-[60px] h-[60px] rounded-full overflow-hidden mx-auto lg:mx-0">
+                {/* Header */}
+                <div className="flex items-center gap-4 px-5 py-4 bg-[#0aa00a]">
+                  <div className="relative h-12 w-12">
                     <Image
                       src={testimonial.img}
                       alt={testimonial.name}
-                      fill
-                      className="object-cover rounded-full"
+                      layout="fill"
+                      className="rounded-full object-cover"
                     />
                   </div>
-                  <div className="intro mt-3 lg:mt-0">
-                    <p className="font-medium">{testimonial.name}</p>
-                    <p className="lg:text-[12px]">{testimonial.location}</p>
+                  <div className="text-left">
+                    <h1 className="text-lg font-medium text-gray-800 text-white">
+                      {testimonial.name}
+                    </h1>
+                    <p className="text-gray-800/80 text-white">
+                      {testimonial.location}
+                    </p>
                   </div>
                 </div>
+
+                {/* Body */}
+                <div className="p-5 pb-7 text-left">
+                  <StarRating rating={5} />
+                  <p className="text-gray-500 mt-5">{testimonial.quote}</p>
+                </div>
+
+                {/* Optional link */}
+                <a href="#" className="text-[#009000] underline px-5">
+                  Read more
+                </a>
               </div>
             ))}
           </div>

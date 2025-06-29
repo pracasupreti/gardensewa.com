@@ -1,141 +1,113 @@
 const blogs = [
   {
     id: 1,
-    title: "Sustainable Farming Practices in Nepal",
+    title: "Top Gardening Services for Nepali Homes",
     author: "Anil Sharma",
     date: "April 1, 2025",
-    image: "/image/navbar/blog/0.jpg",
+    image: "/image/home/latest-update/update1.webp",
     intro:
-      "Nestled in the Himalayas, Nepal’s agriculture sector is the backbone of rural livelihoods. Sustainable farming is key to preserving this heritage.",
-    fullContent: `
-      <section>
-        <h2 class="text-xl font-semibold mt-6 mb-3">The Benefits of Organic Farming in Nepal</h2>
-        <p>Organic farming isn’t just a trend—it’s a sustainable movement that can create long-term benefits for both people and the planet. Here’s why it’s gaining momentum in Nepal:</p>
-        <ul class="list-disc list-inside mb-6">
-          <li><strong>Healthier Food for a Healthier Future:</strong> In Nepal, where fresh food is a staple, the use of synthetic fertilizers and pesticides has long been a concern. Organic farming addresses this by eliminating harmful chemicals from the farming process. As a result, the food produced is not only tastier but also healthier. By growing crops without harmful additives, organic farming ensures that families across Nepal can enjoy wholesome, chemical-free food.</li>
-          <li><strong>Protecting Nepal’s Natural Resources:</strong> Nepal’s agricultural landscape is incredibly diverse, ranging from the Terai plains to the high mountain regions. Organic farming promotes sustainability by conserving soil health, water quality, and biodiversity. Practices like crop rotation and natural pest management help maintain the delicate balance of nature, ensuring that future generations can continue to benefit from these resources.</li>
-          <li><strong>Boosting Soil Health:</strong> Soil health is the cornerstone of any successful farming venture. Unfortunately, conventional farming methods can deplete the soil of essential nutrients over time. Organic farming, however, focuses on improving soil fertility through composting, mulching, and the use of organic fertilizers. These methods promote a thriving ecosystem in the soil, leading to healthier plants and higher-quality crops in the long run.</li>
-          <li><strong>Economic Benefits for Farmers:</strong> One of the most attractive benefits of organic farming is the potential for increased income. Organic produce often fetches a higher price in both local and international markets. As more consumers seek out organic options, Nepalese farmers can tap into a growing market, improving their financial stability and reducing their reliance on expensive synthetic chemicals.</li>
-          <li><strong>Fighting Climate Change:</strong> As climate change becomes a more pressing issue, organic farming offers a way to build resilience in agriculture. Organic practices contribute to carbon sequestration in the soil, helping to mitigate the effects of climate change. Moreover, by reducing the use of synthetic chemicals, organic farming minimizes greenhouse gas emissions, playing a small but important role in the fight against global warming.</li>
-        </ul>
-
-        <h2 class="text-xl font-semibold mt-6 mb-3">Expert Guidance for Organic Farming in Nepal</h2>
-        <p>Transitioning to organic farming can seem daunting, but with the right knowledge and support, it’s entirely achievable. Here are some expert tips for farmers in Nepal who are considering making the switch:</p>
-        <ol class="list-decimal list-inside mb-6">
-          <li><strong>Focus on Soil Health:</strong> Soil is the foundation of any farm, and in organic farming, it’s treated with the utmost care. Start by incorporating organic compost and manure into the soil to improve its structure and fertility. Crop rotation is also key—alternating crops each season helps prevent soil depletion and reduces the risk of pests and diseases.</li>
-          <li><strong>Choose the Right Crops:</strong> Nepal’s varied climate offers a wide range of crops that can thrive under organic conditions. Popular organic crops in Nepal include rice, maize, vegetables, and fruits. Choosing crops that are well-suited to the local environment can help improve yield and ensure the long-term success of the farm.</li>
-          <li><strong>Natural Pest Control:</strong> Managing pests without synthetic chemicals is one of the biggest challenges in organic farming. However, there are plenty of natural methods to keep pests at bay. Introducing beneficial insects, like ladybugs or bees, can help control pests naturally. Neem oil and garlic-based solutions are also effective organic pesticides that can be used to protect crops without harming the environment.</li>
-          <li><strong>Get Certified for Organic Produce:</strong> For farmers looking to sell their products in premium markets, getting certified as an organic farm is essential. The Nepal Agriculture Certification Program (NACP) provides certification that meets international organic standards. This certification can open doors to export opportunities, higher market prices, and better overall recognition.</li>
-          <li><strong>Training and Support:</strong> Transitioning to organic farming requires learning new techniques and gaining a deeper understanding of sustainable practices. Luckily, several organizations in Nepal offer training programs to help farmers. Heifer Nepal and the Nepal Organic Certification Center (NOCC) are excellent resources for anyone looking to learn more about organic farming. Additionally, farmers can reach out to agricultural extension services for support and advice on organic practices.</li>
-        </ol>
-
-        <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
-        <p>Organic farming in Nepal isn’t just a way of growing crops; it’s a way of protecting the future of the nation’s agricultural landscape. By embracing organic practices, Nepalese farmers can not only boost their income but also contribute to a healthier environment and more sustainable food systems.</p>
-        <p>As the demand for organic products grows worldwide, Nepal is well-positioned to become a leader in the organic farming movement. With the right guidance and resources, farmers across the country can make the switch to organic farming and help build a greener, healthier future for generations to come.</p>
-
-        <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
-        <p><strong>Rajendra Prasad</strong> is an agriculture enthusiast with a passion for sustainable farming practices. After working with local farmers in Nepal, Rajendra Prasad has seen firsthand the positive impact that organic farming can have on both the environment and the livelihoods of farmers.</p>
-      </section>
-    `,
-  },
-
-  {
-    id: 2,
-    title: "Organic Fertilizers in Eastern Nepal",
-    author: "Ramesh Gurung",
-    date: "March 20, 2025",
-    image: "/image/navbar/blog/1.jpg",
-    intro:
-      "Organic fertilizers are gaining traction in Eastern Nepal as farmers seek natural ways to boost crop yields and soil health.",
+      "GardenSewa brings you expert gardening services tailored to Nepali homes — from setup to maintenance, we make your dream garden come alive.",
     fullContent: `
     <section>
-      <h2 class="text-xl font-semibold mt-6 mb-3">What Are Organic Fertilizers?</h2>
-      <p>
-        Organic fertilizers are natural substances derived from plant, animal, or mineral sources that provide essential nutrients to crops. Unlike chemical fertilizers, organic options improve soil structure, enhance microbial activity, and promote long-term soil health.
-      </p>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">Common Organic Fertilizers Used in Eastern Nepal</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Comprehensive Gardening Services</h2>
+      <p>At GardenSewa, we provide a range of expert gardening services designed for urban and rural homes in Nepal. Whether you're starting a new garden or need regular maintenance, our skilled team is here to help.</p>
       <ul class="list-disc list-inside mb-6">
-        <li><strong>Compost:</strong> Decomposed organic matter that enriches soil with nutrients and improves water retention.</li>
-        <li><strong>Farmyard Manure:</strong> Animal waste mixed with bedding material, widely used for its rich nutrient content.</li>
-        <li><strong>Green Manure:</strong> Growing and plowing under leguminous plants to add nitrogen and organic matter to soil.</li>
-        <li><strong>Vermicompost:</strong> Compost produced by earthworms, known for high nutrient availability and soil enhancement.</li>
+        <li><strong>Garden Setup:</strong> We help you plan and build beautiful, sustainable gardens suited to Nepali climates and space availability.</li>
+        <li><strong>Plant Care & Maintenance:</strong> Regular care including pruning, fertilizing, and pest control for healthy, thriving plants.</li>
+        <li><strong>Lawn & Turf Management:</strong> We install and maintain lawns that stay green and neat year-round.</li>
+        <li><strong>Seasonal Planting:</strong> Get the right flowers, fruits, and vegetables planted for every season, ensuring freshness and beauty.</li>
       </ul>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">Benefits of Using Organic Fertilizers</h2>
-      <ul class="list-disc list-inside mb-6">
-        <li>Improves soil fertility and structure over time.</li>
-        <li>Supports beneficial soil microorganisms.</li>
-        <li>Reduces dependency on synthetic chemicals.</li>
-        <li>Enhances crop quality and nutritional value.</li>
-        <li>Environmentally friendly and sustainable.</li>
-      </ul>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">Challenges and Considerations</h2>
-      <p>
-        Despite the benefits, some challenges exist such as slower nutrient release compared to chemical fertilizers, and the need for sufficient organic material availability. Training and awareness are crucial for farmers to optimize the use of organic fertilizers.
-      </p>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">How Farmers Can Transition</h2>
-      <p>
-        Farmers in Eastern Nepal can start by mixing organic fertilizers with traditional practices, gradually increasing their usage. Government programs and NGOs provide support through training and access to organic inputs.
-      </p>
-
+      <h2 class="text-xl font-semibold mt-6 mb-3">Why Choose GardenSewa?</h2>
+      <p>We offer professional, affordable, and eco-friendly solutions for all gardening needs. Our team uses organic methods and local knowledge to provide the best service possible.</p>
       <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
-      <p>
-        The use of organic fertilizers in Eastern Nepal presents a promising path toward sustainable agriculture, improved soil health, and better livelihoods for farmers. Embracing these natural inputs supports the environment and meets growing market demand for organic products.
-      </p>
-
+      <p>Let GardenSewa turn your space into a peaceful, green retreat. Whether you're a beginner or an experienced plant lover, our services make gardening easy and enjoyable in Nepal.</p>
       <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
-      <p><strong>Ramesh Gurung</strong> is an agricultural expert focused on sustainable farming methods in Nepal, working closely with farmers in Eastern Nepal to promote eco-friendly farming practices.</p>
+      <p><strong>Anil Sharma</strong> is a gardening expert with 10+ years of experience in helping households across Nepal create sustainable and beautiful green spaces.</p>
     </section>
   `,
   },
   {
+    id: 2,
+    title: "Best Gardening Products for Every Nepali Gardener",
+    author: "Ramesh Gurung",
+    date: "March 20, 2025",
+    image: "/image/home/latest-update/update2.webp",
+    intro:
+      "Discover high-quality tools, soil, and accessories to boost your gardening experience. GardenSewa's curated products help gardens thrive in any region of Nepal.",
+    fullContent: `
+  <section>
+    <h2 class="text-xl font-semibold mt-6 mb-3">1. Vertical Gardening</h2>
+    <p>Transform dull walls and fences into vibrant vertical gardens using a mix of hanging baskets, tiered shelves, or mounted planters. This method is perfect for maximizing limited space in urban Nepali homes. Incorporating vines, herbs, and flowering plants not only adds visual appeal but also helps purify the air and insulate walls, creating a cooler, greener atmosphere.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">2. Balcony Planters</h2>
+    <p>Convert your balcony into a serene green retreat by adding rail-mounted planters, corner stands, and cascading pots. Add a mix of ornamental and edible plants to create a functional and calming space. With thoughtful placement and seasonal selections, balconies can become tiny ecosystems buzzing with butterflies, bees, and fresh fragrances.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">3. Raised Bed Gardening</h2>
+    <p>Raised beds are ideal for rooftops, courtyards, or small front yards. They allow you to control soil quality, manage weeds, and ensure proper drainage. With neatly arranged beds, you can grow vegetables, herbs, and flowers in organized rows—easy to maintain and harvest. Wooden or brick-edged beds can also enhance your garden’s aesthetic.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">4. Indoor Herb Gardens</h2>
+    <p>Bring nature into your home by growing herbs like tulsi, mint, or rosemary on your kitchen windowsill or living room shelf. Use ceramic pots, tin cans, or glass jars to give your herb garden a personal touch. These mini gardens not only provide fresh seasoning at your fingertips but also add life and aroma to your interiors.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">5. Use Multipurpose Tools</h2>
+    <p>Gardening in small spaces requires efficiency. Equip yourself with multipurpose tools—such as a combination trowel and weeder, or foldable stools with storage. These smart tools save space and make gardening easier, especially for beginners or those managing compact gardens. Choose durable, ergonomic tools to enjoy a stress-free gardening experience.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">Top Tools Every Gardener Needs</h2>
+    <ul class="list-disc list-inside mb-6">
+      <li><strong>Pruning Shears:</strong> Perfect for shaping plants, removing dead stems, and encouraging healthy regrowth. A sharp pair of shears makes precise cuts that help plants recover quickly and flourish.</li>
+      <li><strong>Hand Trowel:</strong> This compact tool is essential for digging, transplanting, and breaking up soil. Ideal for use in containers and raised beds, a sturdy trowel speeds up your planting tasks significantly.</li>
+      <li><strong>Watering Can/Spray:</strong> Ensure proper hydration by using a watering can with a long spout or a gentle mist spray for delicate seedlings. Consistent watering is crucial to help young plants establish roots and thrive.</li>
+      <li><strong>Gardening Gloves:</strong> Keep your hands safe from thorns, rough soil, and insects. Choose gloves made from breathable, durable materials for maximum comfort and grip.</li>
+      <li><strong>Weeder:</strong> A simple yet effective tool for uprooting weeds without disturbing your crops. Handy for keeping small garden beds clean and healthy.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">Organic Soils & Fertilizers</h2>
+    <p>Healthy soil is the foundation of a thriving garden. GardenSewa provides premium compost, vermicompost, and biofertilizers designed to improve soil texture, retain moisture, and supply essential nutrients without harmful chemicals. These organic options are safe for the environment, children, and pets—supporting long-term sustainability in your gardening journey.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">Stylish Pots & Planters</h2>
+    <p>From rustic clay pots to modern ceramic and lightweight fiber planters, GardenSewa offers a wide variety to match every taste and space. Whether you want to hang planters on your balcony, place them on your windowsill, or style your office desk with a minimalist pot, our selection combines form and function to enhance your plants' beauty and health.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">Eco-Friendly Gardening Accessories</h2>
+    <p>Make a conscious choice with biodegradable pots, compostable seed trays, and reusable gardening gloves. These accessories reduce waste and promote sustainability, aligning your gardening practices with environmental responsibility. GardenSewa believes in green gardening—from your first seed to your last harvest.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+    <p>Smart gardening is all about making the most of what you have. From vertical gardens to compact toolkits, every Nepali home can enjoy the joy of greenery. GardenSewa supports your gardening dreams by offering expert guidance, quality supplies, and personalized tips—making gardening easy and rewarding for everyone.</p>
+
+    <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+    <p><strong>Kriti Bhandari</strong> is a passionate garden designer and urban greening advocate. She specializes in turning small Nepali spaces into lush, livable environments through practical design and sustainable gardening techniques.</p>
+  </section>
+  `,
+  },
+  {
     id: 3,
-    title: "Top 5 Garden Design Ideas for Nepali Homes",
+    title: "Creative Gardening Ideas for Small Nepali Spaces",
     author: "Kriti Bhandari",
     date: "April 10, 2025",
-    image: "/image/navbar/blog/2.jpg",
+    image: "/image/home/latest-update/update3.webp",
     intro:
-      "Transform your backyard into a beautiful green space with these simple garden design ideas tailored for Nepali homes.",
+      "Maximize limited spaces with clever gardening solutions that bring beauty and greenery to even the smallest areas of your home.",
     fullContent: `
-    <section>
-      
+  <section>
+    <h2 class="text-xl font-semibold mt-6 mb-3">1. Vertical Gardening</h2>
+    <p>Transform dull walls and fences into vibrant vertical gardens using a mix of hanging baskets, tiered shelves, or mounted planters. This method is perfect for maximizing limited space in urban Nepali homes. Incorporating vines, herbs, and flowering plants not only adds visual appeal but also helps purify the air and insulate walls, creating a cooler, greener atmosphere.</p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">1. Use Native Plants for Easy Maintenance</h2>
-      <p>
-        Native plants like Rhododendron, Marigold, and Jasmine thrive naturally in Nepali climates, requiring less water and care. Using these plants reduces maintenance efforts and supports local biodiversity.
-      </p>
+    <h2 class="text-xl font-semibold mt-6 mb-3">2. Balcony Planters</h2>
+    <p>Convert your balcony into a serene green retreat by adding rail-mounted planters, corner stands, and cascading pots. Add a mix of ornamental and edible plants to create a functional and calming space. With thoughtful placement and seasonal selections, balconies can become tiny ecosystems buzzing with butterflies, bees, and fresh fragrances.</p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">2. Create Multi-Level Garden Beds</h2>
-      <p>
-        Building raised or terraced garden beds can add dimension and help maximize limited space. This is especially useful in hilly areas or small yards common in urban Nepali homes.
-      </p>
+    <h2 class="text-xl font-semibold mt-6 mb-3">3. Raised Bed Gardening</h2>
+    <p>Raised beds are ideal for rooftops, courtyards, or small front yards. They allow you to control soil quality, manage weeds, and ensure proper drainage. With neatly arranged beds, you can grow vegetables, herbs, and flowers in organized rows—easy to maintain and harvest. Wooden or brick-edged beds can also enhance your garden’s aesthetic.</p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">3. Incorporate a Water Feature</h2>
-      <p>
-        Adding a small pond, fountain, or water bowl can create a calming ambiance and attract birds and beneficial insects, enhancing the garden's ecosystem.
-      </p>
+    <h2 class="text-xl font-semibold mt-6 mb-3">4. Indoor Herb Gardens</h2>
+    <p>Bring nature into your home by growing herbs like tulsi, mint, or rosemary on your kitchen windowsill or living room shelf. Use ceramic pots, tin cans, or glass jars to give your herb garden a personal touch. These mini gardens not only provide fresh seasoning at your fingertips but also add life and aroma to your interiors.</p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">4. Use Vertical Gardening Techniques</h2>
-      <p>
-        For small yards, vertical gardens with hanging pots, trellises, or wall-mounted planters can help grow flowers, herbs, or vegetables without taking up much floor space.
-      </p>
+    <h2 class="text-xl font-semibold mt-6 mb-3">5. Use Multipurpose Tools</h2>
+    <p>Gardening in small spaces requires efficiency. Equip yourself with multipurpose tools—such as a combination trowel and weeder, or foldable stools with storage. These smart tools save space and make gardening easier, especially for beginners or those managing compact gardens. Choose durable, ergonomic tools to enjoy a stress-free gardening experience.</p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">5. Design a Relaxation Area</h2>
-      <p>
-        Integrate comfortable seating with shade elements like pergolas or native trees. This creates a perfect spot for family gatherings or quiet afternoons.
-      </p>
+    <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+    <p>Smart gardening is all about making the most of what you have. From vertical gardens to compact toolkits, every Nepali home can enjoy the joy of greenery. GardenSewa supports your gardening dreams by offering expert guidance, quality supplies, and personalized tips—making gardening easy and rewarding for everyone.</p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
-      <p>
-        With thoughtful design and a mix of traditional and modern gardening techniques, Nepali homes can enjoy beautiful, sustainable gardens all year round. GardenSewa is here to help you bring these ideas to life with expert planning and execution.
-      </p>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
-      <p><strong>Kriti Bhandari</strong> is a garden designer specializing in creating eco-friendly and beautiful garden spaces that suit the Nepali environment and lifestyle.</p>
-    </section>
+    <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+    <p><strong>Kriti Bhandari</strong> is a passionate garden designer and urban greening advocate. She specializes in turning small Nepali spaces into lush, livable environments through practical design and sustainable gardening techniques.</p>
+  </section>
   `,
   },
   {

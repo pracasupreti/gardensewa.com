@@ -5,42 +5,32 @@ const services = [
   {
     title: "Lawn Care",
     description: `
-- Mowing the lawn
-- Edge trimming and weeding
-- Aerating soil
-- Fertilization and soil conditioning
-- Lawn reseeding
+Keep your lawn lush, healthy, and well-manicured with our expert lawn care services. From regular mowing and precise edge trimming to thorough weeding and aeration, we ensure your turf gets the attention it deserves. Our fertilization and soil conditioning techniques enhance soil health, while lawn reseeding fills in patchy areas for a vibrant, even green. Trust us to give your outdoor space a fresh, polished look all year round.
     `,
     image: "/image/navbar/services/lawnmain.webp",
     imageRight: true,
   },
   {
-    title: "Garden Maintenance",
+    title: "Landscaping Services",
     description: `
-- Weeding (removing unwanted plants)
-- Pruning shrubs, trees, and flowers
-- Deadheading flowers to encourage growth
-- Mulching garden beds
+Enhance the beauty and functionality of your outdoor space with our expert landscaping services. We offer customized solutions including garden design, lawn installation, stone pathways, plant selection, and decorative features to suit your personal style and space. Whether you’re looking to create a peaceful garden retreat, a stylish patio area, or a lush green lawn, our skilled team ensures every detail is thoughtfully crafted. Let us bring your landscape vision to life and boost the overall appeal and value of your property.
     `,
     image: "/image/navbar/services/garden.jpg",
     imageRight: false,
   },
   {
-    title: "Planting and Transplanting",
-    description: `
-- Planting flowers, shrubs, trees, or vegetables
-- Transplanting plants from one area to another
-- Seasonal planting (annuals, perennials)
+    title: "Turfing Services",
+    description: `Achieve a picture-perfect lawn with GardenSewa’s professional turfing services. We take care of the entire process—from clearing and leveling the ground to installing fresh, healthy turf that’s well-suited to Nepal’s diverse climates. Whether you want to upgrade your backyard, school ground, resort lawn, or office frontage, our team ensures proper drainage, soil preparation, and seamless turf laying for long-lasting results. With our expert care, your outdoor area quickly transforms into a soft, green carpet that adds comfort, beauty, and value to your space.
     `,
     image: "/image/navbar/services/planting.webp",
     imageRight: true,
   },
   {
-    title: "Pest and Disease Control",
+    title: "Gardening Makeovers",
     description: `
-- Identifying garden pests (e.g., aphids, snails)
-- Applying eco-friendly pesticides or natural treatments
-- Managing garden diseases (e.g., fungus, blight)
+Give your outdoor space a refreshing transformation with GardenSewa’s customized gardening makeovers. We assess your existing garden and bring it back to life with well-planned layouts, improved soil quality, curated plant selections, and creative design touches—from vertical features and decorative paths to eco-friendly accents. Whether you're working with a tiny balcony or a full backyard, our makeovers are tailored to match your taste, needs, and lifestyle. The result is a functional, beautiful garden that enhances your home environment and brings year-round greenery and joy.
+
+
     `,
     image: "/image/navbar/services/pesecontrol.jpg",
     imageRight: false,
@@ -48,9 +38,7 @@ const services = [
   {
     title: "Irrigation Services",
     description: `
-- Installing and maintaining irrigation systems
-- Checking for leaks or blockages in watering systems
-- Adjusting water flow and timers
+Keep your garden healthy and thriving with GardenSewa’s smart irrigation solutions. From drip systems for precision watering to automated sprinklers for larger lawns, we design and install systems that suit your space, soil, and plant types. Our efficient setups help conserve water while ensuring your plants get just the right amount of moisture—especially during Nepal’s dry months. Say goodbye to manual watering and enjoy a greener, more sustainable garden all year round.
     `,
     image: "/image/navbar/services/irrigation.webp",
     imageRight: true,
@@ -58,9 +46,7 @@ const services = [
   {
     title: "Soil Improvement",
     description: `
-- Soil testing and analysis
-- Adding compost, organic fertilizers, or soil conditioners
-- Preparing garden beds for planting
+Healthy soil is the secret to a flourishing garden. Our soil improvement services focus on testing, enriching, and balancing your soil using organic compost, vermicompost, and biofertilizers tailored to Nepali soil conditions. Whether your soil is too sandy, compacted, or nutrient-poor, we work to restore its texture, moisture retention, and fertility—giving your plants the perfect foundation to grow stronger and healthier.
     `,
     image: "/image/navbar/services/soil.jpg",
     imageRight: false,
@@ -68,8 +54,7 @@ const services = [
   {
     title: "Hardscaping",
     description: `
-- Building or repairing garden structures (e.g., paths, patios, walls)
-- Installing decorative features like fountains or garden sculptures
+Define your garden’s structure and style with our hardscaping services. From stone walkways and retaining walls to patios, edging, and garden borders, we combine function and beauty to shape your outdoor space. Using quality materials that complement your garden’s natural elements, GardenSewa creates long-lasting hardscape features that not only look stunning but also help manage slopes, drainage, and traffic flow in your yard.
     `,
     image: "/image/navbar/services/hscaping.jpg",
     imageRight: true,
@@ -77,9 +62,7 @@ const services = [
   {
     title: "Seasonal Services",
     description: `
-- Fall cleanup (removing fallen leaves, cutting back perennials)
-- Spring preparation (turning soil, prepping flower beds)
-- Winterizing plants (protecting vulnerable plants from frost)
+Each season brings unique gardening needs, and we’re here to support you through them all. GardenSewa’s seasonal services include planting and pruning in spring, monsoon-proofing and pest control in summer, cleanup and mulching in autumn, and protective care for winter. Whether it’s preparing your garden for a festival or refreshing it after heavy rains, our team ensures it stays vibrant and ready throughout the year.
     `,
     image: "/image/navbar/services/seasonal.jpeg",
     imageRight: false,
@@ -87,9 +70,9 @@ const services = [
   {
     title: "Landscape Design",
     description: `
-- Designing layouts for new gardens
-- Advising on plant placement and color schemes
-- Creating theme gardens (e.g., butterfly gardens, Zen gardens)
+Turn your outdoor vision into reality with GardenSewa’s expert landscape design services. We collaborate with you to create personalized garden layouts that reflect your style, space, and climate. From plant selection and lighting plans to functional zones like seating areas or water features, every element is designed to harmonize aesthetics and practicality. Whether you dream of a serene retreat or a lively family garden, we craft landscapes that are both beautiful and sustainable.
+
+
     `,
     image: "/image/navbar/services/landscape.jpg",
     imageRight: true,
@@ -99,9 +82,7 @@ const nursery = [
   {
     title: "Plant Sales",
     description: `
-- Selling a variety of plants (flowers, shrubs, trees, herbs, vegetables, and indoor plants)
-- Offering rare or exotic plant species
-- Offering seasonal plants (e.g., poinsettias for winter, hanging baskets in summer)
+Explore a diverse selection of healthy, vibrant plants suited for every Nepali garden—from flowering shrubs and native trees to indoor foliage and seasonal favorites. GardenSewa carefully sources all plants to ensure high quality and adaptability to local climates, helping you bring life and color to your outdoor or indoor spaces with confidence.
     `,
     image: "/image/navbar/services/plantsales.jpg",
     imageRight: false,
@@ -109,8 +90,7 @@ const nursery = [
   {
     title: "Plant Propagation",
     description: `
-- Propagating plants from cuttings, seeds, or division
-- Selling young plants or seedlings ready for planting
+Grow your garden sustainably with our expert plant propagation services. Using techniques like cuttings, grafting, and seed sowing, we multiply your favorite plants, preserving unique varieties and expanding your green collection. This service is perfect for gardeners wanting to nurture rare or heirloom plants while promoting eco-friendly gardening practices.
     `,
     image: "/image/navbar/services/plantpropagation.webp",
     imageRight: true,
@@ -118,8 +98,7 @@ const nursery = [
   {
     title: "Soil and Fertilizers",
     description: `
-- Selling potting soil, compost, and garden fertilizers
-- Offering specialized soil mixes for specific plants (e.g., cactus, orchids, or azaleas)
+Boost your garden’s productivity with our range of nutrient-rich soils and organic fertilizers. GardenSewa offers customized soil mixes and biofertilizers designed to improve texture, moisture retention, and nutrient availability. Our products support healthy root development and sustainable growth, tailored to Nepal’s varied agricultural regions.
     `,
     image: "/image/navbar/services/soilandfertilizers.jpg",
     imageRight: false,
@@ -127,8 +106,7 @@ const nursery = [
   {
     title: "Plant Care Products",
     description: `
-- Offering pest control solutions (organic and chemical)
-- Selling plant food, growth enhancers, and plant protection products
+Maintain vibrant, disease-free plants with our carefully selected plant care products. From natural pest repellents and organic fungicides to growth enhancers and soil conditioners, our range is safe for both your garden and the environment. We provide solutions that help your plants thrive while minimizing chemical use.
     `,
     image: "/image/navbar/services/plantcare.webp",
     imageRight: true,
@@ -136,8 +114,7 @@ const nursery = [
   {
     title: "Garden Design Advice",
     description: `
-- Providing consultations on plant selection and garden layout
-- Offering guidance on creating specific types of gardens (e.g., vegetable, flower, or ornamental gardens)
+Need help planning your dream garden? Our garden design advice service offers personalized recommendations based on your space, style, and goals. Whether you want to maximize a small balcony, create a family-friendly backyard, or start a kitchen garden, our experts guide you step-by-step to achieve a beautiful, functional garden.
     `,
     image: "/image/navbar/services/gardendesign.jpg",
     imageRight: false,
@@ -145,8 +122,7 @@ const nursery = [
   {
     title: "Delivery and Plant Installation",
     description: `
-- Delivering plants to customers’ homes
-- Offering plant installation services for larger plants or garden designs
+Enjoy hassle-free gardening with our reliable delivery and professional plant installation service. We safely transport your selected plants, pots, and accessories right to your doorstep and ensure proper planting and setup according to best horticultural practices. This service guarantees your garden starts off on the right foot with healthy, well-placed plants.
     `,
     image: "/image/navbar/services/delivery.jpeg",
     imageRight: true,
@@ -154,8 +130,7 @@ const nursery = [
   {
     title: "Workshops and Classes",
     description: `
-- Offering classes on plant care, gardening techniques, and landscaping
-- Running workshops on organic gardening or container gardening
+Join our hands-on workshops and classes designed for gardeners of all skill levels. Learn essential gardening skills like pruning, propagation, composting, and pest management, all tailored to Nepal’s unique environment. These interactive sessions empower you with knowledge and confidence to nurture your own green spaces effectively.
     `,
     image: "/image/navbar/services/workshop.jpg",
     imageRight: false,
@@ -163,8 +138,7 @@ const nursery = [
   {
     title: "Landscape Supply",
     description: `
-- Selling hardscape materials like rocks, mulch, gravel, and pavers
-- Offering garden tools and other landscaping essentials
+GardenSewa stocks a wide variety of premium landscaping materials including stones, mulches, edging, decorative gravel, and garden fabrics. Whether you’re constructing pathways, creating borders, or mulching beds, our quality supplies ensure your landscaping projects are durable, attractive, and easy to maintain.
     `,
     image: "/image/navbar/services/landscapesupply.jpg",
     imageRight: true,
@@ -172,8 +146,7 @@ const nursery = [
   {
     title: "Custom Orders",
     description: `
-- Specializing in sourcing unique or hard-to-find plants for customers
-- Creating custom plant arrangements (e.g., flower baskets, raised bed kits)
+Looking for something special? We accept custom orders for rare plants, unique planters, garden furniture, or tailored garden accessories. Share your vision with us, and our team will source or create bespoke solutions to perfectly fit your garden’s theme and your personal preferences.
     `,
     image: "/image/navbar/services/customorders.jpg",
     imageRight: false,
@@ -181,8 +154,7 @@ const nursery = [
   {
     title: "Garden Consultation Services",
     description: `
-- Providing professional consultation for garden planning and maintenance
-- Helping customers create custom garden designs or plant collections based on their space and preferences
+Get expert advice tailored to your garden’s needs with our consultation services. Our horticulturists and landscape designers assess your space, soil, and climate to provide actionable recommendations for plant selection, pest control, irrigation, and design improvements. Whether starting fresh or troubleshooting, our consultations help you achieve a thriving garden.
     `,
     image: "/image/navbar/services/gardenconsultation.jpg",
     imageRight: true,
@@ -213,7 +185,7 @@ const ServicesPage = () => {
                 <h2 className="text-[30px] font-bold text-[#008000] mb-5 font-serif">
                   {service.title}
                 </h2>
-                <p className="text-justify text-[18px] whitespace-pre-line">
+                <p className="text-justify text-[16px] whitespace-pre-line">
                   {service.description.trim()}
                 </p>
               </div>
