@@ -159,91 +159,83 @@ const blogs = [
 
   {
     id: 5,
-    title: "How to Start Your Home Garden in Kathmandu",
-    author: "Roshan Shrestha",
-    date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    title: "Smart Gardening Tips for Urban Nepali Homes",
+    author: "Kriti Bhandari",
+    date: "July 2, 2025",
+    image: "/image/navbar/blog/4.jpg",
     intro:
-      "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
+      "Living in a city doesn’t mean you have to give up your love for gardening. With limited space and busy routines, urban Nepali homes need smart, low-maintenance solutions. Let’s explore creative tips that help you maintain a thriving garden in the heart of the city.",
     fullContent: `
     <section>
       
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Assess Your Space and Light</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1. Utilize Wall Space</h2>
       <p>
-        Identify the available space for your garden — balconies, rooftops, or small yards. Observe the sunlight patterns, as most vegetables require at least 5-6 hours of sunlight daily.
+       Install vertical garden panels or railing planters to add greenery without using floor space. Herbs, succulents, and air-purifying plants grow well in these compact setups.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Choose Suitable Containers and Soil</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">2. Choose Fast-Growing Plants</h2>
       <p>
-        Use pots, raised beds, or recycled containers. Fill them with high-quality, nutrient-rich soil mixed with compost to ensure healthy plant growth.
+        Opt for plants like spinach, mint, and radish that grow quickly and need less attention—perfect for apartment dwellers with limited time.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Select Easy-to-Grow Vegetables</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">3. Use Self-Watering Pots</h2>
       <p>
-        Start with hardy, fast-growing vegetables like spinach, tomatoes, lettuce, and green chilies. These crops adapt well to container gardening and Kathmandu's climate.
+       These pots help maintain consistent moisture, reducing daily watering needs and preventing overwatering.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4: Watering and Maintenance</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">4. Go for Indoor Plants</h2>
       <p>
-        Water your plants regularly but avoid overwatering. Mulch to retain moisture and reduce weeds. Regularly check for pests and use organic methods for control.
+      Snake plants, pothos, and peace lilies thrive indoors with minimal sunlight, adding fresh air and beauty to your home.
       </p>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Harvesting and Enjoying Your Garden</h2>
-      <p>
-        Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
-      </p>
-
       <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
       <p>
-        Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
+       Urban gardening is about creativity and planning. With GardenSewa’s tools and support, your small space can bloom into a green oasis.
       </p>
-
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
-      <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
+       <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <p><strong>Kriti Bhandari</strong> is a passionate garden designer and urban greening advocate. She transforms limited spaces into lush retreats using sustainable techniques.</p>
     </section>
   `,
   },
 
   {
     id: 6,
-    title: "How to Start Your Home Garden in Kathmandu",
-    author: "Roshan Shrestha",
-    date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    title: "10 Easy-Care Plants Perfect for Nepali Beginners",
+    author: "Ramesh Gurung",
+    date: " July 2, 2025",
+    image: "/image/navbar/blog/5.jpg",
     intro:
-      "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
+      "New to gardening? Start with these easy-care plants ideal for Nepali climate. They require low maintenance and bring instant freshness to any space.",
     fullContent: `
     <section>
       
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Assess Your Space and Light</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">1. Snake Plant</h2>
       <p>
-        Identify the available space for your garden — balconies, rooftops, or small yards. Observe the sunlight patterns, as most vegetables require at least 5-6 hours of sunlight daily.
+       A hardy plant that thrives in neglect and purifies indoor air.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Choose Suitable Containers and Soil</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">2. Tulsi (Holy Basil)</h2>
       <p>
-        Use pots, raised beds, or recycled containers. Fill them with high-quality, nutrient-rich soil mixed with compost to ensure healthy plant growth.
+        Easy to grow in partial sunlight, with religious and health benefits.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Select Easy-to-Grow Vegetables</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">3. Aloe Vera</h2>
       <p>
-        Start with hardy, fast-growing vegetables like spinach, tomatoes, lettuce, and green chilies. These crops adapt well to container gardening and Kathmandu's climate.
+      Ideal for sunny windowsills—great for skincare and healing.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4: Watering and Maintenance</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">4. Mint & Coriandere</h2>
       <p>
-        Water your plants regularly but avoid overwatering. Mulch to retain moisture and reduce weeds. Regularly check for pests and use organic methods for control.
+     Perfect for kitchen gardens; grow in small pots or recycled containers.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Harvesting and Enjoying Your Garden</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">5. Marigold & Zinnia</h2>
       <p>
-        Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
+       Bright, colorful, and pest-resistant flowers for any Nepali garden.
       </p>
 
       <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
       <p>
-        Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
-      </p>
+       Ramesh Gurung is an experienced gardener and educator promoting accessible gardening practices across Nepal.
 
       <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
@@ -251,43 +243,44 @@ const blogs = [
   `,
   },
 
-  {
+{
     id: 7,
-    title: "How to Start Your Home Garden in Kathmandu",
-    author: "Roshan Shrestha",
-    date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    title: "Top Gardening Trends Nepali Gardeners Should Try in 2025",
+    author: "By: Kriti Bhandari",
+    date: "Published on: July 3, 2025",
+    image: "/image/navbar/blog/6.jpg",
     intro:
-      "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
+      "Gardening is evolving with creative, sustainable, and space-saving techniques. In 2025, Nepali gardeners are embracing new trends that bring beauty, efficiency, and eco-friendliness to homes and communities. Explore these popular practices supported by GardenSewa's innovative tools and products",
     fullContent: `
     <section>
       
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Assess Your Space and Light</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Edible Landscaping</h2>
       <p>
-        Identify the available space for your garden — balconies, rooftops, or small yards. Observe the sunlight patterns, as most vegetables require at least 5-6 hours of sunlight daily.
+        Why separate beau  ty and utility? Edible landscaping blends ornamental and edible plants—like growing leafy greens, chili, or tomatoes alongside marigolds and herbs. It adds color and function to gardens while maximizing productivity in small spaces.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Choose Suitable Containers and Soil</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Smart Watering Systems</h2>
       <p>
-        Use pots, raised beds, or recycled containers. Fill them with high-quality, nutrient-rich soil mixed with compost to ensure healthy plant growth.
+        With water conservation becoming a priority, drip irrigation, automatic timers, and moisture sensors are becoming popular. These systems ensure your plants get just the right amount of water—saving time, reducing waste, and promoting healthier growth.
+
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Select Easy-to-Grow Vegetables</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Container Composting</h2>
       <p>
-        Start with hardy, fast-growing vegetables like spinach, tomatoes, lettuce, and green chilies. These crops adapt well to container gardening and Kathmandu's climate.
+        Urban gardeners are turning to compact compost bins and bokashi systems for managing organic waste. These odor-free solutions help convert kitchen scraps into nutrient-rich compost—perfect for pots, planters, or raised beds.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4: Watering and Maintenance</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4:  Native Plant Gardening</h2>
       <p>
-        Water your plants regularly but avoid overwatering. Mulch to retain moisture and reduce weeds. Regularly check for pests and use organic methods for control.
+        Using native species like marigold, tulsi, and jasmine supports local biodiversity and reduces maintenance. Native plants are more resistant to local pests and weather—making them ideal for low-effort gardening.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Harvesting and Enjoying Your Garden</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Indoor Jungle Aesthetics </h2>
       <p>
-        Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
+        Creating lush green indoor spaces is trending, especially in apartments and studios. Hanging pothos, areca palms, and peace lilies in decorative planters can transform your living area into a tranquil oasis.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+        <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
