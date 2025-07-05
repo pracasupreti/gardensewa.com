@@ -764,7 +764,7 @@ const blogs = [
             </div>
 
             <div class="dairy-product">
-              <h5 class='font-semibold text-[30px] my-5'>2. Benefits of Rainwater Harvesting in Nepali Context</p>
+              <h5 class='font-semibold text-[30px] my-5'>2. Benefits of Rainwater Harvesting in Nepali Context</p> </h5>            
               <div class="point">
                 <ul class="list ps-4">
                   <li class='list-disc py-2'><b>Reduces water bills:</b> Especially in urban areas where municipal water is expensive.</li>
@@ -773,11 +773,11 @@ const blogs = [
 
                   <li class='list-disc py-2'><b>Improves plant health:</b> Rainwater is free of chlorine and other chemicals, making it better for plants.</li>
 
-                  <li class='list-disc py-2'>Promotes sustainability: Encourages water conservation and reduces runoff-related erosion in hilly areas.</li>
+                  <li class='list-disc py-2'><b>Promotes sustainability:</b> Encourages water conservation and reduces runoff-related erosion in hilly areas.</li>
                 </ul>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>3. Basic Setup for Home Gardeners</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>3. Basic Setup for Home Gardeners</h5>
                   <p>You don’t need a large house or budget to start harvesting rainwater. Here’s a simple setup suitable for Nepali households:</p>
 
                   <ul class="list ps-4">
@@ -791,7 +791,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>4. Maintenance Tips</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>4. Maintenance Tips</h5>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'>Clean the gutter and filter regularly (especially before and during monsoon).</li>
 
@@ -804,14 +804,14 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>5. Smart Usage of Harvested Rainwater</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>5. Smart Usage of Harvested Rainwater</h5>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Morning watering:</b> Water plants early to reduce evaporation.</li>
 
                     <li class='list-disc py-2'><b>Drip irrigation:</b> Connect your rainwater tank to a drip system for slow and steady watering.</li>
 
                     <li class='list-disc py-2'><b>Compost activation:</b> Use rainwater to moisten compost piles and enhance microbial activity.</li>
-                    <li class='list-disc py-2'>Recycled use: After washing veggies, reuse water for ornamental plants.</li>
+                    <li class='list-disc py-2'><b>Recycled use:</b> After washing veggies, reuse water for ornamental plants.</li>
                     <p>Even small actions can maximize your use of rainwater and improve water efficiency.</p>
                   </ul>
                 </div>
@@ -827,7 +827,7 @@ const blogs = [
 
                 <div class="author-bio">
                   <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
-                  <p><b>Sushila Karki</b>is an environmental horticulturist and advocate for sustainable urban gardening. She guides communities across Nepal in adopting eco-conscious practices like rainwater harvesting, composting, and organic planting techniques.</p>
+                  <p><b>Sushila Karki</b> is an environmental horticulturist and advocate for sustainable urban gardening. She guides communities across Nepal in adopting eco-conscious practices like rainwater harvesting, composting, and organic planting techniques.</p>
                 </div>
               </div>
             </div>
@@ -877,12 +877,12 @@ const blogs = [
                 </ul>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>3. Homemade Natural Sprays</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>3. Homemade Natural Sprays</h5>
                   <p>These simple sprays can be made at home using kitchen ingredients:</p>
 
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Neem Oil Spray:</b>
-                      Mix 2 tsp of neem oil, 1 tsp of liquid soap, and 1 liter of water. Spray on affected plants every few days.
+                      Mix 2 tsp of neem oil, 1 tsp of liquid soap, and 1 liter of water. Spray on affected plants every few days.</br>
                       ➤ Effective against aphids, whiteflies, and fungal diseases.</li>
                     <li class='list-disc py-2'><b>Garlic-Chili Spray:</b>
                       Blend 1 garlic bulb, 2 chili peppers, and 1 liter of water. Let it sit overnight, strain, and spray.
@@ -896,7 +896,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>4. Natural Pest Deterrents from the Garden</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>4. Natural Pest Deterrents from the Garden</h5>
                   <p>Certain plants act as natural repellents or attract helpful insects:</p>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Marigold (Sayapatri):</b> Repels nematodes and whiteflies.</li>
@@ -911,7 +911,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>5. Encourage Beneficial Insects</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>5. Encourage Beneficial Insects</h5>
                   <p>Not all bugs are bad! Encourage “good” insects that feed on harmful pests:</p>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Ladybugs: </b> Eat aphids and whiteflies.</li>
@@ -919,7 +919,7 @@ const blogs = [
                     <li class='list-disc py-2'><b>Lacewings: </b>Feed on caterpillars and mites.</li>
 
                     <li class='list-disc py-2'><b>Bees and butterflies:</b> Help in pollination.</li>
-                    <p>To attract them:</p>
+                    <p class='pt-5'>To attract them:</p>
                     <li class='list-disc py-2'>Grow flowering plants like sunflowers, marigolds, and dill.</li>
 
                     <li class='list-disc py-2'>Avoid spraying during flowering season.</li>
@@ -930,7 +930,7 @@ const blogs = [
               </div>
 
                <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>6. Physical Barriers and Manual Control</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>6. Physical Barriers and Manual Control</h5>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Netting and row covers:</b>  Protect crops from flying insects and birds.</li>
 
@@ -1002,7 +1002,7 @@ const blogs = [
                 </ul>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>3. What to Grow on Rooftops in Nepal</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>3. What to Grow on Rooftops in Nepal</h5>
                   <p>Depending on the season and region, you can grow:</p>
 
                   <ul class="list ps-4">
@@ -1018,7 +1018,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>4. Essential Tools and Materials</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>4. Essential Tools and Materials</h5>
                   <p>To start rooftop gardening, you’ll need:</p>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'>Containers (plastic pots, grow bags, or recycled buckets)</li>
@@ -1034,7 +1034,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>5. Watering and Maintenance Tips</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>5. Watering and Maintenance Tips</h5>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Water regularly:</b> Morning or evening watering prevents moisture loss.</li>
 
@@ -1051,7 +1051,7 @@ const blogs = [
               </div>
 
                <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>6. Design Ideas for Rooftop Gardens</h5>
+                  <h5 class='font-semibold text-[30px] my-5'>6. Design Ideas for Rooftop Gardens</h5>
                   <p>Make your rooftop not just productive, but relaxing too:</p>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'><b>Vertical gardens: </b> Use hanging pots or wall-mounted planters for small spaces.</li>
