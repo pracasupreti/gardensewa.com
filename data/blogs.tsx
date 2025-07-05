@@ -349,11 +349,11 @@ const blogs = [
     fullContent: `
     <section>
       
-     <div className="first-paragraph ">
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Why Grow Tomatoes in Pots?</h5>
-              <p className='my-5'>Potted tomato gardening offers several advantages:</p>
-              <ul className="list list-disc ps-4">
+     <div class="first-paragraph ">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Why Grow Tomatoes in Pots?</h5>
+              <p class='my-5'>Potted tomato gardening offers several advantages:</p>
+              <ul class="list list-disc ps-4">
                 <li>Space Efficiency: Ideal for balconies, rooftops, and small yards common in urban Nepal.</li>
                 <li>Mobility: Move plants to maximize sunlight or protect them during adverse weather.</li>
                 <li>Better Soil Control: Use custom potting mixes to avoid soil-borne diseases common in local soil.</li>
@@ -361,10 +361,10 @@ const blogs = [
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Choosing the Right Tomato Varieties for Pots</h5>
-              <p className='my-5'>Selecting suitable tomato varieties is key to successful container gardening.</p>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Choosing the Right Tomato Varieties for Pots</h5>
+              <p class='my-5'>Selecting suitable tomato varieties is key to successful container gardening.</p>
+              <ul class="list list-disc ps-4">
                 <li>Determinate (Bush) Varieties: Compact, grow to a set size, and produce fruit in a shorter time. Examples include Roma and Patio varieties, perfect for pots.</li>
                 <li>Mobility: Move plants to maximize sunlight or protect them during adverse weather.</li>
                 <li>Cherry Tomatoes: Small fruit, compact plants, high yield. Varieties like ‘Sweet 100’ are ideal for container growing.</li>
@@ -372,9 +372,9 @@ const blogs = [
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Selecting the Right Containers</h5>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Selecting the Right Containers</h5>
+              <ul class="list list-disc ps-4">
                 <li>Containers should be at least 30 cm (12 inches) deep and wide** to support root growth.</li>
                 <li>Materials: Plastic, terracotta, or fiber pots work well; terracotta offers better breathability but dries out faster.</li>
                 <li>Ensure good drainage holes to prevent waterlogging and root rot.</li>
@@ -382,9 +382,9 @@ const blogs = [
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'> Preparing the Potting Mix</h5>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'> Preparing the Potting Mix</h5>
+              <ul class="list list-disc ps-4">
                 <li>Use a well-draining, nutrient-rich potting mix.</li>
                 <li>Mix garden soil with organic compost or vermicompost, and coco peat or perlite for aeration.</li>
                 <li>Ensure good drainage holes to prevent waterlogging and root rot.</li>
@@ -392,9 +392,9 @@ const blogs = [
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Planting Tomato Seedlings</h5>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Planting Tomato Seedlings</h5>
+              <ul class="list list-disc ps-4">
                 <li>Start seeds indoors: Sow seeds in seed trays or small pots 6-8 weeks before planting outdoors.</li>
                 <li>Transplant seedlings: Once seedlings have 4-6 true leaves and the danger of frost is past, transplant into prepared pots.</li>
                 <li>Planting depth: Plant seedlings slightly deeper than they were in seed trays to encourage root development.</li>
@@ -402,44 +402,44 @@ const blogs = [
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Caring for Tomatoes in Pots</h5>
-              <p className='py-2'>Sunlight:</p>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Caring for Tomatoes in Pots</h5>
+              <p class='py-2'>Sunlight:</p>
+              <ul class="list list-disc ps-4">
                 <li>Tomatoes need 6-8 hours of direct sunlight daily.</li>
                 <li>Place pots on sunny balconies, rooftops, or windowsills.</li>
               </ul>
 
-              <p className='py-2'>Watering:</p>
-              <ul className="list list-disc ps-4">
+              <p class='py-2'>Watering:</p>
+              <ul class="list list-disc ps-4">
                 <li>Keep soil consistently moist but not soggy.</li>
                 <li>Water deeply at the base early in the morning or late evening.</li>
                 <li>Mulch soil surface with straw or dried leaves to retain moisture.</li>
               </ul>
 
-              <p className='py-2'>Watering:</p>
-              <ul className="list list-disc ps-4">
+              <p class='py-2'>Watering:</p>
+              <ul class="list list-disc ps-4">
                 <li>Keep soil consistently moist but not soggy.</li>
                 <li>Water deeply at the base early in the morning or late evening.</li>
                 <li>Mulch soil surface with straw or dried leaves to retain moisture.</li>
               </ul>
 
-              <p className='py-2'>Fertilizing</p>
-              <ul className="list list-disc ps-4">
+              <p class='py-2'>Fertilizing</p>
+              <ul class="list list-disc ps-4">
                 <li>Use organic fertilizers like neem cake or compost tea every 2-3 weeks.</li>
                 <li>Avoid over-fertilizing with nitrogen-rich fertilizers which promote leaf growth over fruiting.</li>
               </ul>
 
-              <p className='py-2'>Supporting Plants</p>
-              <ul className="list list-disc ps-4">
+              <p class='py-2'>Supporting Plants</p>
+              <ul class="list list-disc ps-4">
                 <li>Use stakes, cages, or trellises to support plants as they grow.</li>
                 <li>Tie stems gently with soft twine to avoid damage.</li>
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Pest and Disease Management</h5>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Pest and Disease Management</h5>
+              <ul class="list list-disc ps-4">
                 <li>Monitor regularly for aphids, whiteflies, and caterpillars common in Nepal.</li>
                 <li>Use natural pest control like neem oil spray or garlic-chili spray.</li>
                 <li>Avoid chemical pesticides to keep fruits safe for consumption.</li>
@@ -447,18 +447,18 @@ const blogs = [
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Harvesting Tomatoes</h5>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Harvesting Tomatoes</h5>
+              <ul class="list list-disc ps-4">
                 <li>Harvest when fruits turn bright red (or appropriate color for the variety) and feel slightly soft.</li>
                 <li>Pick fruit gently to avoid bruising.</li>
                 <li>Frequent harvesting encourages more fruit production.</li>
               </ul>
             </div>
 
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>Troubleshooting Common Problems</h5>
-              <ul className="list list-disc ps-4">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>Troubleshooting Common Problems</h5>
+              <ul class="list list-disc ps-4">
                 <li>Blossom End Rot: Caused by calcium deficiency or irregular watering. Add calcium supplements and maintain consistent moisture.</li>
                 <li>Yellow Leaves: Check watering habits and nutrient levels.</li>
                 <li>Poor Flowering: Ensure enough sunlight and avoid excess nitrogen fertilizer.</li>
@@ -466,15 +466,15 @@ const blogs = [
             </div>
 
 
-            <div className="conclusion">
-              <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-              <p className='text-justify'>
+            <div class="conclusion">
+              <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+              <p class='text-justify'>
                 Growing tomatoes in pots is a practical and rewarding way to enjoy fresh tomatoes regardless of space. With the right variety, containers, and care, Nepali gardeners can successfully grow healthy, productive tomato plants in urban and small-space settings. GardenSewa provides quality seeds, organic fertilizers, and gardening tools to help you grow your best tomatoes yet.
               </p>
             </div>
           </div>
-          <div className="author-bio">
-            <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+          <div class="author-bio">
+            <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
             <p><b>Suman Lama</b> is a horticulture graduate from Dharan, Nepal, specializing in urban gardening and container farming. He is passionate about helping Nepali gardeners maximize small spaces for fresh, homegrown produce.</p>
           </div>
     </section>
@@ -492,56 +492,56 @@ const blogs = [
     fullContent: `
     <section>
       
-    <div className="first-paragraph ">
-            <div className="point">
-              <h5 className='my-5 font-bold text-[18px]'>1. Use Vertical Gardening to Maximize Space</h5>
-              <p className='my-5'>Vertical gardening turns empty walls or railings into planting surfaces using trellises, hanging pots, and wall-mounted planters. Climbing plants like beans, cucumbers, and ivy gourds grow upward, saving precious floor space.
+    <div class="first-paragraph ">
+            <div class="point">
+              <h5 class='my-5 font-bold text-[18px]'>1. Use Vertical Gardening to Maximize Space</h5>
+              <p class='my-5'>Vertical gardening turns empty walls or railings into planting surfaces using trellises, hanging pots, and wall-mounted planters. Climbing plants like beans, cucumbers, and ivy gourds grow upward, saving precious floor space.
 
                 Installing shelves or stackable planter boxes allows you to grow multiple plants in a compact area. Vertical gardens also add privacy and shade, improving your balcony’s comfort.
 
               </p>
 
-              <h5 className='my-5 font-bold text-[18px]'> 2. Choose Suitable Containers and Planters</h5>
-              <p className='my-5'>Lightweight pots made from plastic, fiber, or terracotta are ideal for balconies. Use containers with drainage holes to prevent waterlogging.Self-watering containers reduce maintenance by storing and releasing water slowly. Window boxes and railing-mounted planters help utilize railing spaces effectively.
+              <h5 class='my-5 font-bold text-[18px]'> 2. Choose Suitable Containers and Planters</h5>
+              <p class='my-5'>Lightweight pots made from plastic, fiber, or terracotta are ideal for balconies. Use containers with drainage holes to prevent waterlogging.Self-watering containers reduce maintenance by storing and releasing water slowly. Window boxes and railing-mounted planters help utilize railing spaces effectively.
 
               </p>
 
-              <h5 className='my-5 font-bold text-[18px]'>3. Select Plants According to Light and Climate</h5>
-              <p className='my-5'>Assess your balcony’s sunlight exposure and choose plants accordingly:
+              <h5 class='my-5 font-bold text-[18px]'>3. Select Plants According to Light and Climate</h5>
+              <p class='my-5'>Assess your balcony’s sunlight exposure and choose plants accordingly:
               </p>
-              <div className="ul list">
-                <li className=''>Full Sun: Tomatoes, chilies, basil, marigolds</li>
-                <li className=''>Partial Shade: Spinach, lettuce, coriander, ferns.</li>
-                <li className='pb-2'>Shade: Snake plant, peace lily, pothos.</li>
+              <div class="ul list">
+                <li class=''>Full Sun: Tomatoes, chilies, basil, marigolds</li>
+                <li class=''>Partial Shade: Spinach, lettuce, coriander, ferns.</li>
+                <li class='pb-2'>Shade: Snake plant, peace lily, pothos.</li>
                 <p>Herbs like mint, coriander, and lemongrass grow well in containers and add fresh flavors to Nepali dishes.</p>
               </div>
 
-              <h5 className='my-5 font-bold text-[18px]'>4. Use Lightweight Potting Mix and Fertilizers</h5>
-              <p className='my-5'>Heavy garden soil can strain balcony structures. Use lightweight, well-draining potting mixes blended with organic compost or coco peat. Fertilize regularly with organic liquid fertilizers or slow-release pellets to keep plants healthy without excess runoff.
+              <h5 class='my-5 font-bold text-[18px]'>4. Use Lightweight Potting Mix and Fertilizers</h5>
+              <p class='my-5'>Heavy garden soil can strain balcony structures. Use lightweight, well-draining potting mixes blended with organic compost or coco peat. Fertilize regularly with organic liquid fertilizers or slow-release pellets to keep plants healthy without excess runoff.
 
               </p>
 
-              <h5 className='my-5 font-bold text-[18px]'>5. Efficient Watering and Maintenance</h5>
-              <p className='my-5'>Balconies dry out faster due to wind and sun exposure. Water plants early in the morning or late evening to minimize evaporation. Mulch container surfaces with dried leaves or straw to retain moisture. Regularly prune and deadhead plants to encourage growth and prevent overcrowding.
+              <h5 class='my-5 font-bold text-[18px]'>5. Efficient Watering and Maintenance</h5>
+              <p class='my-5'>Balconies dry out faster due to wind and sun exposure. Water plants early in the morning or late evening to minimize evaporation. Mulch container surfaces with dried leaves or straw to retain moisture. Regularly prune and deadhead plants to encourage growth and prevent overcrowding.
 
               </p>
 
-              <h5 className='my-5 font-bold text-[18px]'>6. Add Decorative and Functional Elements</h5>
+              <h5 class='my-5 font-bold text-[18px]'>6. Add Decorative and Functional Elements</h5>
               <p>
                 Incorporate decorative pots, colorful flowers, and garden ornaments to enhance aesthetics. Use small trellises or stakes to support climbing plants. Adding a small bench or stool creates a cozy corner where you can relax surrounded by greenery.
               </p>
             </div>
 
-            <div className="conclusion">
-              <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-              <p className='text-justify'>
+            <div class="conclusion">
+              <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+              <p class='text-justify'>
                 Balcony gardening in Nepal’s urban homes is a rewarding way to connect with nature, even in limited space. By smartly using vertical spaces, selecting appropriate plants, and maintaining your garden carefully, you can create a green retreat that supplies fresh herbs, veggies, and beauty all year. GardenSewa supports your urban gardening journey with quality seeds, pots, soil, and expert tips to help every Nepali balcony bloom.
               </p>
             </div>
           </div>
 
-          <div className="author-bio">
-            <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+          <div class="author-bio">
+            <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
             <p><b>Prakash Koirala</b>is an urban horticulturist from Kathmandu who specializes in compact and container gardening. He helps city dwellers in Nepal create vibrant green spaces in small areas.</p>
           </div> `,
   },
@@ -557,72 +557,72 @@ const blogs = [
     fullContent: `
     <section>
       
-     <div className="dairy-product">
-            <h5 className='font-semibold text-[30px] my-5'>1. What is Container Gardening?</h5>
+     <div class="dairy-product">
+            <h5 class='font-semibold text-[30px] my-5'>1. What is Container Gardening?</h5>
             <p>Container gardening involves growing plants in pots, buckets, or other containers rather than planting them directly in the ground. This method is perfect for urban homes where soil availability is limited or nonexistent. Containers can range from clay pots and recycled plastic bottles to wooden boxes and hanging baskets—making it a versatile option for gardeners with creative minds.</p>
-            <div className="point">
-              <h5 className='font-medium text-[18px] py-5'>2. Ideal Plants for Containers in Nepal</h5>
+            <div class="point">
+              <h5 class='font-medium text-[18px] py-5'>2. Ideal Plants for Containers in Nepal</h5>
               <p>Container gardening can support a variety of plants, depending on the season and location. Some popular choices for Nepali urban gardeners include:</p>
 
-              <ul className="list ps-4">
-                <li className='list-disc py-2'><b>Vegetables:</b> Tomatoes, green chilies, spinach, garlic, coriander, radish, lettuce</li>
+              <ul class="list ps-4">
+                <li class='list-disc py-2'><b>Vegetables:</b> Tomatoes, green chilies, spinach, garlic, coriander, radish, lettuce</li>
 
-                <li className='list-disc py-2'><b>Herbs:</b> Mint, basil, oregano, thyme</li>
+                <li class='list-disc py-2'><b>Herbs:</b> Mint, basil, oregano, thyme</li>
 
-                <li className='list-disc py-2'><b>Flowers:</b> Marigold, petunia, pansy, rose</li>
+                <li class='list-disc py-2'><b>Flowers:</b> Marigold, petunia, pansy, rose</li>
 
-                <li className='list-disc py-2'><b>Fruits (in large containers):</b> Strawberries, lemons, dwarf guavas</li>
+                <li class='list-disc py-2'><b>Fruits (in large containers):</b> Strawberries, lemons, dwarf guavas</li>
               </ul>
               <p>By selecting plants based on sunlight availability and climate, you can enjoy fresh, homegrown produce even in the heart of the city.</p>
             </div>
 
-            <div className="point">
-              <h5 className='font-medium text-[18px] py-5'>3. Choosing the Right Container and Soil</h5>
+            <div class="point">
+              <h5 class='font-medium text-[18px] py-5'>3. Choosing the Right Container and Soil</h5>
               <p>Not all containers are created equal. When selecting pots or buckets, ensure they:</p>
 
-              <ul className="list ps-4">
-                <li className='list-disc py-2'>Have good drainage holes</li>
+              <ul class="list ps-4">
+                <li class='list-disc py-2'>Have good drainage holes</li>
 
-                <li className='list-disc py-2'>Are made of durable material (clay, plastic, recycled items)</li>
-                <li className='list-disc py-2'>Match the plant’s root space needs</li>
+                <li class='list-disc py-2'>Are made of durable material (clay, plastic, recycled items)</li>
+                <li class='list-disc py-2'>Match the plant’s root space needs</li>
               </ul>
-              <p className='py-2'>For soil, a mix of garden soil + compost + cocopeat or sand works best. This combination retains moisture while maintaining drainage and nutrient supply.</p>
+              <p class='py-2'>For soil, a mix of garden soil + compost + cocopeat or sand works best. This combination retains moisture while maintaining drainage and nutrient supply.</p>
             </div>
 
-            <div className="point">
-              <h5 className='font-medium text-[18px] py-5'>4. Watering and Sunlight Needs</h5>
+            <div class="point">
+              <h5 class='font-medium text-[18px] py-5'>4. Watering and Sunlight Needs</h5>
               <p>Urban rooftops can get very hot, especially in the summer. Be mindful of the following:</p>
 
-              <ul className="list ps-4">
-                <li className='list-disc py-2'><b>Watering:</b> Most container plants need watering once a day during dry months. Early morning or evening is the best time.</li>
+              <ul class="list ps-4">
+                <li class='list-disc py-2'><b>Watering:</b> Most container plants need watering once a day during dry months. Early morning or evening is the best time.</li>
 
-                <li className='list-disc py-2'><b>Sunlight:</b> Leafy greens need partial sunlight (3-4 hours/day), while flowering and fruiting plants require 6+ hours. Adjust container placement accordingly.</li>
+                <li class='list-disc py-2'><b>Sunlight:</b> Leafy greens need partial sunlight (3-4 hours/day), while flowering and fruiting plants require 6+ hours. Adjust container placement accordingly.</li>
               </ul>
             </div>
           </div>
 
-          <div className="improving-poultry">
-            <h5 className='font-medium text-[30px] my-5'>Common Challenges and Solutions</h5>
+          <div class="improving-poultry">
+            <h5 class='font-medium text-[30px] my-5'>Common Challenges and Solutions</h5>
             <p>Urban gardening comes with its share of difficulties: </p>
-            <div className="point">
-              <ul className="list ps-4">
-                <li className='list-disc py-2'><b>Overwatering or underwatering:</b> Use moisture meters or finger tests to avoid root rot or dryness.</li>
+            <div class="point">
+              <ul class="list ps-4">
+                <li class='list-disc py-2'><b>Overwatering or underwatering:</b> Use moisture meters or finger tests to avoid root rot or dryness.</li>
 
-                <li className='list-disc py-2'><b>Pest control:</b> Neem oil spray, soapy water, or natural predators like ladybugs help control aphids and mites.</li>
+                <li class='list-disc py-2'><b>Pest control:</b> Neem oil spray, soapy water, or natural predators like ladybugs help control aphids and mites.</li>
 
-                <li className='list-disc py-2'><b>Limited space:</b> Vertical gardening using wall-mounted pots or stacked shelves can solve space issues.</li>
+                <li class='list-disc py-2'><b>Limited space:</b> Vertical gardening using wall-mounted pots or stacked shelves can solve space issues.</li>
               </ul>
             </div>
 
-            <div className="conclusion">
-              <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-              <p className='text-justify py-2'>
+            <div class="conclusion">
+              <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+              <p class='text-justify py-2'>
                 Container gardening is an excellent way for urban Nepali families to reconnect with nature, grow their own food, and beautify their surroundings—even with limited space. With minimal investment and proper care, anyone can create a thriving garden in pots and planters. As more Nepali cities expand, this form of gardening offers a practical and rewarding solution to keep greenery alive in urban homes.
               </p>
             </div>
 
-            <div className="author-bio">
-              <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+            <div class="author-bio">
+              <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
               <p><b>Manju Sharma </b>is an urban gardening expert with over 10 years of experience in rooftop and container gardening. She helps city households turn small spaces into green, productive zones through workshops and personalized guidance.</p>
             </div>
           </div>
@@ -640,91 +640,91 @@ const blogs = [
     fullContent: `
     <section>
       
-    <div className="dairy-product">
-            <h5 className='font-semibold text-[30px] my-5'>1. What is Organic Composting?</h5>
+    <div class="dairy-product">
+            <h5 class='font-semibold text-[30px] my-5'>1. What is Organic Composting?</h5>
             <p>Composting is a natural process where organic materials like vegetable peels, fruit scraps, dry leaves, and grass clippings break down into a dark, crumbly substance rich in nutrients. This compost can be mixed into soil to improve plant growth, retain moisture, and reduce the need for chemical fertilizers. In home gardening, composting helps you manage your organic waste while creating free fertilizer for your plants.</p>
-            <div className="point">
-              <h5 className='font-medium text-[18px] py-5'>2. Benefits of Composting for Nepali Households</h5>
+            <div class="point">
+              <h5 class='font-medium text-[18px] py-5'>2. Benefits of Composting for Nepali Households</h5>
 
-              <ul className="list ps-4">
-                <li className='list-disc py-2'><b>Reduces household waste:</b> Up to 60% of household waste in Nepal is organic. Composting helps minimize garbage output.</li>
+              <ul class="list ps-4">
+                <li class='list-disc py-2'><b>Reduces household waste:</b> Up to 60% of household waste in Nepal is organic. Composting helps minimize garbage output.</li>
 
-                <li className='list-disc py-2'><b>Improves soil health:</b>Compost adds essential nutrients and beneficial microbes to the soil.</li>
+                <li class='list-disc py-2'><b>Improves soil health:</b>Compost adds essential nutrients and beneficial microbes to the soil.</li>
 
-                <li className='list-disc py-2'><b>Saves money:</b> You’ll spend less on fertilizers and waste disposal.</li>
+                <li class='list-disc py-2'><b>Saves money:</b> You’ll spend less on fertilizers and waste disposal.</li>
 
-                <li className='list-disc py-2'><b>Fights climate change:</b> Composting reduces methane emissions from landfills and enriches the soil to retain more carbon.</li>
+                <li class='list-disc py-2'><b>Fights climate change:</b> Composting reduces methane emissions from landfills and enriches the soil to retain more carbon.</li>
               </ul>
             </div>
 
-            <div className="dairy-product">
-              <h5 className='font-semibold text-[30px] my-5'>What Can and Cannot Be Composted</h5>
+            <div class="dairy-product">
+              <h5 class='font-semibold text-[30px] my-5'>What Can and Cannot Be Composted</h5>
               <p>You CAN compost:</p>
-              <div className="point">
-                <ul className="list ps-4">
-                  <li className='list-disc py-2'>Fruit and vegetable scraps</li>
+              <div class="point">
+                <ul class="list ps-4">
+                  <li class='list-disc py-2'>Fruit and vegetable scraps</li>
 
-                  <li className='list-disc py-2'>Tea leaves and coffee grounds</li>
+                  <li class='list-disc py-2'>Tea leaves and coffee grounds</li>
 
-                  <li className='list-disc py-2'>Dry leaves, sawdust, newspaper (in small amounts)</li>
+                  <li class='list-disc py-2'>Dry leaves, sawdust, newspaper (in small amounts)</li>
 
-                  <li className='list-disc py-2'>Eggshells</li>
+                  <li class='list-disc py-2'>Eggshells</li>
 
-                  <li className='list-disc py-2'>Garden waste</li>
+                  <li class='list-disc py-2'>Garden waste</li>
                 </ul>
 
                 <p>You should NOT compost:</p>
-                <div className="point">
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'>Meat, bones, or oily food</li>
+                <div class="point">
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'>Meat, bones, or oily food</li>
 
-                    <li className='list-disc py-2'>Dairy products</li>
+                    <li class='list-disc py-2'>Dairy products</li>
 
-                    <li className='list-disc py-2'>Plastic or synthetic waste</li>
+                    <li class='list-disc py-2'>Plastic or synthetic waste</li>
 
-                    <li className='list-disc py-2'>Diseased plant parts</li>
+                    <li class='list-disc py-2'>Diseased plant parts</li>
                     <p>Segregating waste properly ensures high-quality compost and keeps pests away.</p>
                   </ul>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>4. How to Start Composting at Home</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>4. How to Start Composting at Home</h5>
                   <p>You don’t need a large yard to start composting. Even a balcony or corner of your terrace will do. Here’s how:</p>
 
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Choose a container:</b> Use a clay pot, plastic bin, or compost drum with a lid. Drill small holes for airflow.</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Choose a container:</b> Use a clay pot, plastic bin, or compost drum with a lid. Drill small holes for airflow.</li>
 
-                    <li className='list-disc py-2'><b>Layer the waste:</b> Add green (wet) waste like peels and leaves, then dry (brown) waste like paper or sawdust. Maintain a balance (50:50) for proper decomposition.</li>
-                    <li className='list-disc py-2'><b>Stir regularly:</b> Mix the contents every 3-4 days to add oxygen and speed up composting.</li>
-                    <li className='list-disc py-2'><b>Moisture check: </b>The mixture should feel like a damp sponge—not too wet or too dry.</li>
+                    <li class='list-disc py-2'><b>Layer the waste:</b> Add green (wet) waste like peels and leaves, then dry (brown) waste like paper or sawdust. Maintain a balance (50:50) for proper decomposition.</li>
+                    <li class='list-disc py-2'><b>Stir regularly:</b> Mix the contents every 3-4 days to add oxygen and speed up composting.</li>
+                    <li class='list-disc py-2'><b>Moisture check: </b>The mixture should feel like a damp sponge—not too wet or too dry.</li>
                   </ul>
-                  <p className='py-2'>In 4–6 weeks, your compost will be dark, crumbly, and smell earthy—ready for use!</p>
+                  <p class='py-2'>In 4–6 weeks, your compost will be dark, crumbly, and smell earthy—ready for use!</p>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>5. Using Compost in Your Garden</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>5. Using Compost in Your Garden</h5>
                   <p>Once ready, mix the compost with potting soil or garden beds.</p>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'>For vegetables and herbs, use compost as top dressing or mix into planting soil.</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'>For vegetables and herbs, use compost as top dressing or mix into planting soil.</li>
 
-                    <li className='list-disc py-2'>For flowers and ornamental plants, sprinkle compost around the base every 2-3 weeks.</li>
+                    <li class='list-disc py-2'>For flowers and ornamental plants, sprinkle compost around the base every 2-3 weeks.</li>
 
-                    <li className='list-disc py-2'>For lawns, apply compost evenly and water thoroughly.</li>
+                    <li class='list-disc py-2'>For lawns, apply compost evenly and water thoroughly.</li>
                     <p>Compost helps plants grow faster, resist disease, and produce more flowers and fruits.</p>
                   </ul>
                 </div>
               </div>
 
-              <div className="improving-poultry">
-                <div className="conclusion">
-                  <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-                  <p className='text-justify py-2'>
+              <div class="improving-poultry">
+                <div class="conclusion">
+                  <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+                  <p class='text-justify py-2'>
                     Composting is more than just waste management—it's a powerful gardening tool. In a country like Nepal, where organic farming is gaining momentum, starting composting at home can make a big impact. By converting kitchen waste into nutrient-rich compost, gardeners can grow healthier plants, reduce environmental pollution, and promote sustainable living. It’s a small step with big rewards for your garden and the planet.
                   </p>
                 </div>
 
-                <div className="author-bio">
-                  <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+                <div class="author-bio">
+                  <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
                   <p><b>Bimal Khadka</b> is a sustainable gardening advisor with a passion for zero-waste practices and organic farming. He trains households across Nepal on composting techniques and promotes environmental awareness through hands-on community projects.</p>
                 </div>
               </div>
@@ -745,88 +745,88 @@ const blogs = [
     fullContent: `
     <section>
       
-     <div className="dairy-product">
-            <h5 className='font-semibold text-[30px] my-5'>1. What is Rainwater Harvesting?</h5>
+     <div class="dairy-product">
+            <h5 class='font-semibold text-[30px] my-5'>1. What is Rainwater Harvesting?</h5>
             <p>Rainwater harvesting is the process of collecting rain from rooftops, courtyards, or other surfaces and storing it for future use. It involves a simple setup of gutters, storage tanks, filters, and pipes to direct clean rainwater into containers.</p>
-            <div className="point">
-              <h5 className='font-medium text-[18px] py-5'>For gardeners, this collected water can be used for:</h5>
+            <div class="point">
+              <h5 class='font-medium text-[18px] py-5'>For gardeners, this collected water can be used for:</h5>
 
-              <ul className="list ps-4">
-                <li className='list-disc py-2'>Watering plants</li>
+              <ul class="list ps-4">
+                <li class='list-disc py-2'>Watering plants</li>
 
-                <li className='list-disc py-2'>Mixing compost</li>
+                <li class='list-disc py-2'>Mixing compost</li>
 
-                <li className='list-disc py-2'>Cleaning garden tools</li>
+                <li class='list-disc py-2'>Cleaning garden tools</li>
 
-                <li className='list-disc py-2'>Refilling birdbaths or small ponds</li>
+                <li class='list-disc py-2'>Refilling birdbaths or small ponds</li>
               </ul>
               <p>Even during water shortages, a well-maintained harvesting system ensures your garden stays green and hydrated.</p>
             </div>
 
-            <div className="dairy-product">
-              <h5 className='font-semibold text-[30px] my-5'>2. Benefits of Rainwater Harvesting in Nepali Context</p>
-              <div className="point">
-                <ul className="list ps-4">
-                  <li className='list-disc py-2'><b>Reduces water bills:</b> Especially in urban areas where municipal water is expensive.</li>
+            <div class="dairy-product">
+              <h5 class='font-semibold text-[30px] my-5'>2. Benefits of Rainwater Harvesting in Nepali Context</p>
+              <div class="point">
+                <ul class="list ps-4">
+                  <li class='list-disc py-2'><b>Reduces water bills:</b> Especially in urban areas where municipal water is expensive.</li>
 
-                  <li className='list-disc py-2'><b>Provides a backup during shortages:</b> During load-shedding or low supply seasons, stored rainwater is a valuable asset.</li>
+                  <li class='list-disc py-2'><b>Provides a backup during shortages:</b> During load-shedding or low supply seasons, stored rainwater is a valuable asset.</li>
 
-                  <li className='list-disc py-2'><b>Improves plant health:</b> Rainwater is free of chlorine and other chemicals, making it better for plants.</li>
+                  <li class='list-disc py-2'><b>Improves plant health:</b> Rainwater is free of chlorine and other chemicals, making it better for plants.</li>
 
-                  <li className='list-disc py-2'>Promotes sustainability: Encourages water conservation and reduces runoff-related erosion in hilly areas.</li>
+                  <li class='list-disc py-2'>Promotes sustainability: Encourages water conservation and reduces runoff-related erosion in hilly areas.</li>
                 </ul>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>3. Basic Setup for Home Gardeners</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>3. Basic Setup for Home Gardeners</h5>
                   <p>You don’t need a large house or budget to start harvesting rainwater. Here’s a simple setup suitable for Nepali households:</p>
 
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Gutter system:</b> Install clean gutters around your rooftop or shed.</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Gutter system:</b> Install clean gutters around your rooftop or shed.</li>
 
-                    <li className='list-disc py-2'><b>Downspout filter:</b> Use a mesh filter or cloth to remove leaves and debris before water enters storage.</li>
-                    <li className='list-disc py-2'><b>Storage tank:</b> Use plastic barrels, clay tanks, or cement tanks (minimum 200–500 liters).</li>
-                    <li className='list-disc py-2'><b>Overflow system:</b>Create an outlet to direct excess water safely away from the home.</li>
+                    <li class='list-disc py-2'><b>Downspout filter:</b> Use a mesh filter or cloth to remove leaves and debris before water enters storage.</li>
+                    <li class='list-disc py-2'><b>Storage tank:</b> Use plastic barrels, clay tanks, or cement tanks (minimum 200–500 liters).</li>
+                    <li class='list-disc py-2'><b>Overflow system:</b>Create an outlet to direct excess water safely away from the home.</li>
                   </ul>
-                  <p className='py-2'>If possible, elevate the tank slightly to allow easy access through a tap.</p>
+                  <p class='py-2'>If possible, elevate the tank slightly to allow easy access through a tap.</p>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>4. Maintenance Tips</h5>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'>Clean the gutter and filter regularly (especially before and during monsoon).</li>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>4. Maintenance Tips</h5>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'>Clean the gutter and filter regularly (especially before and during monsoon).</li>
 
-                    <li className='list-disc py-2'>Keep storage containers covered to prevent mosquito breeding.</li>
+                    <li class='list-disc py-2'>Keep storage containers covered to prevent mosquito breeding.</li>
 
-                    <li className='list-disc py-2'>If using stored water after many days, use it in the soil (not directly on edible leaves).</li>
-                    <li className='list-disc py-2'>Disinfect tanks occasionally with mild vinegar or lime water.</li>
+                    <li class='list-disc py-2'>If using stored water after many days, use it in the soil (not directly on edible leaves).</li>
+                    <li class='list-disc py-2'>Disinfect tanks occasionally with mild vinegar or lime water.</li>
                     <p>Proper care ensures water stays clean and usable throughout the gardening season.</p>
                   </ul>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>5. Smart Usage of Harvested Rainwater</h5>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Morning watering:</b> Water plants early to reduce evaporation.</li>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>5. Smart Usage of Harvested Rainwater</h5>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Morning watering:</b> Water plants early to reduce evaporation.</li>
 
-                    <li className='list-disc py-2'><b>Drip irrigation:</b> Connect your rainwater tank to a drip system for slow and steady watering.</li>
+                    <li class='list-disc py-2'><b>Drip irrigation:</b> Connect your rainwater tank to a drip system for slow and steady watering.</li>
 
-                    <li className='list-disc py-2'><b>Compost activation:</b> Use rainwater to moisten compost piles and enhance microbial activity.</li>
-                    <li className='list-disc py-2'>Recycled use: After washing veggies, reuse water for ornamental plants.</li>
+                    <li class='list-disc py-2'><b>Compost activation:</b> Use rainwater to moisten compost piles and enhance microbial activity.</li>
+                    <li class='list-disc py-2'>Recycled use: After washing veggies, reuse water for ornamental plants.</li>
                     <p>Even small actions can maximize your use of rainwater and improve water efficiency.</p>
                   </ul>
                 </div>
               </div>
 
-              <div className="improving-poultry">
-                <div className="conclusion">
-                  <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-                  <p className='text-justify py-2'>
+              <div class="improving-poultry">
+                <div class="conclusion">
+                  <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+                  <p class='text-justify py-2'>
                     In a country where water access can be unpredictable, rainwater harvesting offers a practical and eco-friendly solution for gardeners. Whether you live in the Terai plains, the hills of Pokhara, or the rooftops of Kathmandu, collecting and using rainwater supports self-reliance and sustainability. With minimal setup and regular maintenance, you can reduce your environmental impact while ensuring your garden thrives year-round.
                   </p>
                 </div>
 
-                <div className="author-bio">
-                  <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+                <div class="author-bio">
+                  <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
                   <p><b>Sushila Karki</b>is an environmental horticulturist and advocate for sustainable urban gardening. She guides communities across Nepal in adopting eco-conscious practices like rainwater harvesting, composting, and organic planting techniques.</p>
                 </div>
               </div>
@@ -845,113 +845,113 @@ const blogs = [
     fullContent: `
     <section>
       
-      <div className="dairy-product">
-            <h5 className='font-semibold text-[30px] my-5'>1. Why Avoid Chemical Pesticides?</h5>
+      <div class="dairy-product">
+            <h5 class='font-semibold text-[30px] my-5'>1. Why Avoid Chemical Pesticides?</h5>
             <p>While chemical pesticides may provide quick results, they have several long-term drawbacks:</p>
-            <div className="point">
-              <ul className="list ps-4">
-                <li className='list-disc py-2'><b>Harm to soil health:</b> Chemicals kill helpful microbes that enrich the soil.</li>
+            <div class="point">
+              <ul class="list ps-4">
+                <li class='list-disc py-2'><b>Harm to soil health:</b> Chemicals kill helpful microbes that enrich the soil.</li>
 
-                <li className='list-disc py-2'><b>Toxicity risks:</b> Harmful to children, pets, and pollinators like bees.</li>
+                <li class='list-disc py-2'><b>Toxicity risks:</b> Harmful to children, pets, and pollinators like bees.</li>
 
-                <li className='list-disc py-2'><b>Pest resistance:</b> Overuse leads to stronger, more resistant pest populations.</li>
+                <li class='list-disc py-2'><b>Pest resistance:</b> Overuse leads to stronger, more resistant pest populations.</li>
 
-                <li className='list-disc py-2'><b>Environmental pollution:</b> Runoff can contaminate rivers, lakes, and groundwater.</li>
+                <li class='list-disc py-2'><b>Environmental pollution:</b> Runoff can contaminate rivers, lakes, and groundwater.</li>
               </ul>
               <p>Choosing natural alternatives helps maintain balance in the garden ecosystem.</p>
             </div>
 
-            <div className="dairy-product">
-              <h5 className='font-semibold text-[30px] my-5'>2. Common Garden Pests in Nepal</h5>
+            <div class="dairy-product">
+              <h5 class='font-semibold text-[30px] my-5'>2. Common Garden Pests in Nepal</h5>
               <p>Before choosing a control method, identify the pests you're dealing with. In Nepal, common ones include:</p>
-              <div className="point">
-                <ul className="list ps-4">
-                  <li className='list-disc py-2'><b>Aphids:</b> Tiny green insects that suck sap from leaves.</li>
+              <div class="point">
+                <ul class="list ps-4">
+                  <li class='list-disc py-2'><b>Aphids:</b> Tiny green insects that suck sap from leaves.</li>
 
-                  <li className='list-disc py-2'><b>Whiteflies: </b>Small white insects found under leaves.</li>
+                  <li class='list-disc py-2'><b>Whiteflies: </b>Small white insects found under leaves.</li>
 
-                  <li className='list-disc py-2'><b>Caterpillars: </b>Leaf-chewing pests common in vegetable gardens.</li>
+                  <li class='list-disc py-2'><b>Caterpillars: </b>Leaf-chewing pests common in vegetable gardens.</li>
 
-                  <li className='list-disc py-2'><b>Snails and slugs:</b> Attack leafy greens and low-growing plants.</li>
+                  <li class='list-disc py-2'><b>Snails and slugs:</b> Attack leafy greens and low-growing plants.</li>
                   <p>Knowing the pest type helps in applying the right remedy.</p>
                 </ul>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>3. Homemade Natural Sprays</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>3. Homemade Natural Sprays</h5>
                   <p>These simple sprays can be made at home using kitchen ingredients:</p>
 
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Neem Oil Spray:</b>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Neem Oil Spray:</b>
                       Mix 2 tsp of neem oil, 1 tsp of liquid soap, and 1 liter of water. Spray on affected plants every few days.
                       ➤ Effective against aphids, whiteflies, and fungal diseases.</li>
-                    <li className='list-disc py-2'><b>Garlic-Chili Spray:</b>
+                    <li class='list-disc py-2'><b>Garlic-Chili Spray:</b>
                       Blend 1 garlic bulb, 2 chili peppers, and 1 liter of water. Let it sit overnight, strain, and spray.
                       ➤ Repels caterpillars and beetles.</li>
-                    <li className='list-disc py-2'><b>Soap Water:</b>
+                    <li class='list-disc py-2'><b>Soap Water:</b>
                       Mix a few drops of mild soap in water and spray directly on soft-bodied pests.
                       ➤ Great for aphids and mealybugs.</li>
-                    <li className='list-disc py-2'><b>Jasmine (Chameli): </b>Requires sunlight and moderate watering, with fragrant blossoms.</li>
+                    <li class='list-disc py-2'><b>Jasmine (Chameli): </b>Requires sunlight and moderate watering, with fragrant blossoms.</li>
                   </ul>
-                  <p className='py-2'>Always test a small portion of the plant before full application to avoid leaf damage.</p>
+                  <p class='py-2'>Always test a small portion of the plant before full application to avoid leaf damage.</p>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>4. Natural Pest Deterrents from the Garden</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>4. Natural Pest Deterrents from the Garden</h5>
                   <p>Certain plants act as natural repellents or attract helpful insects:</p>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Marigold (Sayapatri):</b> Repels nematodes and whiteflies.</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Marigold (Sayapatri):</b> Repels nematodes and whiteflies.</li>
 
-                    <li className='list-disc py-2'><b>Mint and lemongrass:</b> Drive away ants and aphids.</li>
+                    <li class='list-disc py-2'><b>Mint and lemongrass:</b> Drive away ants and aphids.</li>
 
-                    <li className='list-disc py-2'><b>Spring Onion:</b> Regrows from kitchen scraps and requires little care.</li>
+                    <li class='list-disc py-2'><b>Spring Onion:</b> Regrows from kitchen scraps and requires little care.</li>
 
-                    <li className='list-disc py-2'><b>Chrysanthemum:</b> Contains natural insect-repelling compounds.</li>
+                    <li class='list-disc py-2'><b>Chrysanthemum:</b> Contains natural insect-repelling compounds.</li>
                     <p>Plant these near vegetables or flowers to keep harmful pests at bay.</p>
                   </ul>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>5. Encourage Beneficial Insects</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>5. Encourage Beneficial Insects</h5>
                   <p>Not all bugs are bad! Encourage “good” insects that feed on harmful pests:</p>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Ladybugs: </b> Eat aphids and whiteflies.</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Ladybugs: </b> Eat aphids and whiteflies.</li>
 
-                    <li className='list-disc py-2'><b>Lacewings: </b>Feed on caterpillars and mites.</li>
+                    <li class='list-disc py-2'><b>Lacewings: </b>Feed on caterpillars and mites.</li>
 
-                    <li className='list-disc py-2'><b>Bees and butterflies:</b> Help in pollination.</li>
+                    <li class='list-disc py-2'><b>Bees and butterflies:</b> Help in pollination.</li>
                     <p>To attract them:</p>
-                    <li className='list-disc py-2'>Grow flowering plants like sunflowers, marigolds, and dill.</li>
+                    <li class='list-disc py-2'>Grow flowering plants like sunflowers, marigolds, and dill.</li>
 
-                    <li className='list-disc py-2'>Avoid spraying during flowering season.</li>
+                    <li class='list-disc py-2'>Avoid spraying during flowering season.</li>
 
-                    <li className='list-disc py-2'>Create small water spots and shaded corners for shelter.</li>
+                    <li class='list-disc py-2'>Create small water spots and shaded corners for shelter.</li>
                   </ul>
                 </div>
               </div>
 
-               <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>6. Physical Barriers and Manual Control</h5>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Netting and row covers:</b>  Protect crops from flying insects and birds.</li>
+               <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>6. Physical Barriers and Manual Control</h5>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Netting and row covers:</b>  Protect crops from flying insects and birds.</li>
 
-                    <li className='list-disc py-2'><b>Handpicking: </b>Remove caterpillars and snails by hand.</li>
+                    <li class='list-disc py-2'><b>Handpicking: </b>Remove caterpillars and snails by hand.</li>
 
-                    <li className='list-disc py-2'><b>Sticky traps: </b> Yellow cards with adhesive attract and trap whiteflies.</li>
+                    <li class='list-disc py-2'><b>Sticky traps: </b> Yellow cards with adhesive attract and trap whiteflies.</li>
 
-                    <li className='list-disc py-2'><b>Beer traps:</b> Place shallow containers with beer to attract and drown slugs.</li>
+                    <li class='list-disc py-2'><b>Beer traps:</b> Place shallow containers with beer to attract and drown slugs.</li>
                   </ul>
                 </div>
 
-              <div className="improving-poultry">
-                <div className="conclusion">
-                  <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-                  <p className='text-justify py-2'>
+              <div class="improving-poultry">
+                <div class="conclusion">
+                  <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+                  <p class='text-justify py-2'>
                     Keeping your garden free from pests doesn’t require chemicals. With natural pest control methods—ranging from homemade sprays to companion planting and beneficial insects—you can protect your crops while maintaining soil health and ecological balance. These eco-friendly practices are ideal for Nepali home gardeners who want to grow healthy vegetables, herbs, and flowers sustainably.
                   </p>
                 </div>
 
-                <div className="author-bio">
-                  <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+                <div class="author-bio">
+                  <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
                   <p><b>Dinesh Raut</b> is an organic farming educator working with rural and urban communities in Nepal. With a strong belief in natural agriculture, he teaches eco-friendly gardening methods that protect both plants and the environment.</p>
                 </div>
               </div>
@@ -970,112 +970,112 @@ const blogs = [
     fullContent: `
     <section>
       
-      <div className="dairy-product">
-            <h5 className='font-semibold text-[30px] my-5'>1. Why Rooftop Gardening is Gaining Popularity</h5>
-            <div className="point">
-              <ul className="list ps-4">
-                <li className='list-disc py-2'><b>Space optimization:</b> Perfect solution for city dwellers with no yard.</li>
+      <div class="dairy-product">
+            <h5 class='font-semibold text-[30px] my-5'>1. Why Rooftop Gardening is Gaining Popularity</h5>
+            <div class="point">
+              <ul class="list ps-4">
+                <li class='list-disc py-2'><b>Space optimization:</b> Perfect solution for city dwellers with no yard.</li>
 
-                <li className='list-disc py-2'><b>Improves air quality: </b> Plants filter dust and pollutants.</li>
+                <li class='list-disc py-2'><b>Improves air quality: </b> Plants filter dust and pollutants.</li>
 
-                <li className='list-disc py-2'><b>Reduces heat: </b> Gardens cool the house, reducing air conditioner use.</li>
+                <li class='list-disc py-2'><b>Reduces heat: </b> Gardens cool the house, reducing air conditioner use.</li>
 
-                <li className='list-disc py-2'><b>Mental health benefits:</b> Spending time in green spaces reduces stress.</li>
-                <li className='list-disc py-2'><b>Homegrown food:</b> Grow your own vegetables free from harmful chemicals.</li>
+                <li class='list-disc py-2'><b>Mental health benefits:</b> Spending time in green spaces reduces stress.</li>
+                <li class='list-disc py-2'><b>Homegrown food:</b> Grow your own vegetables free from harmful chemicals.</li>
               </ul>
               <p>Many Nepali households are now turning their concrete rooftops into productive green zones.</p>
             </div>
 
-            <div className="dairy-product">
-              <h5 className='font-semibold text-[30px] my-5'>2. Planning Your Rooftop Garden</h5>
+            <div class="dairy-product">
+              <h5 class='font-semibold text-[30px] my-5'>2. Planning Your Rooftop Garden</h5>
               <p>Before you start planting, consider the following factors:</p>
-              <div className="point">
-                <ul className="list ps-4">
-                  <li className='list-disc py-2'><b>Structural strength: </b>Ensure the roof can support the weight of soil, water, and containers. Consult an engineer if unsure.</li>
+              <div class="point">
+                <ul class="list ps-4">
+                  <li class='list-disc py-2'><b>Structural strength: </b>Ensure the roof can support the weight of soil, water, and containers. Consult an engineer if unsure.</li>
 
-                  <li className='list-disc py-2'><b>Waterproofing: </b> Use waterproof sheets or plastic layers to prevent leakage and damage.</li>
+                  <li class='list-disc py-2'><b>Waterproofing: </b> Use waterproof sheets or plastic layers to prevent leakage and damage.</li>
 
-                  <li className='list-disc py-2'><b>Drainage:</b> Proper drainage holes are essential to avoid stagnant water.</li>
+                  <li class='list-disc py-2'><b>Drainage:</b> Proper drainage holes are essential to avoid stagnant water.</li>
 
-                  <li className='list-disc py-2'><b>Snails and slugs:</b>Sunlight exposure: Most vegetables need 6–8 hours of sunlight. Observe which areas get consistent sun.</li>
+                  <li class='list-disc py-2'><b>Snails and slugs:</b>Sunlight exposure: Most vegetables need 6–8 hours of sunlight. Observe which areas get consistent sun.</li>
                   <p>Planning well prevents future damage and helps plants thrive.</p>
                 </ul>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>3. What to Grow on Rooftops in Nepal</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>3. What to Grow on Rooftops in Nepal</h5>
                   <p>Depending on the season and region, you can grow:</p>
 
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Vegetables:</b>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Vegetables:</b>
                        Tomatoes, chilies, beans, spinach, cucumber, carrots</li>
-                    <li className='list-disc py-2'><b>Herbs:</b>
+                    <li class='list-disc py-2'><b>Herbs:</b>
                      Mint, coriander, basil, oregano, lemongrass</li>
-                    <li className='list-disc py-2'><b>Fruits: </b>
+                    <li class='list-disc py-2'><b>Fruits: </b>
                       Strawberries, lemon, dwarf papaya, guava (in large containers)</li>
-                    <li className='list-disc py-2'><b>Flowers: </b> Marigold, rose, sunflower, zinnia</li>
+                    <li class='list-disc py-2'><b>Flowers: </b> Marigold, rose, sunflower, zinnia</li>
                   </ul>
-                  <p className='py-2'>Use large containers or grow bags, and rotate crops seasonally for best results.</p>
+                  <p class='py-2'>Use large containers or grow bags, and rotate crops seasonally for best results.</p>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>4. Essential Tools and Materials</h5>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>4. Essential Tools and Materials</h5>
                   <p>To start rooftop gardening, you’ll need:</p>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'>Containers (plastic pots, grow bags, or recycled buckets)</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'>Containers (plastic pots, grow bags, or recycled buckets)</li>
 
-                    <li className='list-disc py-2'>Lightweight soil mix (garden soil + compost + cocopeat or sand)</li>
+                    <li class='list-disc py-2'>Lightweight soil mix (garden soil + compost + cocopeat or sand)</li>
 
-                    <li className='list-disc py-2'>Watering can or drip irrigation system</li>
+                    <li class='list-disc py-2'>Watering can or drip irrigation system</li>
 
-                    <li className='list-disc py-2'>Organic fertilizers (vermicompost, cow dung, compost tea)</li>
-                    <li className='list-disc py-2'>Netting for shade or protection from heavy rain and birds</li>
+                    <li class='list-disc py-2'>Organic fertilizers (vermicompost, cow dung, compost tea)</li>
+                    <li class='list-disc py-2'>Netting for shade or protection from heavy rain and birds</li>
                     <p>These tools make daily care easier and more efficient.</p>
                   </ul>
                 </div>
 
-                <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>5. Watering and Maintenance Tips</h5>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Water regularly:</b> Morning or evening watering prevents moisture loss.</li>
+                <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>5. Watering and Maintenance Tips</h5>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Water regularly:</b> Morning or evening watering prevents moisture loss.</li>
 
-                    <li className='list-disc py-2'><b>Mulching: </b> Use straw or dried leaves to retain soil moisture.</li>
+                    <li class='list-disc py-2'><b>Mulching: </b> Use straw or dried leaves to retain soil moisture.</li>
 
-                    <li className='list-disc py-2'><b>Pest control: </b> Use neem spray, garlic-chili mix, or natural traps.</li>
+                    <li class='list-disc py-2'><b>Pest control: </b> Use neem spray, garlic-chili mix, or natural traps.</li>
 
-                    <li className='list-disc py-2'><b>Fertilize monthly: </b> Replenish nutrients with compost or organic fertilizers.</li>
+                    <li class='list-disc py-2'><b>Fertilize monthly: </b> Replenish nutrients with compost or organic fertilizers.</li>
 
-                    <li className='list-disc py-2'><b>Weed control:</b> Remove weeds manually to reduce competition for nutrients.</li>                    
+                    <li class='list-disc py-2'><b>Weed control:</b> Remove weeds manually to reduce competition for nutrients.</li>                    
                     <p>Consistency is key to keeping your rooftop garden productive and beautiful.</p>
                   </ul>
                 </div>
               </div>
 
-               <div className="point">
-                  <h5 className='font-medium text-[18px] py-5'>6. Design Ideas for Rooftop Gardens</h5>
+               <div class="point">
+                  <h5 class='font-medium text-[18px] py-5'>6. Design Ideas for Rooftop Gardens</h5>
                   <p>Make your rooftop not just productive, but relaxing too:</p>
-                  <ul className="list ps-4">
-                    <li className='list-disc py-2'><b>Vertical gardens: </b> Use hanging pots or wall-mounted planters for small spaces.</li>
+                  <ul class="list ps-4">
+                    <li class='list-disc py-2'><b>Vertical gardens: </b> Use hanging pots or wall-mounted planters for small spaces.</li>
 
-                    <li className='list-disc py-2'><b>Seating area:</b> Place a bench or swing for evening tea or reading.</li>
+                    <li class='list-disc py-2'><b>Seating area:</b> Place a bench or swing for evening tea or reading.</li>
 
-                    <li className='list-disc py-2'><b>Pergola with climbers:</b> Add shade and aesthetic appeal.</li>
+                    <li class='list-disc py-2'><b>Pergola with climbers:</b> Add shade and aesthetic appeal.</li>
 
-                    <li className='list-disc py-2'><b>Lighting: </b>Use solar or warm LED lights to enjoy the space at night.</li>
-                    <li className='list-disc py-2'><b>Rainwater harvesting:</b> Set up a system to collect rain for garden use.</li>
+                    <li class='list-disc py-2'><b>Lighting: </b>Use solar or warm LED lights to enjoy the space at night.</li>
+                    <li class='list-disc py-2'><b>Rainwater harvesting:</b> Set up a system to collect rain for garden use.</li>
                     <p>A well-designed garden can become a peaceful retreat above the city.</p>
                   </ul>
                 </div>
 
-              <div className="improving-poultry">
-                <div className="conclusion">
-                  <h4 className='font-semibold text-[30px] my-5'>Conclusion</h4>
-                  <p className='text-justify py-2'>
+              <div class="improving-poultry">
+                <div class="conclusion">
+                  <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+                  <p class='text-justify py-2'>
                     Rooftop gardening is more than just a trend—it’s a smart, sustainable way to improve health, reduce food expenses, and reconnect with nature in urban Nepal. With proper planning and a little creativity, any rooftop can be transformed into a productive garden or relaxing green haven. Whether you’re a beginner or an experienced gardener, starting a rooftop garden brings lasting benefits to your home and the environment.
                   </p>
                 </div>
 
-                <div className="author-bio">
-                  <h4 className='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+                <div class="author-bio">
+                  <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
                   <p><b>Anita Bista </b>is a landscape designer with a passion for turning ordinary spaces into green retreats. She works with urban homeowners and schools across Nepal to create rooftop and terrace gardens that are both functional and beautiful.</p>
                 </div>
               </div>
