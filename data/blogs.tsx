@@ -296,7 +296,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/7.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -343,7 +343,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/8.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -390,7 +390,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/9.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -437,7 +437,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/10.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -484,7 +484,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/11.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -531,7 +531,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/12.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -578,7 +578,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/13.jpg",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -624,7 +624,7 @@ const blogs = [
     title: "Smart Watering Systems for Nepali Gardens: Save Time and Resources",
     author: "Sita Pandey, Landscape Designer",
     date: "July 6, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/14.jpg",
     intro:
       "In Nepal, water scarcity and irregular rainfall can make gardening a challenge. Whether you're growing vegetables in your backyard or maintaining flower beds on your rooftop, efficient watering is essential. Smart watering systems offer a modern solution, helping gardeners conserve water while keeping plants healthy. This blog will guide you through various smart irrigation options, their benefits, and how they can be used effectively in the Nepali context.",
     fullContent: `
