@@ -168,7 +168,7 @@ const blogs = [
     fullContent: `
     <section>
       
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1. Utilize Wall Space</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3">1. Utilize Wall Space</h2>
       <p>
        Install vertical garden panels or railing planters to add greenery without using floor space. Herbs, succulents, and air-purifying plants grow well in these compact setups.
       </p>
@@ -280,12 +280,12 @@ const blogs = [
         Creating lush green indoor spaces is trending, especially in apartments and studios. Hanging pothos, areca palms, and peace lilies in decorative planters can transform your living area into a tranquil oasis.
       </p>
 
-        <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+        <h2 class="text-xl text-[25px] font-semibold mt-6 mb-3">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl text-[25px] font-semibold mt-6 mb-3">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -327,12 +327,12 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -374,12 +374,12 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -421,12 +421,12 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -468,12 +468,12 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -515,12 +515,12 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -562,12 +562,12 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
@@ -609,12 +609,58 @@ const blogs = [
         Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
       <p>
         Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
       </p>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
+      <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
+    </section>
+  `,
+  },
+  {
+    id: 15,
+    title: "How to Start Your Home Garden in Kathmandu",
+    author: "Roshan Shrestha",
+    date: "March 28, 2025",
+    image: "/image/navbar/blog/3.jpg",
+    intro:
+      "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
+    fullContent: `
+    <section>
+      
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Assess Your Space and Light</h2>
+      <p>
+        Identify the available space for your garden — balconies, rooftops, or small yards. Observe the sunlight patterns, as most vegetables require at least 5-6 hours of sunlight daily.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Choose Suitable Containers and Soil</h2>
+      <p>
+        Use pots, raised beds, or recycled containers. Fill them with high-quality, nutrient-rich soil mixed with compost to ensure healthy plant growth.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Select Easy-to-Grow Vegetables</h2>
+      <p>
+        Start with hardy, fast-growing vegetables like spinach, tomatoes, lettuce, and green chilies. These crops adapt well to container gardening and Kathmandu's climate.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4: Watering and Maintenance</h2>
+      <p>
+        Water your plants regularly but avoid overwatering. Mulch to retain moisture and reduce weeds. Regularly check for pests and use organic methods for control.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Harvesting and Enjoying Your Garden</h2>
+      <p>
+        Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
+      <p>
+        Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
+      </p>
+
+      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
       <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
     </section>
   `,
