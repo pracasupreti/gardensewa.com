@@ -621,47 +621,73 @@ const blogs = [
   },
   {
     id: 15,
-    title: "How to Start Your Home Garden in Kathmandu",
-    author: "Roshan Shrestha",
-    date: "March 28, 2025",
+    title: "Smart Watering Systems for Nepali Gardens: Save Time and Resources",
+    author: "Sita Pandey, Landscape Designer",
+    date: "July 6, 2025",
     image: "/image/navbar/blog/3.jpg",
     intro:
-      "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
+      "In Nepal, water scarcity and irregular rainfall can make gardening a challenge. Whether you're growing vegetables in your backyard or maintaining flower beds on your rooftop, efficient watering is essential. Smart watering systems offer a modern solution, helping gardeners conserve water while keeping plants healthy. This blog will guide you through various smart irrigation options, their benefits, and how they can be used effectively in the Nepali context.",
     fullContent: `
     <section>
       
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Assess Your Space and Light</h2>
-      <p>
-        Identify the available space for your garden — balconies, rooftops, or small yards. Observe the sunlight patterns, as most vegetables require at least 5-6 hours of sunlight daily.
-      </p>
+    <div class="first-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>1. What Are Smart Watering Systems?</h4>
+            <p>Smart watering systems are automated devices that deliver water to plants based on time, soil moisture, and weather conditions. They include drip irrigation kits, automatic timers, moisture sensors, and app-controlled sprinklers. Unlike traditional methods, smart systems are designed to avoid water wastage and ensure plants get exactly what they need.</p>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Choose Suitable Containers and Soil</h2>
-      <p>
-        Use pots, raised beds, or recycled containers. Fill them with high-quality, nutrient-rich soil mixed with compost to ensure healthy plant growth.
-      </p>
+          <div class="second-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>2. Benefits for Nepali Gardeners</h4>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'><b>Water Conservation:</b> Especially important in areas with water supply restrictions.</li>
+              <li class='py-2'><b>Water Conservation:</b> Especially important in areas with water supply restrictions.</li>
+              <li class='py-2'><b>Healthier Plants: </b>Consistent watering promotes stronger roots and prevents overwatering.</li>
+              <li class='py-2'><b>Adaptability:</b> Suitable for home gardens, rooftop gardens, and even greenhouses.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Select Easy-to-Grow Vegetables</h2>
-      <p>
-        Start with hardy, fast-growing vegetables like spinach, tomatoes, lettuce, and green chilies. These crops adapt well to container gardening and Kathmandu's climate.
-      </p>
+          <div class="third-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>3. Types of Smart Irrigation Systems</h4>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'><b>Drip Irrigation:</b> Delivers water directly to plant roots using tubes and emitters—ideal for vegetable beds.</li>
+              <li class='py-2'><b>Automatic Sprinklers with Timers:</b> Best for larger lawns or ornamental gardens.</li>
+              <li class='py-2'><b>Smart Controllers and Apps:</b> Allow remote control and schedule adjustments using your smartphone.</li>
+              <li class='py-2'><b>Rain Sensors:</b> These stop the watering system when it rains, saving water.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4: Watering and Maintenance</h2>
-      <p>
-        Water your plants regularly but avoid overwatering. Mulch to retain moisture and reduce weeds. Regularly check for pests and use organic methods for control.
-      </p>
+          <div class="Fourth-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>4. Choosing the Right System</h4>
+            <p>Select a system based on:</p>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'><b>Garden Size: </b>Larger gardens may benefit from sprinklers, while smaller ones may use drip kits.</li>
+              <li class='py-2'><b>Plant Type:</b> Vegetables and flowers have different watering needs.</li>
+              <li class='py-2'><b>Water Availability:</b> Choose low-pressure systems if your supply is limited.</li>
+              <li class='py-2'><b>Budget:</b> Start simple with a timer and upgrade over time.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Harvesting and Enjoying Your Garden</h2>
-      <p>
-        Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
-      </p>
+          <div class="Fifth-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>5. Installation Tips for Nepali Gardens</h4>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'>Use gravity-fed water tanks where tap pressure is low.</li>
+              <li class='py-2'>Place drip lines close to plant stems to avoid evaporation.</li>
+              <li class='py-2'>Combine with mulching to retain soil moisture.</li>
+              <li class='py-2'>If using apps or sensors, ensure Wi-Fi or mobile access is stable.</li>
+              <li class='py-2'>Maintain the system regularly by cleaning filters and checking for leaks.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Conclusion</h2>
-      <p>
-        Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
-      </p>
+        <div class="conclusion">
+          <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+          <p class='text-justify'>
+            With climate change affecting water availability in Nepal, smart watering systems are more than just a luxury—they're a necessity for efficient gardening. These systems not only save time and resources but also contribute to sustainable gardening practices. Whether you're a hobbyist or a serious grower, investing in smart watering tools will pay off in the long run.
+          </p>
+        </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3 text-[25px]">Author Bio:</h2>
-      <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
+        <div class="author-bio">
+          <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+          <p><b>Sita Pandey</b> is a professional landscape designer and green living advocate based in Pokhara. With over 10 years of experience in residential garden planning, she focuses on sustainable, water-wise landscaping suited for Nepal's diverse climate zones..</p>
+        </div>
     </section>
   `,
   },
