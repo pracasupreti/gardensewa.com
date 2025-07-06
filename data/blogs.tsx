@@ -620,7 +620,6 @@ const blogs = [
   `,
   },
 
-  // ... You can continue similarly for the rest of the 15 blog posts.
 ];
 
 export default blogs;
