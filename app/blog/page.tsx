@@ -8,9 +8,9 @@ function Blog() {
       id: "1",
       img: "/image/navbar/blog/0.jpg",
       title:
-        "Sustainable Farming Practices in Nepal: How Consulting Services Can Help",
+        "Top Gardening Services for Nepali Homes",
       description:
-        "Sharing of right agriculture knowledge and technology to the growers at right time motivates them to improve their crop productivity...",
+        "GardenSewa brings you expert gardening services tailored to Nepali homes — from setup to maintenance, we make your dream garden come alive..",
     },
   ];
   let post1 = [
@@ -18,9 +18,9 @@ function Blog() {
       id: "2",
       img: "/image/navbar/blog/1.jpg",
       title:
-        "Organic Farming in Nepal: Benefits and Expert Guidance for Farmers",
+        "Best Gardening Products for Every Nepali Gardener",
       description:
-        "In the heart of the Himalayas, where lush landscapes and fertile soil meet, Nepal is increasingly embracing organic farming. As a country where agriculture plays a pivotal role in the economy, the shift towards organic practices offers a refreshing solution for both farmers and consumers...",
+        "Discover high-quality tools, soil, and accessories to boost your gardening experience. GardenSewa's curated products help gardens thrive in any region of Nepal...",
     },
   ];
   let post2 = [
@@ -28,9 +28,9 @@ function Blog() {
       id: "3",
       img: "/image/navbar/blog/2.jpg",
       title:
-        "The Role of Agriculture Consultants in Boosting Local Farm Productivity",
+        "Creative Gardening Ideas for Small Nepali Spaces",
       description:
-        "Agriculture is the backbone of many economies worldwide, and Nepal is no exception. The country’s vast farming community...",
+        "Maximize limited spaces with clever gardening solutions that bring beauty and greenery to even the smallest areas of your home...",
     },
   ];
   let post3 = [
@@ -38,9 +38,9 @@ function Blog() {
       id: "4",
       img: "/image/navbar/blog/3.jpg",
       title:
-        "Smart Irrigation Solutions for Nepalese Farmers: A Consultant’s Perspective",
+        "How to Start Your Home Garden in Kathmandu",
       description:
-        "Water is one of the most critical resources for farming in Nepal, especially as climate change and erratic rainfall patterns continue to....",
+        "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu...",
     },
   ];
   let post4 = [
@@ -48,27 +48,27 @@ function Blog() {
       id: "5",
       img: "/image/navbar/blog/4.jpg",
       title:
-        "How Modern Technology is Transforming Traditional Farming in Nepal",
+        "Smart Gardening Tips for Urban Nepali Homes",
       description:
-        "Agriculture has been the backbone of Nepal’s economy for centuries. However, traditional farming methods, while effective in the past, have often been inefficient...",
+        "Living in a city doesn’t mean you have to give up your love for gardening. With limited space and busy routines, urban Nepali homes need smart, low-maintenance solutions. Let’s explore creative tips that help you maintain a thriving garden in the heart of the city...",
     },
 
     {
       id: "6",
       img: "/image/navbar/blog/5.jpg",
       title:
-        "Precision Farming in Nepal: How Consulting Services Can Make a Difference",
+        "10 Easy-Care Plants Perfect for Nepali Beginners",
       description:
-        "Agriculture is a vital part of Nepal’s economy, but farmers in the country face numerous challenges, including unpredictable weather, limited resources and traditional farming practices..",
+        "New to gardening? Start with these easy-care plants ideal for Nepali climate. They require low maintenance and bring instant freshness to any space..",
     },
 
     {
       id: "7",
       img: "/image/navbar/blog/6.jpg",
       title:
-        "Livestock Farming Consultation: Improving Dairy and Poultry Productivity.",
+        "Top Gardening Trends Nepali Gardeners Should Try in 2025",
       description:
-        "Livestock farming is a cornerstone of Nepal’s agricultural economy, with dairy and poultry farming playing a significant role in providing nutrition..",
+        "Gardening is evolving with creative, sustainable, and space-saving techniques. In 2025, Nepali gardeners are embracing new trends that bring beauty efficiency, and eco-friendliness to homes and communities. Explore these popular..",
     },
   ];
   let post5 = [
@@ -76,18 +76,18 @@ function Blog() {
       id: "8",
       img: "/image/navbar/blog/7.jpg",
       title:
-        "Government Policies and Subsidies for Nepalese Farmers: What You Need to Know.",
+        "Smart Watering Systems for Nepali Gardens: Save Time and Resources.",
       description:
-        "Agriculture remains the backbone of Nepal’s economy, with the majority of the population relying on farming for their livelihood. Recognizing this,...",
+        "Smart watering systems are automated devices that deliver water to plants based on time, soil moisture, and weather conditions. They include drip irrigation kits, automatic timers,..",
     },
 
     {
       id: "9",
       img: "/image/navbar/blog/8.jpg",
       title:
-        "Climate Change and Its Impact on Agriculture: How Farmers Can Adapt",
+        "Beginner’s Guide to Growing Tomatoes in Pots",
       description:
-        "Climate change is one of the biggest challenges facing agriculture today. Rising temperatures, unpredictable rainfall, and extreme weather events are making...",
+        "Tomatoes are a favorite vegetable in Nepali kitchens and gardens alike. However, many urban and small-space gardeners face challenges growing tomatoes in traditional soil beds due...",
     },
   ];
   let post6 = [
@@ -95,17 +95,17 @@ function Blog() {
       id: "10",
       img: "/image/navbar/blog/9.jpg",
       title:
-        "Choosing the Right Crops for Your Region: Expert Advice for Nepalese Farmers.",
+        "Smart Balcony Gardening Ideas for Urban Nepali Homes",
       description:
-        "Selecting the right crops is crucial for successful farming, especially in a country like Nepal, where diverse climates and terrains influence agricultural productivity...",
+        "As urbanization increases in Nepal, many residents live in apartments or houses with limited outdoor space. However, a small balcony can become a lush, productive garden...",
     },
 
     {
       id: "11",
       img: "/image/navbar/blog/10.jpg",
-      title: "Post-Harvest Management and Storage Solutions for Small Farmers.",
+      title: "Container Gardening: A Smart Solution for Urban Nepali Homes.",
       description:
-        "For small farmers in Nepal, harvesting crops is only half the battle. Without proper post-harvest management and storage solutions, a significant portion of produce..",
+        "As urbanization increases in Nepal, especially in cities like Kathmandu, Pokhara, and Lalitpur, open spaces for traditional gardening are becoming scarce...",
     },
   ];
   let post7 = [
@@ -113,35 +113,35 @@ function Blog() {
       id: "12",
       img: "/image/navbar/blog/11.jpg",
       title:
-        "Organic Certification in Nepal: How Consultants Can Help Farmers Meet Standards.",
+        "Organic Composting at Home: Turn Waste into Garden Gold",
       description:
-        "Organic farming is gaining popularity in Nepal as consumers become more conscious of their health and the environment...",
+        "In Nepal, household waste is often discarded without proper segregation, leading to landfill overflow and environmental pollution. But what if you could convert your kitchen waste into a valuable resource..",
     },
 
     {
       id: "13",
       img: "/image/navbar/blog/12.jpg",
-      title: "Maximizing Crop Yields: Expert Tips for Farmers in Nepal.",
+      title: "Rainwater Harvesting for Home Gardens: A Sustainable Practice for Nepali Growers",
       description:
-        "For Nepalese farmers, maximizing crop yields is key to improving livelihoods and ensuring food security. With challenges like unpredictable weather, soil degradation, and limited...",
+        " Water scarcity is a growing issue in many parts of Nepal, especially during the dry season. For gardeners, maintaining a consistent water supply  Water scarcity is a growing issue in...",
     },
 
     {
       id: "14",
       img: "/image/navbar/blog/13.jpg",
       title:
-        "The Business Side of Farming: How Agriculture Consulting Can Increase Profits.",
+        "Natural Pest Control Methods for a Healthy Nepali Garden",
       description:
-        "Farming isn’t just about growing crops, it’s a business that requires smart decision-making to ensure profitability...",
+        "Pests can quickly turn a thriving garden into a struggling one, damaging plants, spreading disease, and reducing yields. Many Nepali gardeners rely...",
     },
 
     {
       id: "15",
       img: "/image/navbar/blog/14.jpg",
       title:
-        "Youth in Agriculture: How Consulting Services Can Encourage the Next Generation.",
+        "Rooftop Gardening in Nepal: Transforming Spaces into Green Retreats",
       description:
-        "Agriculture has long been the backbone of Nepal’s economy, but in recent years, fewer young people are choosing farming as a career...",
+        "With increasing urbanization and limited land availability, rooftops across Nepali cities like Kathmandu, Lalitpur, and Biratnagar are being transformed...",
     },
   ];
 
@@ -407,3 +407,6 @@ function Blog() {
 }
 
 export default Blog;
+
+
+
