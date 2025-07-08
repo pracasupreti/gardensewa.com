@@ -293,47 +293,73 @@ const blogs = [
 
   {
     id: 8,
-    title: "How to Start Your Home Garden in Kathmandu",
-    author: "Roshan Shrestha",
-    date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    title: "Smart Watering Systems for Nepali Gardens: Save Time and Resources",
+    author: "Sita Pandey, Landscape Designer",
+    date: "July 6, 2025",
+    image: "/image/navbar/blog/9.jpg",
     intro:
-      "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
+      " Smart watering systems are automated devices that deliver water to plants based on time, soil moisture, and weather conditions. They include drip irrigation kits, automatic timers, moisture sensors, and app-controlled sprinklers. Unlike traditional methods, smart systems are designed to avoid water wastage and ensure plants get exactly what they need.",
     fullContent: `
     <section>
       
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 1: Assess Your Space and Light</h2>
-      <p>
-        Identify the available space for your garden — balconies, rooftops, or small yards. Observe the sunlight patterns, as most vegetables require at least 5-6 hours of sunlight daily.
-      </p>
+      <div class="first-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>1. What Are Smart Watering Systems?</h4>
+            <p>Smart watering systems are automated devices that deliver water to plants based on time, soil moisture, and weather conditions. They include drip irrigation kits, automatic timers, moisture sensors, and app-controlled sprinklers. Unlike traditional methods, smart systems are designed to avoid water wastage and ensure plants get exactly what they need.</p>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 2: Choose Suitable Containers and Soil</h2>
-      <p>
-        Use pots, raised beds, or recycled containers. Fill them with high-quality, nutrient-rich soil mixed with compost to ensure healthy plant growth.
-      </p>
+          <div class="second-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>2. Benefits for Nepali Gardeners</h4>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'><b>Water Conservation:</b> Especially important in areas with water supply restrictions.</li>
+              <li class='py-2'><b>Water Conservation:</b> Especially important in areas with water supply restrictions.</li>
+              <li class='py-2'><b>Healthier Plants: </b>Consistent watering promotes stronger roots and prevents overwatering.</li>
+              <li class='py-2'><b>Adaptability:</b> Suitable for home gardens, rooftop gardens, and even greenhouses.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 3: Select Easy-to-Grow Vegetables</h2>
-      <p>
-        Start with hardy, fast-growing vegetables like spinach, tomatoes, lettuce, and green chilies. These crops adapt well to container gardening and Kathmandu's climate.
-      </p>
+          <div class="third-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>3. Types of Smart Irrigation Systems</h4>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'><b>Drip Irrigation:</b> Delivers water directly to plant roots using tubes and emitters—ideal for vegetable beds.</li>
+              <li class='py-2'><b>Automatic Sprinklers with Timers:</b> Best for larger lawns or ornamental gardens.</li>
+              <li class='py-2'><b>Smart Controllers and Apps:</b> Allow remote control and schedule adjustments using your smartphone.</li>
+              <li class='py-2'><b>Rain Sensors:</b> These stop the watering system when it rains, saving water.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 4: Watering and Maintenance</h2>
-      <p>
-        Water your plants regularly but avoid overwatering. Mulch to retain moisture and reduce weeds. Regularly check for pests and use organic methods for control.
-      </p>
+          <div class="Fourth-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>4. Choosing the Right System</h4>
+            <p>Select a system based on:</p>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'><b>Garden Size: </b>Larger gardens may benefit from sprinklers, while smaller ones may use drip kits.</li>
+              <li class='py-2'><b>Plant Type:</b> Vegetables and flowers have different watering needs.</li>
+              <li class='py-2'><b>Water Availability:</b> Choose low-pressure systems if your supply is limited.</li>
+              <li class='py-2'><b>Budget:</b> Start simple with a timer and upgrade over time.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Step 5: Harvesting and Enjoying Your Garden</h2>
-      <p>
-        Harvest vegetables when they reach maturity. Fresh homegrown produce tastes better and is free from harmful chemicals.
-      </p>
+          <div class="Fifth-paragraph">
+            <h4 class='font-semibold text-[25px] my-5'>5. Installation Tips for Nepali Gardens</h4>
+            <ul class="list list-disc ps-4">
+              <li class='py-2'>Use gravity-fed water tanks where tap pressure is low.</li>
+              <li class='py-2'>Place drip lines close to plant stems to avoid evaporation.</li>
+              <li class='py-2'>Combine with mulching to retain soil moisture.</li>
+              <li class='py-2'>If using apps or sensors, ensure Wi-Fi or mobile access is stable.</li>
+              <li class='py-2'>Maintain the system regularly by cleaning filters and checking for leaks.</li>
+            </ul>
+          </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Conclusion</h2>
-      <p>
-        Starting a home garden in Kathmandu is a fulfilling way to connect with nature, improve your diet, and beautify your living space. GardenSewa can assist you with expert advice, design, and maintenance to make your urban garden flourish.
-      </p>
+        <div class="conclusion">
+          <h4 class='font-semibold text-[30px] my-5'>Conclusion</h4>
+          <p class='text-justify'>
+            With climate change affecting water availability in Nepal, smart watering systems are more than just a luxury—they're a necessity for efficient gardening. These systems not only save time and resources but also contribute to sustainable gardening practices. Whether you're a hobbyist or a serious grower, investing in smart watering tools will pay off in the long run.
+          </p>
+        </div>
 
-      <h2 class="text-xl font-semibold mt-6 mb-3">Author Bio:</h2>
-      <p><strong>Roshan Shrestha</strong> is a passionate urban gardener and consultant, helping city residents in Kathmandu create thriving home gardens despite space constraints.</p>
+        <div class="author-bio">
+          <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
+          <p><b>Sita Pandey</b> is a professional landscape designer and green living advocate based in Pokhara. With over 10 years of experience in residential garden planning, she focuses on sustainable, water-wise landscaping suited for Nepal's diverse climate zones..</p>
+        </div>
     </section>
   `,
   },
@@ -343,7 +369,7 @@ const blogs = [
     title: "Beginner’s Guide to Growing Tomatoes in Pots",
     author: "By: Suman Lama",
     date: "July 7, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/10.jpg",
     intro:
       "Tomatoes are a favorite vegetable in Nepali kitchens and gardens alike. However, many urban and small-space gardeners face challenges growing tomatoes in traditional soil beds due to space constraints. Growing tomatoes in pots is an excellent solution that allows gardeners in apartments, rooftops, or small yards to enjoy fresh, homegrown tomatoes year-round. This comprehensive guide from GardenSewa explains how to grow healthy tomatoes in containers, covering everything from selecting the right varieties to care, watering, pest control, and harvesting—tailored specifically for Nepali conditions.",
     fullContent: `
@@ -351,7 +377,7 @@ const blogs = [
       
      <div class="first-paragraph ">
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Why Grow Tomatoes in Pots?</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Why Grow Tomatoes in Pots?</h5>
               <p class='my-5'>Potted tomato gardening offers several advantages:</p>
               <ul class="list list-disc ps-4">
                 <li>Space Efficiency: Ideal for balconies, rooftops, and small yards common in urban Nepal.</li>
@@ -362,7 +388,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Choosing the Right Tomato Varieties for Pots</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Choosing the Right Tomato Varieties for Pots</h5>
               <p class='my-5'>Selecting suitable tomato varieties is key to successful container gardening.</p>
               <ul class="list list-disc ps-4">
                 <li>Determinate (Bush) Varieties: Compact, grow to a set size, and produce fruit in a shorter time. Examples include Roma and Patio varieties, perfect for pots.</li>
@@ -373,7 +399,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Selecting the Right Containers</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Selecting the Right Containers</h5>
               <ul class="list list-disc ps-4">
                 <li>Containers should be at least 30 cm (12 inches) deep and wide** to support root growth.</li>
                 <li>Materials: Plastic, terracotta, or fiber pots work well; terracotta offers better breathability but dries out faster.</li>
@@ -383,7 +409,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'> Preparing the Potting Mix</h5>
+              <h5 class='my-5 font-bold text-[30px]'> Preparing the Potting Mix</h5>
               <ul class="list list-disc ps-4">
                 <li>Use a well-draining, nutrient-rich potting mix.</li>
                 <li>Mix garden soil with organic compost or vermicompost, and coco peat or perlite for aeration.</li>
@@ -393,7 +419,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Planting Tomato Seedlings</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Planting Tomato Seedlings</h5>
               <ul class="list list-disc ps-4">
                 <li>Start seeds indoors: Sow seeds in seed trays or small pots 6-8 weeks before planting outdoors.</li>
                 <li>Transplant seedlings: Once seedlings have 4-6 true leaves and the danger of frost is past, transplant into prepared pots.</li>
@@ -403,7 +429,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Caring for Tomatoes in Pots</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Caring for Tomatoes in Pots</h5>
               <p class='py-2'>Sunlight:</p>
               <ul class="list list-disc ps-4">
                 <li>Tomatoes need 6-8 hours of direct sunlight daily.</li>
@@ -438,7 +464,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Pest and Disease Management</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Pest and Disease Management</h5>
               <ul class="list list-disc ps-4">
                 <li>Monitor regularly for aphids, whiteflies, and caterpillars common in Nepal.</li>
                 <li>Use natural pest control like neem oil spray or garlic-chili spray.</li>
@@ -448,7 +474,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Harvesting Tomatoes</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Harvesting Tomatoes</h5>
               <ul class="list list-disc ps-4">
                 <li>Harvest when fruits turn bright red (or appropriate color for the variety) and feel slightly soft.</li>
                 <li>Pick fruit gently to avoid bruising.</li>
@@ -457,7 +483,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>Troubleshooting Common Problems</h5>
+              <h5 class='my-5 font-bold text-[30px]'>Troubleshooting Common Problems</h5>
               <ul class="list list-disc ps-4">
                 <li>Blossom End Rot: Caused by calcium deficiency or irregular watering. Add calcium supplements and maintain consistent moisture.</li>
                 <li>Yellow Leaves: Check watering habits and nutrient levels.</li>
@@ -486,7 +512,7 @@ const blogs = [
     title: "Smart Balcony Gardening Ideas for Urban Nepali Homes",
     author: "Prakash Koirala",
     date: "July 6, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/11.jpg",
     intro:
       "As urbanization increases in Nepal, many residents live in apartments or houses with limited outdoor space. However, a small balcony can become a lush, productive garden with the right ideas and care. Balcony gardening not only beautifies your home but also provides fresh vegetables, herbs, and flowers year-round. This guide from GardenSewa shares smart balcony gardening ideas tailored for Nepali homes—maximizing space, selecting suitable plants, and using vertical and container gardening techniques to transform your balcony into a green oasis.",
     fullContent: `
@@ -494,19 +520,19 @@ const blogs = [
       
     <div class="first-paragraph ">
             <div class="point">
-              <h5 class='my-5 font-bold text-[18px]'>1. Use Vertical Gardening to Maximize Space</h5>
+              <h5 class='my-5 font-bold text-[30px]'>1. Use Vertical Gardening to Maximize Space</h5>
               <p class='my-5'>Vertical gardening turns empty walls or railings into planting surfaces using trellises, hanging pots, and wall-mounted planters. Climbing plants like beans, cucumbers, and ivy gourds grow upward, saving precious floor space.
 
                 Installing shelves or stackable planter boxes allows you to grow multiple plants in a compact area. Vertical gardens also add privacy and shade, improving your balcony’s comfort.
 
               </p>
 
-              <h5 class='my-5 font-bold text-[18px]'> 2. Choose Suitable Containers and Planters</h5>
+              <h5 class='my-5 font-bold text-[30px]'> 2. Choose Suitable Containers and Planters</h5>
               <p class='my-5'>Lightweight pots made from plastic, fiber, or terracotta are ideal for balconies. Use containers with drainage holes to prevent waterlogging.Self-watering containers reduce maintenance by storing and releasing water slowly. Window boxes and railing-mounted planters help utilize railing spaces effectively.
 
               </p>
 
-              <h5 class='my-5 font-bold text-[18px]'>3. Select Plants According to Light and Climate</h5>
+              <h5 class='my-5 font-bold text-[30px]'>3. Select Plants According to Light and Climate</h5>
               <p class='my-5'>Assess your balcony’s sunlight exposure and choose plants accordingly:
               </p>
               <div class="ul list">
@@ -516,17 +542,17 @@ const blogs = [
                 <p>Herbs like mint, coriander, and lemongrass grow well in containers and add fresh flavors to Nepali dishes.</p>
               </div>
 
-              <h5 class='my-5 font-bold text-[18px]'>4. Use Lightweight Potting Mix and Fertilizers</h5>
+              <h5 class='my-5 font-bold text-[30px]'>4. Use Lightweight Potting Mix and Fertilizers</h5>
               <p class='my-5'>Heavy garden soil can strain balcony structures. Use lightweight, well-draining potting mixes blended with organic compost or coco peat. Fertilize regularly with organic liquid fertilizers or slow-release pellets to keep plants healthy without excess runoff.
 
               </p>
 
-              <h5 class='my-5 font-bold text-[18px]'>5. Efficient Watering and Maintenance</h5>
+              <h5 class='my-5 font-bold text-[30px]'>5. Efficient Watering and Maintenance</h5>
               <p class='my-5'>Balconies dry out faster due to wind and sun exposure. Water plants early in the morning or late evening to minimize evaporation. Mulch container surfaces with dried leaves or straw to retain moisture. Regularly prune and deadhead plants to encourage growth and prevent overcrowding.
 
               </p>
 
-              <h5 class='my-5 font-bold text-[18px]'>6. Add Decorative and Functional Elements</h5>
+              <h5 class='my-5 font-bold text-[30px]'>6. Add Decorative and Functional Elements</h5>
               <p>
                 Incorporate decorative pots, colorful flowers, and garden ornaments to enhance aesthetics. Use small trellises or stakes to support climbing plants. Adding a small bench or stool creates a cozy corner where you can relax surrounded by greenery.
               </p>
@@ -542,7 +568,7 @@ const blogs = [
 
           <div class="author-bio">
             <h4 class='font-semibold text-[25px] mt-5'>Author Bio:</h4>
-            <p><b>Prakash Koirala</b>is an urban horticulturist from Kathmandu who specializes in compact and container gardening. He helps city dwellers in Nepal create vibrant green spaces in small areas.</p>
+            <p><b>Prakash Koirala</b> is an urban horticulturist from Kathmandu who specializes in compact and container gardening. He helps city dwellers in Nepal create vibrant green spaces in small areas.</p>
           </div> `,
   },
 
@@ -551,7 +577,7 @@ const blogs = [
     title: "Container Gardening: A Smart Solution for Urban Nepali Homes",
     author: "Manju Sharma, Urban Gardening Expert",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/12.jpg",
     intro:
       "As urbanization increases in Nepal, especially in cities like Kathmandu, Pokhara, and Lalitpur, open spaces for traditional gardening are becoming scarce. But that doesn't mean you have to give up on greenery. Container gardening is an ideal solution for city dwellers who want to grow vegetables, flowers, or herbs in limited spaces like balconies, rooftops, or courtyards. This method is easy to start, affordable, and adaptable to any environment. In this post, we’ll explore the benefits, tips, and techniques for successful container gardening in Nepali urban settings.",
     fullContent: `
@@ -561,7 +587,7 @@ const blogs = [
             <h5 class='font-semibold text-[30px] my-5'>1. What is Container Gardening?</h5>
             <p>Container gardening involves growing plants in pots, buckets, or other containers rather than planting them directly in the ground. This method is perfect for urban homes where soil availability is limited or nonexistent. Containers can range from clay pots and recycled plastic bottles to wooden boxes and hanging baskets—making it a versatile option for gardeners with creative minds.</p>
             <div class="point">
-              <h5 class='font-medium text-[18px] py-5'>2. Ideal Plants for Containers in Nepal</h5>
+              <h5 class='font-bold text-[30px] py-5'>2. Ideal Plants for Containers in Nepal</h5>
               <p>Container gardening can support a variety of plants, depending on the season and location. Some popular choices for Nepali urban gardeners include:</p>
 
               <ul class="list ps-4">
@@ -577,7 +603,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='font-medium text-[18px] py-5'>3. Choosing the Right Container and Soil</h5>
+              <h5 class='font-bold text-[30px]  py-5'>3. Choosing the Right Container and Soil</h5>
               <p>Not all containers are created equal. When selecting pots or buckets, ensure they:</p>
 
               <ul class="list ps-4">
@@ -590,7 +616,7 @@ const blogs = [
             </div>
 
             <div class="point">
-              <h5 class='font-medium text-[18px] py-5'>4. Watering and Sunlight Needs</h5>
+              <h5 class='font-bold text-[30px] py-5'>4. Watering and Sunlight Needs</h5>
               <p>Urban rooftops can get very hot, especially in the summer. Be mindful of the following:</p>
 
               <ul class="list ps-4">
@@ -602,7 +628,7 @@ const blogs = [
           </div>
 
           <div class="improving-poultry">
-            <h5 class='font-medium text-[30px] my-5'>Common Challenges and Solutions</h5>
+            <h5 class='font-bold text-[30px] my-5'>Common Challenges and Solutions</h5>
             <p>Urban gardening comes with its share of difficulties: </p>
             <div class="point">
               <ul class="list ps-4">
@@ -634,7 +660,7 @@ const blogs = [
     title: "Organic Composting at Home: Turn Waste into Garden Gold",
     author: "Bimal Khadka, Sustainable Gardening Advisor",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/13.jpg",
     intro:
       "In Nepal, household waste is often discarded without proper segregation, leading to landfill overflow and environmental pollution. But what if you could convert your kitchen waste into a valuable resource for your garden? Organic composting is a simple, eco-friendly practice that turns food scraps and garden debris into nutrient-rich compost. This not only reduces waste but also enhances soil fertility for home gardens. In this post, we’ll walk you through the benefits of composting, how to do it at home, and why it matters for every Nepali gardener.",
     fullContent: `
@@ -644,7 +670,7 @@ const blogs = [
             <h5 class='font-semibold text-[30px] my-5'>1. What is Organic Composting?</h5>
             <p>Composting is a natural process where organic materials like vegetable peels, fruit scraps, dry leaves, and grass clippings break down into a dark, crumbly substance rich in nutrients. This compost can be mixed into soil to improve plant growth, retain moisture, and reduce the need for chemical fertilizers. In home gardening, composting helps you manage your organic waste while creating free fertilizer for your plants.</p>
             <div class="point">
-              <h5 class='font-medium text-[18px] py-5'>2. Benefits of Composting for Nepali Households</h5>
+              <h5 class='font-bold text-[30px] py-5'>2. Benefits of Composting for Nepali Households</h5>
 
               <ul class="list ps-4">
                 <li class='list-disc py-2'><b>Reduces household waste:</b> Up to 60% of household waste in Nepal is organic. Composting helps minimize garbage output.</li>
@@ -688,7 +714,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>4. How to Start Composting at Home</h5>
+                  <h5 class='font-bold text-[30px] py-5'>4. How to Start Composting at Home</h5>
                   <p>You don’t need a large yard to start composting. Even a balcony or corner of your terrace will do. Here’s how:</p>
 
                   <ul class="list ps-4">
@@ -702,7 +728,7 @@ const blogs = [
                 </div>
 
                 <div class="point">
-                  <h5 class='font-medium text-[18px] py-5'>5. Using Compost in Your Garden</h5>
+                  <h5 class='font-bold text-[30px] py-5'>5. Using Compost in Your Garden</h5>
                   <p>Once ready, mix the compost with potting soil or garden beds.</p>
                   <ul class="list ps-4">
                     <li class='list-disc py-2'>For vegetables and herbs, use compost as top dressing or mix into planting soil.</li>
@@ -739,7 +765,7 @@ const blogs = [
     title: "Rainwater Harvesting for Home Gardens: A Sustainable Practice for Nepali Growers",
     author: "Sushila Karki, Environmental Horticulturist",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/14.jpg",
     intro:
       " Water scarcity is a growing issue in many parts of Nepal, especially during the dry season. For gardeners, maintaining a consistent water supply is crucial for healthy plant growth. One sustainable solution to this challenge is rainwater harvesting—collecting and storing rainwater for later use in the garden. This eco-friendly practice not only conserves water but also reduces dependence on municipal or groundwater sources. In this article, we explore how home gardeners across Nepal can set up and benefit from rainwater harvesting systems.",
     fullContent: `
@@ -749,7 +775,7 @@ const blogs = [
             <h5 class='font-semibold text-[30px] my-5'>1. What is Rainwater Harvesting?</h5>
             <p>Rainwater harvesting is the process of collecting rain from rooftops, courtyards, or other surfaces and storing it for future use. It involves a simple setup of gutters, storage tanks, filters, and pipes to direct clean rainwater into containers.</p>
             <div class="point">
-              <h5 class='font-medium text-[18px] py-5'>For gardeners, this collected water can be used for:</h5>
+              <h5 class='font-bold text-[30px] py-5'>For gardeners, this collected water can be used for:</h5>
 
               <ul class="list ps-4">
                 <li class='list-disc py-2'>Watering plants</li>
@@ -837,9 +863,9 @@ const blogs = [
   {
     id: 14,
     title: "Natural Pest Control Methods for a Healthy Nepali Garden",
-    author: "RDinesh Raut, Organic Farming Educator",
+    author: "Dinesh Raut, Organic Farming Educator",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/image/navbar/blog/15.jpg",
     intro:
       "Pests can quickly turn a thriving garden into a struggling one, damaging plants, spreading disease, and reducing yields. Many Nepali gardeners rely on chemical pesticides to fight these issues, but overuse can harm beneficial insects, pollute the soil, and affect human health. Fortunately, there are natural pest control methods that are safe, affordable, and effective. In this blog, we’ll explore eco-friendly ways to keep your garden pest-free without using harmful chemicals—suitable for home gardeners across Nepal.",
     fullContent: `
@@ -1084,7 +1110,6 @@ const blogs = [
             </div>
           </div>`,
   },
-
   // ... You can continue similarly for the rest of the 15 blog posts.
 ];
 
