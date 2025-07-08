@@ -17,7 +17,7 @@ const heroimage = [
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi ipsum nostrum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi",
+      "Transform your outdoor space with GardenSewa's expert gardening services—offering lawn care, landscaping, and plant maintenance tailored to your home and lifestyle.",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const heroimage = [
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi ipsum nostrum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi",
+      "Transform your outdoor space with GardenSewa's expert gardening services—offering lawn care, landscaping, and plant maintenance tailored to your home and lifestyle.",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const heroimage = [
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi ipsum nostrum culpa.Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non hic cum aut vitae, dignissimos aliquid excepturi",
+      "Transform your outdoor space with GardenSewa's expert gardening services—offering lawn care, landscaping, and plant maintenance tailored to your home and lifestyle.",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const heroimage = [
     alt: "sliderimg4",
     title: "BEST SERVICES FOR GARDENING",
     title2: "Welcome to Gardensewa",
-    subtitle: "Agriculture Consulting in Nepal.",
+    subtitle: "Transform your outdoor space with GardenSewa's expert gardening services—offering lawn care, landscaping, and plant maintenance tailored to your home and lifestyle.",
   },
 ];
 const services = [
