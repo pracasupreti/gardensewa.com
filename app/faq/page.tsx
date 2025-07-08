@@ -61,117 +61,154 @@ export default Faq;
 const faqData = [
   {
     id: 1,
-    question: "What is Kisanpedia",
+    question: " What is Gardensewa.com?",
     answer:
-      "Kisanpedia is an agri-based startup providing a 'one-stop' agriculture solution to farmers. They work directly with farmers and commercial farms to enhance crop yield, reduce production costs, and improve crop quality for better pricing.",
+      " Gardensewa.com is an online platform dedicated to offering gardening services—from design and planting to maintenance and landscaping—for home gardeners, community projects, and institutions.",
   },
   {
     id: 2,
-    question: "What services does Kisanpedia offer?",
+    question: "Which services does Gardensewa.com offer?",
     answer: (
       <div>
-        <p>Kisanpedia offers a range of services, including:</p>
-        <ul className="list py-1 list-disc pl-4">
-          <li>
-            <strong>Training and Capacity Building:</strong> Workshops and
-            seminars on crop management, pest control, and soil health.
+        <p>Gardensewa offers a range of services, including:</p>
+        <ul className="list py-1">
+          <li className="point ">
+            <strong>Garden Planning & Design –</strong> Customized layout and plant selection.
           </li>
-          <li>
-            <strong>Research and Development:</strong> Development of new crop
-            protection agents and seed varieties.
+          <li className="point">
+            <strong>Planting & Transplanting –</strong> Installation of trees, shrubs, flowers, and vegetables.
           </li>
-          <li>
-            <strong>Technology and Digital Services:</strong> Precision
-            agriculture using GPS-guided tools and remote sensing.
+          <li className="point ">
+            <strong>Maintenance – </strong> Regular watering, weeding, pruning, mulching.
           </li>
-          <li>
-            <strong>Post-Harvest and Value-Added Services:</strong> On-farm
-            processing equipment and advanced packaging solutions.
+          <li className="point">
+            <strong>Seasonal Cleanup –</strong> Spring or fall garden preparation.
+          </li>
+          <li className="point">
+            <strong>Soil Prep & Tiling –</strong> Soil leveling and seedbed preparation.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  
+  {
+    id: 3,
+    question: "Who can benefit from using Gardensewa.com?",
+    answer: (
+      <div>
+        Ideal for homeowners, apartment dwellers with balconies, schools, offices, community gardens, health centers—anyone seeking reliable, eco-conscious gardening services.
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    question: "Why choose Gardensewa.com?",
+    answer:
+      <div>
+        <p>Gardensewa offers a range of services, including:</p>
+        <ul className="list py-1">
+          <li className="point ">
+           <strong> Expertise:</strong> Trained horticulturalists with practical know‑how.
+          </li>
+          <li className="point">
+            <strong>Eco-friendly:</strong> Focus on sustainable, organic gardening.
+          </li>
+          <li className="point ">
+            <strong>Convenience:</strong> Online booking, transparent pricing, scheduled reminders.
+          </li>
+          <li className="point">
+            <strong>Customization:</strong> Garden plans tailored to space, preferences, climate.
+          </li>
+          <li className="point">
+            <strong>Soil Prep & Tiling:</strong> Soil leveling and seedbed preparation.
+          </li>
+        </ul>
+      </div >
+  },
+  {
+    id: 5,
+    question: "How do I book a service?",
+    answer:
+      <div>
+        Visit the Gardensewa.com homepage.
+        <br />
+        Choose your service type (e.g., planting, maintenance).
+
+        <ul className="list py-1">
+          <li className="point py-1">
+            <strong>Fill out the form:</strong> location, garden size, preferred date.
+          </li>
+          <li className="point py-1">
+            Get a free estimate.
+          </li>
+          <li className="point py-1">
+            Confirm the schedule and payment.
+          </li>
+          <li className="point py-1">
+            Enjoy your revamped garden!
+          </li>
+        </ul>
+      </div>,
+  },
+  {
+    id: 6,
+    question: "What are the pricing models?",
+    answer: (
+      <div>
+        Kisanpedia conducts workshops and seminars focusing on:
+        <ul className="list py-1">
+          <li className="point list-disc">
+            <strong>One-time jobs (e.g., seasonal planting):</strong> fixed rate based on garden size and complexity.
+          </li>
+          <li className="point list-disc">
+            <strong>Subscription plans (e.g., weekly maintenance):</strong> discounted monthly packages.
+          </li>
+          <li className="point list-disc">
+            <strong>Add-ons (e.g., mulching, fertilizing):</strong> billed separately for flexibility.
           </li>
         </ul>
       </div>
     ),
   },
   {
-    id: 3,
-    question: "How can I contact Kisanpedia?",
-    answer: (
-      <>
-        You can reach Kisanpedia via email at{" "}
-        <a href="mailto:[email protected]" className="underline text-blue-500">
-          [email protected]
-        </a>{" "}
-        or by phone at +977-9746608593. Their office is located at Puspalal
-        Chowk, Budhiganga -1, Morang.
-      </>
-    ),
-  },
-  {
-    id: 4,
-    question: "Who are the key personnel at Kisanpedia?",
-    answer:
-      "Rajesh Mehta serves as the CEO, and Babita Singh is the Founder of Kisanpedia Service Pvt. Ltd.",
-  },
-  {
-    id: 5,
-    question: "Does Kisanpedia offer products for sale?",
-    answer:
-      "Yes, Kisanpedia provides a variety of agricultural products, including bio-fertilizers, pruning tools, insecticides, seeds, and plant boosters.",
-  },
-  {
-    id: 6,
-    question: "What training programs does Kisanpedia provide?",
-    answer: (
-      <ul className="list-disc pl-4 space-y-1">
-        <li>
-          <strong>Crop Management:</strong> Best practices for growing and
-          harvesting crops.
-        </li>
-        <li>
-          <strong>Pest Control:</strong> Identifying and implementing effective
-          control methods.
-        </li>
-        <li>
-          <strong>Soil Health:</strong> Maintaining healthy soil for sustainable
-          agriculture.
-        </li>
-      </ul>
-    ),
-  },
-  {
     id: 7,
-    question: "How does Kisanpedia support sustainable agriculture?",
+    question: "Do I need any gardening knowledge to use the service?",
     answer:
-      "Kisanpedia emphasizes conservation and sustainability strategies, educating farmers on preserving the environment without compromising productivity. They invest in research and development, prioritize education and training, and foster partnerships to drive positive change.",
+      " No! Gardensewa.com caters to all skill levels. They can guide you from scratch or support your existing gardening efforts with semi- or fully-managed care.",
   },
   {
     id: 8,
-    question: "Does Kisanpedia assist with market access for farmers?",
+    question: " Which areas are served by Gardensewa.com?",
     answer:
-      "Yes, Kisanpedia works to create linkages between farmers and wholesalers, enabling farmers to sell their produce directly to buyers.",
+      " Gardensewa.com primarily serves [Your Country/Region]. Coverage includes urban and suburban zones—check the zone map on the website or contact support for availability in your area.",
   },
   {
     id: 9,
-    question: "What is Kisanpedia's mission and vision?",
-    answer: (
-      <ul className="list-disc pl-4 space-y-1">
-        <li>
-          <strong>Mission:</strong> Empower farmers to take bumper production by
-          providing the best crop intelligence, quality products, and efficient
-          services.
-        </li>
-        <li>
-          <strong>Vision:</strong> Our vision is to make the best farming for a
-          better farmer's life.
-        </li>
-      </ul>
-    ),
+    question: " Are the plants and materials environmentally safe?",
+    answer: 
+    "Yes—Gardensewa.com prioritizes organic seeds, native species, eco-friendly pest control, and sustainable mulches, aligning with eco-conscious gardening standards."
   },
   {
     id: 10,
     question:
-      "How can I stay updated with Kisanpedia's latest news and updates?",
+      " What if I'm unhappy with the service?",
     answer:
-      "You can subscribe to their newsletter through their website to receive the latest updates and information.",
+      "They offer a satisfaction guarantee: notify them within 48 hours, and they’ll redo the task free of charge or provide a partial refund.",
+  },
+   {
+    id: 11,
+    question:
+      "Do they offer consultations or garden coaching?",
+    answer:
+      " Yes! Choose their Garden Coaching service for personalized advice, seasonal planning tips, and step-by-step hobbyist guidance.",
+  },
+
+   {
+    id: 12,
+    question:
+      "How can I stay updated on promotions or gardening tips?",
+    answer:
+      "Subscribe to their weekly newsletter for service offers, tips, plant care guidance, and short how‑to articles—directly from home gardening experts.",
   },
 ];
