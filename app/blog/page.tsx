@@ -6,7 +6,7 @@ function Blog() {
   let post = [
     {
       id: "1",
-      img: "/image/navbar/blog/0.jpg",
+      img: "/images/navbar/blog/1.avif",
       title:
         "Top Gardening Services for Nepali Homes",
       description:
@@ -16,7 +16,7 @@ function Blog() {
   let post1 = [
     {
       id: "2",
-      img: "/image/navbar/blog/1.jpg",
+      img: "/images/navbar/blog/2.avif",
       title:
         "Best Gardening Products for Every Nepali Gardener",
       description:
@@ -26,7 +26,7 @@ function Blog() {
   let post2 = [
     {
       id: "3",
-      img: "/image/navbar/blog/2.jpg",
+      img: "/images/navbar/blog/3.avif",
       title:
         "Creative Gardening Ideas for Small Nepali Spaces",
       description:
@@ -36,7 +36,7 @@ function Blog() {
   let post3 = [
     {
       id: "4",
-      img: "/image/navbar/blog/3.jpg",
+      img: "/images/navbar/blog/4.avif",
       title:
         "How to Start Your Home Garden in Kathmandu",
       description:
@@ -46,7 +46,7 @@ function Blog() {
   let post4 = [
     {
       id: "5",
-      img: "/image/navbar/blog/4.jpg",
+      img: "/images/navbar/blog/5.avif",
       title:
         "Smart Gardening Tips for Urban Nepali Homes",
       description:
@@ -55,7 +55,7 @@ function Blog() {
 
     {
       id: "6",
-      img: "/image/navbar/blog/5.jpg",
+      img: "/images/navbar/blog/6.avif",
       title:
         "10 Easy-Care Plants Perfect for Nepali Beginners",
       description:
@@ -64,7 +64,7 @@ function Blog() {
 
     {
       id: "7",
-      img: "/image/navbar/blog/6.jpg",
+      img: "/images/navbar/blog/7.avif",
       title:
         "Top Gardening Trends Nepali Gardeners Should Try in 2025",
       description:
@@ -74,7 +74,7 @@ function Blog() {
   let post5 = [
     {
       id: "8",
-      img: "/image/navbar/blog/7.jpg",
+      img: "/images/navbar/blog/8.avif",
       title:
         "Smart Watering Systems for Nepali Gardens: Save Time and Resources.",
       description:
@@ -83,7 +83,7 @@ function Blog() {
 
     {
       id: "9",
-      img: "/image/navbar/blog/8.jpg",
+      img: "/images/navbar/blog/9.avif",
       title:
         "Beginner’s Guide to Growing Tomatoes in Pots",
       description:
@@ -93,7 +93,7 @@ function Blog() {
   let post6 = [
     {
       id: "10",
-      img: "/image/navbar/blog/9.jpg",
+      img: "/images/navbar/blog/10.avif",
       title:
         "Smart Balcony Gardening Ideas for Urban Nepali Homes",
       description:
@@ -102,7 +102,7 @@ function Blog() {
 
     {
       id: "11",
-      img: "/image/navbar/blog/10.jpg",
+      img: "/images/navbar/blog/11.avif",
       title: "Container Gardening: A Smart Solution for Urban Nepali Homes.",
       description:
         "As urbanization increases in Nepal, especially in cities like Kathmandu, Pokhara, and Lalitpur, open spaces for traditional gardening are becoming scarce...",
@@ -111,7 +111,7 @@ function Blog() {
   let post7 = [
     {
       id: "12",
-      img: "/image/navbar/blog/11.jpg",
+      img: "/images/navbar/blog/12.avif",
       title:
         "Organic Composting at Home: Turn Waste into Garden Gold",
       description:
@@ -120,7 +120,7 @@ function Blog() {
 
     {
       id: "13",
-      img: "/image/navbar/blog/12.jpg",
+      img: "/images/navbar/blog/13.avif",
       title: "Rainwater Harvesting for Home Gardens: A Sustainable Practice for Nepali Growers",
       description:
         " Water scarcity is a growing issue in many parts of Nepal, especially during the dry season. For gardeners, maintaining a consistent water supply  Water scarcity is a growing issue in...",
@@ -128,7 +128,7 @@ function Blog() {
 
     {
       id: "14",
-      img: "/image/navbar/blog/13.jpg",
+      img: "/images/navbar/blog/14.avif",
       title:
         "Natural Pest Control Methods for a Healthy Nepali Garden",
       description:
@@ -137,7 +137,7 @@ function Blog() {
 
     {
       id: "15",
-      img: "/image/navbar/blog/14.jpg",
+      img: "/images/navbar/blog/15.avif",
       title:
         "Rooftop Gardening in Nepal: Transforming Spaces into Green Retreats",
       description:
@@ -241,7 +241,7 @@ function Blog() {
                 </div>
                 <div className="image relative hidden sm:block md:block lg:block w-[385px] h-[258px] rounded-e-xl overflow-hidden">
                   <Image
-                    src="/image/navbar/blog/2.jpg"
+                    src="/images/navbar/blog/3.avif"
                     alt="Description here"
                     fill
                     className="object-cover rounded-e-xl"
@@ -269,7 +269,7 @@ function Blog() {
                 </div>
                 <div className="image relative hidden sm:block md:block lg:block w-full h-[258px] rounded-e-xl overflow-hidden">
                   <Image
-                    src="/image/navbar/blog/3.jpg"
+                    src="/images/navbar/blog/4.avif"
                     alt="Description here"
                     fill
                     className="object-cover rounded-e-xl"

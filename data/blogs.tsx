@@ -4,7 +4,7 @@ const blogs = [
     title: "Top Gardening Services for Nepali Homes",
     author: "Anil Sharma",
     date: "April 1, 2025",
-    image: "/image/home/latest-update/update1.webp",
+    image: "/images/navbar/blog/1.avif",
     intro:
       "GardenSewa brings you expert gardening services tailored to Nepali homes — from setup to maintenance, we make your dream garden come alive.",
     fullContent: `
@@ -31,7 +31,7 @@ const blogs = [
     title: "Best Gardening Products for Every Nepali Gardener",
     author: "Ramesh Gurung",
     date: "March 20, 2025",
-    image: "/image/home/latest-update/update2.webp",
+    image: "/images/navbar/blog/2.avif",
     intro:
       "Discover high-quality tools, soil, and accessories to boost your gardening experience. GardenSewa's curated products help gardens thrive in any region of Nepal.",
     fullContent: `
@@ -82,7 +82,7 @@ const blogs = [
     title: "Creative Gardening Ideas for Small Nepali Spaces",
     author: "Kriti Bhandari",
     date: "April 10, 2025",
-    image: "/image/home/latest-update/update3.webp",
+    image: "/images/navbar/blog/3.avif",
     intro:
       "Maximize limited spaces with clever gardening solutions that bring beauty and greenery to even the smallest areas of your home.",
     fullContent: `
@@ -115,7 +115,7 @@ const blogs = [
     title: "How to Start Your Home Garden in Kathmandu",
     author: "Roshan Shrestha",
     date: "March 28, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/images/navbar/blog/4.avif",
     intro:
       "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu.",
     fullContent: `
@@ -162,7 +162,7 @@ const blogs = [
     title: "Smart Gardening Tips for Urban Nepali Homes",
     author: "Kriti Bhandari",
     date: "July 2, 2025",
-    image: "/image/navbar/blog/4.jpg",
+    image: "/images/navbar/blog/5.avif",
     intro:
       "Living in a city doesn’t mean you have to give up your love for gardening. With limited space and busy routines, urban Nepali homes need smart, low-maintenance solutions. Let’s explore creative tips that help you maintain a thriving garden in the heart of the city.",
     fullContent: `
@@ -202,7 +202,7 @@ const blogs = [
     title: "10 Easy-Care Plants Perfect for Nepali Beginners",
     author: "Ramesh Gurung",
     date: " July 2, 2025",
-    image: "/image/navbar/blog/5.jpg",
+    image: "/images/navbar/blog/6.avif",
     intro:
       "New to gardening? Start with these easy-care plants ideal for Nepali climate. They require low maintenance and bring instant freshness to any space.",
     fullContent: `
@@ -248,7 +248,7 @@ const blogs = [
     title: "Top Gardening Trends Nepali Gardeners Should Try in 2025",
     author: "By: Kriti Bhandari",
     date: "Published on: July 3, 2025",
-    image: "/image/navbar/blog/6.jpg",
+    image: "/images/navbar/blog/7.avif",
     intro:
       "Gardening is evolving with creative, sustainable, and space-saving techniques. In 2025, Nepali gardeners are embracing new trends that bring beauty, efficiency, and eco-friendliness to homes and communities. Explore these popular practices supported by GardenSewa's innovative tools and products",
     fullContent: `
@@ -369,7 +369,7 @@ const blogs = [
     title: "Beginner’s Guide to Growing Tomatoes in Pots",
     author: "By: Suman Lama",
     date: "July 7, 2025",
-    image: "/image/navbar/blog/10.jpg",
+    image: "/images/navbar/blog/9.avif",
     intro:
       "Tomatoes are a favorite vegetable in Nepali kitchens and gardens alike. However, many urban and small-space gardeners face challenges growing tomatoes in traditional soil beds due to space constraints. Growing tomatoes in pots is an excellent solution that allows gardeners in apartments, rooftops, or small yards to enjoy fresh, homegrown tomatoes year-round. This comprehensive guide from GardenSewa explains how to grow healthy tomatoes in containers, covering everything from selecting the right varieties to care, watering, pest control, and harvesting—tailored specifically for Nepali conditions.",
     fullContent: `
@@ -512,7 +512,7 @@ const blogs = [
     title: "Smart Balcony Gardening Ideas for Urban Nepali Homes",
     author: "Prakash Koirala",
     date: "July 6, 2025",
-    image: "/image/navbar/blog/11.jpg",
+    image: "/images/navbar/blog/10.avif",
     intro:
       "As urbanization increases in Nepal, many residents live in apartments or houses with limited outdoor space. However, a small balcony can become a lush, productive garden with the right ideas and care. Balcony gardening not only beautifies your home but also provides fresh vegetables, herbs, and flowers year-round. This guide from GardenSewa shares smart balcony gardening ideas tailored for Nepali homes—maximizing space, selecting suitable plants, and using vertical and container gardening techniques to transform your balcony into a green oasis.",
     fullContent: `
@@ -577,7 +577,7 @@ const blogs = [
     title: "Container Gardening: A Smart Solution for Urban Nepali Homes",
     author: "Manju Sharma, Urban Gardening Expert",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/12.jpg",
+    image: "/images/navbar/blog/11.avif",
     intro:
       "As urbanization increases in Nepal, especially in cities like Kathmandu, Pokhara, and Lalitpur, open spaces for traditional gardening are becoming scarce. But that doesn't mean you have to give up on greenery. Container gardening is an ideal solution for city dwellers who want to grow vegetables, flowers, or herbs in limited spaces like balconies, rooftops, or courtyards. This method is easy to start, affordable, and adaptable to any environment. In this post, we’ll explore the benefits, tips, and techniques for successful container gardening in Nepali urban settings.",
     fullContent: `
@@ -660,7 +660,7 @@ const blogs = [
     title: "Organic Composting at Home: Turn Waste into Garden Gold",
     author: "Bimal Khadka, Sustainable Gardening Advisor",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/13.jpg",
+    image: "/images/navbar/blog/12.avif",
     intro:
       "In Nepal, household waste is often discarded without proper segregation, leading to landfill overflow and environmental pollution. But what if you could convert your kitchen waste into a valuable resource for your garden? Organic composting is a simple, eco-friendly practice that turns food scraps and garden debris into nutrient-rich compost. This not only reduces waste but also enhances soil fertility for home gardens. In this post, we’ll walk you through the benefits of composting, how to do it at home, and why it matters for every Nepali gardener.",
     fullContent: `
@@ -765,7 +765,7 @@ const blogs = [
     title: "Rainwater Harvesting for Home Gardens: A Sustainable Practice for Nepali Growers",
     author: "Sushila Karki, Environmental Horticulturist",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/14.jpg",
+    image: "/images/navbar/blog/13.avif",
     intro:
       " Water scarcity is a growing issue in many parts of Nepal, especially during the dry season. For gardeners, maintaining a consistent water supply is crucial for healthy plant growth. One sustainable solution to this challenge is rainwater harvesting—collecting and storing rainwater for later use in the garden. This eco-friendly practice not only conserves water but also reduces dependence on municipal or groundwater sources. In this article, we explore how home gardeners across Nepal can set up and benefit from rainwater harvesting systems.",
     fullContent: `
@@ -865,7 +865,7 @@ const blogs = [
     title: "Natural Pest Control Methods for a Healthy Nepali Garden",
     author: "Dinesh Raut, Organic Farming Educator",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/15.jpg",
+    image: "/images/navbar/blog/14.avif",
     intro:
       "Pests can quickly turn a thriving garden into a struggling one, damaging plants, spreading disease, and reducing yields. Many Nepali gardeners rely on chemical pesticides to fight these issues, but overuse can harm beneficial insects, pollute the soil, and affect human health. Fortunately, there are natural pest control methods that are safe, affordable, and effective. In this blog, we’ll explore eco-friendly ways to keep your garden pest-free without using harmful chemicals—suitable for home gardeners across Nepal.",
     fullContent: `
@@ -990,7 +990,7 @@ const blogs = [
     title: "Rooftop Gardening in Nepal: Transforming Spaces into Green Retreats",
     author: "Anita Bista, Landscape Designer",
     date: "July 5, 2025",
-    image: "/image/navbar/blog/3.jpg",
+    image: "/images/navbar/blog/15.avif",
     intro:
       "  With increasing urbanization and limited land availability, rooftops across Nepali cities like Kathmandu, Lalitpur, and Biratnagar are being transformed into vibrant green spaces. Rooftop gardening is not only a smart use of unused space but also contributes to better air quality, temperature regulation, and mental well-being. Whether you're growing vegetables, herbs, or flowers, a rooftop garden can become your personal retreat in the city. In this blog, we’ll guide you through the process of creating and maintaining a rooftop garden suited to Nepal’s climate and lifestyle.",
     fullContent: `

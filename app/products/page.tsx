@@ -54,33 +54,33 @@ const products = [
   },
   {
     id: 9,
-    name: "PRARAMVA TRICHODERMA (trichodermaviride) - 1KG",
-    price: "NPR 350",
-    img: "/image/home/products/9.jpeg",
+    name: "Vermicompost Fertilizer",
+    price: "NPR 300",
+    img: "/images/home/products/9.webp",
   },
   {
     id: 10,
-    name: "Super AcroBAT Fungicide - 100GM",
-    price: "NPR 350",
-    img: "/image/home/products/10.jpeg",
+    name: "liquid-lawn-tonic",
+    price: "NPR 250",
+    img: "/images/home/products/10.webp",
   },
   {
     id: 11,
-    name: "Bullet 505 Insecticide - 100 ML",
-    price: "NPR 140",
-    img: "/image/home/products/11.jpeg",
+    name: "Neem Oil",
+    price: "NPR 180",
+    img: "/images/home/products/11.webp",
   },
   {
     id: 12,
-    name: "Grow plus, Plant booster",
-    price: "NPR 200",
-    img: "/image/home/products/12.jpeg",
+    name: "liquid-biofertilizer",
+    price: "NPR 220",
+    img: "/images/home/products/12.webp",
   },
   {
     id: 13,
-    name: "Secateur 8 deluxe prunner",
+    name: "Heavy-Duty Garden Pruner",
     price: "NPR 1350",
-    img: "/image/home/products/13.jpeg",
+    img: "/images/home/products/13.webp",
   },
 ];
 
@@ -95,7 +95,7 @@ function Products() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="image border border-gray-200 shadow-lg rounded-lg w-full h-[350px] overflow-hidden"
+              className="image p-6 border-gray-200 shadow-lg rounded-lg w-full h-[350px] overflow-hidden"
             >
               <div className="relative w-full h-[250px] shadow-sm rounded-t-md p-6 lg:p-0 overflow-hidden">
                 <Image
