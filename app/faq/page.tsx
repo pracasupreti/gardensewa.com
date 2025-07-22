@@ -1,5 +1,4 @@
 // "use client";
-
 // import React, { useEffect, useState } from "react";
 // import {
 //   Accordion,
@@ -212,3 +211,15 @@
 //       "Subscribe to their weekly newsletter for service offers, tips, plant care guidance, and short how‑to articles—directly from home gardening experts.",
 //   },
 // ];
+
+import React from 'react'
+
+const page = () => {
+  return (
+    <>
+      faq
+    </>
+  )
+}
+
+export default page
