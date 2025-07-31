@@ -3,178 +3,159 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { SendIcon } from "lucide-react";
 
 export default function Footer() {
   return (
     <>
-      <section className="footer bg-[#f1fff1]">
-        <div className="container max-w-[1200px] mx-auto py-5">
-          {/* Newsletter */}
-          <div className="footer-main py-2 flex flex-col md:flex-row text-center items-center gap-y-6 justify-between">
-            <p className="text-[20px] font-semibold text-[#008000]">
-              Get Gardening Tips in Your Email
+      {/* Newsletter Banner */}
+      <div className="bg-primary text-white py-6 px-8 mx-4 md:mx-28 rounded-2xl shadow-lg">
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl font-semibold">Subscribe Newsletter</h2>
+            <p className="text-base">
+              Get updates on services, offers, and plant tips straight to your inbox.
             </p>
-            <form
-              className="border border-[#009000] bg-white ps-2 rounded-lg"
-              action="#"
+          </div>
+          <form className="flex bg-white rounded-full overflow-hidden max-w-[300px] w-full">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="px-4 py-2 w-full text-black focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="bg-primary hover:bg-secondary text-white px-4 py-2 mx-2 my-1 rounded-full"
             >
-              <input
-                type="text"
-                placeholder="Enter your email address"
-                className="focus:outline-none"
-              />
-              <button className="bg-[#009000] px-4 rounded-e-md py-2 text-white hover:bg-green-800 font-semibold">
-                Subscribe
-              </button>
-            </form>
+              <SendIcon className="w-5 h-5" />
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Footer Main Section */}
+      <footer className="bg-[#f1fff1] pt-10 pb-10">
+        <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-6 gap-x-8 gap-y-8 text-sm text-gray-800">
+          
+          {/* Brand Info */}
+          <div className="col-span-2 text-center md:text-left">
+            <div className="flex justify-center md:justify-start mb-3">
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/image/logo/gardensewa.png"
+                  alt="Gardensewa"
+                  width={75}
+                  height={75}
+                  priority
+                />
+                <p className="ml-2 text-[20px] text-primary font-bold">GardenSewa</p>
+              </Link>
+            </div>
+            <p className="mb-3">
+              GardenSewa is your one-stop solution for plants, gardening services, and green lifestyle essentials.
+            </p>
+            <div className="flex justify-center md:justify-start gap-3">
+              {["facebook", "instagram", "linkedin"].map((platform) => (
+                <Image
+                  key={platform}
+                  src={`/image/icons/${platform}-footer-icon.svg`}
+                  alt={platform}
+                  width={20}
+                  height={20}
+                  className="cursor-pointer"
+                />
+              ))}
+            </div>
           </div>
 
-          <div className="w-full h-[1px] bg-gray-200"></div>
+          {/* Useful Links */}
+          <div>
+            <h4 className="font-semibold mb-2">Useful Links</h4>
+            <ul className="space-y-1">
+              {["Home", "Plants", "About", "Services", "Gallery", "Blog"].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="hover:text-green-600">{item}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          {/* Footer Sections */}
-          <div className="footer-contents flex flex-col md:flex-row gap-y-6 items-center text-center lg:text-start justify-between py-5">
-            {/* Contact */}
-            <div className="footer-contact text-[15px]">
+          {/* Explore Plants */}
+          <div>
+            <h4 className="font-semibold mb-2">Explore Plants</h4>
+            <ul className="space-y-1">
+              {["Indoor Plants", "Outdoor Plants", "Pet-Friendly Plants", "Air-Purifying Plants", "Low Maintenance"].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="hover:text-green-600">{item}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Product Help */}
+          <div>
+            <h4 className="font-semibold mb-2">Product Help</h4>
+            <ul className="space-y-1">
+              {["Book a Service", "FAQs", "Contact", "Privacy Policy", "Testimonials"].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="hover:text-green-600">{item}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Download Section */}
+          <div>
+            <h4 className="font-semibold mb-2">Download</h4>
+            <div className="space-y-2">
               <Image
-                className="mx-auto"
-                src="/image/logo/gardensewa.png"
-                alt="Gardensewa Logo"
-                width={75}
-                height={75}
+                src="/image/home/footer/play-store.png"
+                alt="Google Play"
+                width={140}
+                height={40}
               />
-              <p className="my-2 flex items-center gap-1 hover:text-green-500 cursor-pointer">
-                <Image
-                  src="/image/icons/phone.svg"
-                  alt="Phone"
-                  width={15}
-                  height={15}
-                />
-                +977-9852025735
-              </p>
-              <p className="my-2 flex items-center gap-1 hover:text-green-500 cursor-pointer">
-                <Image
-                  src="/image/icons/email.png"
-                  alt="Email"
-                  width={15}
-                  height={15}
-                />
-                info@gardensewa.com
-              </p>
-            </div>
-
-            {/* Nav Links */}
-            <div className="footer-nav">
-              <ul className="nav-link text-[15px]">
-                {[
-                  { label: "Home", href: "/" },
-                  { label: "About", href: "/about" },
-                  { label: "Gallery", href: "/gallery" },
-                  { label: "Contact", href: "/contact" },
-                  { label: "Products", href: "/products" },
-                ].map((item) => (
-                  <li
-                    key={item.href}
-                    className="hover:text-green-500 cursor-pointer pb-2"
-                  >
-                    <Link href={item.href}>{item.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Service Links */}
-            <div className="footer-service">
-              <ul className="service text-[15px]">
-                {[
-                  { label: "Services", href: "/services" },
-                  { label: "Blog", href: "/blog" },
-                  { label: "Message", href: "/message" },
-                  { label: "FAQ", href: "/faq" },
-                  { label: "Privacy", href: "/privacy" },
-                ].map((item) => (
-                  <li
-                    key={item.href}
-                    className="hover:text-green-500 cursor-pointer pb-2"
-                  >
-                    <Link href={item.href}>{item.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Socials */}
-            <div className="footer-Social">
-              <h5 className="font-semibold text-center text-[18px]">Connect</h5>
-              <div className="social-links my-3 flex gap-3 justify-center">
-                {[
-                  "facebook-footer-icon.svg",
-                  "instagram-footer-icon.svg",
-                  "linkedin-footer-icon.svg",
-                  "youtube-footer-icon.svg",
-                ].map((icon, i) => (
-                  <Image
-                    key={i}
-                    src={`/image/icons/${icon}`}
-                    alt="Social Icon"
-                    width={25}
-                    height={25}
-                    className="cursor-pointer"
-                  />
-                ))}
-              </div>
-              <div className="store flex my-5 gap-2">
-                <Image
-                  src="/image/home/footer/app-store.png"
-                  alt="App Store"
-                  width={80}
-                  height={25}
-                />
-                <Image
-                  src="/image/home/footer/play-store.png"
-                  alt="Play Store"
-                  width={80}
-                  height={25}
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full h-[1px] bg-gray-200"></div>
-
-          {/* Bottom Copy */}
-          <div className="footer-end">
-            <div className="container max-w-[1200px] mx-auto overflow-visible">
-              <p className="text-[15px] text-center my-1 pt-4 px-2 lg:mt-0 mt-2">
-                © 2025 Garden Sewa Pvt. Ltd. Kamalpokhari, Kathmandu, Nepal. All
-                Rights Reserved. Technology Partner :{" "}
-                <a
-                  className="hover:text-green-700"
-                  href="https://sriyog.com/"
-                  target="_blank"
-                >
-                  Sriyog Consulting, Kathmandu
-                </a>
-              </p>
+              <Image
+                src="/image/home/footer/app-store.png"
+                alt="Apple Store"
+                width={140}
+                height={40}
+              />
             </div>
           </div>
         </div>
-      </section>
 
-      {/* WhatsApp Floating Button */}
-      <div className="fixed bg-[#4fc95d] bottom-1 right-4 md:bottom-16 md:right-6 z-50 p-2 rounded-full">
-        <a
-          href="https://wa.me/9779746608593?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.kesanpedia.com.%20"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/image/icons/whatsapp.svg"
-            alt="Whatsapp Icon"
-            width={30}
-            height={30}
-          />
-        </a>
-      </div>
+        {/* Divider */}
+        <div className="w-full h-[1px] bg-gray-300 my-4"></div>
+
+        {/* Bottom Footer */}
+        <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-y-2">
+          <div className="flex flex-wrap justify-center md:justify-end gap-40">
+          <div><p className="text-sm text-black">Legal & Credits</p>
+            <p>© 2025 Garden Sewa. All rights reserved.</p></div>
+            <div className="flex items-center gap-1">
+              <Image src="/image/icons/email.png" alt="Email" width={24} height={24} />
+              <div className="flex flex-col">
+              <p className="text-sm text-black">Email</p>
+              <p>support@gardensewa.com</p>
+            </div>
+            </div>
+            <div className="flex items-center gap-1">
+              <Image src="/image/icons/phone.svg" alt="Phone" width={24} height={24} />
+              <div className="flex flex-col">
+              <p className="text-sm text-black">Phone</p>
+              <p>97XXXXXXXX</p>
+            </div>
+            </div>
+            <div className="flex items-center gap-1">
+              <Image src="/image/icons/location.png" alt="Location" width={24} height={24} />
+              <div className="flex flex-col">
+              <p className="text-sm text-black">Location</p>
+              <p>Putalisadak, Kathmandu</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
