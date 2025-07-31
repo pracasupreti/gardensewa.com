@@ -35,7 +35,7 @@ export default function Footer() {
 
       {/* Footer Main Section */}
       <footer className="bg-[#f1fff1] pt-10 pb-10">
-        <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-6 gap-x-8 gap-y-8 text-sm text-gray-800">
+        <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-6 gap-x-16 gap-y-8 text-sm text-gray-800">
           
           {/* Brand Info */}
           <div className="col-span-2 text-center md:text-left">
@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-1">
               {["Home", "Plants", "About", "Services", "Gallery", "Blog"].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="hover:text-green-600">{item}</Link>
+                  <Link href="#" className="hover:text-green-600 hover:pl-4">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -86,7 +86,7 @@ export default function Footer() {
             <ul className="space-y-1">
               {["Indoor Plants", "Outdoor Plants", "Pet-Friendly Plants", "Air-Purifying Plants", "Low Maintenance"].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="hover:text-green-600">{item}</Link>
+                  <Link href="#" className="hover:text-green-600 hover:pl-4">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -98,7 +98,7 @@ export default function Footer() {
             <ul className="space-y-1">
               {["Book a Service", "FAQs", "Contact", "Privacy Policy", "Testimonials"].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="hover:text-green-600">{item}</Link>
+                  <Link href="#" className="hover:text-green-600 hover:pl-4">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -113,12 +113,14 @@ export default function Footer() {
                 alt="Google Play"
                 width={140}
                 height={40}
+                className="cursor-pointer h-16 w-36"
               />
               <Image
                 src="/image/home/footer/app-store.png"
                 alt="Apple Store"
                 width={140}
                 height={40}
+                className="cursor-pointer h-16 w-36"
               />
             </div>
           </div>
