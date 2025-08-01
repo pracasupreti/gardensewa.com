@@ -71,8 +71,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
           src={article.image}
           alt={article.title}
           layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-300 group-hover:scale-105" // Zoom effect on hover
+          className="object-cover transition-transform duration-300 group-hover:scale-105" // Zoom effect on hover
         />
       </div>
 
@@ -92,9 +91,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
           alt={article.title}
           height={24}
           width={24}
-          className="rounded-full"
+          className="rounded-full object-cover"
           layout="fixed"
-          objectFit="cover"
         />
           </div>
           <span className="mr-3">{article.author}</span>

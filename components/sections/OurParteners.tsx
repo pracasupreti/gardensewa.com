@@ -39,7 +39,6 @@ export function OurPartners() {
                   src={partner.logo}
                   alt={partner.name}
                   layout="fill"
-                  objectFit="contain"
                 />
               </div>
             </div>
