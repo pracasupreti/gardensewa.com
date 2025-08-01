@@ -17,6 +17,7 @@
   --font-mono: var(--font-geist-mono);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-third: var(--Third);
   --color-text: var(--text);
 }
 

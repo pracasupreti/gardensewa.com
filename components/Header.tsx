@@ -91,7 +91,7 @@ export default function Header() {
       {/* Main Nav */}
       <section className="nav-header bg-white border-t-1 border-gray-500 block">
         <div className="container mx-auto max-w-[1250px] px-5 py-2">
-          <div className="nav-bar flex flex-wrap justify-between items-center font-semibold">
+          <div className="nav-bar flex flex-wrap justify-between items-center">
 
           <div className="contact flex items-center gap-1 text-[14px]">
             <a className="hover:text-green-500" href="tel:+977-9852025735">
@@ -154,7 +154,7 @@ export default function Header() {
                 menuOpen ? "translate-x-0" : "translate-x-full"
               }`}
             >
-              <ul className="px-4 text-[#008000] text-center font-semibold text-[15px] my-3">
+              <ul className="px-4 text-[#008000] text-center text-[15px] my-3">
                 {navItems.map((item) => (
                   <li key={item.name} className="py-2">
                     <Link

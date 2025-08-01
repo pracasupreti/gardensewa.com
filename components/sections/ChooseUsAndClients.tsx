@@ -16,7 +16,7 @@ interface ClientCardProps {
 
 // FeatureCard Component
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description }) => (
-  <div className="flex flex-col items-center p-6 bg-green-200 rounded-xl transition-shadow duration-300">
+  <div className="flex flex-col items-center p-6 bg-green-100 rounded-xl transition-shadow duration-300">
     <div className="bg-white p-4 rounded-full mb-4">
       <Icon className="w-10 h-10 text-black" />
     </div>
@@ -107,27 +107,43 @@ const ChooseUs: React.FC = () => {
       </section>
 
       {/* Our Clients Section */}
-      <section className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-12">
-          <h2 className="text-5xl font-bold text-green-800">Our Clients</h2>
-          <button className="flex items-center text-green-700 font-semibold px-4 py-2 rounded-full border border-green-700 hover:bg-green-700 hover:text-white transition-colors duration-300">
-            View All
-            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </button>
+      <section className="max-w-7xl mx-auto px-4 py-16">
+  {/* Header */}
+  <div className="flex justify-between items-center mb-12 flex-wrap gap-4">
+    <h2 className="text-4xl md:text-5xl font-bold text-green-800">Our Clients</h2>
+    <button className="flex items-center text-green-700 font-semibold px-5 py-2 rounded-full border border-green-700 hover:bg-green-700 hover:text-white transition duration-300">
+      View All
+      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+      </svg>
+    </button>
+  </div>
+
+  {/* Client Cards */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 h-80">
+    {clients.map((client, index) => (
+      <div
+        key={index}
+        className="relative group overflow-hidden rounded-2xl border-3 border-green-100 transform hover:scale-105 transition duration-500"
+      >
+        {/* Client Image */}
+        <img
+          src={client.image}
+          alt={client.name}
+          className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+        />
+        <h3 className="text-black text-lg font-semibold mb-1 text-center"> {client.name} </h3>
+        
+        {/* Overlay Content */}
+        <div className="absolute inset-0 bg-white bg-opacity-60 flex flex-col justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+          <h3 className="text-primary text-6xl font-semibold mb-1"> 	&ldquo; </h3>
+          <p className="text-black text-base p-4">{client.text}</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
-          {clients.map((client, index) => (
-            <ClientCard
-              key={index}
-              image={client.image}
-              name={client.name}
-              text={client.text}
-            />
-          ))}
-        </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
+
     </div>
   );
 };

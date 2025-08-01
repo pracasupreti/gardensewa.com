@@ -12,7 +12,8 @@ interface Article {
   author: string;
   date: string;
   readTime: string;
-  description?: string; // Optional for the larger card
+  description?: string;
+  img: string;
 }
 
 // Mock data for the articles, mimicking the content from the image
@@ -22,6 +23,7 @@ const articles: Article[] = [
     image: '/image/home/latest-update/updates1.png',
     title: 'How can small-scale farmers thrive despite having limited land and resources?',
     author: 'Author Name',
+    img: '/image/home/latest-update/author.png',
     date: 'July 31, 2025',
     readTime: '5 min',
     description: 'Small-scale farmers in Nepal can thrive despite having limited land and resources by adopting smart, sustainable, and community-based practices that maximize productivity, reduce dependency, and open up new income opportunities...',
@@ -32,6 +34,7 @@ const articles: Article[] = [
     image: '/image/home/latest-update/updates2.png',
     title: 'What challenges do small farmers face in Nepal today?',
     author: 'Author Name',
+    img: '/image/home/latest-update/author.png',
     date: 'July 30, 2025',
     readTime: '5 min',
   },
@@ -41,6 +44,7 @@ const articles: Article[] = [
     image: '/image/home/latest-update/updates3.png',
     title: 'How can science-backed sustainable practices help?',
     author: 'Author Name',
+    img: '/image/home/latest-update/author.png',
     date: 'July 29, 2025',
     readTime: '5 min',
   },
@@ -83,7 +87,15 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
         <div className="flex items-center text-sm opacity-90">
           {/* Placeholder for author avatar - you can replace with an actual image */}
           <div className="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center mr-2 text-gray-700 font-semibold text-xs">
-            {article.author.charAt(0)}
+             <Image
+          src={article.img}
+          alt={article.title}
+          height={24}
+          width={24}
+          className="rounded-full"
+          layout="fixed"
+          objectFit="cover"
+        />
           </div>
           <span className="mr-3">{article.author}</span>
           <span className="mr-3">&bull;</span>

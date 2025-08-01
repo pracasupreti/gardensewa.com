@@ -101,7 +101,7 @@ const HomeHero: React.FC = () => {
                   <button className="bg-primary text-white font-bold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-secondary transition">
                     {slide.button}
                   </button>
-                  <button className="text-white font-bold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-primary hover:text-white transition">
+                  <button className="text-white font-bold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-primary hover:text-white hover:border-0 transition">
                     {slide.button2}
                   </button>
                 </div>
@@ -112,11 +112,11 @@ const HomeHero: React.FC = () => {
       ))}
 
       {/* Dots + Arrows Container */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-lg z-30 space-x-3">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center bg-white/80 backdrop-blur-md px-4 py-0 rounded-full shadow-lg z-30 space-x-3">
         {/* Prev Button */}
         <button
           onClick={goToPrev}
-          className="text-black text-[20px] font-bold hover:text-gray-700 p-1 rounded-full transition"
+          className="text-black text-[26px] font-bold hover:text-gray-700 p-1 rounded-full transition"
           aria-label="Previous Slide"
         >
           &#8249;
@@ -127,7 +127,7 @@ const HomeHero: React.FC = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide
               ? "bg-black"
               : "bg-gray-400 hover:bg-gray-600"
               }`}
@@ -138,7 +138,7 @@ const HomeHero: React.FC = () => {
         {/* Next Button */}
         <button
           onClick={goToNext}
-          className="text-black text-[20px] font-bold hover:text-gray-700 p-1 rounded-full transition"
+          className="text-black text-[26px] font-bold hover:text-gray-700 p-1 rounded-full transition"
           aria-label="Next Slide"
         >
           &#8250;

@@ -76,20 +76,18 @@ const plants: Plant[] = [
 
 // Service Card Component
 const ServiceCard: React.FC<Service> = ({ title, imageUrl }) => (
-  <div className="relative w-full h-58 rounded-xl overflow-hidden shadow-lg">
-    <img
-      src={imageUrl}
-      alt={title}
-      className="w-full h-full object-cover"
-      onError={(e) => {
-        e.currentTarget.src = 'https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found';
-      }}
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-xl"></div>
-    <div className="absolute top-3 left-3 bg-white bg-opacity-80 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
-      {title}
-    </div>
+  <div className="relative w-full h-58 rounded-xl overflow-hidden group">
+  <img
+    src={imageUrl}
+    alt={title}
+    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-xl"></div>
+  <div className="absolute top-3 left-3 bg-white bg-opacity-80 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
+    {title}
   </div>
+</div>
+
 );
 
 // Plant Card Component

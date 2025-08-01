@@ -6,7 +6,7 @@ import HomeHero from "./sections/HomeHero";
 import ChooseUs from "./sections/ChooseUsAndClients";
 import ServicesAndPlants from "./sections/ServicesAndPlants";
 import { OurPartners } from "./sections/OurParteners";
-import LatestUpdates from "./LatestUpdates";
+import LatestUpdates from "./sections/LatestUpdates";
 import Testimonial from "./sections/Testimonial";
 
 
