@@ -19,7 +19,7 @@ const slides = [
     alt: "sliderimg2",
     title: "Tailored Gardening Services",
     subtitle:
-      "From garden vleaning to private gardening, we offer realiable solutions that matches your outdoor needs.",
+      "From garden cleaning to private gardening, we offer reliable solutions that match your outdoor needs.",
     button: "Read More",
     button2: "Book a Service",
   },
@@ -29,7 +29,7 @@ const slides = [
     alt: "sliderimg3",
     title: "Green Companions for Every Home",
     subtitle:
-      "Discover a variety of plants indoor, outdoor, air purifying, and more, delivered with care",
+      "Discover a variety of plants: indoor, outdoor, air-purifying, and more, delivered with care",
     button: "Read More",
     button2: "Explore Plants",
   },
@@ -79,10 +79,10 @@ const HomeHero: React.FC = () => {
           <Image
             src={slide.img}
             alt={slide.alt}
-            layout="fill"
-            objectFit="cover"
+            width={1920} // Set appropriate width
+            height={1080} // Set appropriate height
+            style={{ objectFit: "cover" }} // Apply objectFit using style
             className="brightness-75"
-            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
