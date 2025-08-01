@@ -41,8 +41,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           alt={imageAlt}
           height={40}
           width={40}
-          objectFit="cover"
-          className="rounded-full"
+          className="rounded-full object-cover"
         />
       </div>
       <div>
