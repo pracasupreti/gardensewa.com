@@ -106,7 +106,7 @@ export default function Header() {
                     href={item.link}
                     className={
                       isActive(item.link)
-                        ? "bg-[#009000] text-white rounded-4xl px-2 py-1"
+                        ? "bg-[#009000] text-white font-semibold rounded-4xl px-2 py-1"
                         : "hover:text-[#009000] hover:bg-green-100 rounded-4xl px-2 py-1"
                     }
                   >
@@ -120,7 +120,7 @@ export default function Header() {
               {/* Right Section (Hire Button + Mobile Menu Icon) */}
               <div className="flex items-center">
                 <Link href="/hire">
-                  <button className="hidden cursor-pointer lg:block md:block bg-primary hover:bg-secondary text-white py-2 px-4 rounded-4xl">
+                  <button className="hidden cursor-pointer lg:block md:block bg-primary hover:bg-secondary text-white py-2 px-4 rounded-4xl font-bold">
                     Book a Service
                   </button>
                 </Link>
@@ -162,7 +162,7 @@ export default function Header() {
                       onClick={() => setMenuOpen(false)}
                       className={
                         isActive(item.link)
-                          ? "text-green-500"
+                          ? "text-green-500 font-semibold"
                           : "hover:text-green-500"
                       }
                     >

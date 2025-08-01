@@ -98,10 +98,10 @@ const HomeHero: React.FC = () => {
                 </p>
 
                 <div className="flex gap-4">
-                  <button className="bg-primary text-white font-bold px-6 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-secondary transition">
+                  <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
                     {slide.button}
                   </button>
-                  <button className="text-white font-bold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full font-medium hover:bg-primary hover:text-white hover:border-0 transition">
+                  <button className="text-white font-semibold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full  hover:bg-primary hover:text-white hover:border-0 transition">
                     {slide.button2}
                   </button>
                 </div>
