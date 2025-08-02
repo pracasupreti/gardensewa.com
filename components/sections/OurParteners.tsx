@@ -1,21 +1,13 @@
-'use client';
-
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Partner = {
-  name: string;
-  description: string;
-  logo: string;
-  link: string;
-};
-
 export function OurPartners() {
-  const partners: Partner[] = [
+  const partners = [
     {
       name: 'Pristine Gardens',
       description: 'LANDSCAPE & HORTICULTURE - Bringing Future Home -',
-      logo: '/image/home/partners/partener1.png',
+      logo: '/image/home/top-services/1.jpg',
       link: '#',
     },
     {
@@ -43,19 +35,19 @@ export function OurPartners() {
             style={{ minHeight: '300px' }}
           >
             <div className="flex-grow flex items-center justify-center mb-4">
-              <div className="relative w-48 h-32">
+              <div className="relative w-48 h-32"> {/* Adjust size as needed */}
                 <Image
                   src={partner.logo}
-                  alt={`${partner.name} logo`}
-                  fill
-                  style={{ objectFit: 'contain' }}
+                  alt={partner.name}
+                  layout="fill"
+                  objectFit="contain"
                 />
               </div>
             </div>
             <Link href={partner.link} passHref>
-              <a className="mt-auto px-6 py-2 border border-black text-black rounded-4xl hover:bg-gray-50 transition-colors duration-200 text-sm">
+              <button className="mt-auto px-6 py-2 border border-black text-black rounded-4xl hover:bg-gray-50 transition-colors duration-200 text-sm">
                 Visit Site
-              </a>
+              </button>
             </Link>
           </div>
         ))}
