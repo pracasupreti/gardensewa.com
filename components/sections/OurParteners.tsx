@@ -2,21 +2,31 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export function OurPartners() {
-  const partners = [
+interface Partner {
+  id: string;
+  name: string;
+  description: string;
+  logo: string;
+  link: string;
+}
+
+  const partners: Partner[]  = [
     {
+      id: '1',
       name: 'Pristine Gardens',
       description: 'LANDSCAPE & HORTICULTURE - Bringing Future Home -',
-      logo: '/image/home/top-services/1.jpg',
+      logo: '/image/home/partners/partener1.png',
       link: '#',
     },
     {
+      id: '2',
       name: 'Home Park Gardens',
       description: '& Landscaping',
       logo: '/image/home/partners/partener2.png',
       link: '#',
     },
     {
+      id: '3',
       name: 'Home Garden Restoration',
       description: 'hello',
       logo: '/image/home/partners/partener3.jpg',
@@ -24,6 +34,8 @@ export function OurPartners() {
     },
   ];
 
+
+const OurPartners: React.FC = () => {
   return (
     <section className="py-16">
       <h2 className="text-4xl font-bold text-center text-green-800 mb-12">Our Partners</h2>
@@ -55,3 +67,4 @@ export function OurPartners() {
     </section>
   );
 }
+export default OurPartners;
