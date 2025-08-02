@@ -2,39 +2,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface Partner {
-  id: string;
-  name: string;
-  description: string;
-  logo: string;
-  link: string;
-}
-
-  const partners: Partner[]  = [
+export function OurPartners() {
+  const partners = [
     {
-      id: '1',
       name: 'Pristine Gardens',
       description: 'LANDSCAPE & HORTICULTURE - Bringing Future Home -',
       logo: '/image/home/partners/partener1.png',
       link: '#',
     },
     {
-      id: '2',
       name: 'Home Park Gardens',
       description: '& Landscaping',
       logo: '/image/home/partners/partener2.png',
       link: '#',
     },
     {
-      id: '3',
       name: 'Home Garden Restoration',
       description: 'hello',
       logo: '/image/home/partners/partener3.jpg',
       link: '#',
     },
   ];
-
-export function OurPartners() {
 
   return (
     <section className="py-16">

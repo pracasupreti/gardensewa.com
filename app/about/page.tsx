@@ -51,10 +51,8 @@ export default function AboutPage() {
         <Image
           src="/image/navbar/about/about.jpg"
           alt="A large green plant"
-          layout="fill"
-          objectFit="cover"
           quality={100}
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 object-cover"
         />
         <div className="absolute inset-0 bg-black/30 opacity-60 z-10"></div>
 
