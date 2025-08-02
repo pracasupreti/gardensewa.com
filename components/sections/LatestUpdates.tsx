@@ -19,7 +19,7 @@ interface Article {
 const articles: Article[] = [
   {
     id: '1',
-    image: '/image/home/latest-update/updates1.png',
+    image: 'public/image/home/latest-update/updates1.png',
     title: 'How can small-scale farmers thrive despite having limited land and resources?',
     author: 'Author Name',
     img: '/image/home/latest-update/author.png',
