@@ -1,9 +1,7 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
-
-export function OurPartners() {
-  const partners = [
+const partners = [
     {
       name: 'Pristine Gardens',
       description: 'LANDSCAPE & HORTICULTURE - Bringing Future Home -',
@@ -23,6 +21,8 @@ export function OurPartners() {
       link: '#',
     },
   ];
+export default function OurPartners() {
+  
 
   return (
     <section className="py-16">
