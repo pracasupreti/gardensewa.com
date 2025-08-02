@@ -1,5 +1,4 @@
-// pages/index.tsx
-
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -70,9 +69,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
         <Image
           src={article.image}
           alt={article.title}
-          height={640} // Adjusted height for large card
-          width={640} // Adjusted width for large card
-          className="object-cover transition-transform duration-300 group-hover:scale-105" // Zoom effect on hover
+          layout="fill"
+          objectFit="cover"
+          className="transition-transform duration-300 group-hover:scale-105" // Zoom effect on hover
         />
       </div>
 
@@ -92,7 +91,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
           alt={article.title}
           height={24}
           width={24}
-          className="rounded-full object-cover"
+          className="rounded-full"
+          layout="fixed"
+          objectFit="cover"
         />
           </div>
           <span className="mr-3">{article.author}</span>
@@ -106,7 +107,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
 };
 
 // Home Component: The main page component that renders the Latest Updates section
-const LatestUpdates: React.FC = () => {
+const LatestUpdates: React.FC<Article> = ({ image, title, description, author, date, readTime,img }) => {
+  
   return (
     <div className="min-h-screen bg-gray-50 font-sans"> {/* Using a light gray background */}
       <Head>

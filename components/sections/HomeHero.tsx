@@ -19,7 +19,7 @@ const slides = [
     alt: "sliderimg2",
     title: "Tailored Gardening Services",
     subtitle:
-      "From garden cleaning to private gardening, we offer reliable solutions that match your outdoor needs.",
+      "From garden vleaning to private gardening, we offer realiable solutions that matches your outdoor needs.",
     button: "Read More",
     button2: "Book a Service",
   },
@@ -73,28 +73,29 @@ const HomeHero: React.FC = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
         >
-          <div className="relative w-full h-full">
-            <Image
-              src={slide.img}
-              alt={slide.alt}
-              layout="fill"
-              objectFit="cover"
-              className="brightness-75"
-              priority
-            />
-          </div>
+          <Image
+            src={slide.img}
+            alt={slide.alt}
+            layout="fill"
+            objectFit="cover"
+            className="brightness-75"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
           {/* Text content */}
           <div className="absolute top-0 left-0 w-full h-full flex items-center z-20">
             <div className="container max-w-[1250px] mx-auto px-4 md:px-6">
               <div className="text-white max-w-xl">
-                <h2 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h2>
-                <p className="text-sm md:text-lg font-light mb-6">{slide.subtitle}</p>
+                <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                  {slide.title}
+                </h2>
+                <p className="text-sm md:text-lg font-light mb-6">
+                  {slide.subtitle}
+                </p>
 
                 <div className="flex gap-4">
                   <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
@@ -126,9 +127,10 @@ const HomeHero: React.FC = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "bg-black" : "bg-gray-400 hover:bg-gray-600"
-            }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide
+              ? "bg-black"
+              : "bg-gray-400 hover:bg-gray-600"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

@@ -39,9 +39,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <Image
           src={imageSrc}
           alt={imageAlt}
-          height={40}
-          width={40}
-          className="rounded-full object-cover"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-full"
         />
       </div>
       <div>

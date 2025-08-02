@@ -38,8 +38,8 @@ export function OurPartners() {
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  height={128}
-                  width={192}
+                  layout="fill"
+                  objectFit="contain"
                 />
               </div>
             </div>
