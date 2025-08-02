@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Gardensewa | Your Trusted Gardening & Nursery Partner ",
   description: "gardensewa.com",
-  icons: "/images/logo/logo.png",
+  icons: "/images/logo/gardensewa.png",
 };
 
 export default function RootLayout({
