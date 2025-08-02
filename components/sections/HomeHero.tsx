@@ -79,9 +79,9 @@ const HomeHero: React.FC = () => {
           <Image
             src={slide.img}
             alt={slide.alt}
-            layout="fill"
-            objectFit="cover"
-            className="brightness-75"
+            height={1080}
+            width={1920}
+            className="brightness-75 object-cover w-full h-full"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>

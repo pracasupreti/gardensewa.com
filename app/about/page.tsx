@@ -52,7 +52,7 @@ export default function AboutPage() {
           src="/image/navbar/about/about.jpg"
           alt="A large green plant"
           height={400}
-            width={400}
+          width={400}
           quality={100}
           className="absolute inset-0 z-0 object-cover h-100 w-full"
         />
@@ -157,45 +157,45 @@ export default function AboutPage() {
 
       {/* Mission Section */}
       <div className='py-12'>
-      <div className="max-w-7xl mx-auto text-center mb-12">
+        <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-5xl font-extrabold text-green-800 tracking-tight leading-tight">
             Our Mission
           </h2>
         </div>
 
         <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-full">
-        <div
-          className="relative w-full max-w-full mx-0 overflow-hidden shadow-2xl py-12"
-          style={{
-            backgroundImage: 'url(/image/navbar/about/OurMission.jpg)', 
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed', 
-          }}
-        >
-          
-          <div className="absolute inset-0 opacity-60"></div>
-
           <div
-            className="relative z-10 flex flex-col items-center justify-center
-                       p-8 md:p-16 text-white text-center"
+            className="relative w-full max-w-full mx-0 overflow-hidden shadow-2xl py-12"
+            style={{
+              backgroundImage: 'url(/image/navbar/about/OurMission.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundAttachment: 'fixed',
+            }}
           >
-            <h1 className="text-xl md:text-2xl text-green-100 mb-2 font-bold leading-tight">
-              To reconnect people with nature
-            </h1>
-            <h1 className="text-3xl md:text-6xl text-green-50 font-bold mb-6 leading-tight">
-              One plant one garden, one moment at a home.
-            </h1>
+
+            <div className="absolute inset-0 opacity-60"></div>
+
+            <div
+              className="relative z-10 flex flex-col items-center justify-center
+                       p-8 md:p-16 text-white text-center"
+            >
+              <h1 className="text-xl md:text-2xl text-green-100 mb-2 font-bold leading-tight">
+                To reconnect people with nature
+              </h1>
+              <h1 className="text-3xl md:text-6xl text-green-50 font-bold mb-6 leading-tight">
+                One plant one garden, one moment at a home.
+              </h1>
+            </div>
           </div>
         </div>
-      </div>      
-        </div>
+      </div>
 
 
-        {/* Call to Action Section */}
-        <main className="flex min-h-screen items-center justify-center bg-green-50 p-4">
+      {/* Call to Action Section */}
+      <main className="flex min-h-screen items-center justify-center bg-green-50 p-4">
         <div className="flex w-full max-w-7xl flex-col items-center px-6 py-8 md:flex-row md:items-stretch">
-          
+
           {/* Left Section */}
           <div className="flex flex-1 flex-col justify-center p-4 text-center md:text-left">
             <h1 className="mb-4 text-4xl font-bold text-green-900 md:text-5xl mb-8">

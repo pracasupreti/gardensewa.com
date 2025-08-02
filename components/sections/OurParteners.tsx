@@ -39,8 +39,9 @@ export default function OurPartners() {
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  layout="fill"
-                  objectFit="contain"
+                  height={128}
+                  width={192}
+                  className="object-contain w-full h-full"
                 />
               </div>
             </div>
