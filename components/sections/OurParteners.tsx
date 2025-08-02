@@ -34,8 +34,8 @@ interface Partner {
     },
   ];
 
+export function OurPartners() {
 
-const OurPartners: React.FC = () => {
   return (
     <section className="py-16">
       <h2 className="text-4xl font-bold text-center text-green-800 mb-12">Our Partners</h2>
@@ -67,4 +67,3 @@ const OurPartners: React.FC = () => {
     </section>
   );
 }
-export default OurPartners;
