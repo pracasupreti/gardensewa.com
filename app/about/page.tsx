@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 
-export default function AboutPage() {
+
   interface FeatureCardProps {
     title: string;
     description: string;
@@ -43,7 +43,7 @@ export default function AboutPage() {
       icon: "/image/navbar/about/vision.png",
     },
   ];
-
+export default function AboutPage() {
   return (
     <main>
       <div className={`relative w-full h-[400px] flex items-center justify-center text-white`}>
