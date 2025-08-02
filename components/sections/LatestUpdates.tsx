@@ -107,8 +107,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
 };
 
 // Home Component: The main page component that renders the Latest Updates section
-const LatestUpdates: React.FC<Article> = ({ image, title, description, author, date, readTime,img }) => {
-  
+const LatestUpdates: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-sans"> {/* Using a light gray background */}
       <Head>
