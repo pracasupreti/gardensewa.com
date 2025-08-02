@@ -1,12 +1,23 @@
 "use client";
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const slides = [
+interface Slide {
+  id: number;
+  img: string;
+  alt: string;
+  title: string;
+  subtitle: string;
+  button: string;
+  button2: string;
+}
+
+const slides: Slide[] = [
   {
     id: 1,
     img: "/image/home/slider-image/Hero1.jpg",
-    alt: "sliderimg1",
+    alt: "Slider Image 1",
     title: "Welcome to GardenSewa",
     subtitle:
       "Growing green, growing together. From garden cleaning to plant shopping, we make your outdoors bloom.",
@@ -16,27 +27,27 @@ const slides = [
   {
     id: 2,
     img: "/image/home/slider-image/Hero2.jpg",
-    alt: "sliderimg2",
+    alt: "Slider Image 2",
     title: "Tailored Gardening Services",
     subtitle:
-      "From garden vleaning to private gardening, we offer realiable solutions that matches your outdoor needs.",
+      "From garden cleaning to private gardening, we offer reliable solutions that match your outdoor needs.",
     button: "Read More",
     button2: "Book a Service",
   },
   {
     id: 3,
     img: "/image/home/slider-image/Hero3.jpg",
-    alt: "sliderimg3",
+    alt: "Slider Image 3",
     title: "Green Companions for Every Home",
     subtitle:
-      "Discover a variety of plants indoor, outdoor, air purifying, and more, delivered with care",
+      "Discover a variety of indoor and outdoor plants, including air-purifying options, delivered with care.",
     button: "Read More",
     button2: "Explore Plants",
   },
   {
     id: 4,
     img: "/image/home/slider-image/Hero4.jpg",
-    alt: "sliderimg4",
+    alt: "Slider Image 4",
     title: "Let's Grow Together",
     subtitle:
       "Book a service, ask a question, or just say hello! We're here to help your garden thrive.",
@@ -46,7 +57,7 @@ const slides = [
 ];
 
 const HomeHero: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -72,21 +83,22 @@ const HomeHero: React.FC = () => {
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-            }`}
+          key={slide.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"}`}
+          aria-hidden={index !== currentSlide}
         >
           <Image
             src={slide.img}
             alt={slide.alt}
-            layout="fill"
-            objectFit="cover"
-            className="brightness-75"
-            priority
+            fill
+            sizes="100vw"
+            className="object-cover brightness-75"
+            priority={index === 0}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
-          {/* Text content */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none" />
+
+          {/* Text Content */}
           <div className="absolute top-0 left-0 w-full h-full flex items-center z-20">
             <div className="container max-w-[1250px] mx-auto px-4 md:px-6">
               <div className="text-white max-w-xl">
@@ -96,12 +108,11 @@ const HomeHero: React.FC = () => {
                 <p className="text-sm md:text-lg font-light mb-6">
                   {slide.subtitle}
                 </p>
-
                 <div className="flex gap-4">
                   <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
                     {slide.button}
                   </button>
-                  <button className="text-white font-semibold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full  hover:bg-primary hover:text-white hover:border-0 transition">
+                  <button className="text-white font-semibold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-primary hover:text-white hover:border-0 transition">
                     {slide.button2}
                   </button>
                 </div>
@@ -111,9 +122,9 @@ const HomeHero: React.FC = () => {
         </div>
       ))}
 
-      {/* Dots + Arrows Container */}
+      {/* Navigation Dots and Arrows */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center bg-white/80 backdrop-blur-md px-4 py-0 rounded-full shadow-lg z-30 space-x-3">
-        {/* Prev Button */}
+        {/* Previous Button */}
         <button
           onClick={goToPrev}
           className="text-black text-[26px] font-bold hover:text-gray-700 p-1 rounded-full transition"
@@ -127,10 +138,7 @@ const HomeHero: React.FC = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide
-              ? "bg-black"
-              : "bg-gray-400 hover:bg-gray-600"
-              }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide ? "bg-black" : "bg-gray-400 hover:bg-gray-600"}`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
