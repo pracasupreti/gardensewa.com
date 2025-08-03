@@ -87,7 +87,7 @@ const HomeHero: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
           {/* Text content */}
-          <div className="absolute top-0 left-0 w-full h-full flex items-center z-20">
+          <div className="absolute top-0 left-0 w-full h-full flex items-center z-10">
             <div className="container max-w-[1250px] mx-auto px-4 md:px-6">
               <div className="text-white max-w-xl">
                 <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -112,7 +112,7 @@ const HomeHero: React.FC = () => {
       ))}
 
       {/* Dots + Arrows Container */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center bg-white/80 backdrop-blur-md px-4 py-0 rounded-full shadow-lg z-30 space-x-3">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center bg-white/80 backdrop-blur-md px-4 py-0 rounded-full shadow-lg z-10 space-x-3">
         {/* Prev Button */}
         <button
           onClick={goToPrev}
