@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, DollarSign, Leaf, Truck, Quote } from 'lucide-react';
+import { ShieldCheck, DollarSign, Leaf, Truck } from 'lucide-react';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 // FeatureCard props and component

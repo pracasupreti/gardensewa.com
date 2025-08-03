@@ -3,12 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { SendIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Footer() {
   return (
     <>
-      {/* Newsletter Banner */}
+      {/* Newsletter Section */}
       <div className="bg-primary text-white py-6 px-8 mx-4 md:mx-28 rounded-2xl shadow-lg">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
@@ -17,7 +17,7 @@ export default function Footer() {
               Get updates on services, offers, and plant tips straight to your inbox.
             </p>
           </div>
-          <form className="flex bg-white rounded-full overflow-hidden max-w-[300px] w-full">
+          <form className="flex bg-white rounded-full overflow-hidden w-full max-w-sm">
             <input
               type="email"
               placeholder="Enter your email"
@@ -25,18 +25,18 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-primary hover:bg-secondary text-white px-4 py-2 mx-2 my-1 rounded-full"
+              className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-full"
             >
-              <SendIcon className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5" />
             </button>
           </form>
         </div>
       </div>
 
-      {/* Footer Main Section */}
+      {/* Main Footer */}
       <footer className="bg-[#f1fff1] pt-10 pb-10">
         <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-6 gap-x-16 gap-y-8 text-sm text-gray-800">
-          
+
           {/* Brand Info */}
           <div className="col-span-2 text-center md:text-left">
             <div className="flex justify-center md:justify-start mb-3">
@@ -68,15 +68,15 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Useful Links */}
+          {/* Explore */}
           <div>
-            <h4 className="font-semibold mb-2">Useful Links</h4>
+            <h4 className="font-semibold mb-2">Explore</h4>
             <ul className="space-y-1">
-              {["Home", "Plants", "About", "Services", "Gallery", "Blog"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-green-600 hover:pl-4">{item}</Link>
-                </li>
-              ))}
+              <li><Link href="/plants" className="hover:text-green-600 hover:pl-2">Plants</Link></li>
+              <li><Link href="/services" className="hover:text-green-600 hover:pl-2">Book a Service</Link></li>
+              <li><Link href="/blog" className="hover:text-green-600 hover:pl-2">Blog</Link></li>
+              <li><Link href="/testimonials" className="hover:text-green-600 hover:pl-2">Testimonials</Link></li>
+              <li><Link href="/client" className="hover:text-green-600 hover:pl-2">Our Clients</Link></li>
             </ul>
           </div>
 
@@ -84,9 +84,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Explore Plants</h4>
             <ul className="space-y-1">
-              {["Indoor Plants", "Outdoor Plants", "Pet-Friendly Plants", "Air-Purifying Plants", "Low Maintenance"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-green-600 hover:pl-4">{item}</Link>
+              {["Indoor Plants", "Outdoor Plants", "Pet-Friendly Plants", "Air-Purifying Plants", "Low Maintenance"].map((item, index) => (
+                <li key={index}>
+                  <Link href="#" className="hover:text-green-600 hover:pl-2">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -96,11 +96,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Product Help</h4>
             <ul className="space-y-1">
-              {["Book a Service", "FAQs", "Contact", "Privacy Policy", "Testimonials"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-green-600 hover:pl-4">{item}</Link>
-                </li>
-              ))}
+              <li><Link href="/services" className="hover:text-green-600 hover:pl-2">Book a Service</Link></li>
+              <li><Link href="/faqs" className="hover:text-green-600 hover:pl-2">FAQs</Link></li>
+              <li><Link href="/contact" className="hover:text-green-600 hover:pl-2">Contact</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-green-600 hover:pl-2">Privacy Policy</Link></li>
+              <li><Link href="/testimonials" className="hover:text-green-600 hover:pl-2">Testimonials</Link></li>
             </ul>
           </div>
 
@@ -116,8 +116,8 @@ export default function Footer() {
                 className="cursor-pointer h-16 w-36"
               />
               <Image
-                src="/image/home/footer/app-store.png"
-                alt="Apple Store"
+                src="/image/home/footer/play-store.png"
+                alt="Google Play"
                 width={140}
                 height={40}
                 className="cursor-pointer h-16 w-36"
@@ -129,44 +129,43 @@ export default function Footer() {
         {/* Divider */}
         <div className="w-full h-[1px] bg-gray-300 my-4"></div>
 
-       {/* Bottom Footer */}
-<div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-4 md:gap-8">
-  <div className="flex flex-wrap justify-center md:justify-between w-full text-center md:text-left">
-    {/* Legal & Credits Section */}
-    <div className="flex flex-col items-center md:items-start">
-      <p className="text-sm text-black">Legal & Credits</p>
-      <p>© 2025 Garden Sewa. All rights reserved.</p>
-    </div>
+        {/* Bottom Footer */}
+        <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-4 md:gap-8">
+          <div className="flex flex-wrap justify-center md:justify-between w-full text-center md:text-left">
+            {/* Legal */}
+            <div className="flex flex-col items-center md:items-start">
+              <p className="text-sm text-black">Legal & Credits</p>
+              <p>© 2025 Garden Sewa. All rights reserved.</p>
+            </div>
 
-    {/* Email Section */}
-    <div className="flex items-center gap-2">
-      <Image src="/image/icons/email.png" alt="Email" width={20} height={20} />
-      <div className="flex flex-col">
-        <p className="text-xs text-black">Email</p>
-        <p className="text-xs">support@gardensewa.com</p>
-      </div>
-    </div>
+            {/* Email */}
+            <div className="flex items-center gap-2">
+              <Image src="/image/icons/email.png" alt="Email" width={20} height={20} />
+              <div className="flex flex-col">
+                <p className="text-xs text-black">Email</p>
+                <p className="text-xs">info@gardensewa.com</p>
+              </div>
+            </div>
 
-    {/* Phone Section */}
-    <div className="flex items-center gap-2">
-      <Image src="/image/icons/phone.svg" alt="Phone" width={20} height={20} />
-      <div className="flex flex-col">
-        <p className="text-xs text-black">Phone</p>
-        <p className="text-xs">97XXXXXXXX</p>
-      </div>
-    </div>
+            {/* Phone */}
+            <div className="flex items-center gap-2">
+              <Image src="/image/icons/phone.svg" alt="Phone" width={20} height={20} />
+              <div className="flex flex-col">
+                <p className="text-xs text-black">Phone</p>
+                <p className="text-xs">+977-9852025735</p>
+              </div>
+            </div>
 
-    {/* Location Section */}
-    <div className="flex items-center gap-2">
-      <Image src="/image/icons/location.png" alt="Location" width={20} height={20} />
-      <div className="flex flex-col">
-        <p className="text-xs text-black">Location</p>
-        <p className="text-xs">Putalisadak, Kathmandu</p>
-      </div>
-    </div>
-  </div>
-</div>
-
+            {/* Location */}
+            <div className="flex items-center gap-2">
+              <Image src="/image/icons/location.png" alt="Location" width={20} height={20} />
+              <div className="flex flex-col">
+                <p className="text-xs text-black">Location</p>
+                <p className="text-xs">Maitidevi, Kathmandu</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </>
   );
