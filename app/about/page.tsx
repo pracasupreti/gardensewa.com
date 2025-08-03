@@ -174,7 +174,7 @@ export default function AboutPage() {
             }}
           >
 
-            <div className="absolute inset-0 opacity-60 bg-black/30"></div>
+            <div className="absolute inset-0 opacity-60 bg-black/50"></div>
 
             <div
               className="relative z-10 flex flex-col items-center justify-center
