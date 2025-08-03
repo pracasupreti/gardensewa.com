@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       {/* Newsletter Section */}
-      <div className="bg-primary text-white py-6 px-8 mx-4 md:mx-28 rounded-2xl shadow-lg">
+      <div className="bg-primary text-white py-6 px-8 mx-4 md:mx-28 rounded-2xl">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-semibold">Subscribe Newsletter</h2>
@@ -28,7 +28,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-full"
+              className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-full my-1 mx-2"
             >
               <ArrowRight className="w-5 h-5" />
             </button>
