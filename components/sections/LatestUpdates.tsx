@@ -116,7 +116,7 @@ const LatestUpdates: React.FC = () => {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-2">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-center text-green-800 mb-12 tracking-tight">
           Latest Updates
