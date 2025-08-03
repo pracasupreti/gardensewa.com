@@ -117,7 +117,7 @@ return(
                     </section>
                     <div className="mb-8 py-12">
                     <div className={`relative w-full h-[360px] flex items-center justify-center text-white`}>
-                {/* Background image with a dark overlay */}
+                {/* Background image with a dark overlay.... */}
                 <Image
                   src="/image/home/client/client_bg2.jpg"
                   alt="A large green plant"
