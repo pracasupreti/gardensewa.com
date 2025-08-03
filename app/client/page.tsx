@@ -62,7 +62,7 @@ return(
         <div className={`relative w-full h-[360px] flex items-center justify-center text-white`}>
                 {/* Background image with a dark overlay */}
                 <Image
-                  src="/image/home/client/client_bg1.jpg"
+                  src="/image/home/client/clientbg1.jpg"
                   alt="A large green plant"
                   height={400}
                   width={400}
@@ -119,14 +119,14 @@ return(
                     <div className={`relative w-full h-[360px] flex items-center justify-center text-white`}>
                 {/* Background image with a dark overlay.... */}
                 <Image
-                  src="/image/home/client/client_bg2.jpg"
+                  src="/image/home/client/clientbg2.jpg"
                   alt="A large green plant"
                   height={400}
                   width={400}
                   quality={100}
                   className="absolute inset-0 z-0 object-cover h-90 w-full"
                 />
-                <div className="absolute inset-0 bg-black/30 opacity-60 z-10"></div>
+                <div className="absolute inset-0 opacity-60 z-10"></div>
         
                 {/* Main content container */}
                 <div className="relative z-10 max-w-4xl text-center px-4">

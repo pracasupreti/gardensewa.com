@@ -194,10 +194,10 @@ export default function AboutPage() {
 
       {/* Call to Action Section */}
       <main className="flex min-h-screen items-center justify-center bg-green-50 p-4">
-        <div className="flex w-full max-w-7xl flex-col items-center px-6 py-8 md:flex-row md:items-stretch">
+        <div className="flex w-full max-w-7xl flex-col items-center px-10 py-8 md:flex-row md:items-stretch">
 
           {/* Left Section */}
-          <div className="flex flex-1 flex-col justify-center p-4 text-center md:text-left">
+          <div className="flex flex-1 flex-col justify-center text-center md:text-left">
             <h1 className="mb-4 text-4xl font-bold text-green-900 md:text-5xl mb-8">
               Got Plants to <br className="hidden md:block" /> Share?
             </h1>
