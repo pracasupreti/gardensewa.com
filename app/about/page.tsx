@@ -174,16 +174,16 @@ export default function AboutPage() {
             }}
           >
 
-            <div className="absolute inset-0 opacity-60"></div>
+            <div className="absolute inset-0 opacity-60 bg-black/30"></div>
 
             <div
               className="relative z-10 flex flex-col items-center justify-center
                        p-8 md:p-16 text-white text-center"
             >
-              <h1 className="text-xl md:text-2xl text-green-100 mb-2 font-bold leading-tight">
+              <h1 className="text-xl md:text-2xl text-[#A8E6E2] mb-2 font-bold leading-tight">
                 To reconnect people with nature
               </h1>
-              <h1 className="text-3xl md:text-6xl text-green-50 font-bold mb-6 leading-tight">
+              <h1 className="text-3xl md:text-6xl text-[#DDFFDA] font-bold mb-6 leading-tight">
                 One plant one garden, one moment at a home.
               </h1>
             </div>

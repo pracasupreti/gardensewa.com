@@ -53,14 +53,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
   // Increased pointer size to 24px
   const speechBubbleClasses = `
-    relative bg-green-50 rounded-2xl p-6 shadow-md w-full max-w-md mx-auto
+    relative bg-[#E7FFE4] rounded-2xl p-6 shadow-md w-full max-w-md mx-auto
     ${avatarPosition === 'top' ? 'mt-4' : 'mb-4'}
 
     after:absolute after:border-solid after:border-[24px] after:left-1/2 after:-translate-x-1/2
 
     ${avatarPosition === 'top'
-      ? 'after:border-b-green-50 after:border-l-transparent after:border-r-transparent after:border-t-transparent after:top-[-47px]'
-      : 'after:border-t-green-50 after:border-l-transparent after:border-r-transparent after:border-b-transparent after:bottom-[-47px]'
+      ? 'after:border-b-[#E7FFE4] after:border-l-transparent after:border-r-transparent after:border-t-transparent after:top-[-47px]'
+      : 'after:border-t-[#E7FFE4] after:border-l-transparent after:border-r-transparent after:border-b-transparent after:bottom-[-47px]'
     }
   `;
 
@@ -68,7 +68,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <div className="flex flex-col items-center">
       {avatarPosition === 'top' && avatarSection}
       <div className={speechBubbleClasses}>
-        <p className="text-primary text-base leading-relaxed">{comment}</p>
+        <p className="text-[#2E472B] text-base leading-relaxed">{comment}</p>
       </div>
       {avatarPosition === 'bottom' && avatarSection}
     </div>

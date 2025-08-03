@@ -129,34 +129,44 @@ export default function Footer() {
         {/* Divider */}
         <div className="w-full h-[1px] bg-gray-300 my-4"></div>
 
-        {/* Bottom Footer */}
-        <div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-y-2">
-          <div className="flex flex-wrap justify-center md:justify-end gap-40">
-          <div><p className="text-sm text-black">Legal & Credits</p>
-            <p>© 2025 Garden Sewa. All rights reserved.</p></div>
-            <div className="flex items-center gap-1">
-              <Image src="/image/icons/email.png" alt="Email" width={24} height={24} />
-              <div className="flex flex-col">
-              <p className="text-sm text-black">Email</p>
-              <p>support@gardensewa.com</p>
-            </div>
-            </div>
-            <div className="flex items-center gap-1">
-              <Image src="/image/icons/phone.svg" alt="Phone" width={24} height={24} />
-              <div className="flex flex-col">
-              <p className="text-sm text-black">Phone</p>
-              <p>97XXXXXXXX</p>
-            </div>
-            </div>
-            <div className="flex items-center gap-1">
-              <Image src="/image/icons/location.png" alt="Location" width={24} height={24} />
-              <div className="flex flex-col">
-              <p className="text-sm text-black">Location</p>
-              <p>Putalisadak, Kathmandu</p>
-            </div>
-            </div>
-          </div>
-        </div>
+       {/* Bottom Footer */}
+<div className="max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 gap-4 md:gap-8">
+  <div className="flex flex-wrap justify-center md:justify-between w-full text-center md:text-left">
+    {/* Legal & Credits Section */}
+    <div className="flex flex-col items-center md:items-start">
+      <p className="text-sm text-black">Legal & Credits</p>
+      <p>© 2025 Garden Sewa. All rights reserved.</p>
+    </div>
+
+    {/* Email Section */}
+    <div className="flex items-center gap-2">
+      <Image src="/image/icons/email.png" alt="Email" width={20} height={20} />
+      <div className="flex flex-col">
+        <p className="text-xs text-black">Email</p>
+        <p className="text-xs">support@gardensewa.com</p>
+      </div>
+    </div>
+
+    {/* Phone Section */}
+    <div className="flex items-center gap-2">
+      <Image src="/image/icons/phone.svg" alt="Phone" width={20} height={20} />
+      <div className="flex flex-col">
+        <p className="text-xs text-black">Phone</p>
+        <p className="text-xs">97XXXXXXXX</p>
+      </div>
+    </div>
+
+    {/* Location Section */}
+    <div className="flex items-center gap-2">
+      <Image src="/image/icons/location.png" alt="Location" width={20} height={20} />
+      <div className="flex flex-col">
+        <p className="text-xs text-black">Location</p>
+        <p className="text-xs">Putalisadak, Kathmandu</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </footer>
     </>
   );

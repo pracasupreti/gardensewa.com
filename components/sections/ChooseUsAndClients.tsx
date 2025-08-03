@@ -16,7 +16,7 @@ interface ClientCardProps {
 
 // FeatureCard Component
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description }) => (
-  <div className="flex flex-col items-center p-6 bg-green-100 rounded-xl transition-shadow duration-300">
+  <div className="flex flex-col items-center p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
     <div className="bg-white p-4 rounded-full mb-4">
       <Icon className="w-10 h-10 text-black" />
     </div>

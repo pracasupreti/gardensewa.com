@@ -26,11 +26,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 left-0 right-0 z-20">
       {/* Top Contact Bar */}
-      <section className="header bg-white">
+      <section className="header bg-white border-b-1 border-gray-200">
         <div className="container max-w-[1250px] mx-auto flex flex-wrap md:flex-row text-center justify-between lg:px-5 text-white py-0 px-2 rounded-t-2xl">
           
             {/* Logo */}
-            <div className="logo flex items-center text-[28px] font-semibold text-[#8a8c8a] py-2">
+            <div className="logo flex items-center text-[28px] font-semibold text-[#8a8c8a] py-0">
               <Link href="/" className="flex items-center">
                 <Image
                   className="cursor-pointer"
@@ -89,7 +89,7 @@ export default function Header() {
       </section>
 
       {/* Main Nav */}
-      <section className="nav-header bg-white border-t-1 border-gray-500 block">
+      <section className="nav-header bg-white block border-b-1 border-gray-500">
         <div className="container mx-auto max-w-[1250px] px-5 py-2">
           <div className="nav-bar flex flex-wrap justify-between items-center">
 
@@ -174,7 +174,7 @@ export default function Header() {
                 <li>
                   <Link href="/hire" onClick={() => setMenuOpen(false)}>
                     <button className="block lg:hidden md:hidden bg-[#008000] hover:bg-green-800 text-white py-2 mt-2 px-4 mx-auto rounded-lg">
-                      Hire a Consultant
+                      Book a Service
                     </button>
                   </Link>
                 </li>
