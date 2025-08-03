@@ -6,6 +6,9 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export default function Footer() {
+  const linkHoverClass =
+    "inline-block transform transition-transform duration-200 hover:translate-x-2 hover:text-green-600";
+
   return (
     <>
       {/* Newsletter Section */}
@@ -36,7 +39,6 @@ export default function Footer() {
       {/* Main Footer */}
       <footer className="bg-[#f1fff1] pt-10 pb-10">
         <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-2 md:grid-cols-6 gap-x-16 gap-y-8 text-sm text-gray-800">
-
           {/* Brand Info */}
           <div className="col-span-2 text-center md:text-left">
             <div className="flex justify-center md:justify-start mb-3">
@@ -72,11 +74,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Explore</h4>
             <ul className="space-y-1">
-              <li><Link href="/plants" className="hover:text-green-600 hover:pl-2">Plants</Link></li>
-              <li><Link href="/services" className="hover:text-green-600 hover:pl-2">Book a Service</Link></li>
-              <li><Link href="/blog" className="hover:text-green-600 hover:pl-2">Blog</Link></li>
-              <li><Link href="/testimonials" className="hover:text-green-600 hover:pl-2">Testimonials</Link></li>
-              <li><Link href="/client" className="hover:text-green-600 hover:pl-2">Our Clients</Link></li>
+              <li><Link href="/plants" className={linkHoverClass}>Plants</Link></li>
+              <li><Link href="/services" className={linkHoverClass}>Book a Service</Link></li>
+              <li><Link href="/blog" className={linkHoverClass}>Blog</Link></li>
+              <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
+              <li><Link href="/client" className={linkHoverClass}>Our Clients</Link></li>
             </ul>
           </div>
 
@@ -84,9 +86,15 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Explore Plants</h4>
             <ul className="space-y-1">
-              {["Indoor Plants", "Outdoor Plants", "Pet-Friendly Plants", "Air-Purifying Plants", "Low Maintenance"].map((item, index) => (
+              {[
+                "Indoor Plants",
+                "Outdoor Plants",
+                "Pet-Friendly Plants",
+                "Air-Purifying Plants",
+                "Low Maintenance",
+              ].map((item, index) => (
                 <li key={index}>
-                  <Link href="#" className="hover:text-green-600 hover:pl-2">{item}</Link>
+                  <Link href="#" className={linkHoverClass}>{item}</Link>
                 </li>
               ))}
             </ul>
@@ -96,11 +104,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Product Help</h4>
             <ul className="space-y-1">
-              <li><Link href="/services" className="hover:text-green-600 hover:pl-2">Book a Service</Link></li>
-              <li><Link href="/faqs" className="hover:text-green-600 hover:pl-2">FAQs</Link></li>
-              <li><Link href="/contact" className="hover:text-green-600 hover:pl-2">Contact</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-green-600 hover:pl-2">Privacy Policy</Link></li>
-              <li><Link href="/testimonials" className="hover:text-green-600 hover:pl-2">Testimonials</Link></li>
+              <li><Link href="/services" className={linkHoverClass}>Book a Service</Link></li>
+              <li><Link href="/faqs" className={linkHoverClass}>FAQs</Link></li>
+              <li><Link href="/contact" className={linkHoverClass}>Contact</Link></li>
+              <li><Link href="/privacy-policy" className={linkHoverClass}>Privacy Policy</Link></li>
+              <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
             </ul>
           </div>
 
