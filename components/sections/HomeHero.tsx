@@ -76,13 +76,12 @@ const HomeHero: React.FC = () => {
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
         >
-          <Image
+          <img
             src={slide.img}
             alt={slide.alt}
             height={1080}
             width={1920}
             className="brightness-75 object-cover w-full h-full"
-            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 

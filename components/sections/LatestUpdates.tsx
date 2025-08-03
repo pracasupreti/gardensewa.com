@@ -66,7 +66,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
     <div className="relative rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300">
       {/* Image container with responsive height */}
       <div className={`relative w-full ${imageContainerClasses}`}>
-        <Image
+        <img
           src={article.image}
           alt={article.title}
           height={large ? 400 : 300} // Adjust height based on large prop
@@ -86,13 +86,13 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
         <div className="flex items-center text-sm opacity-90">
           {/* Placeholder for author avatar - you can replace with an actual image */}
           <div className="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center mr-2 text-gray-700 font-semibold text-xs">
-             <Image
-          src={article.img}
-          alt={article.title}
-          height={24}
-          width={24}
-          className="rounded-full object-cover"
-        />
+            <img
+              src={article.img}
+              alt={article.title}
+              height={24}
+              width={24}
+              className="rounded-full object-cover"
+            />
           </div>
           <span className="mr-3">{article.author}</span>
           <span className="mr-3">&bull;</span>

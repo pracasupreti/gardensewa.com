@@ -36,7 +36,7 @@ export default function OurPartners() {
           >
             <div className="flex-grow flex items-center justify-center mb-4">
               <div className="relative w-48 h-32"> {/* Adjust size as needed */}
-                <Image
+                <img
                   src={partner.logo}
                   alt={partner.name}
                   height={128}

@@ -13,7 +13,7 @@ import Image from 'next/image';
     <div className="flex flex-col items-center p-8  m-2 rounded-2xl border border-green-200 bg-white">
       {/* Icon Container */}
       <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-100 text-green-700 overflow-hidden">
-        <Image src={icon} alt={title} width={40} height={40} />
+        <img src={icon} alt={title} width={40} height={40} />
       </div>
       {/* Card Title */}
       <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
@@ -48,12 +48,11 @@ export default function AboutPage() {
     <main>
       <div className={`relative w-full h-[400px] flex items-center justify-center text-white`}>
         {/* Background image with a dark overlay */}
-        <Image
+        <img  
           src="/image/navbar/about/about.jpg"
           alt="A large green plant"
           height={400}
           width={400}
-          quality={100}
           className="absolute inset-0 z-0 object-cover h-100 w-full"
         />
         <div className="absolute inset-0 bg-black/30 opacity-60 z-10"></div>
