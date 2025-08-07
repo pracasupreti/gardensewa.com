@@ -4,13 +4,13 @@ import Image from "next/image";
 
 // Gallery data arrays
 const trainings = [
-  { id: "1", img: "/image/navbar/gallery/training/1.jpg" },
-  { id: "2", img: "/image/navbar/gallery/training/6.jpg" },
-  { id: "3", img: "/image/navbar/gallery/training/5.jpg" },
-  { id: "4", img: "/image/navbar/gallery/training/4.jpg" },
-  { id: "5", img: "/image/navbar/gallery/training/3.jpg" },
-  { id: "6", img: "/image/navbar/gallery/training/2.jpg" },
-  { id: "7", img: "/image/navbar/gallery/training/1.jpg" },
+  { id: "1", img: "/image/gallery/gardensewa1.jpg" },
+  { id: "2", img: "/image/gallery/gardensewa2.jpg" },
+  { id: "3", img: "/image//gallery/gardensewa3.jpg" },
+  { id: "4", img: "/image//gallery/gardensewa4.jpg" },
+  { id: "5", img: "/image//gallery/gardensewa5.jpg" },
+  { id: "6", img: "/image//gallery/gardensewa6.jpg" },
+  { id: "7", img: "/image//gallery/gardensewa7.jpg" },
 ];
 const field = [
   { id: "1", img: "/image/navbar/gallery/field-visit/11.jpg" },
