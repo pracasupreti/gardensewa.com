@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 const partners = [
     {
-      name: 'Pristine Gardens',
+      name: 'Home Garden Restoration',
       description: 'LANDSCAPE & HORTICULTURE - Bringing Future Home -',
       logo: '/image/home/partners/partener1.png',
-      link: 'https://pristinegardensllc.com/',
+      link: 'https://homeparkgardens.co.uk/',
     },
     {
       name: 'Home Park Gardens',
@@ -15,10 +15,10 @@ const partners = [
       link: 'https://homeparkgardens.co.uk/',
     },
     {
-      name: 'Home Garden Restoration',
+      name: 'Pristine Gardens',
       description: 'hello',
       logo: '/image/home/partners/partener3.jpg',
-      link: 'https://homeparkgardens.co.uk/',
+      link: 'https://pristinegardensllc.com/',
     },
   ];
 export default function OurPartners() {

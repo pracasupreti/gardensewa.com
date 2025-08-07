@@ -75,10 +75,11 @@ export default function Footer() {
             <h4 className="font-semibold mb-2">Explore</h4>
             <ul className="space-y-1">
               <li><Link href="/plants" className={linkHoverClass}>Plants</Link></li>
-              <li><Link href="/services" className={linkHoverClass}>Book a Service</Link></li>
               <li><Link href="/blog" className={linkHoverClass}>Blog</Link></li>
               <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
+              <li><Link href="/partener" className={linkHoverClass}>Our Parteners</Link></li>
               <li><Link href="/client" className={linkHoverClass}>Our Clients</Link></li>
+              <li><Link href="/contact" className={linkHoverClass}>Become a Client</Link></li>
             </ul>
           </div>
 
@@ -116,14 +117,14 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Download</h4>
             <div className="space-y-2">
-              <Image
+              <img
                 src="/image/home/footer/play-store.png"
                 alt="Google Play"
                 width={140}
                 height={40}
                 className="cursor-pointer h-16 w-36"
               />
-              <Image
+              <img
                 src="/image/home/footer/play-store.png"
                 alt="Google Play"
                 width={140}
@@ -170,6 +171,13 @@ export default function Footer() {
               <div className="flex flex-col">
                 <p className="text-xs text-black">Location</p>
                 <p className="text-xs">Maitidevi, Kathmandu</p>
+              </div>
+            </div>
+
+            {/* Sriyoga */}
+            <div className="flex items-center gap-2">
+              <div className="flex flex-col">
+                <p className="text-sm">Powered By SRIYOG</p>
               </div>
             </div>
           </div>
