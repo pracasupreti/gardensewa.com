@@ -30,6 +30,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
+        <style>@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+</style>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

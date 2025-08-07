@@ -89,7 +89,7 @@ const HomeHero: React.FC = () => {
           <div className="absolute top-0 left-0 w-full h-full flex items-center z-10">
             <div className="container max-w-[1250px] mx-auto px-4 md:px-6">
               <div className="text-white max-w-xl">
-                <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                <h2 className="text-3xl md:text-5xl font-bold mb-4 tiktok-sans">
                   {slide.title}
                 </h2>
                 <p className="text-sm md:text-lg font-light mb-6">
@@ -111,23 +111,23 @@ const HomeHero: React.FC = () => {
       ))}
 
       {/* Dots + Arrows Container */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center bg-white/80 backdrop-blur-md px-4 py-0 rounded-full shadow-lg z-10 space-x-3">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center z-10 space-x-3">
         {/* Prev Button */}
-        <button
+        {/* <button
           onClick={goToPrev}
           className="text-black text-[26px] font-bold hover:text-gray-700 p-1 rounded-full transition"
           aria-label="Previous Slide"
         >
           &#8249;
-        </button>
+        </button> */}
 
         {/* Dots */}
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide
-              ? "bg-black"
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+              ? "bg-white"
               : "bg-gray-400 hover:bg-gray-600"
               }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -135,13 +135,13 @@ const HomeHero: React.FC = () => {
         ))}
 
         {/* Next Button */}
-        <button
+        {/* <button
           onClick={goToNext}
           className="text-black text-[26px] font-bold hover:text-gray-700 p-1 rounded-full transition"
           aria-label="Next Slide"
         >
           &#8250;
-        </button>
+        </button> */}
       </div>
     </div>
   );

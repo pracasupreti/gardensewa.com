@@ -6,19 +6,19 @@ const partners = [
       name: 'Pristine Gardens',
       description: 'LANDSCAPE & HORTICULTURE - Bringing Future Home -',
       logo: '/image/home/partners/partener1.png',
-      link: '#',
+      link: 'https://pristinegardensllc.com/',
     },
     {
       name: 'Home Park Gardens',
       description: '& Landscaping',
       logo: '/image/home/partners/partener2.png',
-      link: '#',
+      link: 'https://homeparkgardens.co.uk/',
     },
     {
       name: 'Home Garden Restoration',
       description: 'hello',
       logo: '/image/home/partners/partener3.jpg',
-      link: '#',
+      link: 'https://homeparkgardens.co.uk/',
     },
   ];
 export default function OurPartners() {

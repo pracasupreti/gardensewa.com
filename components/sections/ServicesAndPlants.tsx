@@ -25,12 +25,12 @@ const services: Service[] = [
   {
     id: '2',
     title: 'Landscaping Services',
-    imageUrl: '/image/home/top-services/2.jpg',
+    imageUrl: '/image/home/top-services/Landscaping.jpg',
   },
   {
     id: '3',
     title: 'Turfing Service',
-    imageUrl: '/image/home/top-services/3.jpg',
+    imageUrl: '/image/home/top-services/Tufring-Services.jpg',
   },
   {
     id: '4',
@@ -40,12 +40,12 @@ const services: Service[] = [
   {
     id: '5',
     title: 'Seasonal Service',
-    imageUrl: '/image/home/top-services/5.jpg',
+    imageUrl: '/image/home/top-services/Seasonal.jpg',
   },
   {
     id: '6',
     title: 'Lawn Care',
-    imageUrl: '/image/home/top-services/6.jpg',
+    imageUrl: '/image/home/top-services/Lawn Care.jpg',
   },
 ];
 
