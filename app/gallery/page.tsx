@@ -20,12 +20,21 @@ const topServices: GalleryItem[] = [
 ];
 
 const indoorOutdoorPlants: GalleryItem[] = [
-  { id: 1, imageUrl: '/images/gallery/plants/1.jpg', altText: 'Cactus in a pot' },
-  { id: 2, imageUrl: '/images/gallery/plants/2.jpg', altText: 'Indoor plants in a living room' },
-  { id: 3, imageUrl: '/images/gallery/plants/3.jpg', altText: 'Spring flowers in pots' },
-  { id: 4, imageUrl: '/images/gallery/plants/4.jpg', altText: 'Herbs on a table' },
-  { id: 5, imageUrl: '/images/gallery/plants/5.jpg', altText: 'Potted succulent on the floor' },
-  { id: 6, imageUrl: '/images/gallery/plants/6.jpg', altText: 'Field of cacti' },
+  { id: 1, imageUrl: '/image/gallery/gallery7.jpg', altText: 'Cactus in a pot' },
+  { id: 2, imageUrl: '/image/gallery/gallery8.jpg', altText: 'Indoor plants in a living room' },
+  { id: 3, imageUrl: '/image/gallery/gallery9.jpg', altText: 'Spring flowers in pots' },
+  { id: 4, imageUrl: '/image/gallery/gallery10.jpg', altText: 'Herbs on a table' },
+  { id: 5, imageUrl: '/image/gallery/gallery11.jpg', altText: 'Potted succulent on the floor' },
+  { id: 6, imageUrl: '/image/gallery/gallery12.jpg', altText: 'Field of cacti' },
+];
+
+const rarePlants: GalleryItem[] = [
+  { id: 1, imageUrl: '/image/gallery/gallery13.jpg', altText: 'Cactus in a pot' },
+  { id: 2, imageUrl: '/image/gallery/gallery14.jpg', altText: 'Indoor plants in a living room' },
+  { id: 3, imageUrl: '/image/gallery/gallery15.jpg', altText: 'Spring flowers in pots' },
+  { id: 4, imageUrl: '/image/gallery/gallery16.jpg', altText: 'Herbs on a table' },
+  { id: 5, imageUrl: '/image/gallery/gallery17.jpg', altText: 'Potted succulent on the floor' },
+  { id: 6, imageUrl: '/image/gallery/gallery18.jpg', altText: 'Field of cacti' },
 ];
 
 // Reusable Gallery Grid component
@@ -71,7 +80,7 @@ const GalleryPage: React.FC = () => {
         {/* Rare Plants */}
         <section>
           <h2 className="text-2xl font-bold text-green-700 mb-6">Rare Plants</h2>
-          <GalleryGrid items={indoorOutdoorPlants} />
+          <GalleryGrid items={rarePlants} />
         </section>
       </main>
       <div className={`relative w-full h-[400px] flex items-center justify-center text-white my-12`}>
