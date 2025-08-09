@@ -77,7 +77,7 @@ export default function AboutPage() {
           {/* Left Column */}
           <div className="lg:w-1/2 flex flex-col justify-between p-6 md:p-10 lg:p-12 bg-white">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6 leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold text-secondary mb-6 leading-tight">
                 Helping You Grow the <br /> Garden You Love
               </h1>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10">

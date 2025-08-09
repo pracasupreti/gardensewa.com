@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 const clients = [
@@ -146,9 +147,10 @@ export default function ClientPage() {
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-8">
               Join our growing network of satisfied clients.
             </p>
+            <Link href="book-a-service">
             <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
-              Become a Client
-            </button>
+              Book a Service
+            </button></Link>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       </div>
 
       {/* Comment */}
-      <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+      <p className="text-gray-600 text-md leading-relaxed mb-6 flex-grow">
         {comment}
       </p>
 
@@ -42,8 +42,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           />
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-gray-800">{name}</h3>
-          <p className="text-xs text-gray-500">{title}</p>
+          <h3 className="text-base font-semibold text-gray-800">{name}</h3>
+          <p className="text-sm text-gray-500">{title}</p>
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ export default function OurPartners() {
             style={{ minHeight: '300px' }}
           >
             <div className="flex-grow flex items-center justify-center mb-4">
-              <div className="relative w-48 h-32"> {/* Adjust size as needed */}
+              <div className="relative w-58 h-58"> {/* Adjust size as needed */}
                 <img
                   src={partner.logo}
                   alt={partner.name}

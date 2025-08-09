@@ -45,33 +45,37 @@ const ChooseUs: React.FC = () => {
   ];
 
   const clients = [
-    {
-      image: '/image/home/client/1.png',
-      name: 'Bajeko Sekuwa',
-      text: 'GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.',
-    },
-    {
-      image: '/image/home/client/2.png',
-      name: 'British Embassy Kathmandu',
-      text: 'GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.',
-    },
-    {
-      image: '/image/home/client/3.png',
-      name: 'Aloft',
-      text: 'GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.',
-    },
-    {
-      image: '/image/home/client/4.png',
-      name: 'Yak & Yeti',
-      text: 'GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.',
-    },
+     {
+    image: '/image/home/client/1.png',
+    name: 'Bajeko Sekuwa',
+    text: 'Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.',
+    link: 'https://www.bajekosekuwa.com/',
+  },
+  {
+    image: '/image/home/client/2.png',
+    name: 'British Embassy Kathmandu',
+    text: 'Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.',
+    link: 'https://www.gov.uk/world/organisations/british-embassy-kathmandu',
+  },
+  {
+    image: '/image/home/client/3.png',
+    name: 'Aloft',
+    text: 'Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.',
+    link: 'https://www.marriott.com/en-us/hotels/ktmal-aloft-kathmandu-thamel/overview/?nst=paid&cid=PAI_GLB0004YFY_GLE000BHOR_GLF000OCGE&nst=paid&gclsrc=aw.ds&gad_source=1&gad_campaignid=22178666619&gbraid=0AAAAADilnidqVZJVxY377ZINfb9DlsduA&gclid=CjwKCAjw49vEBhAVEiwADnMbbB2ExULZAhvCxIRIOMKWNlEMTC0Sg2F8FSSBwc4FAzV_04N6yDk9qxoCpUIQAvD_BwE',
+  },
+  {
+    image: '/image/home/client/4.png',
+    name: 'Yak & Yeti',
+    text: 'Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.',
+    link: 'https://www.yakandyeti.com/',
+  },
   ];
 
   return (
     <div className="font-sans antialiased bg-gray-50 py-12 px-4 sm:px-6 lg:px-16">
       {/* Why Choose Us Section */}
       <section className="max-w-7xl mx-auto mb-16">
-        <h2 className="text-6xl font-bold text-center text-green-800 mb-12">Why Choose Us?</h2>
+        <h2 className="lg:text-5xl font-bold text-center text-green-800 mb-12">Why Choose Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <FeatureCard
@@ -85,28 +89,29 @@ const ChooseUs: React.FC = () => {
       </section>
 
       {/* Our Clients Section */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-green-800 text-center mb-12">Our Clients</h2>
+      <section className="max-w-7xl mx-auto px-8 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="relative group bg-white border border-green-200 rounded-2xl p-6 h-[320px] flex flex-col items-center justify-center text-center overflow-hidden transition duration-300"
+              className="bg-white border border-green-200 rounded-3xl p-6 flex flex-col items-start text-left"
             >
-              {/* Logo */}
-              <img
-                src={client.image}
-                alt={client.name}
-                className="h-24 object-contain mb-4 transition duration-300 group-hover:opacity-0"
-              />
-              {/* Name */}
-              <p className="text-black text-lg font-semibold transition duration-300 group-hover:opacity-0">{client.name}</p>
-
-              {/* Hover testimonial */}
-              <div className="absolute inset-0 bg-white border border-green-300 rounded-2xl p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-                <FaQuoteLeft className="text-green-600 w-6 h-6 mb-3" />
-                <p className="text-black text-base text-left leading-relaxed">{client.text}</p>
+              <div className="w-full flex justify-center mb-4">
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  className="h-32 w-auto object-contain"
+                />
               </div>
+              <p className="text-black text-sm text-left leading-relaxed mt-4 mb-4">
+                {client.text}
+              </p>
+              <a
+                href={client.link}
+                className="mt-auto self-center bg-primary text-white font-semibold px-6 py-2 rounded-lg hover:bg-secondary transition"
+              >
+                Browse More
+              </a>
             </div>
           ))}
         </div>

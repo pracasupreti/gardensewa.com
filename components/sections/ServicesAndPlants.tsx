@@ -182,8 +182,8 @@ const ServicesAndPlants: React.FC = () => {
 
       {/* Explore Plants Section */}
       <section>
-        <div className="flex justify-between items-center mb-6 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-green-800">Explore Plants</h2>
+        <div className="flex flex-row justify-between items-center mb-6 max-w-6xl mx-auto">
+          <h2 className="text-2xl lg:text-4xl font-bold text-green-800">Explore Plants</h2>
           <button className="bg-white text-green-700 border border-green-700 py-2 px-6 rounded-full hover:bg-green-600 hover:text-white transition-colors flex items-center space-x-2">
             <span>View All</span>
             <span>→</span>

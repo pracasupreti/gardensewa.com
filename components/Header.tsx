@@ -57,13 +57,13 @@ export default function Header() {
           </div>
           <div className="flex items-center space-x-3">
             <a href="#" aria-label="Facebook" className="hover:scale-110 transition-transform">
-              <FaFacebook className="w-4 h-4" />
+              <FaFacebook className="w-5 h-5" />
             </a>
             <a href="#" aria-label="Instagram" className="hover:scale-110 transition-transform">
-              <FaInstagram className="w-4 h-4" />
+              <FaInstagram className="w-5 h-5" />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:scale-110 transition-transform">
-              <FaLinkedinIn className="w-4 h-4" />
+              <FaLinkedinIn className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function Header() {
                     aria-label="Toggle Menu"
                   >
                     <Image
-                      className="w-[25px] h-[25px]"
+                      className="w-[35px] h-[35px]"
                       src={menuOpen
                         ? "/image/icons/cross-circle-svgrepo-com.svg"
                         : "/image/icons/hamburger.svg"

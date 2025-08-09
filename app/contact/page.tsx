@@ -1,7 +1,7 @@
 // pages/contact.tsx
-import React from 'react';
-import Head from 'next/head';
-import { ArrowRight, Mail, Phone, User } from 'lucide-react';
+import React from "react";
+import Head from "next/head";
+import { ArrowRight, Mail, Phone, User } from "lucide-react";
 
 interface Expert {
   name: string;
@@ -9,23 +9,10 @@ interface Expert {
   imageUrl: string;
 }
 
-// Data for the experts to be displayed
 const experts: Expert[] = [
-  {
-    name: "Niranjan Sharma",
-    role: "Project Manager",
-    imageUrl: "/image/icons/profile.svg",
-  },
-  {
-    name: "Pracas Upreti",
-    role: "CTO",
-    imageUrl: "/image/icons/profile.svg",
-  },
-  {
-    name: "Nadan Tamang",
-    role: "Information Manager",
-    imageUrl: "/image/icons/profile.svg",
-  },
+  { name: "Niranjan Sharma", role: "Project Manager", imageUrl: "/image/icons/profile.svg" },
+  { name: "Pracas Upreti", role: "CTO", imageUrl: "/image/icons/profile.svg" },
+  { name: "Nadan Tamang", role: "Information Manager", imageUrl: "/image/icons/profile.svg" },
 ];
 
 const ContactPage = () => {
@@ -37,7 +24,7 @@ const ContactPage = () => {
 
       <div className="bg-white min-h-screen">
         {/* Header Section */}
-        <div className="relative w-full h-[350px] flex items-center justify-center text-white">
+        <div className="relative w-full h-[300px] sm:h-[350px] flex items-center justify-center text-white">
           <img
             src="/image/gallery/galleryBg.jpg"
             alt="Green plant background"
@@ -48,8 +35,8 @@ const ContactPage = () => {
             <div className="mb-3 text-sm text-gray-300">
               Home &gt; <span className="text-green-400">Contact Us</span>
             </div>
-            <h1 className="text-4xl font-bold mb-3">Contact Us</h1>
-            <p className="text-base text-gray-200 leading-relaxed">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Contact Us</h1>
+            <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
               We’re here to help your garden grow smoothly. Whether you have questions,
               feedback, or want to partner with us, feel free to reach out.
             </p>
@@ -57,39 +44,22 @@ const ContactPage = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="container mx-auto px-30 -mt-20 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 -mt-12 sm:-mt-20 relative z-10">
           <div className="bg-gray-100 rounded-3xl shadow-lg flex flex-col lg:flex-row overflow-hidden border border-gray-100">
 
             {/* Left Column - Contact Info */}
-            <div className="bg-primary text-white p-2 lg:p-4 m-6 border-1 border-light rounded-3xl w-1/2 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
+            <div className="bg-primary text-white p-6 lg:p-8 w-full lg:w-1/2 flex flex-col justify-center rounded-none lg:rounded-l-3xl">
+              <h2 className="text-xl sm:text-2xl font-bold mb-8">Contact Information</h2>
               <div className="space-y-6">
                 {[
-                  {
-                    title: 'Email',
-                    value: 'support@gardensewa.com',
-                    icon: '/image/icons/email.png',
-                  },
-                  {
-                    title: 'Phone',
-                    value: '+977 97XXXXXXXX',
-                    icon: '/image/icons/phone.png',
-                  },
-                  {
-                    title: 'Office Hours',
-                    value: 'Mon - Fri\n9:00 AM - 5:00 PM',
-                    icon: '/image/icons/calendar.svg',
-                  },
-                  {
-                    title: 'Location',
-                    value: 'Maitidevi, Kathmandu',
-                    icon: '/image/icons/location.png',
-                  },
+                  { title: 'Email', value: 'support@gardensewa.com', icon: '/image/icons/email.png' },
+                  { title: 'Phone', value: '+977 97XXXXXXXX', icon: '/image/icons/phone.png' },
+                  { title: 'Office Hours', value: 'Mon - Fri\n9:00 AM - 5:00 PM', icon: '/image/icons/calendar.svg' },
+                  { title: 'Location', value: 'Maitidevi, Kathmandu', icon: '/image/icons/location.png' },
                 ].map((item, idx) => (
                   <div className="flex items-start" key={idx}>
                     <div className="bg-white text-black rounded-full p-3 w-12 h-12 flex items-center justify-center mr-4">
-                      <img src={item.icon}
-                      alt={item.title} />
+                      <img src={item.icon} alt={item.title} className="w-6 h-6" />
                     </div>
                     <div>
                       <h3 className="font-semibold">{item.title}</h3>
@@ -101,13 +71,11 @@ const ContactPage = () => {
             </div>
 
             {/* Right Column - Contact Form */}
-            <div className="bg-white text-light p-2 lg:p-4 m-6 border-1 border-light w-1/2 rounded-3xl flex justify-center items-center">
+            <div className="bg-white text-light p-6 lg:p-8 w-full lg:w-1/2 flex justify-center items-center rounded-none lg:rounded-r-3xl">
               <form className="space-y-6 w-full max-w-md">
                 {/* Name */}
                 <div>
-                  <label htmlFor="name" className="text-sm font-medium text-gray-700">
-                    Name
-                  </label>
+                  <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
                   <div className="relative mt-1">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <User className="h-5 w-5 text-gray-400" />
@@ -123,9 +91,7 @@ const ContactPage = () => {
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="text-sm font-medium text-gray-700">
-                    Email
-                  </label>
+                  <label htmlFor="email" className="text-sm font-medium text-gray-700">Email</label>
                   <div className="relative mt-1">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <Mail className="h-5 w-5 text-gray-400" />
@@ -141,9 +107,7 @@ const ContactPage = () => {
 
                 {/* Phone */}
                 <div>
-                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">
-                    Phone Number
-                  </label>
+                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</label>
                   <div className="relative mt-1">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <Phone className="h-5 w-5 text-gray-400" />
@@ -159,9 +123,7 @@ const ContactPage = () => {
 
                 {/* Message */}
                 <div>
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">
-                    Message
-                  </label>
+                  <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
                   <textarea
                     id="message"
                     rows={5}
@@ -185,59 +147,45 @@ const ContactPage = () => {
           </div>
         </div>
 
+        {/* Our Location */}
         <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      
-      {/* Our Location Section */}
-      <section className="container mx-auto max-w-7xl mb-16 px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-8">
-          Our Location
-        </h2>
-        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-gray-200 max-w-7xl mx-auto">
-          {/* Map Image - This is a placeholder. You can replace this with a real map embed like Google Maps or a map library. */}
-          <div className="relative w-full" style={{ paddingBottom: '175%' /* 4:3 Aspect Ratio */ }}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0493883767512!2d85.3226278695138!3d27.711186085795504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef740a066ed089%3A0xaf7934e44a7b1e17!2sSRIYOG!5e0!3m2!1sen!2snp!4v1754747091169!5m2!1sen!2snp"
-              width="600"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Experts Section */}
-      <section className="container mx-auto max-w-7xl px-12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-8">
-          Our Experts
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {experts.map((expert, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center px-0 py-12 bg-white  rounded-2xl transition-transform transform hover:scale-105 border border-gray-200"
-            >
-              <img
-                src={expert.imageUrl}
-                alt={expert.name}
-                className="w-32 h-32 rounded-full object-cover mb-4"
-              />
-              <div className="text-center">
-                <p className="text-sm text-dark font-medium mb-4">
-                  {expert.role}
-                </p>
-                <p className="text-xl font-semibold text-dark">
-                  {expert.name}
-                </p>
-              </div>
+          <section className="container mx-auto max-w-7xl mb-16 px-0 sm:px-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-8">Our Location</h2>
+            <div className="relative w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden border border-gray-200">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0493883767512!2d85.3226278695138!3d27.711186085795504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef740a066ed089%3A0xaf7934e44a7b1e17!2sSRIYOG!5e0!3m2!1sen!2snp!4v1754747091169!5m2!1sen!2snp"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+              ></iframe>
             </div>
-          ))}
+          </section>
+
+          {/* Our Experts */}
+          <section className="container mx-auto max-w-7xl px-4 sm:px-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-8">Our Experts</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {experts.map((expert, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center px-4 py-12 bg-white rounded-2xl transition-transform transform hover:scale-105 border border-gray-200"
+                >
+                  <img
+                    src={expert.imageUrl}
+                    alt={expert.name}
+                    className="w-32 h-32 rounded-full object-cover mb-4"
+                  />
+                  <div className="text-center">
+                    <p className="text-sm text-dark font-medium mb-4">{expert.role}</p>
+                    <p className="text-xl font-semibold text-dark">{expert.name}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
       </div>
     </>
   );

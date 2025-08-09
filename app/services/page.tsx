@@ -114,11 +114,9 @@ const recentServices: Service[] = [
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
   <div className="flex flex-col items-center px-0 py-6 border border-green-300 rounded-xl shadow-md transition-shadow duration-300 hover:shadow-lg bg-white">
     <div className="relative w-48 h-48 rounded-full overflow-hidden mb-4">
-      <Image
+      <img
         src={service.imageUrl}
         alt={service.altText}
-        layout="fill"
-        objectFit="cover"
         className="h-48 w-48 transition-transform duration-300 hover:scale-110"
       />
     </div>
@@ -180,7 +178,7 @@ const ServicesPage: React.FC = () => {
             ))}
           </div>
           {/* Pagination */}
-          <div className="flex justify-center items-center mt-12 space-x-2">
+          {/* <div className="flex justify-center items-center mt-12 space-x-2">
             <button
               className="p-2 w-8 h-8 border-1 rounded-lg flex items-center justify-center text-dark rounded-full hover:bg-gray-200 transition-colors duration-200 disabled:opacity-50"
               disabled={currentPage === 1}
@@ -208,7 +206,7 @@ const ServicesPage: React.FC = () => {
             >
               &gt;
             </button>
-          </div>
+          </div> */}
         </main>
       </div>
     </div>
