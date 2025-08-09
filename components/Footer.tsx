@@ -79,7 +79,7 @@ export default function Footer() {
               <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
               <li><Link href="/partener" className={linkHoverClass}>Our Parteners</Link></li>
               <li><Link href="/client" className={linkHoverClass}>Our Clients</Link></li>
-              <li><Link href="/contact" className={linkHoverClass}>Become a Client</Link></li>
+              <li><Link href="/become-client" className={linkHoverClass}>Become a Client</Link></li>
             </ul>
           </div>
 
