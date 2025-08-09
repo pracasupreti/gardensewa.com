@@ -1,154 +1,246 @@
-import React from "react";
+// pages/contact.tsx
+import React from 'react';
+import Head from 'next/head';
+import { ArrowRight, Mail, Phone, User } from 'lucide-react';
 
-const page = () => {
+interface Expert {
+  name: string;
+  role: string;
+  imageUrl: string;
+}
+
+// Data for the experts to be displayed
+const experts: Expert[] = [
+  {
+    name: "Niranjan Sharma",
+    role: "Project Manager",
+    imageUrl: "/image/icons/profile.svg",
+  },
+  {
+    name: "Pracas Upreti",
+    role: "CTO",
+    imageUrl: "/image/icons/profile.svg",
+  },
+  {
+    name: "Nadan Tamang",
+    role: "Information Manager",
+    imageUrl: "/image/icons/profile.svg",
+  },
+];
+
+const ContactPage = () => {
   return (
-    <div>
-      <section className="contact bg-[#f7f7f7]">
-        <h1 className="text-[45px] font-bold text-[#008000] text-center py-10">
-          Contact
-        </h1>
-        <div className="container mx-auto max-w-[1200px]">
-          <div className="text text-center px-4 lg:px-0 pb-5">
-            <p className="lg:mx-20 text-gray-600">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, beatae. Veniam est vitae laudantium. Modi, nostrum
-              rem aspernatur magni eum esse neque sed quod libero?
+    <>
+      <Head>
+        <title>Contact Us | GardenSewa</title>
+      </Head>
+
+      <div className="bg-white min-h-screen">
+        {/* Header Section */}
+        <div className="relative w-full h-[350px] flex items-center justify-center text-white">
+          <img
+            src="/image/gallery/galleryBg.jpg"
+            alt="Green plant background"
+            className="absolute inset-0 z-0 object-cover w-full h-full"
+          />
+          <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+          <div className="relative z-10 max-w-3xl text-center px-4">
+            <div className="mb-3 text-sm text-gray-300">
+              Home &gt; <span className="text-green-400">Contact Us</span>
+            </div>
+            <h1 className="text-4xl font-bold mb-3">Contact Us</h1>
+            <p className="text-base text-gray-200 leading-relaxed">
+              We’re here to help your garden grow smoothly. Whether you have questions,
+              feedback, or want to partner with us, feel free to reach out.
             </p>
           </div>
+        </div>
 
-          <div className="contact-details  grid sm:grid-cols-2 px-4 lg:px-0 gap-y-6 justify-center gap-12 py-10 items-center">
-            <div className="google-map lg:w-[550px] w-full h-[450px] overflow-hidden">
-              <iframe
-                className="w-full h-[480px] rounded-lg"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2100.6240267300113!2d85.32876948534584!3d27.69212986357574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bc93869ba7%3A0x87784ab7b2bddb4f!2sBijulibazar!5e0!3m2!1sen!2snp!4v1750998522510!5m2!1sen!2snp"
-                frameBorder="0"
-              ></iframe>
-            </div>
-            <div className="text max-w-[550px]">
-              <div className="address">
-                <h5 className="text-[20px] font-semibold">Our Address</h5>
-                <div className="text flex py-2 gap-2 items-center text-gray-600 text-[15px]">
-                  <img
-                    className="h-[20px]"
-                    src="/image/icons/location.png"
-                    alt=""
-                  />
-                  <p>Maitidevi, Kathmandu-29, Kathmandu</p>
-                </div>
-              </div>
-              <hr />
-              <div className="hours py-4 ">
-                <h5 className="text-[20px] font-semibold">Hours</h5>
-                <div className="text py-2 gap-2 items-center text-gray-600 text-[15px]">
-                  <p>Sunday - Friday : 9:30AM - 6:00PM</p>
-                  <p>Saturday: Close</p>
-                </div>
-              </div>
-              <hr />
-              <div className="address py-4">
-                <h5 className="text-[20px] font-semibold pb-2">Contact</h5>
-                <div className="text flex py-2 gap-2 items-center text-gray-600 text-[15px]">
-                  <img
-                    className="h-[20px]"
-                    src="/image/icons/email.png"
-                    alt=""
-                  />
-                  <p className="cursor-pointer hover:text-green-700">
-                    info@gardensewa.com
-                  </p>
-                </div>
-                <div className="text flex py-2 gap-2 items-center text-gray-600 text-[15px]">
-                  <img
-                    className="h-[20px]"
-                    src="/image/icons/phone.png"
-                    alt=""
-                  />
-                  <p>+977-9852025735</p>
-                </div>
-                <div className="text flex py-2 gap-2 items-center text-gray-600 text-[15px]">
-                  <img
-                    className="h-[20px]"
-                    src="/image/icons/landline.png"
-                    alt=""
-                  />
-                  <p>Landline: +977-21-465533</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="profile grid sm:grid-cols-2 md:grid-cols-3 px-4 lg:px-0 gap-y-6 justify-center gap-12 py-10 items-center max-w-[1200px] mx-auto">
-            <div className="contact-profile text-center text-gray-600 w-full max-w-[220px] mx-auto">
-              <img
-                className="w-[220px] mx-auto"
-                src="/image/navbar/contact/1.png"
-                alt=""
-              />
-              <div className="info text-center">
-                <h2 className="text-[18px] font-semibold py-2">Rajesh Mehta</h2>
-                <h5 className="font-medium text-[15px]">CEO</h5>
-                <div className="flex gap-1 py-2 justify-center items-center">
-                  <img
-                    className="w-[15px]"
-                    src="/image/icons/phone.png"
-                    alt=""
-                  />
-                  <p className="cursor-pointer hover:text-green-700">
-                    +977 9746608593
-                  </p>
-                </div>
+        {/* Contact Section */}
+        <div className="container mx-auto px-30 -mt-20 relative z-10">
+          <div className="bg-gray-100 rounded-3xl shadow-lg flex flex-col lg:flex-row overflow-hidden border border-gray-100">
+
+            {/* Left Column - Contact Info */}
+            <div className="bg-primary text-white p-2 lg:p-4 m-6 border-1 border-light rounded-3xl w-1/2 flex flex-col justify-center">
+              <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
+              <div className="space-y-6">
+                {[
+                  {
+                    title: 'Email',
+                    value: 'support@gardensewa.com',
+                    icon: '/image/icons/email.png',
+                  },
+                  {
+                    title: 'Phone',
+                    value: '+977 97XXXXXXXX',
+                    icon: '/image/icons/phone.png',
+                  },
+                  {
+                    title: 'Office Hours',
+                    value: 'Mon - Fri\n9:00 AM - 5:00 PM',
+                    icon: '/image/icons/calendar.svg',
+                  },
+                  {
+                    title: 'Location',
+                    value: 'Maitidevi, Kathmandu',
+                    icon: '/image/icons/location.png',
+                  },
+                ].map((item, idx) => (
+                  <div className="flex items-start" key={idx}>
+                    <div className="bg-white text-black rounded-full p-3 w-12 h-12 flex items-center justify-center mr-4">
+                      <img src={item.icon}
+                      alt={item.title} />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="text-sm whitespace-pre-line">{item.value}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="contact-profile text-center text-gray-600 w-full max-w-[220px] mx-auto">
-              <img
-                className="w-[220px] mx-auto"
-                src="/image/navbar/contact/3.webp"
-                alt=""
-              />
-              <div className="info text-center">
-                <h2 className="text-[18px] font-semibold py-2">
-                  Subham Bhandari
-                </h2>
-                <h5 className="font-medium text-[15px]">Sales</h5>
-                <div className="flex gap-1 py-2 justify-center items-center">
-                  <img
-                    className="w-[15px]"
-                    src="/image/icons/phone.png"
-                    alt=""
-                  />
-                  <p className="cursor-pointer hover:text-green-700">
-                    +977 9863547283
-                  </p>
+            {/* Right Column - Contact Form */}
+            <div className="bg-white text-light p-2 lg:p-4 m-6 border-1 border-light w-1/2 rounded-3xl flex justify-center items-center">
+              <form className="space-y-6 w-full max-w-md">
+                {/* Name */}
+                <div>
+                  <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                    Name
+                  </label>
+                  <div className="relative mt-1">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                      <User className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Enter your full name..."
+                      className="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="contact-profile text-center text-gray-600 w-full max-w-[220px] mx-auto">
-              <img
-                className="w-[220px] mx-auto"
-                src="/image/navbar/contact/2.png"
-                alt=""
-              />
-              <div className="info text-center">
-                <h2 className="text-[18px] font-semibold py-2">Babita Singh</h2>
-                <h5 className="font-medium text-[15px]">Founder</h5>
-                <div className="flex gap-1 py-2 justify-center items-center">
-                  <img
-                    className="w-[15px]"
-                    src="/image/icons/phone.png"
-                    alt=""
-                  />
-                  <p className="cursor-pointer hover:text-green-700">
-                    +977 9819952725
-                  </p>
+                {/* Email */}
+                <div>
+                  <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    Email
+                  </label>
+                  <div className="relative mt-1">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                      <Mail className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter your email address..."
+                      className="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500"
+                    />
+                  </div>
                 </div>
-              </div>
+
+                {/* Phone */}
+                <div>
+                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                    Phone Number
+                  </label>
+                  <div className="relative mt-1">
+                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                      <Phone className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="Enter your phone number..."
+                      className="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500"
+                    />
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={5}
+                    placeholder="Write your message here..."
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500 mt-1"
+                  ></textarea>
+                </div>
+
+                {/* Submit Button */}
+                <div className="flex justify-end">
+                  <button
+                    type="submit"
+                    className="px-8 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition shadow-md flex items-center space-x-2"
+                  >
+                    <span>Send Message</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+
+        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      
+      {/* Our Location Section */}
+      <section className="container mx-auto max-w-7xl mb-16 px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-8">
+          Our Location
+        </h2>
+        <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-gray-200 max-w-7xl mx-auto">
+          {/* Map Image - This is a placeholder. You can replace this with a real map embed like Google Maps or a map library. */}
+          <div className="relative w-full" style={{ paddingBottom: '175%' /* 4:3 Aspect Ratio */ }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0493883767512!2d85.3226278695138!3d27.711186085795504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef740a066ed089%3A0xaf7934e44a7b1e17!2sSRIYOG!5e0!3m2!1sen!2snp!4v1754747091169!5m2!1sen!2snp"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Experts Section */}
+      <section className="container mx-auto max-w-7xl px-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary mb-8">
+          Our Experts
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {experts.map((expert, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center px-0 py-12 bg-white  rounded-2xl transition-transform transform hover:scale-105 border border-gray-200"
+            >
+              <img
+                src={expert.imageUrl}
+                alt={expert.name}
+                className="w-32 h-32 rounded-full object-cover mb-4"
+              />
+              <div className="text-center">
+                <p className="text-sm text-dark font-medium mb-4">
+                  {expert.role}
+                </p>
+                <p className="text-xl font-semibold text-dark">
+                  {expert.name}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
+      </div>
+    </>
   );
 };
 
-export default page;
+export default ContactPage;

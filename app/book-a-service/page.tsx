@@ -39,7 +39,7 @@ const FormInput: React.FC<{
       value={value}
       onChange={onChange}
       required={required}
-      className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors"
+      className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
     />
   </div>
 );
@@ -64,7 +64,7 @@ const FormSelect: React.FC<{
       value={value}
       onChange={onChange}
       required={required}
-      className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors bg-white"
+      className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors bg-white"
     >
       <option value="" disabled>Select...</option>
       {options.map((option, index) => (
@@ -109,18 +109,26 @@ const BookingPage: React.FC = () => {
   };
 
   return (
+    <> {/* Header section */}
+        <div className="flex flex-col items-center justify-center h-full px-4 py-12 text-center bg-green-50">
+    {/* Breadcrumb navigation */}
+    <div className="mb-4 text-sm w-full">
+      <span className="text-light">
+        Home &gt;
+        <span className="text-primary">Book a Service</span>
+      </span>
+    </div>
+
+    {/* Section title */}
+    <h1 className="mb-4 text-5xl font-bold text-primary md:text-6xl">
+      Book a Gardening Service
+    </h1>
+  </div>
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans">
       <Head>
         <title>Book a Service</title>
       </Head>
       <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-xl shadow-lg border border-gray-200">
-        {/* Header section */}
-        <div className="text-center mb-10">
-          <p className="text-sm text-gray-500 mb-1">Home &gt; <span className='text-primary'>Book a Service</span></p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-green-700">
-            Book a Gardening Service
-          </h1>
-        </div>
 
         {/* Form container */}
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -175,7 +183,7 @@ const BookingPage: React.FC = () => {
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
-                options={['City A', 'City B', 'City C']}
+                options={['Kathmandu', 'Janakpur', 'Pokhara']}
                 required
               />
               <FormInput
@@ -213,11 +221,11 @@ const BookingPage: React.FC = () => {
                       max="10000"
                       value={formData.price}
                       onChange={handleChange}
-                      className="w-full h-2 bg-green-200 rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full h-2 bg-primary rounded-lg appearance-none cursor-pointer"
                     />
                     <span className="absolute -bottom-6 left-0 text-xs text-gray-500">NPR. 1000</span>
                     <span className="absolute -bottom-6 right-0 text-xs text-gray-500">NPR. 10000</span>
-                    <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-sm font-medium text-green-700">
+                    <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-sm font-medium text-primary">
                       NPR. {formData.price}
                     </span>
                   </div>
@@ -255,7 +263,7 @@ const BookingPage: React.FC = () => {
                 onChange={handleChange}
                 rows={4}
                 placeholder="Mention tools required, preferred gardener, plant types, etc."
-                className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors"
+                className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
               />
             </div>
           </section>
@@ -268,7 +276,7 @@ const BookingPage: React.FC = () => {
                 name="isConfidential"
                 checked={formData.isConfidential}
                 onChange={handleChange}
-                className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                className="h-4 w-4 text-white focus:ring-primary border-gray-300 rounded accent-primary"
               />
               <span>
                 Your details are kept confidential. We use your information only to coordinate your gardening service.
@@ -276,7 +284,7 @@ const BookingPage: React.FC = () => {
             </label>
             <button
               type="submit"
-              className="w-full sm:w-auto px-6 py-3 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors duration-300 flex items-center justify-center space-x-2"
+              className="w-full sm:w-auto px-6 py-3 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-primary focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors duration-300 flex items-center justify-center space-x-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -287,6 +295,7 @@ const BookingPage: React.FC = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
