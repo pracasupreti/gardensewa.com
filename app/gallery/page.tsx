@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Define the interface for a gallery item
 interface GalleryItem {
@@ -56,33 +57,48 @@ const GalleryGrid: React.FC<{ items: GalleryItem[] }> = ({ items }) => (
 
 const GalleryPage: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen max-w-7xl mx-auto px-8">
-      <Head>
+    <>
+     <Head>
         <title>Gallery</title>
       </Head>
-      <header className="py-8 bg-gray-50 text-center">
-        <p className="text-sm text-gray-500">Home / Gallery</p>
-        <h1 className="text-4xl font-bold text-green-800 mt-2">Gallery</h1>
-      </header>
+            <div className="h-full bg-green-50">
+  {/* Main content container */}
+  <div className="flex flex-col items-center justify-center h-full px-4 py-8 text-center">
+    {/* Breadcrumb navigation */}
+    <div className="mb-4 text-sm w-full">
+      <span className="text-light">
+        Home &gt;
+        <span className="text-primary">Gallery</span>
+      </span>
+    </div>
+
+    {/* Section title */}
+    <h1 className="mb-4 text-5xl font-bold text-primary md:text-6xl">
+      Gallery
+    </h1>
+  </div>
+</div>
+<div className="bg-white min-h-screen max-w-7xl mx-auto px-8">
       <main className="container mx-auto px-4 py-12 space-y-12">
         {/* Top Services Section */}
-        <section>
-          <h2 className="text-2xl font-bold text-green-700 mb-6">Top Services</h2>
+        <section className='py-2'>
+          <h2 className="text-2xl font-bold text-primary mb-6">Top Services</h2>
           <GalleryGrid items={topServices} />
         </section>
 
         {/* Indoor Outdoor Plants Section */}
-        <section>
-          <h2 className="text-2xl font-bold text-green-700 mb-6">Indoor Outdoor Plants</h2>
+        <section className='py-2'>
+          <h2 className="text-2xl font-bold text-primary mb-6">Indoor/Outdoor Plants</h2>
           <GalleryGrid items={indoorOutdoorPlants} />
         </section>
 
         {/* Rare Plants */}
-        <section>
-          <h2 className="text-2xl font-bold text-green-700 mb-6">Rare Plants</h2>
+        <section className='py-2'>
+          <h2 className="text-2xl font-bold text-primary mb-6">Rare Plants</h2>
           <GalleryGrid items={rarePlants} />
         </section>
       </main>
+                </div>
       <div className={`relative w-full h-[400px] flex items-center justify-center text-white my-12`}>
         {/* Background image with a dark overlay */}
         <img  
@@ -107,14 +123,16 @@ const GalleryPage: React.FC = () => {
             get answers to common services questions - save time and stay informed </p>
 
           {/* Action buttons */}
-          <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
-              view FAQ
-            </button>
-          </div>
-        </div>
+         <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+  <Link href="/faq">
+    <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
+      View FAQ
+    </button>
+  </Link>
+</div>
       </div>
     </div>
+    </>
   );
 };
 

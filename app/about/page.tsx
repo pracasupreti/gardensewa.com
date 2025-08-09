@@ -46,45 +46,30 @@ import Image from 'next/image';
 export default function AboutPage() {
   return (
     <main>
-      <div className={`relative w-full h-[400px] flex items-center justify-center text-white`}>
-        {/* Background image with a dark overlay */}
-        <img  
-          src="/image/navbar/about/about.jpg"
-          alt="A large green plant"
-          height={400}
-          width={400}
-          className="absolute inset-0 z-0 object-cover h-100 w-full"
-        />
-        <div className="absolute inset-0 bg-black/30 opacity-60 z-10"></div>
+      <div className="h-full bg-green-50">
+  {/* Main content container */}
+  <div className="flex flex-col items-center justify-center h-full px-4 py-8 text-center">
+    {/* Breadcrumb navigation */}
+    <div className="mb-4 text-sm w-full">
+      <span className="text-light">
+        Home &gt;
+        <span className="text-primary"> About Us</span>
+      </span>
+    </div>
 
-        {/* Main content container */}
-        <div className="relative z-10 max-w-4xl text-center px-4">
-          {/* Breadcrumb navigation */}
-          <div className="flex justify-center w-full text-sm mb-4">
-            <span className="text-white">Home &gt;<span className='text-green-400'> About Us</span></span>
-          </div>
+    {/* Section title */}
+    <h1 className="mb-4 text-5xl font-bold text-primary md:text-6xl">
+      About Us
+    </h1>
 
-          {/* Section title */}
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            About Us
-          </h1>
-
-          {/* Section description */}
-          <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-8">
-            We believe that everyone deserves a little more green in their life. Garden Sewa is built to bring plants, people, and peace together through simple and thoughtful gardening services.
-          </p>
-
-          {/* Action buttons */}
-          <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
-              Book a Service
-            </button>
-            <button className="text-white font-semibold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-primary hover:text-white hover:border-0 transition">
-              Explore Plants
-            </button>
-          </div>
-        </div>
-      </div>
+    {/* Section description */}
+    <p className="max-w-3xl mb-8 text-lg leading-relaxed text-light md:text-lg">
+      We believe that everyone deserves a little more green in their life.
+      Garden Sewa is built to bring plants, people, and peace together through
+      simple and thoughtful gardening services.
+    </p>
+  </div>
+</div>
 
       {/* Section Divider */}
       <div className="px-2 md:px-5 lg:px-8 py-8 md:py-16 lg:py-12">
@@ -92,7 +77,7 @@ export default function AboutPage() {
           {/* Left Column */}
           <div className="lg:w-1/2 flex flex-col justify-between p-6 md:p-10 lg:p-12 bg-white">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-green-800 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6 leading-tight">
                 Helping You Grow the <br /> Garden You Love
               </h1>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10">
@@ -132,10 +117,10 @@ export default function AboutPage() {
       </div>
 
       {/* Section Divider */}
-      <div className="font-sans bg-gray-50 py-4 px-4 sm:px-6 lg:px-16">
+      <div className="bg-gray-50 py-4 px-4 sm:px-6 lg:px-16">
         {/* Section Title */}
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-5xl font-extrabold text-green-800 tracking-tight leading-tight">
+          <h2 className="text-5xl font-extrabold text-secondary tracking-tight leading-tight">
             Description of Products & Services
           </h2>
         </div>
@@ -157,7 +142,7 @@ export default function AboutPage() {
       {/* Mission Section */}
       <div className='py-12'>
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-5xl font-extrabold text-green-800 tracking-tight leading-tight">
+          <h2 className="text-5xl font-extrabold text-secondary tracking-tight leading-tight">
             Our Mission
           </h2>
         </div>
@@ -197,7 +182,7 @@ export default function AboutPage() {
 
           {/* Left Section */}
           <div className="flex flex-1 flex-col justify-center text-center md:text-left">
-            <h1 className="mb-4 text-4xl font-bold text-green-900 md:text-5xl mb-8">
+            <h1 className="mb-4 text-4xl font-bold text-secondary md:text-5xl mb-8">
               Got Plants to <br className="hidden md:block" /> Share?
             </h1>
             <p className="mb-6 text-sm text-gray-600 md:text-base">

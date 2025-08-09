@@ -19,19 +19,19 @@ interface Article {
 const articles: Article[] = [
   {
     id: '1',
-    image: '/image/home/latest-update/updates1.png',
-    title: 'How can small-scale farmers thrive despite having limited land and resources?',
+    image: '/image/navbar/blog/blog1.jpg',
+    title: 'How Flower Brings Happiness',
     author: 'Author Name',
     img: '/image/home/latest-update/author.png',
     date: 'July 31, 2025',
     readTime: '5 min',
-    description: 'Small-scale farmers in Nepal can thrive despite having limited land and resources by adopting smart, sustainable, and community-based practices that maximize productivity, reduce dependency, and open up new income opportunities...',
-  },
+    description: 'In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, and daily pressures. But sometimes, the simplest things can bring the greatest joy. One of those beautiful, natural sources of happiness is flowers.',
+   },
   {
     id: '2',
     // Placeholder image URL.
-    image: '/image/home/latest-update/updates2.png',
-    title: 'What challenges do small farmers face in Nepal today?',
+    image: '/image/navbar/blog/blog2.jpg',
+    title: 'How to Start Gardening Business',
     author: 'Author Name',
     img: '/image/home/latest-update/author.png',
     date: 'July 30, 2025',
@@ -40,8 +40,8 @@ const articles: Article[] = [
   {
     id: '3',
     // Placeholder image URL.
-    image: '/image/home/latest-update/updates3.png',
-    title: 'How can science-backed sustainable practices help?',
+    image: '/image/navbar/blog/blog3.jpg',
+    title: ' Impact of Flower in Mental Health',
     author: 'Author Name',
     img: '/image/home/latest-update/author.png',
     date: 'July 29, 2025',

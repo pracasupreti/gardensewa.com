@@ -9,8 +9,9 @@ import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Gallery", link: "/gallery" },
   { name: "Services", link: "/services" },
+  { name: "Projects", link: "/projects" },
+  { name: "Gallery", link: "/gallery" },
   { name: "Blog", link: "/blog" },
   { name: "Contact", link: "/contact" },
 ];
@@ -94,8 +95,8 @@ export default function Header() {
                   <Link
                     href={item.link}
                     className={isActive(item.link)
-                      ? "bg-[#009000] text-white font-semibold rounded-4xl px-2 py-1"
-                      : "hover:text-[#009000] hover:bg-green-100 rounded-4xl px-2 py-1"
+                      ? "bg-primary text-white font-semibold rounded-lg px-2 py-1"
+                      : "hover:text-[#009000] hover:bg-accent rounded-lg px-2 py-1"
                     }
                   >
                     {item.name}
@@ -106,8 +107,8 @@ export default function Header() {
             <div className="flex items-center space-x-4">
               {/* Right Section (Hire Button + Mobile Menu Icon) */}
               <div className="flex items-center">
-                <Link href="/hire">
-                  <button className="hidden cursor-pointer lg:block md:block bg-primary hover:bg-secondary text-white py-2 px-4 rounded-4xl font-bold">
+                <Link href="/book-a-service">
+                  <button className="hidden cursor-pointer lg:block bg-primary hover:bg-secondary text-white py-2 px-4 rounded-xl font-bold">
                     Book a Service
                   </button>
                 </Link>
@@ -135,36 +136,36 @@ export default function Header() {
             </div>
 
             {/* Mobile Menu */}
-            <div
-              className={`fixed top-32 left-0 w-full h-[300px] block md:hidden lg:hidden bg-[#f1fff1] transform transition-transform duration-300 ${
-                menuOpen ? "translate-x-0" : "translate-x-full"
-              }`}
-            >
-              <ul className="px-4 text-[#008000] text-center text-[15px] my-3">
-                {navItems.map((item) => (
-                  <li key={item.name} className="py-2">
-                    <Link
-                      href={item.link}
-                      onClick={() => setMenuOpen(false)}
-                      className={isActive(item.link)
-                        ? "text-green-500 font-semibold"
-                        : "hover:text-green-500"
-                      }
-                    >
-                      {item.name}
-                    </Link>
-                    <div className="w-full h-[1px] bg-gray-200"></div>
-                  </li>
-                ))}
-                <li>
-                  <Link href="/hire" onClick={() => setMenuOpen(false)}>
-                    <button className="block lg:hidden md:hidden bg-[#008000] hover:bg-green-800 text-white py-2 mt-2 px-4 mx-auto rounded-lg">
-                      Book a Service
-                    </button>
-                  </Link>
-                </li>
-              </ul>
-            </div>
+                   <div
+          className={`lg:hidden fixed left-4 right-4 top-[90px] z-40 rounded-xl bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
+            menuOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <ul className="text-center text-[#008000] text-[16px] py-4 space-y-3 px-4">
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <Link
+                  href={item.link}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block py-2 rounded-md transition-colors duration-200 ${
+                    isActive(item.link)
+                      ? "text-green-600 font-semibold bg-green-100"
+                      : "hover:text-green-600 hover:bg-green-50"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/book-a-service" onClick={() => setMenuOpen(false)}>
+                <button className="w-full bg-primary hover:bg-secondary text-white py-2 mt-2 rounded-lg font-semibold">
+                  Book a Service
+                </button>
+              </Link>
+            </li>
+          </ul>
+        </div>
           </div>
         </div>
       </section>
