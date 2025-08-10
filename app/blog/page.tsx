@@ -1,412 +1,227 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Search } from "lucide-react";
 
-function Blog() {
-  let post = [
-    {
-      id: "1",
-      img: "/images/navbar/blog/1.avif",
-      title:
-        "Top Gardening Services for Nepali Homes",
-      description:
-        "GardenSewa brings you expert gardening services tailored to Nepali homes — from setup to maintenance, we make your dream garden come alive..",
-    },
-  ];
-  let post1 = [
-    {
-      id: "2",
-      img: "/images/navbar/blog/2.avif",
-      title:
-        "Best Gardening Products for Every Nepali Gardener",
-      description:
-        "Discover high-quality tools, soil, and accessories to boost your gardening experience. GardenSewa's curated products help gardens thrive in any region of Nepal...",
-    },
-  ];
-  let post2 = [
-    {
-      id: "3",
-      img: "/images/navbar/blog/3.avif",
-      title:
-        "Creative Gardening Ideas for Small Nepali Spaces",
-      description:
-        "Maximize limited spaces with clever gardening solutions that bring beauty and greenery to even the smallest areas of your home...",
-    },
-  ];
-  let post3 = [
-    {
-      id: "4",
-      img: "/images/navbar/blog/4.avif",
-      title:
-        "How to Start Your Home Garden in Kathmandu",
-      description:
-        "Want to grow your own vegetables in the city? Here's a beginner’s guide to starting a home garden in urban areas like Kathmandu...",
-    },
-  ];
-  let post4 = [
-    {
-      id: "5",
-      img: "/images/navbar/blog/5.avif",
-      title:
-        "Smart Gardening Tips for Urban Nepali Homes",
-      description:
-        "Living in a city doesn’t mean you have to give up your love for gardening. With limited space and busy routines, urban Nepali homes need smart, low-maintenance solutions. Let’s explore creative tips that help you maintain a thriving garden in the heart of the city...",
-    },
+interface BlogPost {
+  id: string;
+  img: string;
+  title: string;
+  description: string;
+}
 
-    {
-      id: "6",
-      img: "/images/navbar/blog/6.avif",
-      title:
-        "10 Easy-Care Plants Perfect for Nepali Beginners",
-      description:
-        "New to gardening? Start with these easy-care plants ideal for Nepali climate. They require low maintenance and bring instant freshness to any space..",
-    },
+const allPosts: BlogPost[] = [
+  // Popular Posts
+  {
+    id: "1",
+    img: "/images/blog/popular-1.jpg",
+    title: "The Blooming Business of Gardening Services",
+    description:
+      "Explore the rise of gardening services and their benefits for both urban and rural communities. Discover how professional gardeners bring beauty and sustainability to every space.",
+  },
+  {
+    id: "2",
+    img: "/images/blog/popular-2.jpg",
+    title: "Flower Brings Happiness",
+    description:
+      "Flowers are not only beautiful to look at but also uplift the mood and bring happiness into our lives. Learn how to use flowers to brighten up your day.",
+  },
+  {
+    id: "3",
+    img: "/images/blog/popular-3.jpg",
+    title: "Impact of Flowers on Mental Health",
+    description:
+      "Studies have shown that flowers have a positive impact on mental health, reducing stress and anxiety while boosting overall well-being.",
+  },
 
-    {
-      id: "7",
-      img: "/images/navbar/blog/7.avif",
-      title:
-        "Top Gardening Trends Nepali Gardeners Should Try in 2025",
-      description:
-        "Gardening is evolving with creative, sustainable, and space-saving techniques. In 2025, Nepali gardeners are embracing new trends that bring beauty efficiency, and eco-friendliness to homes and communities. Explore these popular..",
-    },
-  ];
-  let post5 = [
-    {
-      id: "8",
-      img: "/images/navbar/blog/8.avif",
-      title:
-        "Smart Watering Systems for Nepali Gardens: Save Time and Resources.",
-      description:
-        "Smart watering systems are automated devices that deliver water to plants based on time, soil moisture, and weather conditions. They include drip irrigation kits, automatic timers,..",
-    },
+  // Featured Posts
+  {
+    id: "4",
+    img: "/images/blog/featured-1.jpg",
+    title: "Flower Brings Happiness",
+    description:
+      "Flowers are not only beautiful to look at but also uplift the mood and bring happiness into our lives. Learn how to use flowers to brighten up your day.",
+  },
+  {
+    id: "5",
+    img: "/images/blog/featured-2.jpg",
+    title: "Impact of Flowers on Mental Health",
+    description:
+      "Studies have shown that flowers have a positive impact on mental health, reducing stress and anxiety while boosting overall well-being.",
+  },
 
-    {
-      id: "9",
-      img: "/images/navbar/blog/9.avif",
-      title:
-        "Beginner’s Guide to Growing Tomatoes in Pots",
-      description:
-        "Tomatoes are a favorite vegetable in Nepali kitchens and gardens alike. However, many urban and small-space gardeners face challenges growing tomatoes in traditional soil beds due...",
-    },
-  ];
-  let post6 = [
-    {
-      id: "10",
-      img: "/images/navbar/blog/10.avif",
-      title:
-        "Smart Balcony Gardening Ideas for Urban Nepali Homes",
-      description:
-        "As urbanization increases in Nepal, many residents live in apartments or houses with limited outdoor space. However, a small balcony can become a lush, productive garden...",
-    },
+  // Recent Posts
+  {
+    id: "6",
+    img: "/images/blog/recent-1.jpg",
+    title: "How to Care for Orchids",
+    description:
+      "A step-by-step guide to caring for orchids, ensuring they bloom beautifully year after year.",
+  },
+  {
+    id: "7",
+    img: "/images/blog/recent-2.jpg",
+    title: "Transform Your Garden with These Design Ideas",
+    description:
+      "Discover creative ways to redesign your garden for a fresh and vibrant look.",
+  },
+  {
+    id: "8",
+    img: "/images/blog/recent-3.jpg",
+    title: "Top Indoor Plants for Air Purification",
+    description:
+      "These indoor plants not only add beauty to your home but also help purify the air naturally.",
+  },
+  {
+    id: "9",
+    img: "/images/blog/recent-4.jpg",
+    title: "Outdoor Furniture Ideas for This Summer",
+    description:
+      "Upgrade your outdoor space with stylish and comfortable furniture perfect for summer gatherings.",
+  },
+  {
+    id: "10",
+    img: "/images/blog/recent-5.jpg",
+    title: "How to Grow a Lily in a Pot",
+    description:
+      "Learn how to plant, care for, and enjoy lilies in containers, even if you have limited space.",
+  },
+  {
+    id: "11",
+    img: "/images/blog/recent-6.jpg",
+    title: "The Beauty of Lotus Flowers",
+    description:
+      "Lotus flowers are not only beautiful but also hold cultural and spiritual significance in many traditions.",
+  },
+];
 
-    {
-      id: "11",
-      img: "/images/navbar/blog/11.avif",
-      title: "Container Gardening: A Smart Solution for Urban Nepali Homes.",
-      description:
-        "As urbanization increases in Nepal, especially in cities like Kathmandu, Pokhara, and Lalitpur, open spaces for traditional gardening are becoming scarce...",
-    },
-  ];
-  let post7 = [
-    {
-      id: "12",
-      img: "/images/navbar/blog/12.avif",
-      title:
-        "Organic Composting at Home: Turn Waste into Garden Gold",
-      description:
-        "In Nepal, household waste is often discarded without proper segregation, leading to landfill overflow and environmental pollution. But what if you could convert your kitchen waste into a valuable resource..",
-    },
-
-    {
-      id: "13",
-      img: "/images/navbar/blog/13.avif",
-      title: "Rainwater Harvesting for Home Gardens: A Sustainable Practice for Nepali Growers",
-      description:
-        " Water scarcity is a growing issue in many parts of Nepal, especially during the dry season. For gardeners, maintaining a consistent water supply  Water scarcity is a growing issue in...",
-    },
-
-    {
-      id: "14",
-      img: "/images/navbar/blog/14.avif",
-      title:
-        "Natural Pest Control Methods for a Healthy Nepali Garden",
-      description:
-        "Pests can quickly turn a thriving garden into a struggling one, damaging plants, spreading disease, and reducing yields. Many Nepali gardeners rely...",
-    },
-
-    {
-      id: "15",
-      img: "/images/navbar/blog/15.avif",
-      title:
-        "Rooftop Gardening in Nepal: Transforming Spaces into Green Retreats",
-      description:
-        "With increasing urbanization and limited land availability, rooftops across Nepali cities like Kathmandu, Lalitpur, and Biratnagar are being transformed...",
-    },
-  ];
-
+const Blog: React.FC = () => {
   return (
-    <>
-      <section className="blog bg-[#f9f9f9]">
-        <h1 className="text-center text-[45px] font-bold text-[#008000] py-10">
+    <div className="bg-[#f9f9f9] text-gray-800 font-sans">
+      {/* Blog Header */}
+      <div className="container mx-auto max-w-[1200px] py-10 px-4 lg:px-0">
+        <h1 className="text-center text-4xl font-bold text-[#008000] mb-4">
           Blog
         </h1>
-        <div className="w-full h-[1px] bg-gray-200"></div>
-
-        <div className="container mx-auto max-w-[1200px] mt-5 mb-10 px-4 lg:px-0">
-          {post.slice(0, 1).map((a) => (
-            <div
-              key={a.id}
-              className="blog-content max-h-[650px] border border-gray-200 lg:border-none rounded-xl"
-            >
-              <div className="relative w-full max-h-[500px] h-[500px] rounded-t-xl overflow-hidden">
-                <Image
-                  src={a.img}
-                  alt={a.title}
-                  fill
-                  className="object-cover rounded-t-xl"
-                />
-              </div>
-              <div className="blog-text py-2 px-2 text-gray-600">
-                <div className="title flex flex-col md:flex-row justify-between">
-                  <h5 className="text-[20px] font-semibold text-[#008000] py-2">
-                    {a.title}
-                  </h5>
-                  <Link
-                    href={`/blog/${a.id}`}
-                    className="hidden sm:block lg:block"
-                  >
-                    <button className="border border-[#008000] text-[#008000] shadow mt-4 rounded-lg px-2 py-1 my-2 gap-2 hover:bg-green-700 hover:text-white">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-                <p>{a.description}</p>
-                <Link href={`/blog/${a.id}`}>
-                  <button className="border cursor-pointer block sm:hidden lg:hidden border-[#008000] text-[#008000] shadow mt-4 rounded-lg px-2 py-1 my-2 gap-2 hover:bg-green-700 hover:text-white">
-                    Read More
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
+        <div className="relative flex items-center max-w-2xl mx-auto">
+          <input
+            type="text"
+            placeholder="Search blogs..."
+            className="w-full p-3 pl-10 rounded-full border border-gray-300 focus:outline-none focus:border-green-500 transition-colors"
+          />
+          <Search className="absolute left-3 text-gray-400" size={20} />
         </div>
+      </div>
 
-        <div className="container mx-auto max-w-[1200px] py-10 flex flex-wrap flex-col md:flex-row items-center  gap-y-6 justify-between px-4 lg:px-0">
-          {/* .................2nd content....................*/}
-          {post1.map((b) => (
-            <div
-              key={b.id}
-              className="blog-content max-w-[590px] flex flex-wrap max-h-[545x] border border-gray-200 rounded-xl"
-            >
-              <div className="relative w-full h-[210px] lg:h-[310px] rounded-t-xl overflow-hidden">
+      <div className="w-full h-[1px] bg-gray-200"></div>
+
+      {/* Popular Posts */}
+      <div className="container mx-auto max-w-[1200px] mt-10 mb-10 px-4 lg:px-0">
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">Popular Posts</h2>
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Main Popular */}
+          <Link href={`/blog/${allPosts[0].id}`} className="flex-1 block">
+            <div className="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="relative w-full h-[300px] md:h-[500px] lg:h-[450px]">
                 <Image
-                  src={b.img}
-                  alt={b.title}
+                  src={allPosts[0].img}
+                  alt={allPosts[0].title}
                   fill
-                  className="object-cover rounded-t-xl"
+                  className="object-cover"
                 />
               </div>
-              <div className="blog-text px-2 text-gray-600">
-                <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000] py-2">
-                  {b.title}
+              <div className="p-4 md:p-6 bg-white">
+                <h5 className="text-xl md:text-2xl font-bold text-[#008000] mb-2">
+                  {allPosts[0].title}
                 </h5>
-                <p className="text-[15px]">{b.description}</p>
-                <Link href={`/blog/${b.id}`}>
-                  <button className="border border-[#008000] mt-4 text-[#008000] shadow rounded-lg px-2 py-1 my-2 flex gap-2 hover:bg-green-700 hover:text-white">
-                    Read More
-                  </button>
-                </Link>
+                <p className="text-gray-600 text-sm md:text-base">
+                  {allPosts[0].description}
+                </p>
               </div>
             </div>
-          ))}
+          </Link>
 
-          {/* ...................3rd content................................ */}
-          <div className="blog-contents">
-            {post2.map((c) => (
-              <div
-                key={c.id}
-                className="blog-content overflow-hidden max-w-[590px] h-[300px] lg:h-[260px] border border-gray-200 rounded-xl flex text-gray-600 mb-4"
-              >
-                <div className="text w-full relative p-4">
-                  <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000] pb-2">
-                    {c.title}
-                  </h5>
-                  <p className="">{c.description}</p>
-                  <Link href={`/blog/${c.id}`}>
-                    <button className="absolute bottom-[10px] border border-[#008000] mt-10 text-[#008000] px-2 py-1 rounded-lg my-1 flex items-center gap-1  hover:bg-green-700 hover:text-white">
-                      Read More
-                    </button>
-                  </Link>
+          {/* Side Popular */}
+          <div className="w-full md:w-1/2 flex flex-col gap-6">
+            {allPosts.slice(1, 3).map((post) => (
+              <Link href={`/blog/${post.id}`} key={post.id} className="block">
+                <div className="border border-gray-200 rounded-xl overflow-hidden flex flex-col sm:flex-row shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="relative w-full sm:w-1/2 h-[200px] sm:h-auto min-h-[200px] flex-shrink-0">
+                    <Image
+                      src={post.img}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-4 bg-white flex-grow">
+                    <h5 className="text-lg font-bold text-[#008000] mb-2">
+                      {post.title}
+                    </h5>
+                    <p className="text-gray-600 text-sm">{post.description}</p>
+                  </div>
                 </div>
-                <div className="image relative hidden sm:block md:block lg:block w-[385px] h-[258px] rounded-e-xl overflow-hidden">
-                  <Image
-                    src="/images/navbar/blog/3.avif"
-                    alt="Description here"
-                    fill
-                    className="object-cover rounded-e-xl"
-                  />
-                </div>
-              </div>
-            ))}
-
-            {/* .....................4th content....................... */}
-            {post3.map((d) => (
-              <div
-                key={d.id}
-                className="blog-content  max-w-[590px] h-[300px] lg:h-[260px] border border-gray-200 rounded-xl flex text-gray-600"
-              >
-                <div className="text overflow-hidden w-full relative p-4">
-                  <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000] pb-2">
-                    {d.title}
-                  </h5>
-                  <p className="">{d.description}</p>
-                  <Link href={`/blog/${d.id}`}>
-                    <button className="border absolute bottom-[10px] border-[#008000] mt-10 text-[#008000] px-2 py-1 rounded-lg flex items-center gap-1 hover:bg-green-700 hover:text-white">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-                <div className="image relative hidden sm:block md:block lg:block w-full h-[258px] rounded-e-xl overflow-hidden">
-                  <Image
-                    src="/images/navbar/blog/4.avif"
-                    alt="Description here"
-                    fill
-                    className="object-cover rounded-e-xl"
-                  />
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
+      </div>
 
-        {/* ......................5th content........................ */}
-        <div className="container mx-auto max-w-[1200px] gap-6 grid md:grid-cols-2 lg:grid-cols-3 items-center justify-between mb-10 px-4 lg:px-0">
-          {post4.slice(0, 3).map((e) => (
-            <div
-              key={e.id}
-              className="blog-content w-full border border-gray-200 rounded-xl"
-            >
-              <div className="relative w-full lg:h-[280px] h-[210px] rounded-t-xl overflow-hidden">
-                <Image
-                  src={e.img}
-                  alt=""
-                  fill
-                  className="object-cover rounded-t-xl"
-                />
+      {/* Featured Posts */}
+      <div className="container mx-auto max-w-[1200px] py-10 px-4 lg:px-0">
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">Featured Posts</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {allPosts.slice(3, 5).map((post) => (
+            <Link href={`/blog/${post.id}`} key={post.id} className="block">
+              <div className="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="relative w-full h-[250px]">
+                  <Image
+                    src={post.img}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4 bg-white">
+                  <h5 className="text-xl font-bold text-[#008000] mb-2">
+                    {post.title}
+                  </h5>
+                  <p className="text-gray-600 text-sm">{post.description}</p>
+                </div>
               </div>
-
-              <div className="blog-text py-2 px-2 text-gray-600">
-                <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000]">
-                  {e.title}
-                </h5>
-                <p className="py-2 overflow-hidden">{e.description}</p>
-                <Link href={`/blog/${e.id}`}>
-                  <button className="border shadow border-[#008000] text-[#008000] mt-8 rounded-lg px-2 py-1 flex gap-2 hover:bg-green-700 hover:text-white">
-                    Read More
-                  </button>
-                </Link>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
+      </div>
 
-        {/* .................................6th Content......................... */}
-        <div className="container mx-auto max-w-[1200px] flex flex-col md:flex-row items-center gap-y-6 gap-4 px-4 lg:px-0">
-          {post5.slice(0, 2).map((f) => (
-            <div
-              key={f.id}
-              className="blog-content max-w-[600px] h-[300px] lg:h-[240px] border border-gray-200 overflow-hidden rounded-xl flex text-gray-600 mb-4"
-            >
-              <div className="text w-full relative px-4 py-2">
-                <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000]">
-                  {f.title}
-                </h5>
-                <p className="text-[15px]">{f.description}</p>
-                <Link href={`/blog/${f.id}`}>
-                  <button className="border absolute bottom-2 border-[#008000] text-[#008000] mt-6 px-2 py-1 rounded-lg flex items-center gap-1 hover:bg-green-700 hover:text-white">
-                    Read More
-                  </button>
-                </Link>
+      {/* Recent Posts */}
+      <div className="container mx-auto max-w-[1200px] py-10 px-4 lg:px-0">
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">Recent Posts</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {allPosts.slice(5).map((post) => (
+            <Link href={`/blog/${post.id}`} key={post.id} className="block">
+              <div className="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="relative w-full h-[200px]">
+                  <Image
+                    src={post.img}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4 bg-white">
+                  <h5 className="text-lg font-bold text-[#008000] mb-2">
+                    {post.title}
+                  </h5>
+                  <p className="text-gray-600 text-sm">{post.description}</p>
+                </div>
               </div>
-              <div className="image relative hidden lg:block md:block sm:block w-[300px] h-[238px] rounded-e-xl overflow-hidden">
-                <Image
-                  src={f.img}
-                  alt=""
-                  fill
-                  className="object-cover rounded-e-xl"
-                />
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
-
-        {/* ......................................7th Content................................ */}
-        <div className="container mx-auto max-w-[1200px] flex flex-col md:flex-row items-center gap-y-6 gap-4 px-4 lg:px-0">
-          {post6.slice(0, 2).map((g) => (
-            <div
-              key={g.id}
-              className="blog-content max-w-[600px] h-[300px] lg:h-[240px] border border-gray-200 rounded-xl overflow-hidden flex text-gray-600 mb-6"
-            >
-              <div className="text w-full relative px-4 py-2">
-                <h5 className="text-[18px] lg:text-[20px] font-semibold text-[#008000]">
-                  {g.title}
-                </h5>
-                <p className="text-[15px]">{g.description}</p>
-                <Link href={`/blog/${g.id}`}>
-                  <button className="border absolute bottom-2 border-[#008000] text-[#008000] px-2 py-1 rounded-lg flex items-center gap-1 hover:bg-green-700 hover:text-white">
-                    Read More
-                  </button>
-                </Link>
-              </div>
-              <div className="image relative hidden lg:block md:block sm:block w-[300px] h-[238px] rounded-e-xl overflow-hidden">
-                <Image
-                  src={g.img}
-                  alt=""
-                  fill
-                  className="object-cover rounded-e-xl"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* .........................................8th Content.................................... */}
-        <div className="container mx-auto max-w-[1200px] gap-4 grid sm:grid-cols-2 lg:grid-cols-4 px-4 lg:px-0 items-center gap-y-6 justify-between justify py-5">
-          {post7.map((h) => (
-            <div
-              key={h.id}
-              className="blog-content overflow-hidden w-full lg:h-[450px] h-[470px] items-center relative border border-gray-200 rounded-xl"
-            >
-              <div className="relative w-full lg:h-[170px] h-[210px] rounded-t-xl overflow-hidden">
-                <Image
-                  src={h.img}
-                  alt=""
-                  fill
-                  className="object-cover rounded-t-xl"
-                />
-              </div>
-
-              <div className="blog-text py-2 px-2 text-gray-600">
-                <h5 className="text-[18px] lg:text-[16px] font-semibold text-[#008000] py-2">
-                  {h.title}
-                </h5>
-                <p>{h.description}</p>
-                <Link href={`/blog/${h.id}`}>
-                  <button className="border absolute bottom-[10px] border-[#008000] text-[#008000] shadow mt-8 rounded-lg px-2 py-1 flex gap-2 hover:bg-green-700 hover:text-white">
-                    Read More
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
-}
+};
 
 export default Blog;
-
-
-
