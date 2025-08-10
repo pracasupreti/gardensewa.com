@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Define the TypeScript interface for an Article
 interface Article {
@@ -13,6 +14,7 @@ interface Article {
   readTime: string;
   description?: string;
   img: string;
+  Link:string;
 }
 
 // Mock data for the articles, mimicking the content from the image
@@ -25,6 +27,7 @@ const articles: Article[] = [
     img: '/image/home/latest-update/author.png',
     date: 'July 31, 2025',
     readTime: '5 min',
+    Link: "/how-flower-brings-happiness",
     description: 'In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, and daily pressures. But sometimes, the simplest things can bring the greatest joy. One of those beautiful, natural sources of happiness is flowers.',
    },
   {
@@ -36,6 +39,7 @@ const articles: Article[] = [
     img: '/image/home/latest-update/author.png',
     date: 'July 30, 2025',
     readTime: '5 min',
+    Link: "/how-to-start-gardening-business",
   },
   {
     id: '3',
@@ -46,6 +50,7 @@ const articles: Article[] = [
     img: '/image/home/latest-update/author.png',
     date: 'July 29, 2025',
     readTime: '5 min',
+    Link:"#",
   },
 ];
 
@@ -63,44 +68,48 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
   const descriptionClasses = large ? 'text-sm mb-4 line-clamp-3' : 'hidden'; // Description only for large card
 
   return (
-    <div className="relative rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300">
-      {/* Image container with responsive height */}
-      <div className={`relative w-full ${imageContainerClasses}`}>
-        <img
-          src={article.image}
-          alt={article.title}
-          height={large ? 400 : 300} // Adjust height based on large prop
-          width={large ? 600 : 400} // Adjust width based on large prop
-          className="transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full" // Zoom effect on hover
-        />
-      </div>
 
-      {/* Gradient overlay for better text readability on image */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+<Link href={article.Link}>
+  <div className="relative rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300">
+    {/* Image container with responsive height */}
+    <div className={`relative w-full ${imageContainerClasses}`}>
+      <img
+        src={article.image}
+        alt={article.title}
+        height={large ? 400 : 300}
+        width={large ? 600 : 400}
+        className="transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full"
+      />
+    </div>
 
-      {/* Text content positioned at the bottom of the card */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-        <h3 className={`font-bold ${titleClasses} mb-2`}>{article.title}</h3>
-        {/* Description for the large card */}
-        {large && <p className={descriptionClasses}>{article.description}</p>}
-        <div className="flex items-center text-sm opacity-90">
-          {/* Placeholder for author avatar - you can replace with an actual image */}
-          <div className="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center mr-2 text-gray-700 font-semibold text-xs">
-            <img
-              src={article.img}
-              alt={article.title}
-              height={24}
-              width={24}
-              className="rounded-full object-cover"
-            />
-          </div>
-          <span className="mr-3">{article.author}</span>
-          <span className="mr-3">&bull;</span>
-          <span className="mr-3">{article.date}</span>
-          <span>&bull; {article.readTime}</span>
+    {/* Gradient overlay for better text readability on image */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+
+    {/* Text content positioned at the bottom of the card */}
+    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+      <h3 className={`font-bold ${titleClasses} mb-2`}>{article.title}</h3>
+
+      {large && <p className={descriptionClasses}>{article.description}</p>}
+
+      <div className="flex items-center text-sm opacity-90">
+        <div className="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center mr-2 text-gray-700 font-semibold text-xs">
+          <img
+            src={article.img}
+            alt={article.title}
+            height={24}
+            width={24}
+            className="rounded-full object-cover"
+          />
         </div>
+        <span className="mr-3">{article.author}</span>
+        <span className="mr-3">&bull;</span>
+        <span className="mr-3">{article.date}</span>
+        <span>&bull; {article.readTime}</span>
       </div>
     </div>
+  </div>
+</Link>
+
   );
 };
 

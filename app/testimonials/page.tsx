@@ -12,47 +12,47 @@ const testimonials: Testimonial[] = [
   {
     name: "Dinesh Pathak",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=DP",
+    image: "/image/home/testimonials/t1.png",
   },
   {
     name: "Rodrig Smith",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=RS",
+    image: "/image/home/testimonials/t2.png",
   },
   {
     name: "Edward Smith",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=ES",
+    image: "/image/home/testimonials/t3.png",
   },
   {
     name: "Alex Junior",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=AJ",
+    image: "/image/home/testimonials/t4.png",
   },
   {
     name: "David Bowie",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=DB",
+    image: "/image/home/testimonials/t5.png",
   },
   {
     name: "James Murphy",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=JM",
+    image: "/image/home/testimonials/t6.png",
   },
   {
     name: "Aman Pathak",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=AP",
+    image: "/image/home/testimonials/t7.png",
   },
   {
     name: "Adarsh Singh",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=AS",
+    image: "/image/home/testimonials/t8.png",
   },
   {
     name: "Raunak Gupta",
     quote: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
-    image: "https://placehold.co/100x100/16a34a/fff?text=RG",
+    image: "/image/home/testimonials/t9.png",
   },
 ];
 
