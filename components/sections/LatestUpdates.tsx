@@ -83,7 +83,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
     </div>
 
     {/* Gradient overlay for better text readability on image */}
-    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+    <div className="absolute inset-0 via-black/60 to-transparent"></div>
 
     {/* Text content positioned at the bottom of the card */}
     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -92,7 +92,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
       {large && <p className={descriptionClasses}>{article.description}</p>}
 
       <div className="flex items-center text-sm opacity-90">
-        <div className="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center mr-2 text-gray-700 font-semibold text-xs">
+        <div className="w-6 h-6 rounded-full flex items-center justify-center mr-2 text-gray-700 font-semibold text-xs">
           <img
             src={article.img}
             alt={article.title}
@@ -116,7 +116,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, large = false }) => 
 // Home Component: The main page component that renders the Latest Updates section
 const LatestUpdates: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 font-sans"> {/* Using a light gray background */}
+    <div className="min-h-screen font-sans"> {/* Using a light gray background */}
       <Head>
         <title>Latest Updates - Farming</title>
         <meta name="description" content="Latest updates and articles on farming practices." />
