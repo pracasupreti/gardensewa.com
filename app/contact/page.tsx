@@ -1,7 +1,7 @@
 // pages/contact.tsx
-import React from "react";
-import Head from "next/head";
-import { ArrowRight, Mail, Phone, User } from "lucide-react";
+import React from 'react';
+import Head from 'next/head';
+import { ArrowRight, Mail, Phone, User } from 'lucide-react';
 
 interface Expert {
   name: string;
@@ -10,9 +10,9 @@ interface Expert {
 }
 
 const experts: Expert[] = [
-  { name: "Niranjan Sharma", role: "Project Manager", imageUrl: "/image/icons/profile.svg" },
-  { name: "Pracas Upreti", role: "CTO", imageUrl: "/image/icons/profile.svg" },
-  { name: "Nadan Tamang", role: "Information Manager", imageUrl: "/image/icons/profile.svg" },
+  { name: "Niranjan Sharma", role: "Project Manager", imageUrl: "/image/navbar/contact/Niranjan Sharma.png" },
+  { name: "Pracas Upreti", role: "CTO", imageUrl: "/image/navbar/contact/Pracas Upreti.png" },
+  { name: "Nadan Tamang", role: "Information Manager", imageUrl: "/image/navbar/contact/Madan Tamang.png" },
 ];
 
 const ContactPage = () => {
@@ -45,11 +45,11 @@ const ContactPage = () => {
 
         {/* Contact Section */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 -mt-12 sm:-mt-20 relative z-10">
-          <div className="bg-gray-100 rounded-3xl shadow-lg flex flex-col lg:flex-row overflow-hidden border border-gray-100">
+          <div className="bg-[#F3FFF2] rounded-3xl shadow-lg flex flex-col lg:flex-row overflow-hidden border border-gray-100">
 
             {/* Left Column - Contact Info */}
-            <div className="bg-primary text-white p-6 lg:p-8 w-full lg:w-1/2 flex flex-col justify-center rounded-none lg:rounded-l-3xl">
-              <h2 className="text-xl sm:text-2xl font-bold mb-8">Contact Information</h2>
+    <div className="bg-gradient-to-r from-[#43963A] to-[#009000] text-white p-8 sm:p-8 lg:p-8 m-4 sm:m-6 rounded-3xl w-full lg:w-1/2 flex flex-col justify-center items-center">
+      <h2 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-centers">Contact Information</h2>
               <div className="space-y-6">
                 {[
                   { title: 'Email', value: 'support@gardensewa.com', icon: '/image/icons/email.png' },
@@ -58,8 +58,8 @@ const ContactPage = () => {
                   { title: 'Location', value: 'Maitidevi, Kathmandu', icon: '/image/icons/location.png' },
                 ].map((item, idx) => (
                   <div className="flex items-start" key={idx}>
-                    <div className="bg-white text-black rounded-full p-3 w-12 h-12 flex items-center justify-center mr-4">
-                      <img src={item.icon} alt={item.title} className="w-6 h-6" />
+                    <div className="bg-white text-black rounded-full p-3 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mr-4">
+                      <img src={item.icon} alt={item.title} className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <div>
                       <h3 className="font-semibold">{item.title}</h3>
@@ -71,11 +71,13 @@ const ContactPage = () => {
             </div>
 
             {/* Right Column - Contact Form */}
-            <div className="bg-white text-light p-6 lg:p-8 w-full lg:w-1/2 flex justify-center items-center rounded-none lg:rounded-r-3xl">
+            <div className="bg-white text-light p-8 sm:p-8 lg:p-8 m-4 sm:m-6 w-full lg:w-2/3 rounded-3xl flex justify-center items-center">
               <form className="space-y-6 w-full max-w-md">
                 {/* Name */}
                 <div>
-                  <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
+                  <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                    Name
+                  </label>
                   <div className="relative mt-1">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <User className="h-5 w-5 text-gray-400" />
@@ -91,7 +93,9 @@ const ContactPage = () => {
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="text-sm font-medium text-gray-700">Email</label>
+                  <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    Email
+                  </label>
                   <div className="relative mt-1">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <Mail className="h-5 w-5 text-gray-400" />
@@ -107,7 +111,9 @@ const ContactPage = () => {
 
                 {/* Phone */}
                 <div>
-                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</label>
+                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                    Phone Number
+                  </label>
                   <div className="relative mt-1">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <Phone className="h-5 w-5 text-gray-400" />
@@ -123,7 +129,9 @@ const ContactPage = () => {
 
                 {/* Message */}
                 <div>
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
+                  <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     rows={5}
@@ -136,7 +144,7 @@ const ContactPage = () => {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="px-8 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition shadow-md flex items-center space-x-2"
+                    className="px-6 sm:px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-secondary transition shadow-md flex items-center space-x-2"
                   >
                     <span>Send Message</span>
                     <ArrowRight className="w-5 h-5" />
@@ -148,9 +156,11 @@ const ContactPage = () => {
         </div>
 
         {/* Our Location */}
-        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-          <section className="container mx-auto max-w-7xl mb-16 px-0 sm:px-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-8">Our Location</h2>
+        <div className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+          <section className="container mx-auto max-w-7xl mb-12 sm:mb-16 px-0 sm:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-primary mb-6 sm:mb-8">
+              Our Location
+            </h2>
             <div className="relative w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden border border-gray-200">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0493883767512!2d85.3226278695138!3d27.711186085795504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef740a066ed089%3A0xaf7934e44a7b1e17!2sSRIYOG!5e0!3m2!1sen!2snp!4v1754747091169!5m2!1sen!2snp"
@@ -165,21 +175,27 @@ const ContactPage = () => {
 
           {/* Our Experts */}
           <section className="container mx-auto max-w-7xl px-4 sm:px-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-8">Our Experts</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-primary mb-6 sm:mb-8">
+              Our Experts
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {experts.map((expert, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center px-4 py-12 bg-white rounded-2xl transition-transform transform hover:scale-105 border border-gray-200"
+                  className="flex flex-col items-center px-4 py-8 sm:py-12 bg-white rounded-2xl transition-transform transform hover:scale-105 border border-gray-200"
                 >
                   <img
                     src={expert.imageUrl}
                     alt={expert.name}
-                    className="w-32 h-32 rounded-full object-cover mb-4"
+                    className="lg:w-44 lg:h-44 sm:w-32 sm:h-32 rounded-full object-cover mb-4"
                   />
                   <div className="text-center">
-                    <p className="text-sm text-dark font-medium mb-4">{expert.role}</p>
-                    <p className="text-xl font-semibold text-dark">{expert.name}</p>
+                    <p className="text-sm text-dark bg-green-50 rounded-lg p-2 font-medium mb-2 sm:mb-4">
+                      {expert.role}
+                    </p>
+                    <p className="text-lg sm:text-xl font-semibold text-dark">
+                      {expert.name}
+                    </p>
                   </div>
                 </div>
               ))}

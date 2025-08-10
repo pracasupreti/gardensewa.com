@@ -77,7 +77,7 @@ export default function Footer() {
               <li><Link href="/plants" className={linkHoverClass}>Plants</Link></li>
               <li><Link href="/blog" className={linkHoverClass}>Blog</Link></li>
               <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
-              <li><Link href="/partener" className={linkHoverClass}>Our Parteners</Link></li>
+              <li><Link href="/parteners" className={linkHoverClass}>Our Parteners</Link></li>
               <li><Link href="/client" className={linkHoverClass}>Our Clients</Link></li>
               <li><Link href="/become-client" className={linkHoverClass}>Become a Client</Link></li>
             </ul>
