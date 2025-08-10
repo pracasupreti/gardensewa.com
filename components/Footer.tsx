@@ -72,20 +72,19 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h4 className="font-semibold mb-2">Explore</h4>
+            <h4 className="font-semibold text-lg mb-2 text-secondary">Quick Links</h4>
             <ul className="space-y-1">
               <li><Link href="/plants" className={linkHoverClass}>Plants</Link></li>
               <li><Link href="/blog" className={linkHoverClass}>Blog</Link></li>
               <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
-              <li><Link href="/parteners" className={linkHoverClass}>Our Parteners</Link></li>
-              <li><Link href="/client" className={linkHoverClass}>Our Clients</Link></li>
+              <li><Link href="/partner" className={linkHoverClass}>Our Partner</Link></li>
               <li><Link href="/become-client" className={linkHoverClass}>Become a Client</Link></li>
             </ul>
           </div>
 
           {/* Explore Plants */}
           <div>
-            <h4 className="font-semibold mb-2">Explore Plants</h4>
+            <h4 className="font-semibold text-lg mb-2 text-secondary">Explore Plants</h4>
             <ul className="space-y-1">
               {[
                 "Indoor Plants",
@@ -103,19 +102,19 @@ export default function Footer() {
 
           {/* Product Help */}
           <div>
-            <h4 className="font-semibold mb-2">Product Help</h4>
+            <h4 className="font-semibold text-lg mb-2 text-secondary">Product Help</h4>
             <ul className="space-y-1">
-              <li><Link href="/services" className={linkHoverClass}>Book a Service</Link></li>
-              <li><Link href="/faqs" className={linkHoverClass}>FAQs</Link></li>
+              <li><Link href="/book-a-service" className={linkHoverClass}>Book a Service</Link></li>
+              <li><Link href="/faq" className={linkHoverClass}>FAQs</Link></li>
               <li><Link href="/contact" className={linkHoverClass}>Contact</Link></li>
-              <li><Link href="/privacy-policy" className={linkHoverClass}>Privacy Policy</Link></li>
-              <li><Link href="/testimonials" className={linkHoverClass}>Testimonials</Link></li>
+              <li><Link href="/privacy" className={linkHoverClass}>Privacy Policy</Link></li>
+              <li><Link href="/conditions" className={linkHoverClass}>Terms and Conditions</Link></li>
             </ul>
           </div>
 
           {/* Download Section */}
           <div>
-            <h4 className="font-semibold mb-2">Download</h4>
+            <h4 className="font-semibold text-lg mb-2 text-secondary">Download</h4>
             <div className="space-y-2">
               <img
                 src="/image/home/footer/play-store.png"

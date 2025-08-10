@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const slides = [
@@ -12,6 +13,7 @@ const slides = [
       "Growing green, growing together. From garden cleaning to plant shopping, we make your outdoors bloom.",
     button: "Read More",
     button2: "Explore Plants",
+    button2link: "/plants" ,
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const slides = [
       "From garden vleaning to private gardening, we offer realiable solutions that matches your outdoor needs.",
     button: "Read More",
     button2: "Book a Service",
+     button2link: "/book-a-service" ,
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ const slides = [
       "Discover a variety of plants indoor, outdoor, air purifying, and more, delivered with care",
     button: "Read More",
     button2: "Explore Plants",
+     button2link: "/plants" ,
   },
   {
     id: 4,
@@ -42,6 +46,7 @@ const slides = [
       "Book a service, ask a question, or just say hello! We're here to help your garden thrive.",
     button: "Read More",
     button2: "Contact Us",
+     button2link: "/contact" ,
   },
 ];
 
@@ -68,7 +73,7 @@ const HomeHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-screen pt-[80px] overflow-hidden">
+    <div className="relative w-full h-130 pt-[80px] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -81,7 +86,7 @@ const HomeHero: React.FC = () => {
             alt={slide.alt}
             height={1080}
             width={1920}
-            className="brightness-75 object-cover w-full h-full"
+            className="brightness-75 object-cover w-full h-130"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
@@ -97,12 +102,14 @@ const HomeHero: React.FC = () => {
                 </p>
 
                 <div className="flex gap-4">
-                  <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
+                  <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-lg hover:bg-secondary transition">
                     {slide.button}
                   </button>
-                  <button className="text-white font-semibold border border-white px-6 py-2 md:px-8 md:py-3 rounded-full  hover:bg-primary hover:text-white hover:border-0 transition">
+                  <Link href={slide.button2link}>
+                  <button className="text-white font-semibold border border-white px-6 py-2 md:px-8 md:py-3 rounded-lg  hover:bg-primary hover:text-white hover:border-0 transition">
                     {slide.button2}
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

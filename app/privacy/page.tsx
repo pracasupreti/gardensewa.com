@@ -1,125 +1,190 @@
-import React from "react";
+"use client";
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
-function Privacy() {
+// This is the main component for the Privacy Policy page
+const PrivacyPolicyPage = () => {
+  // State to keep track of the currently active section in the table of contents
+  const [activeSection, setActiveSection] = useState('introduction');
+
+  // Use a useEffect hook to handle the scroll event and update the active section
+  useEffect(() => {
+    // Function to check which section is currently in view
+    const handleScroll = () => {
+      const sections = ['introduction', 'information-we-collect', 'how-we-use-your-information', 'data-protection', 'your-rights'];
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      for (const sectionId of sections) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once on mount to set the initial active section
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Function to handle clicking on a link in the table of contents
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // Smooth scroll to the clicked section
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const tableOfContentsItems = [
+    { id: 'introduction', label: 'Introduction' },
+    { id: 'information-we-collect', label: 'Information We Collect' },
+    { id: 'how-we-use-your-information', label: 'How We Use Your Information' },
+    { id: 'data-protection', label: 'Data Protection' },
+    { id: 'your-rights', label: 'Your Rights' },
+  ];
+
   return (
-    <div>
-      <section className="privacy-policy bg-[#f4f4f4]">
-        <div className="container mx-auto max-w-[1000px] text-justify pb-10 px-4 lg:px-0">
-          <h1 className="font-bold text-[30px] py-5">Privacy</h1>
-          <p className="text-gray-700 text-[15px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            cumque at numquam repellendus nesciunt possimus magni voluptates,
-            doloremque quia sit.
-          </p>
-
-          <h1 className="font-bold text-[20px] py-5">Information We Collect</h1>
-          <p className="text-gray-700 text-[15px]">
-            We may collect the following information:
-          </p>
-          <ul className="list list-disc py-2 px-4 text-gray-700 text-[15px]">
-            <li>Your name and contact information</li>
-            <li>Demographic information</li>
-            <li>
-              Other information relevant to customer surveys and/or offers
-            </li>
-          </ul>
-
-          <h1 className="font-bold text-[20px] py-5">
-            How We Use the Information
+    <><div className="text-center mb-12 bg-green-50 p-12">
+          <p className="text-sm text-gray-500 mb-2">Home &gt; <span className='ml-2 text-primary'>Privacy Policy</span></p>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary p-2">
+            Privacy Policy
           </h1>
-          <p className="text-gray-700 text-[15px]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-            consequuntur assumenda, obcaecati neque eius nulla inventore
-            doloribus molestiae laboriosam amet.
-          </p>
-
-          <ul className="list list-disc py-2 px-4 text-gray-700 text-[15px]">
-            <li className="py-1">Internal record keeping</li>
-            <li className="py-1">Improving our products and services</li>
-            <li className="py-1">
-              Sending promotional emails about new products, special offers, or
-              other information which we think you may find interesting
-            </li>
-            <li className="py-1">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-              iusto repellat sapiente nulla magni fuga doloribus debitis
-              accusantium. Molestias similique expedita quaerat eos sapiente
-              ipsa natus illo distinctio optio quam.
-            </li>
-          </ul>
-          <h1 className="font-bold text-[20px] py-5">Security</h1>
-          <p className="text-gray-700 text-[15px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad
-            debitis fugiat iure sequi nostrum perspiciatis ea quisquam,
-            repudiandae maiores sit ex laudantium ullam, mollitia aliquam. Minus
-            facere perspiciatis molestias.
-          </p>
-
-          <h1 className="font-bold text-[20px] py-5">Cookies</h1>
-          <p className="text-gray-700 text-[15px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
-            reiciendis natus. Minima mollitia voluptatum ullam dolore earum
-            dicta quia dolor assumenda, totam temporibus ipsam. Error voluptates
-            necessitatibus architecto accusamus expedita quos voluptas in
-            quidem. Inventore reprehenderit voluptatibus hic ratione asperiores,
-            voluptatum libero amet ducimus laudantium. Sint quidem vel odit.
-            Autem nemo corporis omnis, non aliquam optio in sint consectetur
-            voluptas provident iusto dicta dolores vero laborum unde aliquid
-            ullam ab.
-          </p>
-
-          <h1 className="font-bold text-[20px] py-5">
-            Links to Other Websites
-          </h1>
-          <p className="text-gray-700 text-[15px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            odio repudiandae quo vitae maxime dicta facere, molestiae ut! Fuga
-            odio tempora incidunt quibusdam nisi libero saepe dicta ab neque
-            officiis, corrupti labore ea quasi perferendis aliquid ratione quia
-            natus deserunt adipisci cum vel possimus? Maxime a alias rem
-            voluptatem omnis?
-          </p>
-
-          <h1 className="font-bold text-[20px] py-5">
-            Controlling Your Personal Information
-          </h1>
-          <p className="text-gray-700 text-[15px]">
-            You may choose to restrict the collection or use of your personal
-            information in the following ways:
-          </p>
-
-          <ul className="list list-disc py-2 px-4 text-gray-700 text-[15px]">
-            <li className="py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              consequatur, laudantium, aliquid quod, et nulla ullam nihil ea
-              maxime eligendi iure officiis reiciendis. Amet veritatis deleniti
-              ex assumenda unde consectetur?
-            </li>
-            <li className="py-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              voluptate, enim ex tenetur cupiditate quo impedit labore, repellat
-              amet ipsa debitis eius illo inventore eaque. Expedita corporis
-              fugit iste cum!
-            </li>
-            <li className="py-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Praesentium itaque adipisci quos. Excepturi labore voluptate ab
-              pariatur quos maxime dolorem odio temporibus at, ullam voluptas
-              modi minus. Incidunt, fugiat numquam.
-            </li>
-            <li className="py-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Aspernatur, dolore blanditiis, harum ut illum rerum voluptatem ea
-              corrupti exercitationem officiis vel? Ut eaque natus maiores.
-            </li>
-          </ul>
-          <p className="text-gray-700 text-[15px] pt-2 font-medium">
-            This privacy policy is subject to change without notice.
-          </p>
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            How GardenSewa handles your data</p>
         </div>
-      </section>
-    </div>
-  );
-}
+    <div className="bg-white text-gray-800 font-sans">
+      <Head>
+        <title>Privacy Policy | Garden Seva</title>
+        <meta name="description" content="Garden Seva Privacy Policy" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-export default Privacy;
+      <div className="flex flex-col md:flex-row min-h-screen max-w-7xl mx-auto p-8">
+        {/* Left Column: Table of Contents */}
+        <nav className="md:w-1/4 p-8 bg-green-50 sticky top-0 h-full">
+          <h2 className="text-xl font-bold text-secondary mb-6">Table of Contents</h2>
+          <ul>
+            {tableOfContentsItems.map((item) => (
+              <li key={item.id} className="mb-2">
+                <a
+                  href={`#${item.id}`}
+                  onClick={(e) => handleLinkClick(e, item.id)}
+                  className={`block p-2 rounded-lg transition-colors duration-200 ${
+                    activeSection === item.id
+                      ? 'border-l-4 border-primary text-secondary font-bold'
+                      : 'hover:bg-gray-200 text-gray-600'
+                  }`}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Right Column: Main Content */}
+        <main className="md:w-3/4 p-8">
+          {/* Introduction Section */}
+          <section id="introduction" className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
+            <p className="text-gray-700 leading-relaxed">
+              At Garden Seva, we believe that your privacy is just as important as the peace and beauty we bring to your outdoor spaces. Whether you're browsing our website, booking a landscaping service, or contacting us for gardening support, we are committed to keeping your personal information safe, transparent, and under your control. The purpose of this privacy policy is to explain what information we collect, how we use it, and for what purposes. Please take a moment to read through this policy carefully to understand how we handle your information and your choices in managing it. By using our website or services, you agree to the practices described below.
+            </p>
+          </section>
+
+          {/* Information We Collect Section */}
+          <section id="information-we-collect" className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Information We Collect</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              We may collect the following types of information:
+            </p>
+            <ol className="list-decimal list-inside pl-4 space-y-2 text-gray-700">
+              <li>
+                <span className="font-semibold">Personal Information</span>
+                <ul className="list-disc list-inside ml-4 space-y-1">
+                  <li>Name</li>
+                  <li>Email address</li>
+                  <li>Phone number</li>
+                  <li>Location/address</li>
+                  <li>Billing and payment information (processed securely by third-party services)</li>
+                </ul>
+              </li>
+              <li>
+                <span className="font-semibold">Usage Data</span>
+                <ul className="list-disc list-inside ml-4 space-y-1">
+                  <li>IP address</li>
+                  <li>Browser type and version</li>
+                  <li>Pages visited</li>
+                  <li>Time and date of visit</li>
+                  <li>Device type</li>
+                </ul>
+              </li>
+              <li>
+                <span className="font-semibold">Cookies and Tracking Technologies</span>
+                <ul className="list-disc list-inside ml-4 space-y-1">
+                  <li>We use cookies to enhance your experience, improve our website, and understand user behavior. You can disable cookies via your browser settings.</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+
+          {/* How We Use Your Information Section */}
+          <section id="how-we-use-your-information" className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">How We Use Your Information</h2>
+            <p className="text-gray-700 leading-relaxed">
+              We use your information to:
+            </p>
+            <ul className="list-disc list-inside pl-4 space-y-2 text-gray-700">
+              <li>Provide and manage our gardening and landscaping services</li>
+              <li>Communicate with you about appointments, inquiries, and promotions</li>
+              <li>Improve the functionality and user experience of our website</li>
+              <li>Process transactions securely</li>
+              <li>Respond to customer support requests</li>
+              <li>Analyze site usage and trends</li>
+            </ul>
+          </section>
+
+          {/* Data Protection Section */}
+          <section id="data-protection" className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Data Protection</h2>
+            <p className="text-gray-700 leading-relaxed">
+              We do not sell, rent, or lease your personal information to third parties. We may share your data only in the following situations:
+            </p>
+            <ul className="list-disc list-inside pl-4 space-y-2 text-gray-700">
+              <li>With trusted third-party service providers for payment processing, analytics, and customer support</li>
+              <li>When required by law or in response to legal processes</li>
+              <li>To protect the rights, property, or safety of Garden Seva, our users, or others</li>
+            </ul>
+          </section>
+
+          {/* Your Rights Section */}
+          <section id="your-rights" className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Your Rights</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              You have the right to:
+            </p>
+            <ul className="list-disc list-inside pl-4 space-y-2 text-gray-700">
+              <li>Access the personal information we hold about you</li>
+              <li>Request corrections or updates to your data</li>
+              <li>Withdraw consent for marketing communications at any time</li>
+              <li>Request deletion of your personal information (subject to legal obligations)</li>
+            </ul>
+            <p className="text-gray-700 leading-relaxed mt-4">
+              To exercise these rights, contact us at <a href="mailto:gardenseva@mail.com" className="text-primary hover:underline">gardenseva@mail.com</a>
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+    </>
+  );
+};
+
+export default PrivacyPolicyPage;

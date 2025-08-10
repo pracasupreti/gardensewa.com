@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 // Define interfaces for data types
@@ -116,7 +117,7 @@ const PlantCard: React.FC<Plant> = ({
         }}
       />
       {labels && (
-        <div className="absolute top-3 right-3 bg-green-200 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+        <div className="absolute top-3 right-3 bg-green-200 text-primary text-xs font-semibold px-3 py-1 rounded-full">
           {labels.join(', ')}
         </div>
       )}
@@ -170,9 +171,13 @@ const ServicesAndPlants: React.FC = () => {
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900 p-4 sm:p-6 lg:p-8">
       {/* Our Services Section */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-center mb-8 text-green-800">
-          Our Services
-        </h2>
+        <div className="flex flex-row justify-between items-center mb-6 max-w-6xl mx-auto">
+          <h2 className="text-2xl lg:text-4xl font-bold text-secondary">Our Services</h2>
+          <Link href="/services"><button className="bg-white text-primary border border-primary py-2 px-6 rounded-lg hover:bg-secondary hover:text-white transition-colors flex items-center space-x-2">
+            <span>View All</span>
+            <span>→</span>
+          </button></Link>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {services.map((service) => (
             <ServiceCard key={service.id} {...service} />
@@ -183,11 +188,11 @@ const ServicesAndPlants: React.FC = () => {
       {/* Explore Plants Section */}
       <section>
         <div className="flex flex-row justify-between items-center mb-6 max-w-6xl mx-auto">
-          <h2 className="text-2xl lg:text-4xl font-bold text-green-800">Explore Plants</h2>
-          <button className="bg-white text-green-700 border border-green-700 py-2 px-6 rounded-full hover:bg-green-600 hover:text-white transition-colors flex items-center space-x-2">
+          <h2 className="text-2xl lg:text-4xl font-bold text-secondary">Explore Plants</h2>
+          <Link href="/plants"><button className="bg-white text-primary border border-primary py-2 px-6 rounded-lg hover:bg-secondary hover:text-white transition-colors flex items-center space-x-2">
             <span>View All</span>
             <span>→</span>
-          </button>
+          </button></Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {plants.map((plant) => (

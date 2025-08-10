@@ -72,10 +72,10 @@ const ChooseUs: React.FC = () => {
   ];
 
   return (
-    <div className="font-sans antialiased bg-gray-50 py-12 px-4 sm:px-6 lg:px-16">
+    <div className="font-sans antialiased bg-gray-50 py-4 px-4 sm:px-6 lg:px-16 mt-4">
       {/* Why Choose Us Section */}
-      <section className="max-w-7xl mx-auto mb-16">
-        <h2 className="lg:text-5xl font-bold text-center text-green-800 mb-12">Why Choose Us?</h2>
+      <section className="max-w-7xl mx-auto mb-8">
+        <h2 className="text-2xl lg:text-4xl font-bold text-secondary text-center mb-12">Why Choose Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <FeatureCard
@@ -89,7 +89,8 @@ const ChooseUs: React.FC = () => {
       </section>
 
       {/* Our Clients Section */}
-      <section className="max-w-7xl mx-auto px-8 py-16">
+      <section className="max-w-7xl mx-auto px-8 py-4">
+        <h2 className="text-2xl lg:text-4xl font-bold text-secondary text-center mb-12">Our Clients</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {clients.map((client, index) => (
             <div

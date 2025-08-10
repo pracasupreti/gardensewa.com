@@ -112,7 +112,7 @@ export default function ClientPage() {
                   className="h-32 w-auto object-contain"
                 />
               </div>
-              <p className="text-black text-sm text-left leading-relaxed mt-4 mb-4">
+              <p className="text-black text-center justify-center text-sm  leading-relaxed mt-4 mb-4">
                 {client.text}
               </p>
               <a
@@ -148,7 +148,7 @@ export default function ClientPage() {
               Join our growing network of satisfied clients.
             </p>
             <Link href="book-a-service">
-            <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-secondary transition">
+            <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-lg hover:bg-secondary transition">
               Book a Service
             </button></Link>
           </div>

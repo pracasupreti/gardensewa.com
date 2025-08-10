@@ -53,7 +53,7 @@ export default function AboutPage() {
     <div className="mb-4 text-sm w-full">
       <span className="text-light">
         Home &gt;
-        <span className="text-primary"> About Us</span>
+        <span className="text-primary ml-2"> About Us</span>
       </span>
     </div>
 
@@ -149,7 +149,7 @@ export default function AboutPage() {
 
         <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-full">
           <div
-            className="relative w-full max-w-full mx-0 overflow-hidden shadow-2xl py-12"
+            className="relative w-full max-w-full mx-0 overflow-hidden py-12"
             style={{
               backgroundImage: 'url(/image/navbar/about/OurMission.jpg)',
               backgroundSize: 'cover',
@@ -191,7 +191,7 @@ export default function AboutPage() {
               Nepal!
             </p>
             <div className="mt-4 md:mt-0">
-              <button className="rounded-full bg-primary px-6 py-3 font-semibold text-white transition duration-300 ease-in-out hover:bg-secondary">
+              <button className="rounded-lg bg-primary px-6 py-3 font-semibold text-white transition duration-300 ease-in-out hover:bg-secondary">
                 Start Selling
               </button>
             </div>
