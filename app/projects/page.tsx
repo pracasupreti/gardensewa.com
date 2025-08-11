@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaQuoteLeft } from "react-icons/fa";
 import { ChevronRight, ArrowRight } from "lucide-react";
+import { useState } from "react";
 
 const clients = [
   {
@@ -24,7 +25,7 @@ const clients = [
     link: "https://www.marriott.com/en-us/hotels/ktmal-aloft-kathmandu-thamel/overview/?nst=paid&cid=PAI_GLB0004YFY_GLE000BHOR_GLF000OCGE&nst=paid&gclsrc=aw.ds&gad_source=1&gad_campaignid=22178666619&gbraid=0AAAAADilnidqVZJVxY377ZINfb9DlsduA&gclid=CjwKCAjw49vEBhAVEiwADnMbbB2ExULZAhvCxIRIOMKWNlEMTC0Sg2F8FSSBwc4FAzV_04N6yDk9qxoCpUIQAvD_BwE",
   },
   {
-    image: "/image/home/client/4.png",
+    image: "/image/project/yakandyeti.png",
     name: "Yak & Yeti",
     text: "Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.",
     link: "https://www.yakandyeti.com/",
@@ -36,31 +37,31 @@ const clients = [
     link: "https://soaltee.com/",
   },
   {
-    image: "/image/home/client/client6.png",
+    image: "/image/project/hotel.png",
     name: "Metropolitan Hotel",
     text: "Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.",
     link: "#",
   },
   {
-    image: "/image/home/client/client7.png",
+    image: "/image/project/nepal_med.png",
     name: "Nepal Mediciti",
     text: "Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.",
     link: "https://www.nepalmediciti.com/",
   },
   {
-    image: "/image/home/client/client8.png",
+    image: "/image/project/grande.png",
     name: "Grande International Hospital",
     text: "Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.",
     link: "https://www.grandehospital.com/en",
   },
   {
-    image: "/image/home/client/client9.jpg",
+    image: "/image/project/Mercure.png",
     name: "Mercure Hotel",
     text: "Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.",
     link: "#",
   },
   {
-    image: "/image/home/client/client10.png",
+    image: "/image/project/hilton.png",
     name: "Hilton",
     text: "Aloft Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture with a focus on art, music, and technology. Enjoy our vibrant social spaces, and warm hospitality with us during your stay in Kathmandu.",
     link: "https://www.hilton.com/en/",
@@ -110,31 +111,60 @@ export default function ClientPage() {
       </div>
       {/* Cards */}
       <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25 max-w-[1440px] flex-warp">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="bg-white border-[3px] border-[#C9EDC5] rounded-3xl p-6 flex flex-col items-start text-left"
-            >
-              <div className="w-full flex justify-center mb-4">
-                <img
-                  src={client.image}
-                  alt={client.name}
-                  className="h-32 w-auto object-contain"
-                />
-              </div>
-              <p className="text-black text-sm text-left leading-relaxed mt-4 mb-4 pb-2">
-                {client.text}
-              </p>
-              <span className="border-t-2 border-t-card w-full p-2"></span>
-              <a
-                href={client.link}
-                className="mt-auto self-center bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-6 py-2 rounded-lg hover:bg-secondary transition"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {clients.map((client, index) => {
+            const [isHovered, setIsHovered] = useState(false);
+
+            return (
+              <div
+                key={index}
+                className="bg-white border-[3px] border-[#C9EDC5] rounded-3xl p-4 sm:p-6 flex flex-col items-start text-left relative overflow-hidden cursor-pointer"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               >
-                Browse More
-              </a>
-            </div>
-          ))}
+                {/* Your existing content - unchanged */}
+                <div className="w-full flex justify-center mb-4">
+                  <img
+                    src={client.image}
+                    alt={client.name}
+                    className="h-24 sm:h-28 md:h-32 w-auto object-contain"
+                  />
+                </div>
+                <p className="text-black text-xs sm:text-sm text-left leading-relaxed mt-4 mb-4 pb-2 flex-1">
+                  {client.text}
+                </p>
+                <span className="border-t-2 border-t-card w-full p-2"></span>
+                <a
+                  href={client.link}
+                  className="mt-auto self-center bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-2 rounded-lg hover:bg-secondary transition text-sm sm:text-base"
+                >
+                  Browse More
+                </a>
+
+                {/* Hover content - slides up from bottom to cover full card */}
+                <div
+                  className={`absolute inset-0 bg-white rounded-3xl p-4 sm:p-6 flex flex-col transition-transform duration-500 ease-in-out ${
+                    isHovered
+                      ? "transform translate-y-0"
+                      : "transform translate-y-full"
+                  }`}
+                >
+                  <div className="text-green-600 text-4xl sm:text-5xl font-bold leading-none mb-4">
+                    "
+                  </div>
+                  <p className="text-black text-sm sm:text-base leading-relaxed flex-1 mb-6">
+                    {client.text}
+                  </p>
+                  <a
+                    href={client.link}
+                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center"
+                  >
+                    Browse More
+                  </a>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
       {/*image bg */}

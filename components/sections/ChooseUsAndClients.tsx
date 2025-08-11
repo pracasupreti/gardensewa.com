@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 // FeatureCard props and component
@@ -13,14 +13,19 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   title,
   description,
 }) => (
-  <div className="flex w-[300px] h-[248px] flex-col items-center p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
-    <div className="bg-white p-4 rounded-2xl mb-4 w-[76px] h-[76px]">
-      <img src={icon} className="w-[50px] h-[50px]" />
+  <div className="flex w-full sm:w-[280px] md:w-[300px] h-auto min-h-[200px] sm:min-h-[220px] md:h-[248px] flex-col items-center p-4 sm:p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
+    <div className="bg-white p-3 sm:p-4 rounded-2xl mb-3 sm:mb-4 w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[76px] md:h-[76px]">
+      <img
+        src={icon}
+        className="w-[36px] h-[36px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px]"
+      />
     </div>
-    <h3 className="text-2xl font-semibold text-title mb-2 text-center">
+    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-title mb-2 text-center">
       {title}
     </h3>
-    <p className="text-center text-light-body">{description}</p>
+    <p className="text-center text-light-body text-sm sm:text-base">
+      {description}
+    </p>
   </div>
 );
 
@@ -77,13 +82,13 @@ const ChooseUs: React.FC = () => {
   ];
 
   return (
-    <div className="font-sans antialiased mt-4 max-w-[1300px]">
+    <div className="font-sans antialiased mt-4 w-full max-w-[1300px]">
       {/* Why Choose Us Section */}
-      <section className="mx-auto mb-40">
-        <h2 className="text-2xl lg:text-[52px] font-bold text-secondary text-center mb-12">
+      <section className="mx-auto mb-20 sm:mb-32 lg:mb-40">
+        <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[52px] font-bold text-secondary text-center mb-8 sm:mb-10 lg:mb-12 px-2">
           Why Choose Us?
         </h2>
-        <div className="flex flex-wrap items-center justify-center gap-6">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -96,40 +101,70 @@ const ChooseUs: React.FC = () => {
       </section>
 
       {/* Our Clients Section */}
-      <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25">
-        <h2 className="flex w-full justify-between">
-          <div className=" text-secondary font-bold text-2xl lg:text-4xl">
+      <section className="mx-auto flex flex-col gap-6 mb-20 sm:mb-25">
+        <h2 className="flex flex-col sm:flex-row w-full justify-between items-start sm:items-center gap-4">
+          <div className="text-secondary font-bold text-xl sm:text-2xl lg:text-4xl">
             Our Clients
           </div>
-          <a className="border border-secondary py-2.5 px-6 rounded-md flex text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
-            View All <ArrowRight />
+          <a className="border border-secondary py-2 sm:py-2.5 px-4 sm:px-6 rounded-md flex text-secondary text-base sm:text-lg gap-1.5 hover:bg-secondary hover:text-white transition-colors self-start sm:self-auto">
+            View All <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </a>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="bg-white border-[3px] border-[#C9EDC5] rounded-3xl p-6 flex flex-col items-start text-left"
-            >
-              <div className="w-full flex justify-center mb-4">
-                <img
-                  src={client.image}
-                  alt={client.name}
-                  className="h-32 w-auto object-contain"
-                />
-              </div>
-              <p className="text-black text-sm text-left leading-relaxed mt-4 mb-4 pb-2">
-                {client.text}
-              </p>
-              <span className="border-t-2 border-t-card w-full p-2"></span>
-              <a
-                href={client.link}
-                className="mt-auto self-center bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-6 py-2 rounded-lg hover:bg-secondary transition"
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          {clients.map((client, index) => {
+            const [isHovered, setIsHovered] = useState(false);
+
+            return (
+              <div
+                key={index}
+                className="bg-white border-[3px] border-[#C9EDC5] rounded-3xl p-4 sm:p-6 flex flex-col items-start text-left relative overflow-hidden cursor-pointer"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               >
-                Browse More
-              </a>
-            </div>
-          ))}
+                {/* Your existing content - unchanged */}
+                <div className="w-full flex justify-center mb-4">
+                  <img
+                    src={client.image}
+                    alt={client.name}
+                    className="h-24 sm:h-28 md:h-32 w-auto object-contain"
+                  />
+                </div>
+                <p className="text-black text-xs sm:text-sm text-left leading-relaxed mt-4 mb-4 pb-2 flex-1">
+                  {client.text}
+                </p>
+                <span className="border-t-2 border-t-card w-full p-2"></span>
+                <a
+                  href={client.link}
+                  className="mt-auto self-center bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-2 rounded-lg hover:bg-secondary transition text-sm sm:text-base"
+                >
+                  Browse More
+                </a>
+
+                {/* Hover content - slides up from bottom to cover full card */}
+                <div
+                  className={`absolute inset-0 bg-white rounded-3xl p-4 sm:p-6 flex flex-col transition-transform duration-500 ease-in-out ${
+                    isHovered
+                      ? "transform translate-y-0"
+                      : "transform translate-y-full"
+                  }`}
+                >
+                  <div className="text-green-600 text-4xl sm:text-5xl font-bold leading-none mb-4">
+                    "
+                  </div>
+                  <p className="text-black text-sm sm:text-base leading-relaxed flex-1 mb-6">
+                    {client.text}
+                  </p>
+                  <a
+                    href={client.link}
+                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center"
+                  >
+                    Browse More
+                  </a>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>

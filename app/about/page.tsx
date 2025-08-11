@@ -49,7 +49,7 @@ const features = [
 ];
 export default function AboutPage() {
   return (
-    <main>
+    <main className="flex flex-col gap-30">
       <div className="h-full bg-[#F6F9F6]">
         {/* Main content container */}
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">

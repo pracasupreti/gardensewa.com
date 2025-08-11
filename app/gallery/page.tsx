@@ -133,11 +133,11 @@ const GalleryGrid: React.FC<{ items: GalleryItem[] }> = ({ items }) => (
 
 const GalleryPage: React.FC = () => {
   return (
-    <>
+    <div className="mb-40">
       <Head>
         <title>Gallery</title>
       </Head>
-      <div className="h-full bg-green-50">
+      <div className="h-[209px] bg-green-50">
         {/* Main content container */}
         <div className="flex flex-col items-center justify-center h-full px-4 py-8 text-center">
           {/* Breadcrumb navigation */}
@@ -225,7 +225,7 @@ const GalleryPage: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

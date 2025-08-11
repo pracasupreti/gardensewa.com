@@ -12,22 +12,25 @@ export default function Footer() {
   return (
     <div className="relative">
       {/* Main Footer */}
-      <footer className="bg-card pt-24" style={{ height: "502px" }}>
+      <footer
+        className="bg-card pt-24"
+        style={{ height: "auto", minHeight: "502px" }}
+      >
         {/* Newsletter Section - Overlapping */}
         <div
           className="absolute top-0 left-0 right-0 z-10"
           style={{ transform: "translateY(-70.5px)" }}
         >
           <div
-            className="bg-[#00AA00] text-white px-8 mx-4 md:mx-28 rounded-2xl shadow-2xl"
-            style={{ height: "141px" }}
+            className="bg-[#00AA00] text-white px-4 sm:px-8 mx-2 sm:mx-4 md:mx-28 rounded-2xl shadow-2xl"
+            style={{ minHeight: "141px", height: "auto" }}
           >
-            <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6 h-full">
+            <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 py-4 sm:py-6 md:h-full">
               <div className="text-center md:text-left">
-                <h2 className="text-[52px] font-semibold">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] font-semibold leading-tight">
                   Subscribe Newsletter
                 </h2>
-                <p className="text-base">
+                <p className="text-sm sm:text-base mt-2">
                   Get updates on services, offers, and plant tips straight to
                   your inbox.
                 </p>
@@ -36,23 +39,24 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-4 py-2 w-full text-black font-bold focus:outline-none h-[52px]"
+                  className="px-3 sm:px-4 py-2 w-full text-black font-bold focus:outline-none h-[44px] sm:h-[52px] text-sm sm:text-base"
                 />
                 <button
                   type="submit"
-                  className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:bg-secondary text-white w-[85px] px-4 py-2 rounded-full my-1 mx-1 flex items-center justify-center"
+                  className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:bg-secondary text-white w-[70px] sm:w-[85px] px-3 sm:px-4 py-2 rounded-full my-1 mx-1 flex items-center justify-center"
                 >
-                  <ArrowRight className="w-[26px] h-[26px]" />
+                  <ArrowRight className="w-[20px] h-[20px] sm:w-[26px] sm:h-[26px]" />
                 </button>
               </form>
             </div>
           </div>
         </div>
-        <div className="max-w-[1200px] mx-auto px-4 flex flex-col justify-between h-full">
+
+        <div className="max-w-[1200px] mx-auto px-2 sm:px-4 flex flex-col justify-between h-full">
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-sm text-gray-800 mb-8 p-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 text-sm text-gray-800 mb-6 sm:mb-8 p-4 sm:p-6 lg:p-10">
             {/* Brand Info */}
-            <div className="col-span-1 md:col-span-1">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-1">
               <div className="flex items-center mb-3">
                 <Image
                   src="/image/logo/gardensewa.png"
@@ -60,46 +64,46 @@ export default function Footer() {
                   width={24}
                   height={24}
                   priority
-                  className="w-6 h-6"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                 />
-                <p className="ml-2 text-lg text-primary font-bold">
+                <p className="ml-2 text-base sm:text-lg text-primary font-bold">
                   GardenSewa
                 </p>
               </div>
-              <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+              <p className="text-gray-600 text-xs sm:text-sm mb-4 leading-relaxed">
                 GardenSewa is your one-stop solution for plants, gardening
                 services, and green lifestyle essentials.
               </p>
 
               {/* App Store Buttons */}
-              <div className="space-y-2">
+              <div className="space-y-2 flex flex-col items-start">
                 <Image
                   src="/image/home/footer/app-store.png"
                   alt="App Store"
-                  width={120}
-                  height={40}
-                  className="cursor-pointer"
+                  width={100}
+                  height={33}
+                  className="cursor-pointer w-[100px] sm:w-[120px] h-auto"
                 />
                 <Image
                   src="/image/home/footer/play-store.png"
                   alt="Google Play"
-                  width={120}
-                  height={40}
-                  className="cursor-pointer"
+                  width={100}
+                  height={33}
+                  className="cursor-pointer w-[100px] sm:w-[120px] h-auto"
                 />
               </div>
             </div>
 
             {/* Quick Links */}
-            <div>
-              <h4 className="font-semibold text-base mb-3 text-gray-900">
+            <div className="col-span-1">
+              <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Quick Links
               </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/plants"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Plants
                   </Link>
@@ -107,7 +111,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/blog"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Blog
                   </Link>
@@ -115,7 +119,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/testimonials"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Testimonials
                   </Link>
@@ -123,7 +127,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/partner"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Our Partner
                   </Link>
@@ -131,7 +135,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/become-client"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Become a Client
                   </Link>
@@ -140,15 +144,15 @@ export default function Footer() {
             </div>
 
             {/* Explore Plants */}
-            <div>
-              <h4 className="font-semibold text-base mb-3 text-gray-900">
+            <div className="col-span-1">
+              <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Explore Plants
               </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Indoor Plants
                   </Link>
@@ -156,7 +160,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Outdoor Plants
                   </Link>
@@ -164,7 +168,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Pet-Friendly Plants
                   </Link>
@@ -172,7 +176,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Air-Purifying Plants
                   </Link>
@@ -180,7 +184,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Low Maintenance
                   </Link>
@@ -189,15 +193,15 @@ export default function Footer() {
             </div>
 
             {/* Product Help */}
-            <div>
-              <h4 className="font-semibold text-base mb-3 text-gray-900">
+            <div className="col-span-1">
+              <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Product Help
               </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/book-a-service"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Book a Service
                   </Link>
@@ -205,7 +209,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/faq"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     FAQs
                   </Link>
@@ -213,7 +217,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Contact
                   </Link>
@@ -221,7 +225,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/privacy"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Privacy Policy
                   </Link>
@@ -229,7 +233,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/conditions"
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
                   >
                     Terms and Conditions
                   </Link>
@@ -238,22 +242,22 @@ export default function Footer() {
             </div>
 
             {/* Get the Latest News */}
-            <div>
-              <h4 className="font-semibold text-base mb-3 text-gray-900">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+              <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Get the Latest News
               </h4>
               <div className="space-y-3">
                 {/* News Item 1 */}
-                <div className="flex gap-3">
+                <div className="flex gap-2 sm:gap-3">
                   <Image
                     src="/image/blog/flower-happiness.jpg"
                     alt="How Flower Brings Happiness"
-                    width={50}
-                    height={40}
-                    className="rounded object-cover flex-shrink-0"
+                    width={40}
+                    height={32}
+                    className="rounded object-cover flex-shrink-0 w-[40px] h-[32px] sm:w-[50px] sm:h-[40px]"
                   />
-                  <div>
-                    <h5 className="text-sm font-medium text-gray-900 mb-1">
+                  <div className="min-w-0 flex-1">
+                    <h5 className="text-xs sm:text-sm font-medium text-gray-900 mb-1 line-clamp-2">
                       How Flower Brings Happiness
                     </h5>
                     <p className="text-xs text-gray-500">
@@ -263,16 +267,16 @@ export default function Footer() {
                 </div>
 
                 {/* News Item 2 */}
-                <div className="flex gap-3">
+                <div className="flex gap-2 sm:gap-3">
                   <Image
                     src="/image/blog/gardensewa-business.jpg"
                     alt="The Blooming Business of GardenSewa"
-                    width={50}
-                    height={40}
-                    className="rounded object-cover flex-shrink-0"
+                    width={40}
+                    height={32}
+                    className="rounded object-cover flex-shrink-0 w-[40px] h-[32px] sm:w-[50px] sm:h-[40px]"
                   />
-                  <div>
-                    <h5 className="text-sm font-medium text-gray-900 mb-1">
+                  <div className="min-w-0 flex-1">
+                    <h5 className="text-xs sm:text-sm font-medium text-gray-900 mb-1 line-clamp-2">
                       The Blooming Business of GardenSewa
                     </h5>
                     <p className="text-xs text-gray-500">
@@ -285,31 +289,33 @@ export default function Footer() {
           </div>
 
           {/* Bottom Footer */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-secondary">
-            <div className="text-sm text-gray-600">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 border-t border-secondary pt-4 pb-4">
+            <div className="text-xs sm:text-sm text-gray-600 text-center sm:text-left">
               Copyright © SRIYOG Consulting Pvt. Ltd. All Rights Reserved.
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-3">
-              <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
+            <div className="flex gap-2 sm:gap-3">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
                 <Image
                   src="/image/icons/facebook-footer-icon.svg"
                   alt="Facebook"
-                  width={16}
-                  height={16}
+                  width={14}
+                  height={14}
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                 />
               </div>
-              <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
                 <Image
                   src="/image/icons/linkedin-footer-icon.svg"
                   alt="LinkedIn"
-                  width={16}
-                  height={16}
+                  width={14}
+                  height={14}
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                 />
               </div>
-              <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
-                <Twitter height={16} width={16} />
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
+                <Twitter height={14} width={14} />
               </div>
             </div>
           </div>
