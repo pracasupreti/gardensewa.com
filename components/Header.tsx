@@ -3,8 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { useState, useEffect, useCallback } from "react";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTimes } from "react-icons/fa";
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -24,167 +24,234 @@ export default function Header() {
   // Check if the current pathname is active
   const isActive = (href: string) => pathname === href;
 
-  // Handle scroll event
+  // Handle scroll event with debouncing to fix glitching
+  const handleScroll = useCallback(() => {
+    const scrollPosition = window.scrollY;
+    setIsScrolled(scrollPosition > 50);
+  }, []);
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+    // Throttle scroll events to prevent glitching
+    let timeoutId: NodeJS.Timeout;
+
+    const throttledScroll = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(handleScroll, 10); // Small delay to smooth transitions
+    };
+
+    window.addEventListener("scroll", throttledScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", throttledScroll);
+      clearTimeout(timeoutId);
+    };
+  }, [handleScroll]);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (menuOpen && !target.closest(".mobile-menu-container")) {
+        setMenuOpen(false);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (menuOpen) {
+      document.addEventListener("click", handleClickOutside);
+      document.body.style.overflow = "hidden"; // Prevent background scroll
+    } else {
+      document.body.style.overflow = "unset";
+    }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("click", handleClickOutside);
+      document.body.style.overflow = "unset";
     };
-  }, []);
+  }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-20">
+    <header className="sticky top-0 left-0 right-0 z-50">
       {/* Top Contact Bar */}
       <section
-        className={`header bg-primary border-b-1 border-gray-200 py-1 transition-all duration-300 ${
-          isScrolled ? "hidden" : ""
+        className={`header bg-primary border-b border-gray-200 transition-all duration-500 ease-in-out overflow-hidden ${
+          isScrolled
+            ? "h-0 py-0 opacity-0 transform -translate-y-full"
+            : "h-auto py-1 sm:py-1.5 md:py-2 opacity-100 transform translate-y-0"
         }`}
       >
-        <div className="container max-w-[1250px] mx-auto flex flex-wrap md:flex-row text-center justify-between lg:px-5 text-white py-0 px-2 rounded-t-2xl">
-          <div className="contact flex items-center gap-1 text-[14px]">
-            <a className="hover:text-green-500" href="tel:+977-9852025735">
+        <div className="container max-w-[1250px] mx-auto flex flex-col sm:flex-row items-center justify-between px-3 sm:px-4 md:px-5 lg:px-6 text-white">
+          <div className="contact flex items-center gap-1 text-xs sm:text-sm md:text-[14px] mb-1 sm:mb-0">
+            <a
+              className="hover:text-green-200 transition-colors duration-200"
+              href="tel:+977-9852025735"
+            >
               Call Support: +977-9852025735
             </a>
           </div>
-          <div className="flex items-center space-x-3">
+
+          <div className="flex items-center space-x-2 sm:space-x-3">
             <a
               href="#"
               aria-label="Facebook"
-              className="hover:scale-110 transition-transform"
+              className="hover:scale-110 hover:text-green-200 transition-all duration-200"
             >
-              <FaFacebook className="w-5 h-5" />
+              <FaFacebook className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
             </a>
             <a
               href="#"
               aria-label="Instagram"
-              className="hover:scale-110 transition-transform"
+              className="hover:scale-110 hover:text-green-200 transition-all duration-200"
             >
-              <FaInstagram className="w-5 h-5" />
+              <FaInstagram className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
             </a>
             <a
               href="#"
               aria-label="LinkedIn"
-              className="hover:scale-110 transition-transform"
+              className="hover:scale-110 hover:text-green-200 transition-all duration-200"
             >
-              <FaLinkedinIn className="w-5 h-5" />
+              <FaLinkedinIn className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
             </a>
           </div>
         </div>
       </section>
 
       {/* Main Nav */}
-      <section className="nav-header bg-white block border-b-1 border-gray-500">
-        <div className="container mx-auto max-w-[1250px] px-5 py-0">
-          <div className="nav-bar flex flex-wrap justify-between items-center">
+      <section className="nav-header bg-white shadow-sm border-b border-gray-200">
+        <div className="container mx-auto max-w-[1250px] px-3 sm:px-4 md:px-5 lg:px-6">
+          <div className="nav-bar flex justify-between items-center py-2 sm:py-3 md:py-4">
             {/* Logo */}
-            <div className="logo flex items-center text-[28px] font-semibold text-[#8a8c8a] py-0">
-              <Link href="/" className="flex items-center">
+            <div className="logo flex items-center">
+              <Link href="/" className="flex items-center group">
                 <Image
-                  className="cursor-pointer"
+                  className="cursor-pointer transition-transform duration-200 group-hover:scale-105"
                   src="/image/logo/gardensewa.png"
                   alt="Gardensewa"
-                  width={75}
-                  height={75}
+                  width={50}
+                  height={50}
+                  sizes="(max-width: 640px) 40px, (max-width: 768px) 50px, 75px"
                   priority
                 />
-                <p className="cursor-pointer text-[#008000] ml-2">GardenSewa</p>
+                <p className="cursor-pointer text-[#008000] ml-2 text-base sm:text-lg md:text-xl lg:text-[28px] font-semibold">
+                  GardenSewa
+                </p>
               </Link>
             </div>
+
             {/* Desktop Nav Links */}
-            <ul className="nav-list lg:flex gap-[12px] hidden">
+            <nav className="nav-list hidden lg:flex gap-2 xl:gap-[12px]">
               {navItems.map((item) => (
-                <li key={item.name} className="">
+                <Link
+                  key={item.name}
+                  href={item.link}
+                  className={`transition-all duration-200 rounded-md px-2 xl:px-[14px] py-1 xl:py-[2px] text-sm xl:text-lg font-medium ${
+                    isActive(item.link)
+                      ? "bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold shadow-md"
+                      : "hover:text-[#009000] text-gray-700 hover:bg-green-50"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+              {/* Desktop Book Service Button */}
+              <Link href="/book-a-service" className="hidden lg:block">
+                <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:shadow-lg text-white py-2 px-3 xl:px-4 rounded-md font-bold text-sm xl:text-base transition-all duration-200 hover:scale-105">
+                  Book a Service
+                </button>
+              </Link>
+
+              {/* Mobile Hamburger */}
+              <div className="lg:hidden mobile-menu-container">
+                <button
+                  onClick={() => setMenuOpen(!menuOpen)}
+                  aria-label="Toggle Menu"
+                  className="p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
+                >
+                  <div className="relative w-6 h-6 sm:w-7 sm:h-7">
+                    <span
+                      className={`absolute block w-full h-0.5 bg-gray-700 transform transition-all duration-300 ${
+                        menuOpen ? "rotate-45 top-3" : "top-1"
+                      }`}
+                    />
+                    <span
+                      className={`absolute block w-full h-0.5 bg-gray-700 transform transition-all duration-300 top-3 ${
+                        menuOpen ? "opacity-0" : "opacity-100"
+                      }`}
+                    />
+                    <span
+                      className={`absolute block w-full h-0.5 bg-gray-700 transform transition-all duration-300 ${
+                        menuOpen ? "-rotate-45 top-3" : "top-5"
+                      }`}
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`lg:hidden fixed inset-0 z-40 transition-all duration-300 ${
+          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className="absolute inset-0 bg-transparent"
+          onClick={() => setMenuOpen(false)}
+        />
+
+        {/* Mobile Menu */}
+        <div
+          className={`absolute w-full  bg-white bg-opacity-95 backdrop-blur-sm rounded-t-none rounded-xl shadow-2xl transform transition-all duration-300 mobile-menu-container ${
+            menuOpen ? "translate-y-0 scale-100" : "-translate-y-8 scale-95"
+          }`}
+        >
+          {/* Close Button */}
+          <div className="flex justify-end p-4">
+            <button
+              onClick={() => setMenuOpen(false)}
+              aria-label="Close Menu"
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
+            >
+              <FaTimes className="w-5 h-5 text-gray-600" />
+            </button>
+          </div>
+
+          <nav className="text-center pb-4 sm:pb-6">
+            <ul className="space-y-1 px-4">
+              {navItems.map((item) => (
+                <li key={item.name}>
                   <Link
                     href={item.link}
-                    className={
+                    onClick={() => setMenuOpen(false)}
+                    className={`block py-3 px-4 rounded-lg transition-all duration-200 text-sm sm:text-base ${
                       isActive(item.link)
-                        ? "bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold text-lg rounded-md px-[14px] py-[2px]"
-                        : "hover:text-[#009000] text-title hover:bg-card text-lg rounded-md px-[14px] py-[2px]"
-                    }
+                        ? "text-white bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] font-semibold shadow-md"
+                        : "text-gray-700 hover:text-[#009000] hover:bg-green-50"
+                    }`}
                   >
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className="flex items-center space-x-4">
-              {/* Right Section (Hire Button + Mobile Menu Icon) */}
-              <div className="flex items-center">
-                <Link href="/book-a-service">
-                  <button className="hidden cursor-pointer lg:block bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:bg-secondary text-white py-2 px-4 rounded-md font-bold">
-                    Book a Service
-                  </button>
-                </Link>
 
-                {/* Mobile Hamburger */}
-                <div className="lg:hidden relative z-50">
-                  <button
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    aria-label="Toggle Menu"
-                  >
-                    <Image
-                      className="w-[35px] h-[35px]"
-                      src={
-                        menuOpen
-                          ? "/image/icons/cross-circle-svgrepo-com.svg"
-                          : "/image/icons/hamburger.svg"
-                      }
-                      alt={menuOpen ? "Close menu" : "Open menu"}
-                      width={25}
-                      height={25}
-                      loading="lazy"
-                    />
-                  </button>
-                </div>
-              </div>
+            {/* Mobile Book Service Button */}
+            <div className="px-4 mt-4 sm:mt-6">
+              <Link href="/book-a-service" onClick={() => setMenuOpen(false)}>
+                <button className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:shadow-lg text-white py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-200">
+                  Book a Service
+                </button>
+              </Link>
             </div>
-
-            {/* Mobile Menu */}
-            <div
-              className={`lg:hidden fixed left-4 right-4 top-[90px] z-40 rounded-xl bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
-                menuOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
-              }`}
-            >
-              <ul className="text-center text-[#008000] text-[16px] py-4 space-y-3 px-4">
-                {navItems.map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.link}
-                      onClick={() => setMenuOpen(false)}
-                      className={`block py-2 rounded-md transition-colors duration-200 ${
-                        isActive(item.link)
-                          ? "text-green-600 font-semibold bg-green-100"
-                          : "hover:text-green-600 hover:bg-green-50"
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-                <li>
-                  <Link
-                    href="/book-a-service"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    <button className="w-full bg-primary hover:bg-secondary text-white py-2 mt-2 rounded-lg font-semibold">
-                      Book a Service
-                    </button>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+          </nav>
         </div>
-      </section>
+      </div>
     </header>
   );
 }

@@ -250,7 +250,7 @@ export default function Footer() {
                 {/* News Item 1 */}
                 <div className="flex gap-2 sm:gap-3">
                   <Image
-                    src="/image/blog/flower-happiness.jpg"
+                    src="/image/navbar/navimg1.png"
                     alt="How Flower Brings Happiness"
                     width={40}
                     height={32}
@@ -269,7 +269,7 @@ export default function Footer() {
                 {/* News Item 2 */}
                 <div className="flex gap-2 sm:gap-3">
                   <Image
-                    src="/image/blog/gardensewa-business.jpg"
+                    src="/image/navbar/navimg2.png"
                     alt="The Blooming Business of GardenSewa"
                     width={40}
                     height={32}
@@ -298,7 +298,7 @@ export default function Footer() {
             <div className="flex gap-2 sm:gap-3">
               <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
                 <Image
-                  src="/image/icons/facebook-footer-icon.svg"
+                  src="/image/navbar/facebook-footer-icon.svg"
                   alt="Facebook"
                   width={14}
                   height={14}
