@@ -139,7 +139,7 @@ const BookingPage: React.FC = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans">
+      <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans">
         <Head>
           <title>Book a Service</title>
         </Head>

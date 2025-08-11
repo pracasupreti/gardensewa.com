@@ -119,21 +119,24 @@ const recentServices: Service[] = [
 
 // Reusable Service Card component
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
-  <div className="flex flex-col items-center justify-center px-6 py-8 border-[3px] border-[#C9EDC5] rounded-xl w-[412px] h-[509px] shadow-md transition-shadow duration-300 hover:shadow-lg bg-white">
-    <div className="relative w-[230px] h-[230px] rounded-full overflow-hidden mb-4">
+  <div className="flex flex-col items-center justify-center px-4 sm:px-5 md:px-6 py-6 sm:py-7 md:py-8 border-2 sm:border-[3px] border-[#C9EDC5] rounded-xl w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+    <div className="relative w-[150px] h-[150px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] lg:w-[230px] lg:h-[230px] rounded-full overflow-hidden mb-3 sm:mb-4 flex-shrink-0">
       <img
         src={service.imageUrl}
         alt={service.altText}
-        className="h-[230px] w-[230px] transition-transform duration-300 hover:scale-110"
+        className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
       />
     </div>
-    <h3 className="text-xl font-bold text-dark text-center mb-6">
+
+    <h3 className="text-base sm:text-lg md:text-xl font-bold text-dark text-center mb-3 sm:mb-4 md:mb-6 leading-tight px-2">
       {service.title}
     </h3>
-    <p className="text-dark text-center text-sm mb-4 h-12 overflow-hidden max-w-[364px]">
+
+    <p className="text-dark text-center text-xs sm:text-sm md:text-sm mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2 flex-grow">
       {service.description}
     </p>
-    <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white py-2 px-6 rounded-lg font-semibold hover:bg-secondary transition-colors">
+
+    <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
       Explore More
     </button>
   </div>
@@ -146,55 +149,59 @@ const ServicesPage: React.FC = () => {
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full">
       {/* Header section */}
-      <div className="h-full w-full bg-[#F6F9F6]">
+      <div className="w-full bg-[#F6F9F6]">
         {/* Main content container */}
-        <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
+        <div className="flex flex-col items-center justify-center min-h-[200px] sm:min-h-[240px] md:min-h-[277px] px-4 sm:px-6 md:px-8 py-6 sm:py-7 md:py-8 text-center">
           {/* Breadcrumb navigation */}
-          <div className="mb-4 text-sm w-full">
-            <span className="text-light flex items-center justify-center text-[#616161] text-base">
-              Home <ChevronRight width={20} height={20} />
-              <span className="text-primary ml-2 font-semibold">Services</span>
-            </span>
+          <div className="mb-3 sm:mb-4 text-sm w-full">
+            <div className="text-[#616161] flex items-center justify-center text-sm sm:text-base">
+              <span>Home</span>
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 mx-1" />
+              <span className="text-primary font-semibold">Services</span>
+            </div>
           </div>
 
           {/* Section title */}
-          <h1 className="mb-4 text-5xl font-bold text-[#008000] md:text- [52px]">
+          <h1 className="mb-4 sm:mb-5 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-[#008000] leading-tight">
             Our Services
           </h1>
 
           {/* Section description */}
-          <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-[#7C7F7A]">
+          <p className="max-w-[280px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[858px] mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base md:text-lg leading-relaxed text-[#7C7F7A] px-2">
             At Gardensewa, we believe a beautiful garden is more than just
-            plants — it’s a living space that brings peace, purity, and purpose
+            plants — it's a living space that brings peace, purity, and purpose
             to your life. Our expert team delivers thoughtful, plant-based
             garden services that are organic, eco-friendly, and tailored to your
             space and needs.
           </p>
         </div>
       </div>
-      <div className="min-h-screen max-w-[1440px]">
+
+      <div className="w-full max-w-[1440px] px-4 sm:px-6 md:px-8">
         {/* Main content sections */}
-        <div className="container mx-auto py-12 space-y-12">
+        <div className="container mx-auto py-8 sm:py-10 md:py-12 space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32 xl:space-y-40">
           {/* Top Services Section */}
           <main>
-            <h2 className="text-[52px] font-semibold text-secondary text-center mb-10">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[52px] font-semibold text-secondary text-center mb-6 sm:mb-8 md:mb-10 leading-tight px-4">
               Common Services
             </h2>
-            <div className="flex flex-wrap gap-8 w-full items-center justify-center">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center">
               {topServices.map((service) => (
                 <ServiceCard key={service.id} service={service} />
               ))}
             </div>
           </main>
 
-          {/* Recent Services Section with Pagination */}
+          {/* Recent Services Section */}
           <main>
-            <h2 className="text-[52px] font-semibold text-secondary text-center mb-10">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[52px] font-semibold text-secondary text-center mb-6 sm:mb-8 md:mb-10 leading-tight px-4">
               Nursery Owner Services
             </h2>
-            <div className="flex flex-wrap gap-8 w-full items-center justify-center mb-40">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center mb-16 sm:mb-24 md:mb-32 lg:mb-40">
               {recentServices.map((service) => (
                 <ServiceCard key={service.id} service={service} />
               ))}

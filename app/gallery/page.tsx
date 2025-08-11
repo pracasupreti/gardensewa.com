@@ -162,8 +162,8 @@ const GalleryPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white min-h-screen max-w-7xl mx-auto px-8">
-        <main className="container mx-auto px-4 py-12 space-y-12">
+      <div className="bg-white min-h-screen max-w-7xl mx-auto px-8 ">
+        <main className="container mx-auto px-4 py-12 space-y-12 flex flex-col gap-30">
           {/* Top Services Section */}
           <section className="py-2">
             <h2 className="text-2xl font-bold text-primary mb-6">

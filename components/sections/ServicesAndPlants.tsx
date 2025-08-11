@@ -252,7 +252,7 @@ const ServicesAndPlants: React.FC = () => {
     <div className="min-h-screen w-full font-sans text-gray-900  max-w-[1300px]">
       {/* Our Services Section */}
       <section className="mb-30 ">
-        <div className="flex flex-row justify-between items-center mb-6 px-[70px]  ">
+        <div className="flex flex-row justify-between items-center mb-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-secondary">
             Our Services
           </h2>

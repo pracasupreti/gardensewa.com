@@ -22,31 +22,54 @@ const partners = [
     link: "https://pristinegardensllc.com/",
   },
 ];
+
 export default function OurPartners() {
   return (
-    <section className="flex flex-col gap-8 mb-20  max-w-[1300px]">
-      <h2 className="text-[52px] text-secondary font-bold text-center">
+    <section className="flex flex-col gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20 w-full max-w-[1300px] px-4 sm:px-6 lg:px-8 mx-auto">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] text-secondary font-bold text-center leading-tight">
         Our Partners
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center">
         {partners.map((partner) => (
           <div
             key={partner.name}
-            className="bg-white flex flex-col items-center gap-2.5  text-center w-[417px] h-[480px] rounded-2xl border-2 border-[#E8E8E8]"
+            className="bg-white flex flex-col items-center gap-3 sm:gap-4 text-center w-full max-w-[320px] sm:max-w-[360px] md:max-w-[380px] lg:max-w-[417px] h-auto min-h-[350px] sm:min-h-[400px] md:min-h-[450px] lg:h-[480px] rounded-2xl border-2 border-[#E8E8E8] p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="relative w-[369px] h-[369px]">
+            <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[340px] lg:max-w-[369px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[369px] flex-1 flex items-center justify-center">
               <img
                 src={partner.logo}
                 alt={partner.name}
-                height={128}
-                width={192}
-                className="object-contain w-full h-full"
+                className="object-contain w-full h-full rounded-lg"
               />
             </div>
 
-            <a className="border border-secondary py-2.5 px-6 rounded-md flex text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
+            {/* Partner name - hidden on very small screens to save space */}
+            <h3 className="hidden sm:block font-semibold text-sm md:text-base lg:text-lg text-gray-800 px-2">
+              {partner.name}
+            </h3>
+
+            <Link
+              href={partner.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-secondary py-2 sm:py-2.5 px-4 sm:px-6 rounded-md flex items-center justify-center text-secondary text-sm sm:text-base md:text-lg gap-1.5 hover:bg-secondary hover:text-white transition-all duration-300 w-full max-w-[200px] font-medium"
+            >
               Visit Site
-            </a>
+              <svg
+                className="w-3 h-3 sm:w-4 sm:h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </Link>
           </div>
         ))}
       </div>
