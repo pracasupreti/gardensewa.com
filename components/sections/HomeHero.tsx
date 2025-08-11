@@ -116,47 +116,6 @@ const HomeHero: React.FC = () => {
         </div>
       ))}
 
-      {/* Navigation Arrows - Hidden on mobile */}
-      <button
-        onClick={goToPrev}
-        className="absolute left-4 sm:left-6 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 sm:p-3 rounded-full transition-all duration-300 hidden sm:flex items-center justify-center"
-        aria-label="Previous slide"
-      >
-        <svg
-          className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </button>
-
-      <button
-        onClick={goToNext}
-        className="absolute right-4 sm:right-6 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 sm:p-3 rounded-full transition-all duration-300 hidden sm:flex items-center justify-center"
-        aria-label="Next slide"
-      >
-        <svg
-          className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </button>
-
       {/* Dots Navigation */}
       <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 left-1/2 -translate-x-1/2 flex items-center z-20 space-x-2 sm:space-x-3">
         {slides.map((_, index) => (
