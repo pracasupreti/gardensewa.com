@@ -56,13 +56,25 @@ export default function Header() {
             </a>
           </div>
           <div className="flex items-center space-x-3">
-            <a href="#" aria-label="Facebook" className="hover:scale-110 transition-transform">
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="hover:scale-110 transition-transform"
+            >
               <FaFacebook className="w-5 h-5" />
             </a>
-            <a href="#" aria-label="Instagram" className="hover:scale-110 transition-transform">
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="hover:scale-110 transition-transform"
+            >
               <FaInstagram className="w-5 h-5" />
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:scale-110 transition-transform">
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="hover:scale-110 transition-transform"
+            >
               <FaLinkedinIn className="w-5 h-5" />
             </a>
           </div>
@@ -73,7 +85,6 @@ export default function Header() {
       <section className="nav-header bg-white block border-b-1 border-gray-500">
         <div className="container mx-auto max-w-[1250px] px-5 py-0">
           <div className="nav-bar flex flex-wrap justify-between items-center">
-
             {/* Logo */}
             <div className="logo flex items-center text-[28px] font-semibold text-[#8a8c8a] py-0">
               <Link href="/" className="flex items-center">
@@ -89,14 +100,15 @@ export default function Header() {
               </Link>
             </div>
             {/* Desktop Nav Links */}
-            <ul className="nav-list lg:flex gap-8 text-[15px] hidden">
+            <ul className="nav-list lg:flex gap-[12px] hidden">
               {navItems.map((item) => (
-                <li key={item.name}>
+                <li key={item.name} className="">
                   <Link
                     href={item.link}
-                    className={isActive(item.link)
-                      ? "bg-primary text-white font-semibold rounded-lg px-2 py-1"
-                      : "hover:text-[#009000] hover:bg-accent rounded-lg px-2 py-1"
+                    className={
+                      isActive(item.link)
+                        ? "bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold text-lg rounded-md px-[14px] py-[2px]"
+                        : "hover:text-[#009000] text-title hover:bg-card text-lg rounded-md px-[14px] py-[2px]"
                     }
                   >
                     {item.name}
@@ -108,7 +120,7 @@ export default function Header() {
               {/* Right Section (Hire Button + Mobile Menu Icon) */}
               <div className="flex items-center">
                 <Link href="/book-a-service">
-                  <button className="hidden cursor-pointer lg:block bg-primary hover:bg-secondary text-white py-2 px-4 rounded-xl font-bold">
+                  <button className="hidden cursor-pointer lg:block bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:bg-secondary text-white py-2 px-4 rounded-md font-bold">
                     Book a Service
                   </button>
                 </Link>
@@ -121,9 +133,10 @@ export default function Header() {
                   >
                     <Image
                       className="w-[35px] h-[35px]"
-                      src={menuOpen
-                        ? "/image/icons/cross-circle-svgrepo-com.svg"
-                        : "/image/icons/hamburger.svg"
+                      src={
+                        menuOpen
+                          ? "/image/icons/cross-circle-svgrepo-com.svg"
+                          : "/image/icons/hamburger.svg"
                       }
                       alt={menuOpen ? "Close menu" : "Open menu"}
                       width={25}
@@ -136,36 +149,39 @@ export default function Header() {
             </div>
 
             {/* Mobile Menu */}
-                   <div
-          className={`lg:hidden fixed left-4 right-4 top-[90px] z-40 rounded-xl bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
-            menuOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
-          <ul className="text-center text-[#008000] text-[16px] py-4 space-y-3 px-4">
-            {navItems.map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.link}
-                  onClick={() => setMenuOpen(false)}
-                  className={`block py-2 rounded-md transition-colors duration-200 ${
-                    isActive(item.link)
-                      ? "text-green-600 font-semibold bg-green-100"
-                      : "hover:text-green-600 hover:bg-green-50"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link href="/book-a-service" onClick={() => setMenuOpen(false)}>
-                <button className="w-full bg-primary hover:bg-secondary text-white py-2 mt-2 rounded-lg font-semibold">
-                  Book a Service
-                </button>
-              </Link>
-            </li>
-          </ul>
-        </div>
+            <div
+              className={`lg:hidden fixed left-4 right-4 top-[90px] z-40 rounded-xl bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
+                menuOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <ul className="text-center text-[#008000] text-[16px] py-4 space-y-3 px-4">
+                {navItems.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.link}
+                      onClick={() => setMenuOpen(false)}
+                      className={`block py-2 rounded-md transition-colors duration-200 ${
+                        isActive(item.link)
+                          ? "text-green-600 font-semibold bg-green-100"
+                          : "hover:text-green-600 hover:bg-green-50"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <Link
+                    href="/book-a-service"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    <button className="w-full bg-primary hover:bg-secondary text-white py-2 mt-2 rounded-lg font-semibold">
+                      Book a Service
+                    </button>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

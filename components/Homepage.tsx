@@ -7,18 +7,17 @@ import ChooseUs from "./sections/ChooseUsAndClients";
 import ServicesAndPlants from "./sections/ServicesAndPlants";
 import LatestUpdates from "./sections/LatestUpdates";
 import Testimonial from "./sections/Testimonial";
-import  OurPartners  from "./sections/OurParteners";
-
+import OurPartners from "./sections/OurParteners";
 
 export default function HeroSlider() {
   return (
-    <>
-    <HomeHero />
-    <ChooseUs />
-    <ServicesAndPlants />
-    <OurPartners />
-    <LatestUpdates />
-    <Testimonial />
-    </>
+    <div className="flex flex-col gap-8 items-center">
+      <HomeHero />
+      <ChooseUs />
+      <ServicesAndPlants />
+      <OurPartners />
+      <LatestUpdates />
+      <Testimonial />
+    </div>
   );
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai'; // Still importing in case you want to add them back
+import React from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai"; // Still importing in case you want to add them back
 
 // Testimonial Card Props
 interface TestimonialCardProps {
@@ -19,14 +19,16 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="bg-white rounded-3xl p-8 shadow-lg max-w-sm w-full h-full flex flex-col justify-between">
+    <div className="bg-white rounded-2xl p-8 max-w-sm w-[417px] h-[325px] flex flex-col justify-between border-2 border-[#F4F4F4]">
       {/* Quote Icon */}
       <div className="mb-4">
-        <span className="text-4xl text-primary font-serif font-bold leading-none">“</span>
+        <span className="text-4xl text-primary font-serif font-bold leading-none">
+          “
+        </span>
       </div>
 
       {/* Comment */}
-      <p className="text-gray-600 text-md leading-relaxed mb-6 flex-grow">
+      <p className=" text-body text-sm leading-relaxed mb-6 flex-grow">
         {comment}
       </p>
 
@@ -38,7 +40,10 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             alt={imageAlt}
             className="w-full h-full object-cover rounded-full"
             // Fallback in case the image fails to load
-            onError={(e) => (e.currentTarget.src = 'https://placehold.co/48x48/000/FFF?text=P')}
+            onError={(e) =>
+              (e.currentTarget.src =
+                "https://placehold.co/48x48/000/FFF?text=P")
+            }
           />
         </div>
         <div>
@@ -53,7 +58,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 // Main Testimonials Section
 const Testimonial: React.FC = () => {
   return (
-    <div className="bg-gray-50 min-h-screen max-w-7xl mx-auto px-8 py-16 font-['Inter'] flex flex-col items-center">
+    <div className="max-w-7xl mx-auto px-8 py-16 flex flex-col items-center mb-30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-secondary text-center mb-12">
           What Our Users Say
