@@ -1,13 +1,10 @@
-"use client";
-import { useState } from "react";
+'use client';
+import { Clock } from 'lucide-react';
+import { useState } from 'react';
 
-// Placeholder image generator
-const getPlaceholderImage = (width: number, height: number, text: string) =>
-  `https://placehold.co/${width}x${height}/f0fdf4/14532d?text=${encodeURIComponent(
-    text
-  )}`;
-
-// Blog post type
+// -----------------------
+// Blog Post Interface
+// -----------------------
 interface BlogPost {
   id: number;
   title: string;
@@ -18,240 +15,277 @@ interface BlogPost {
   imageUrl: string;
 }
 
-// Blog post data
+// -----------------------
+// Mock Blog Data
+// -----------------------
 const postData: BlogPost[] = [
   {
     id: 1,
     title: "The Blooming Business of Gardening Services",
-    author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "8 min read",
+    author: "Niranjan Sharma",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "The gardening industry, once a quiet and niche market, has undergone a significant transformation. Fueled by a new wave of urban gardening, sustainability, and a growing appreciation for green spaces, it has blossomed into a thriving business...",
+      "Gardening is more than just planting flowers or vegetables — it is a full-fledged industry. From selling indoor plants to setting up home gardens, vertical gardens, rooftop greenery, and landscape designing, the gardening business offers multiple income sources. People today are more health-conscious, environmentally aware, and interested in aesthetic living. As a result, ...",
     imageUrl: "/image/navbar/blog/Blog-1.png",
   },
   {
     id: 2,
     title: "How a Flower Brings Happiness",
-    author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "5 min read",
+    author: "Pracas Upreti",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "A flower’s beauty and elegance inspire serene and soothing emotions, and its presence provides a calming ambiance and a deeper connection to nature...",
+      "In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, ...",
     imageUrl: "/image/navbar/blog/Blog-2.png",
   },
   {
     id: 3,
     title: "Impact of a Flower in Mental Health",
-    author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "7 min read",
+    author: "Dipak Pahadi",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "Flowers have been part of human life for thousands of years. They are used in ceremonies, decoration, and as gifts. Flowers have always had a special place in our hearts...",
+      "Flowers have been part of human life for thousands of years. They are used in celebrations, rituals, decorations, and even in medicine. But did you know ...",
     imageUrl: "/image/navbar/blog/Blog-3.png",
   },
   {
     id: 4,
-    title: "Nurturing Your Life Naturally With Everyday Habits",
-    author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "3 min read",
+    title: "How to Detox Your Life Naturally With Everyday Habits",
+    author: "Pracas Upreti",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "Nurturing our lives naturally begins with small, consistent habits. It is not about grand gestures but about the daily rituals that connect us to the earth...",
-    imageUrl: "/image/navbar/blog/Blog-4.png",
+      "Detoxing isn’t just about green juices and diets. A real detox involves cleansing your environment, ...",
+    imageUrl: "/image/navbar/blog/Blog-4.jpg",
   },
   {
     id: 5,
-    title: "Organic Food Homemade - and Homegrown",
-    author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "4 min read",
+    title: "Happiness is Homemade — and Homegrown",
+    author: "Niranjan Sharma",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "Creating your own organic food is a rewarding and delicious way to ensure you are eating the freshest, most nutrient-rich produce...",
-    imageUrl: "/image/navbar/blog/Blog-5.png",
+      "True happiness often lies in simple joys — like seeing a seed sprout, harvesting your own vegetables, ...",
+    imageUrl: "/image/navbar/blog/Blog-5.jpg",
   },
   {
     id: 6,
-    title: "Meditation and Gardening Go Hand in Hand",
+    title: "How Mindfulness and Gardening Go Hand in Hand",
     author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "5 min read",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "For many, the peaceful act of gardening is a form of meditation. The quiet focus on tending to plants provides a welcome escape from the hustle and bustle of daily life...",
-    imageUrl: "/image/navbar/blog/Blog-6.png",
+      "In a fast-paced world, mindfulness is the anchor that brings us back to the present. And there’s no better place ...",
+    imageUrl: "/image/navbar/blog/Blog-6.jpg",
   },
   {
     id: 7,
-    title: "Why Gardening Services for the Future of Urban Living",
+    title: "Why Gardening Services Are the Future of Urban Living",
     author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "6 min read",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "With the rise of urbanization, green spaces are becoming increasingly rare. Gardening services are helping to combat this trend...",
-    imageUrl: "/image/navbar/blog/Blog-7.png",
+      "With shrinking open spaces and busier schedules, urban dwellers are turning to gardening professionals ...",
+    imageUrl: "/image/navbar/blog/Blog-7.jpg",
   },
   {
     id: 8,
-    title: "Green Is the New Lifestyle – Embrace the Garden Life",
+    title: "Green is the New Lifestyle — Embrace the Garden Life",
     author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "4 min read",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "Adopting a green lifestyle has a profound and positive impact on both personal well-being and the environment...",
-    imageUrl: "/image/navbar/blog/Blog-8.png",
+      "Gardening is more than a weekend activity — it’s a lifestyle choice. It's about living closer to nature, ...",
+    imageUrl: "/image/navbar/blog/Blog-8.jpg",
   },
   {
     id: 9,
-    title: "Plants: Nature’s Timeless Gift For a Healthier, Happier Life",
+    title: "Plants: Nature’s Timeless Gift for a Healthier, Happier Life",
     author: "Van Praag",
-    date: "28/07/2023",
-    readTime: "3 min read",
+    date: "29/07/2025",
+    readTime: "5 min",
     snippet:
-      "Plants offer a myriad of benefits, from purifying the air we breathe to boosting our mood...",
-    imageUrl: "/image/navbar/blog/Blog-9.png",
+      "Plants are more than just decorative green companions — they’re living tools for a healthier, ...",
+    imageUrl: "/image/navbar/blog/Blog-9.jpg",
   },
 ];
 
-// Post Card Component
-const PostCard = ({
-  post,
-  isLarge = false,
-}: {
-  post: BlogPost;
-  isLarge?: boolean;
-}) => {
-  return (
-    <div
-      className={`flex flex-col overflow-hidden rounded-xl bg-white ${
-        isLarge ? "" : ""
-      }`}
-    >
-      <img
-        src={post.imageUrl}
-      />
-      <div className="flex flex-col p-4">
-        <h3
-          className={`font-bold text-gray-800 hover:text-green-600 transition-colors ${
-            isLarge ? "text-2xl" : "text-lg"
-          }`}
-        >
-          {post.title}
-        </h3>
-        <div className="flex items-center text-sm mt-2 text-gray-500">
-          <p className="mr-4">by {post.author}</p>
-          <span className="text-gray-400">•</span>
-          <p className="ml-4">{post.date}</p>
-        </div>
-        <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3">
-          {post.snippet}
-        </p>
-        <a
-          href="#"
-          className="mt-4 inline-flex items-center text-green-600 font-semibold hover:translate-x-1 transition-transform"
-        >
-          Read More
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-4 h-4 ml-2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-          </svg>
-        </a>
+// -----------------------
+// PostCard Component
+// -----------------------
+const PostCard = ({ post, isLarge = false }: { post: BlogPost; isLarge?: boolean }) => (
+  <div className="flex flex-col overflow-hidden">
+    <img src={post.imageUrl} alt={post.title} className="w-full h-56 object-cover rounded-2xl" />
+    <div className="flex flex-col p-4">
+      <div className="flex items-center text-sm mt-2 text-dark">
+        <p className="mr-2">by {post.author}</p>
+        <span className="text-dark">•</span>
+        <p className="ml-2 mr-20">{post.date}</p>
+        
+        <p className="ml-4 flex gap-2"><Clock/>{post.readTime}</p>
       </div>
+      <h3 className={`font-bold text-secondary transition-colors ${isLarge ? 'text-2xl' : 'text-lg'}`}>
+        {post.title}
+      </h3>
+      <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3">{post.snippet}</p>
+      <a
+                      href="#"
+                      className="px-2 w-40 py-2.5 bg-gradient-to-r from-[#00C400] via-[#009800] to-[#009000] rounded-lg inline-flex justify-center items-center gap-1.5 text-white text-lg font-semibold"
+                    >
+                      Read More
+                    </a>
     </div>
-  );
-};
+  </div>
+);
 
-// Main Page Component
-export default function App() {
+// -----------------------
+// Main Blog Page Component
+// -----------------------
+export default function BlogPage() {
   return (
-    <div className="min-h-screen text-gray-800">
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
-        <div className="text-center mb-12">
-          <div className="text-sm font-semibold text-gray-600 mb-2">
-            HOME &gt; <span className="text-primary"> BLOG </span>
+    <>{/* Header */}
+      <div className="w-full py-12 bg-[#F6F9F6] flex flex-col justify-start items-center gap-8">
+        {/* Breadcrumb */}
+        <div className="w-full flex flex-col justify-start items-center gap-6 px-4 sm:px-8 md:px-16">
+          <div className="w-full flex flex-col justify-start items-center gap-2.5">
+            <div className="w-full flex flex-col justify-start items-center gap-2.5">
+              <div className="inline-flex justify-start items-center gap-1.5 w-full">
+                <div className="flex justify-center items-center gap-1.5 w-full">
+                  <div className="text-sm font-semibold text-gray-600 mb-2">
+                    Home &gt; <span className="text-primary ml-2"> Blog </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-green-700">
-            Blog
-          </h1>
-          <div className="relative mt-6 max-w-xl mx-auto">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="w-full pl-12 pr-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all"
-            />
-            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-search"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <path d="m21 21-4.3-4.3" />
-              </svg>
+
+          {/* Blog Title */}
+          <div className="w-full max-w-3xl flex flex-col justify-start items-center gap-8">
+            <div className="w-full flex flex-col justify-start items-start gap-4">
+              <h1 className="w-full text-center text-primary text-3xl sm:text-4xl md:text-5xl font-bold">
+                Blog
+              </h1>
             </div>
           </div>
         </div>
 
-        {/* Popular Posts */}
-        <section className="mb-12">
-          <div className="flex items-center mb-6">
-            <h2 className="text-xl font-bold text-green-700 mr-4">
-              Popular Posts
-            </h2>
-            <div className="flex-grow h-px bg-gray-300"></div>
+        {/* Search Input */}
+        <div className="relative w-full max-w-xl px-4 sm:px-0 mt-6">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="pl-12 pr-4 py-3 w-full h-14 bg-white rounded-[30px] outline outline-1 outline-offset-[-1px] outline-green-800"
+          />
+          <div className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-search"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
           </div>
-          <PostCard post={postData[0]} isLarge />
+        </div>
+      </div>
+    <div className="min-h-screen bg-[#FFFFFF] text-gray-800">
+      
+
+      {/* Blog Sections */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+
+        {/* Popular Post */}
+        <section>
+          <h2 className="text-xl font-bold text-primary mb-6">Popular Post</h2>
+          <div className="flex flex-col rounded-2xl overflow-hidden">
+            <img src={postData[0].imageUrl} alt={postData[0].title} className="w-full h-64 sm:h-[485px] object-cover rounded-2xl" />
+            <div className="p-6 rounded-2xl">
+              <div className="flex flex-wrap justify-between items-center mb-4 text-sm text-gray-500">
+                <div className="flex items-center text-dark gap-3">
+                  <img src="https://placehold.co/40x40" className="w-10 h-10 rounded-full" />
+                  <span>{postData[0].author}</span>
+                  <div className="w-1.5 h-1.5 bg-dark rounded-full mx-2" />
+                  <span>{postData[0].date}</span>
+                </div>
+                <span className='flex gap-2'><Clock/> {postData[0].readTime}</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-semibold text-secondary mb-3">{postData[0].title}</h2>
+              <p className="text-dark mb-6 line-clamp-4">{postData[0].snippet}</p>
+              <a
+                      href="#"
+                      className="px-6 py-2.5 bg-gradient-to-r from-[#00C400] via-[#009800] to-[#009000] rounded-lg inline-flex justify-center items-center gap-1.5 text-white text-lg font-semibold"
+                    >
+                      Read More
+                    </a>
+            </div>
+          </div>
         </section>
 
-        {/* Featured Posts */}
-        <section className="mb-12">
-          <div className="flex items-center mb-6">
-            <h2 className="text-xl font-bold text-green-700 mr-4">
-              Featured Posts
-            </h2>
-            <div className="flex-grow h-px bg-gray-300"></div>
+        {/* Featured Posts (Custom Layout) */}
+        <section className="w-full inline-flex flex-col justify-start items-start gap-7">
+          <div className="self-stretch h-7 text-green-700 text-2xl font-semibold leading-loose">
+            Featured Posts
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <PostCard post={postData[1]} />
-            <PostCard post={postData[2]} />
+          <div className="self-stretch inline-flex justify-start items-center gap-6 flex-wrap lg:flex-nowrap">
+            {[postData[1], postData[2]].map((post, index) => (
+              <div key={post.id} className="flex-1 inline-flex flex-col justify-start items-start">
+                <img
+                  className="self-stretch h-96 object-cover rounded-2xl"
+                  src={post.imageUrl}
+                  alt={post.title}
+                />
+                <div className="self-stretch py-5 rounded-2xl flex flex-col justify-start items-start gap-2.5">
+                  <div className="self-stretch flex flex-col justify-start items-start gap-6">
+                    <div className="self-stretch flex flex-col justify-start items-center gap-4">
+                      <div className="self-stretch inline-flex justify-between items-center">
+                        <div className="flex justify-start items-center gap-2">
+                          <img className="w-8 h-8 rounded-full" src="https://placehold.co/32x32" />
+                          <div className="text-sm">{post.author}</div>
+                          <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
+                          <div className="text-sm">{post.date}</div>
+                        </div>
+                        <div className="flex justify-start items-center gap-2.5">
+                          <div className="text-sm flex gap-2"> <Clock/> {post.readTime}</div>
+                        </div>
+                      </div>
+                      <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                        <div className="text-2xl text-secondary font-semibold leading-loose">{post.title}</div>
+                        <div className="text-base text-dark leading-normal line-clamp-3">{post.snippet}</div>
+                      </div>
+                    </div>
+                    <a
+                      href="#"
+                      className="px-6 py-2.5 bg-gradient-to-r from-[#00C400] via-[#009800] to-[#009000] rounded-lg inline-flex justify-center items-center gap-1.5 text-white text-lg font-semibold"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
         {/* Recent Posts */}
         <section>
-          <div className="flex items-center mb-6">
-            <h2 className="text-xl font-bold text-green-700 mr-4">
-              Recent Posts
-            </h2>
-            <div className="flex-grow h-px bg-gray-300"></div>
-          </div>
+          <h2 className="text-xl font-bold text-green-700 mb-6">Recent Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <PostCard post={postData[3]} />
-            <PostCard post={postData[4]} />
-             <PostCard post={postData[5]} />
-            <PostCard post={postData[6]} />
-             <PostCard post={postData[7]} />
-            <PostCard post={postData[8]} />
+            {postData.slice(3).map(post => (
+              <PostCard key={post.id} post={post} />
+            ))}
           </div>
         </section>
+
       </main>
     </div>
+    </>
   );
 }
