@@ -54,9 +54,9 @@ export default function Footer() {
 
         <div className="max-w-[1200px] mx-auto px-2 sm:px-4 flex flex-col justify-between h-full">
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 text-sm text-gray-800 mb-6 sm:mb-8 p-4 sm:p-6 lg:p-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 text-sm text-gray-800 mb-6 sm:mb-8 p-4 sm:p-6 lg:p-10">
             {/* Brand Info */}
-            <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-1 mr-10">
               <div className="flex items-center mb-3">
                 <Image
                   src="/image/logo/gardensewa.png"
@@ -103,41 +103,46 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/plants"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Plants
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Plants</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/blog"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Blog
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Blog</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/testimonials"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Testimonials
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Testimonials</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/partner"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Our Partner
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Our Partner</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/become-client"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Become a Client
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Become a Client</span>
                   </Link>
                 </li>
               </ul>
@@ -152,41 +157,46 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Indoor Plants
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Indoor Plants</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Outdoor Plants
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Outdoor Plants</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Pet-Friendly Plants
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Pet-Friendly Plants</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Air-Purifying Plants
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Air-Purifying Plants</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Low Maintenance
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Low Maintenance</span>
                   </Link>
                 </li>
               </ul>
@@ -201,41 +211,46 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/book-a-service"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Book a Service
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Book a Service</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/faq"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    FAQs
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>FAQs</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/contact"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Contact
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Contact</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/privacy"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Privacy Policy
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Privacy Policy</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/conditions"
-                    className="text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm"
+                    className="group text-gray-600 hover:text-green-600 transition-colors text-xs sm:text-sm flex items-center"
                   >
-                    Terms and Conditions
+                    <ArrowRight className="w-3 h-3 mr-1 transform -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300" />
+                    <span>Terms and Conditions</span>
                   </Link>
                 </li>
               </ul>
@@ -296,26 +311,32 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-2 sm:gap-3">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
                 <Image
-                  src="/image/navbar/facebook-footer-icon.svg"
+                  src="/image/navbar/fb.png"
                   alt="Facebook"
-                  width={14}
-                  height={14}
-                  className="w-3.5 h-3.5 sm:w-4 sm:h-4"
+                  width={30}
+                  height={30}
+                  className="w-8 sm:h-8"
                 />
               </div>
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
                 <Image
-                  src="/image/icons/linkedin-footer-icon.svg"
+                  src="/image/navbar/ld.png"
                   alt="LinkedIn"
-                  width={14}
-                  height={14}
-                  className="w-3.5 h-3.5 sm:w-4 sm:h-4"
+                  width={30}
+                  height={30}
+                  className="w-8 sm:h-8"
                 />
               </div>
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
-                <Twitter height={14} width={14} />
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors">
+                <Image
+                  src="/image/navbar/twitter.png"
+                  alt="LinkedIn"
+                  width={30}
+                  height={30}
+                  className="w-8 sm:h-8"
+                />
               </div>
             </div>
           </div>

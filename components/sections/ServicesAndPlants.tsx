@@ -199,7 +199,13 @@ const PlantCard: React.FC<Plant> = ({
         <div className="p-4 h-full flex flex-col">
           {/* Title and Price */}
           <div className="mb-3">
-            <h3 className="text-lg font-semibold text-gray-800 mb-1">{name}</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-1 flex">
+              {name}{" "}
+              <div className="flex space-x-1 ml-auto">
+                <div className={`w-3 h-3 rounded-full ${color1}`}></div>
+                <div className={`w-3 h-3 rounded-full ${color2}`}></div>
+              </div>
+            </h3>
             <div className="flex items-center space-x-2">
               <span className="text-lg font-bold text-gray-900">
                 NPR. {price}
@@ -231,10 +237,6 @@ const PlantCard: React.FC<Plant> = ({
               className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200"
             >
               Add to Favorite
-              <div className="flex space-x-1 ml-auto">
-                <div className={`w-3 h-3 rounded-full ${color1}`}></div>
-                <div className={`w-3 h-3 rounded-full ${color2}`}></div>
-              </div>
             </button>
 
             <button className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 px-4 rounded-lg font-medium transition-colors duration-200">

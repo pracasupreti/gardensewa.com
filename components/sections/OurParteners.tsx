@@ -40,7 +40,7 @@ export default function OurPartners() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="object-contain w-full h-full rounded-lg"
+                className="object-contain w-[300px] h-[300px] rounded-lg"
               />
             </div>
 

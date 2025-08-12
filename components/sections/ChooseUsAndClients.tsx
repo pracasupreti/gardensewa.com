@@ -136,7 +136,7 @@ const ChooseUs: React.FC = () => {
                 <span className="border-t-2 border-t-card w-full p-2"></span>
                 <a
                   href={client.link}
-                  className="mt-auto self-center bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-2 rounded-lg hover:bg-secondary transition text-sm sm:text-base"
+                  className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center"
                 >
                   Browse More
                 </a>
