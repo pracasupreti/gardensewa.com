@@ -116,9 +116,8 @@ const PartnersTestimonials: React.FC = () => {
                 </h3>
 
                 {/* Quote section */}
-                <div className="text-center text-gray-600">
-                  <p className="text-md text-light text-left p-4">
-                    <span className="text-[#009000] text-4xl">"</span>{" "}
+                <div className=" text-gray-600 p-4">
+                  <p className="text-md text-light text-left">
                     {testimonial.quote}
                   </p>
                 </div>

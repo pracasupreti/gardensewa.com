@@ -196,7 +196,7 @@ const PlantCard: React.FC<Plant> = ({
         }`}
         style={{ height: "235px" }} // Half of the total card height (469px / 2)
       >
-        <div className="p-4 h-full flex flex-col">
+        <div className="p-2 h-full flex flex-col">
           {/* Title and Price */}
           <div className="mb-3">
             <h3 className="text-lg font-semibold text-gray-800 mb-1 flex">
@@ -234,7 +234,7 @@ const PlantCard: React.FC<Plant> = ({
           <div className="mt-auto space-y-3">
             <button
               onClick={() => setIsFavorite(!isFavorite)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-gray-300 text-white bg-green-600 hover:bg-green-700 transition-colors duration-200"
             >
               Add to Favorite
             </button>
@@ -253,12 +253,12 @@ const ServicesAndPlants: React.FC = () => {
   return (
     <div className="min-h-screen w-full font-sans text-gray-900  max-w-[1300px]">
       {/* Our Services Section */}
-      <section className="mb-30 ">
-        <div className="flex flex-row justify-between items-center mb-6">
+      <section className="mb-30">
+        <div className="flex flex-row justify-between items-center mb-10">
           <h2 className="text-2xl lg:text-4xl font-bold text-secondary">
             Our Services
           </h2>
-          <a className="border border-secondary py-2.5 px-6 rounded-md flex text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
+          <a className="border border-secondary py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
             View All <ArrowRight />
           </a>
         </div>
@@ -271,11 +271,11 @@ const ServicesAndPlants: React.FC = () => {
 
       {/* Explore Plants Section */}
       <section className="mb-20">
-        <div className="flex flex-row justify-between items-center  mx-auto p-2">
+        <div className="flex flex-row justify-between items-center mb-10  mx-auto p-2">
           <h2 className="text-2xl lg:text-4xl font-bold text-secondary">
             New Arrivals
           </h2>
-          <a className="border border-secondary py-2.5 px-6 rounded-md flex text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
+          <a className="border border-secondary py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
             View All <ArrowRight />
           </a>
         </div>

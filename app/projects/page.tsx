@@ -111,10 +111,9 @@ export default function ClientPage() {
       </div>
       {/* Cards */}
       <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25 max-w-[1440px] flex-warp">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {clients.map((client, index) => {
             const [isHovered, setIsHovered] = useState(false);
-
             return (
               <div
                 key={index}
@@ -122,45 +121,52 @@ export default function ClientPage() {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                {/* Your existing content - unchanged */}
-                <div className="w-full flex justify-center mb-4">
+                {/* Logo - hidden on hover */}
+                <div
+                  className={`w-full flex justify-center mb-4 transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
+                >
                   <img
                     src={client.image}
                     alt={client.name}
                     className="h-24 sm:h-28 md:h-32 w-auto object-contain"
                   />
                 </div>
-                <p className="text-black text-xs sm:text-sm text-left leading-relaxed mt-4 mb-4 pb-2 flex-1">
+
+                {/* Original text - hidden on hover */}
+                <p
+                  className={`text-black text-xs sm:text-sm text-left leading-relaxed mt-4 mb-4 pb-2 flex-1 transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
+                >
                   {client.text}
                 </p>
+
+                {/* Divider line - always visible */}
                 <span className="border-t-2 border-t-card w-full p-2"></span>
+
+                {/* Button - always in same position */}
                 <a
                   href={client.link}
-                  className="mt-auto self-center bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-2 rounded-lg hover:bg-secondary transition text-sm sm:text-base"
+                  className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
                 >
                   Browse More
                 </a>
 
-                {/* Hover content - slides up from bottom to cover full card */}
+                {/* Hover text content - positioned in the text area */}
                 <div
-                  className={`absolute inset-0 bg-white rounded-3xl p-4 sm:p-6 flex flex-col transition-transform duration-500 ease-in-out ${
+                  className={`absolute left-4 sm:left-6 right-4 sm:right-6 flex flex-col justify-center transition-all duration-500 ease-in-out ${
                     isHovered
-                      ? "transform translate-y-0"
-                      : "transform translate-y-full"
+                      ? "opacity-100 transform translate-y-0"
+                      : "opacity-0 transform translate-y-8"
                   }`}
+                  style={{
+                    bottom: "150px",
+                  }}
                 >
-                  <div className="text-green-600 text-4xl sm:text-5xl font-bold leading-none mb-4">
+                  <div className="text-green-600 text-4xl sm:text-5xl font-bold leading-none mb-2">
                     "
                   </div>
-                  <p className="text-black text-sm sm:text-base leading-relaxed flex-1 mb-6">
+                  <p className="text-black text-sm sm:text-base leading-relaxed">
                     {client.text}
                   </p>
-                  <a
-                    href={client.link}
-                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center"
-                  >
-                    Browse More
-                  </a>
                 </div>
               </div>
             );
@@ -190,8 +196,8 @@ export default function ClientPage() {
               Join our growing network of satisfied clients.
             </p>
             <Link href="book-a-service">
-              <button className="bg-primary text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-lg hover:bg-secondary transition">
-                become a client
+              <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-lg hover:bg-secondary transition">
+                Become a client
               </button>
             </Link>
           </div>

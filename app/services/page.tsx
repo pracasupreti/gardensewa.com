@@ -136,7 +136,7 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
       {service.description}
     </p>
 
-    <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
+    <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
       Explore More
     </button>
   </div>

@@ -117,7 +117,7 @@ const GalleryGrid: React.FC<{ items: GalleryItem[] }> = ({ items }) => (
     {items.map((item) => (
       <div
         key={item.id}
-        className="relative w-full h-64 rounded-xl overflow-hidden shadow-md"
+        className="relative w-full h-78 rounded-xl overflow-hidden shadow-md"
       >
         <Image
           src={item.imageUrl}
@@ -190,15 +190,15 @@ const GalleryPage: React.FC = () => {
         </main>
       </div>
       <div
-        className={`relative w-full h-[400px] flex items-center justify-center text-white my-12`}
+        className={`relative w-full h-[350px] flex items-center justify-center text-white my-12`}
       >
         {/* Background image with a dark overlay */}
         <img
           src="/image/gallery/galleryBg.jpg"
           alt="A large green plant"
-          height={400}
+          height={350}
           width={400}
-          className="absolute inset-0 z-0 object-cover h-100 w-full"
+          className="absolute inset-0 z-0 object-cover h-[350px] w-full"
         />
         <div className="absolute inset-0 bg-black/30 opacity-60 z-10"></div>
 

@@ -212,7 +212,7 @@ export default function AboutPage() {
               Nepal!
             </p>
             <div className="mt-4 md:mt-0">
-              <button className="rounded-full bg-primary px-6 py-3 font-semibold text-white transition duration-300 ease-in-out hover:bg-secondary">
+              <button className="rounded-full px-6 py-3 font-semibold text-white transition duration-300 ease-in-out bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400]">
                 Start Selling
               </button>
             </div>

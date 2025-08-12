@@ -62,7 +62,7 @@ const HomeHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px] xl:h-[650px] overflow-hidden bg-gradient-to-l from-[#1F1F1F] via-[#39393980] to-[#39393900]">
+    <div className="relative w-full h-[80vh] overflow-hidden bg-gradient-to-l from-[#1F1F1F] via-[#39393980] to-[#39393900]">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -98,14 +98,12 @@ const HomeHero: React.FC = () => {
 
                 {/* Responsive button layout */}
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <button className="font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-3.5 rounded-lg transition bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white text-sm sm:text-base w-full sm:w-auto">
+                  <button className="font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-3.5 rounded-lg transition bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white text-sm sm:text-base w-full sm:w-auto">
                     {slide.button}
                   </button>
+
                   <Link href={slide.button2link} className="w-full sm:w-auto">
-                    <button
-                      className="font-semibold border px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-3.5 rounded-lg transition text-sm sm:text-base w-full hover:bg-[#22c55e] hover:border-[#22c55e] transition-colors duration-300"
-                      style={{ color: "#ffffff", borderColor: "#ffffff" }}
-                    >
+                    <button className="font-semibold border border-white text-white px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-3.5 rounded-lg transition text-sm sm:text-base w-full hover:bg-primary hover:border-primary duration-300">
                       {slide.button2}
                     </button>
                   </Link>

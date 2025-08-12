@@ -27,7 +27,7 @@ export default function Footer() {
           >
             <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 py-4 sm:py-6 md:h-full">
               <div className="text-center md:text-left">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] font-semibold leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-3xl xl:text-[52px] font-semibold leading-tight">
                   Subscribe Newsletter
                 </h2>
                 <p className="text-sm sm:text-base mt-2">
@@ -43,7 +43,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:bg-secondary text-white w-[70px] sm:w-[85px] px-3 sm:px-4 py-2 rounded-full my-1 mx-1 flex items-center justify-center"
+                  className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white w-[70px] sm:w-[85px] px-3 sm:px-4 py-2 rounded-full my-1 mx-1 flex items-center justify-center"
                 >
                   <ArrowRight className="w-[20px] h-[20px] sm:w-[26px] sm:h-[26px]" />
                 </button>
@@ -61,12 +61,12 @@ export default function Footer() {
                 <Image
                   src="/image/logo/gardensewa.png"
                   alt="Gardensewa"
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   priority
-                  className="w-5 h-5 sm:w-6 sm:h-6"
+                  className="w-8 h-8 sm:w-10 sm:h-10"
                 />
-                <p className="ml-2 text-base sm:text-lg text-primary font-bold">
+                <p className="ml-1 text-lg sm:text-xl text-primary font-bold">
                   GardenSewa
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default function Footer() {
               <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Quick Links
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-0.5">
                 <li>
                   <Link
                     href="/plants"
@@ -153,7 +153,7 @@ export default function Footer() {
               <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Explore Plants
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-0.5">
                 <li>
                   <Link
                     href="#"
@@ -207,7 +207,7 @@ export default function Footer() {
               <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                 Product Help
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-0.5">
                 <li>
                   <Link
                     href="/book-a-service"

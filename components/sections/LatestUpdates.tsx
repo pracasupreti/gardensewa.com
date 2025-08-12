@@ -75,9 +75,10 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
   return (
     <Link href={article.Link}>
-      <div className="relative rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300">
+      <div className="relative rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300 ">
         {/* Image container with responsive height */}
-        <div className={`relative w-full ${imageContainerClasses}`}>
+
+        <div className={`relative w-full ${imageContainerClasses} group`}>
           <img
             src={article.image}
             alt={article.title}
@@ -85,6 +86,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
             width={large ? 600 : 400}
             className="transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1F1F1F] via-[#39393980] to-[#39393900]"></div>
         </div>
 
         {/* Gradient overlay for better text readability on image */}
@@ -150,7 +152,7 @@ const LatestUpdates: React.FC = () => {
           </div>
 
           {/* Container for the two smaller article cards */}
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 gap-8 ">
             {/* Smaller Article Card 1 */}
             <ArticleCard article={articles[1]} />
             {/* Smaller Article Card 2 */}
