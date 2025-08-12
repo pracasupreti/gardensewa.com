@@ -1,5 +1,5 @@
 'use client';
-import { Clock } from 'lucide-react';
+import { ArrowRight, Clock } from 'lucide-react';
 import { useState } from 'react';
 
 // -----------------------
@@ -13,6 +13,7 @@ interface BlogPost {
   readTime: string;
   snippet: string;
   imageUrl: string;
+  photo: string;
 }
 
 // -----------------------
@@ -28,6 +29,7 @@ const postData: BlogPost[] = [
     snippet:
       "Gardening is more than just planting flowers or vegetables — it is a full-fledged industry. From selling indoor plants to setting up home gardens, vertical gardens, rooftop greenery, and landscape designing, the gardening business offers multiple income sources. People today are more health-conscious, environmentally aware, and interested in aesthetic living. As a result, ...",
     imageUrl: "/image/navbar/blog/Blog-1.png",
+    photo: "/image/navbar/contact/Niranjan Sharma.png"
   },
   {
     id: 2,
@@ -38,16 +40,18 @@ const postData: BlogPost[] = [
     snippet:
       "In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, ...",
     imageUrl: "/image/navbar/blog/Blog-2.png",
+    photo: "/image/navbar/contact/Pracas Upreti.png"
   },
   {
     id: 3,
     title: "Impact of a Flower in Mental Health",
-    author: "Dipak Pahadi",
+    author: "Madan Tamang",
     date: "29/07/2025",
     readTime: "5 min",
     snippet:
       "Flowers have been part of human life for thousands of years. They are used in celebrations, rituals, decorations, and even in medicine. But did you know ...",
     imageUrl: "/image/navbar/blog/Blog-3.png",
+    photo: "/image/navbar/contact/Madan Tamang.png"
   },
   {
     id: 4,
@@ -58,6 +62,7 @@ const postData: BlogPost[] = [
     snippet:
       "Detoxing isn’t just about green juices and diets. A real detox involves cleansing your environment, ...",
     imageUrl: "/image/navbar/blog/Blog-4.jpg",
+    photo: "/image/navbar/contact/Pracas Upreti.png"
   },
   {
     id: 5,
@@ -68,46 +73,51 @@ const postData: BlogPost[] = [
     snippet:
       "True happiness often lies in simple joys — like seeing a seed sprout, harvesting your own vegetables, ...",
     imageUrl: "/image/navbar/blog/Blog-5.jpg",
+    photo: "/image/navbar/contact/Niranjan Sharma.png"
   },
   {
     id: 6,
     title: "How Mindfulness and Gardening Go Hand in Hand",
-    author: "Van Praag",
+    author: "Niranjan Sharma",
     date: "29/07/2025",
     readTime: "5 min",
     snippet:
       "In a fast-paced world, mindfulness is the anchor that brings us back to the present. And there’s no better place ...",
     imageUrl: "/image/navbar/blog/Blog-6.jpg",
+    photo: "/image/navbar/contact/Niranjan Sharma.png"
   },
   {
     id: 7,
     title: "Why Gardening Services Are the Future of Urban Living",
-    author: "Van Praag",
+    author: "Niranjan Sharma",
     date: "29/07/2025",
     readTime: "5 min",
     snippet:
       "With shrinking open spaces and busier schedules, urban dwellers are turning to gardening professionals ...",
     imageUrl: "/image/navbar/blog/Blog-7.jpg",
+    photo: "/image/navbar/contact/Niranjan Sharma.png"
   },
   {
     id: 8,
     title: "Green is the New Lifestyle — Embrace the Garden Life",
-    author: "Van Praag",
+    author: "Pracas Upreti",
     date: "29/07/2025",
     readTime: "5 min",
     snippet:
       "Gardening is more than a weekend activity — it’s a lifestyle choice. It's about living closer to nature, ...",
     imageUrl: "/image/navbar/blog/Blog-8.jpg",
+    photo: "/image/navbar/contact/Pracas Upreti.png"
   },
   {
     id: 9,
     title: "Plants: Nature’s Timeless Gift for a Healthier, Happier Life",
-    author: "Van Praag",
+    author: "Madan Tamang",
     date: "29/07/2025",
     readTime: "5 min",
     snippet:
       "Plants are more than just decorative green companions — they’re living tools for a healthier, ...",
     imageUrl: "/image/navbar/blog/Blog-9.jpg",
+    photo: "/image/navbar/contact/Madan Tamang.png"
   },
 ];
 
@@ -118,22 +128,26 @@ const PostCard = ({ post, isLarge = false }: { post: BlogPost; isLarge?: boolean
   <div className="flex flex-col overflow-hidden">
     <img src={post.imageUrl} alt={post.title} className="w-full h-56 object-cover rounded-2xl" />
     <div className="flex flex-col p-4">
-      <div className="flex items-center text-sm mt-2 text-dark">
-        <p className="mr-2">by {post.author}</p>
-        <span className="text-dark">•</span>
-        <p className="ml-2 mr-20">{post.date}</p>
-        
-        <p className="ml-4 flex gap-2"><Clock/>{post.readTime}</p>
-      </div>
+      <div className="self-stretch inline-flex justify-between items-center mb-2">
+                        <div className="flex justify-start items-center gap-2">
+                          <img className="w-8 h-8 rounded-full" src={post.photo} />
+                          <div className="text-sm">{post.author}</div>
+                          <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
+                          <div className="text-sm">{post.date}</div>
+                        </div>
+                        <div className="flex justify-start items-center gap-2.5">
+                          <div className="text-sm flex gap-2"> <Clock/> {post.readTime}</div>
+                        </div>
+                      </div>
       <h3 className={`font-bold text-secondary transition-colors ${isLarge ? 'text-2xl' : 'text-lg'}`}>
         {post.title}
       </h3>
-      <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3">{post.snippet}</p>
+      <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3 mb-4">{post.snippet}</p>
       <a
                       href="#"
                       className="px-2 w-40 py-2.5 bg-gradient-to-r from-[#00C400] via-[#009800] to-[#009000] rounded-lg inline-flex justify-center items-center gap-1.5 text-white text-lg font-semibold"
                     >
-                      Read More
+                      Read More <ArrowRight/>
                     </a>
     </div>
   </div>
@@ -200,7 +214,7 @@ export default function BlogPage() {
       
 
       {/* Blog Sections */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-8 space-y-16 mb-20">
 
         {/* Popular Post */}
         <section>
@@ -210,9 +224,10 @@ export default function BlogPage() {
             <div className="p-6 rounded-2xl">
               <div className="flex flex-wrap justify-between items-center mb-4 text-sm text-gray-500">
                 <div className="flex items-center text-dark gap-3">
-                  <img src="https://placehold.co/40x40" className="w-10 h-10 rounded-full" />
+                  <img src={postData[0].photo} className="w-10 h-10 rounded-full" />
                   <span>{postData[0].author}</span>
-                  <div className="w-1.5 h-1.5 bg-dark rounded-full mx-2" />
+                  
+        <span className="text-dark">•</span>
                   <span>{postData[0].date}</span>
                 </div>
                 <span className='flex gap-2'><Clock/> {postData[0].readTime}</span>
@@ -223,7 +238,7 @@ export default function BlogPage() {
                       href="#"
                       className="px-6 py-2.5 bg-gradient-to-r from-[#00C400] via-[#009800] to-[#009000] rounded-lg inline-flex justify-center items-center gap-1.5 text-white text-lg font-semibold"
                     >
-                      Read More
+                      Read More <ArrowRight/>
                     </a>
             </div>
           </div>
@@ -247,7 +262,7 @@ export default function BlogPage() {
                     <div className="self-stretch flex flex-col justify-start items-center gap-4">
                       <div className="self-stretch inline-flex justify-between items-center">
                         <div className="flex justify-start items-center gap-2">
-                          <img className="w-8 h-8 rounded-full" src="https://placehold.co/32x32" />
+                          <img className="w-8 h-8 rounded-full" src={post.photo} />
                           <div className="text-sm">{post.author}</div>
                           <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
                           <div className="text-sm">{post.date}</div>
@@ -265,7 +280,7 @@ export default function BlogPage() {
                       href="#"
                       className="px-6 py-2.5 bg-gradient-to-r from-[#00C400] via-[#009800] to-[#009000] rounded-lg inline-flex justify-center items-center gap-1.5 text-white text-lg font-semibold"
                     >
-                      Read More
+                      Read More <ArrowRight/>
                     </a>
                   </div>
                 </div>
