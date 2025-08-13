@@ -19,22 +19,20 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[400px] lg:max-w-[417px] h-auto min-h-[280px] sm:min-h-[300px] md:min-h-[325px] flex flex-col justify-between border-2 border-[#F4F4F4] hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-white rounded-2xl p-8 w-[380px] h-auto flex flex-col gap-3 justify-between border-2 border-[#F4F4F4] hover:shadow-lg transition-shadow duration-300">
       {/* Quote Icon */}
       <div className="mb-3 sm:mb-4">
-        <span className="text-2xl sm:text-3xl md:text-4xl text-primary font-serif font-bold leading-none">
+        <span className="text-4xl text-primary font-serif font-bold leading-none">
           "
         </span>
       </div>
 
       {/* Comment */}
-      <p className="text-body text-xs sm:text-sm md:text-sm leading-relaxed mb-4 sm:mb-5 md:mb-6 flex-grow">
-        {comment}
-      </p>
+      <p className="text-body text-sm leading-relaxed flex-grow">{comment}</p>
 
       {/* Avatar and User Info */}
       <div className="flex items-center mt-auto">
-        <div className="relative w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
+        <div className="relative w-14 h-14 rounded-full overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
           <img
             src={imageSrc}
             alt={imageAlt}
@@ -60,14 +58,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 // Main Testimonials Section
 const Testimonial: React.FC = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 flex flex-col items-center mb-12 sm:mb-20 md:mb-30">
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 flex flex-col items-center mb-30">
       <div className="w-full max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary text-center mb-8 sm:mb-10 md:mb-12 leading-tight px-4">
           What Our Users Say
         </h2>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center items-stretch">
+        <div className="flex flex-wrap gap-6 items-center justify-center ">
           {/* Testimonial 1 */}
           <TestimonialCard
             name="Ramesh Sharma"
@@ -94,15 +92,6 @@ const Testimonial: React.FC = () => {
             imageAlt="Dipendra Lankil"
             imageSrc="/image/home/testimonials/Dipendra.png"
           />
-        </div>
-
-        {/* Mobile scroll hint - only visible on mobile */}
-        <div className="flex md:hidden justify-center mt-6 text-xs text-gray-500">
-          <div className="flex items-center space-x-2">
-            <div className="w-2 h-2 bg-gray-300 rounded-full animate-pulse"></div>
-            <span>Scroll to see all testimonials</span>
-            <div className="w-2 h-2 bg-gray-300 rounded-full animate-pulse"></div>
-          </div>
         </div>
       </div>
     </div>

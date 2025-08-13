@@ -75,7 +75,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
   return (
     <Link href={article.Link}>
-      <div className="relative rounded-xl overflow-hidden shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300 ">
+      <div className="relative rounded-xl overflow-hidden max-sm:h-[400px] max-md:h-[500px] shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300 ">
         {/* Image container with responsive height */}
 
         <div className={`relative w-full ${imageContainerClasses} group`}>
@@ -145,14 +145,14 @@ const LatestUpdates: React.FC = () => {
         </h2>
 
         {/* Grid layout for the articles */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto">
           {/* Large Article Card (first article in the data array) */}
           <div className="md:col-span-1">
             <ArticleCard article={articles[0]} large />
           </div>
 
           {/* Container for the two smaller article cards */}
-          <div className="grid grid-cols-1 gap-8 ">
+          <div className="grid grid-cols-1 gap-6">
             {/* Smaller Article Card 1 */}
             <ArticleCard article={articles[1]} />
             {/* Smaller Article Card 2 */}

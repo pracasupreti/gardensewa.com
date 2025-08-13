@@ -13,13 +13,13 @@ export default function Footer() {
     <div className="relative">
       {/* Main Footer */}
       <footer
-        className="bg-card pt-24"
-        style={{ height: "auto", minHeight: "502px" }}
+        className="bg-card pt-24 h-[502px] xl:h-[400px]"
+        style={{ height: "auto" }}
       >
         {/* Newsletter Section - Overlapping */}
         <div
           className="absolute top-0 left-0 right-0 z-10"
-          style={{ transform: "translateY(-70.5px)" }}
+          style={{ transform: "translateY(-90.5px)" }}
         >
           <div
             className="bg-[#00AA00] text-white px-4 sm:px-8 mx-2 sm:mx-4 md:mx-28 rounded-2xl shadow-2xl"
@@ -35,7 +35,7 @@ export default function Footer() {
                   your inbox.
                 </p>
               </div>
-              <form className="flex bg-white rounded-full overflow-hidden w-full max-w-sm">
+              <form className="flex bg-white rounded-full overflow-hidden w-full max-w-sm max-sm:w-[80%]">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -76,20 +76,20 @@ export default function Footer() {
               </p>
 
               {/* App Store Buttons */}
-              <div className="space-y-2 flex flex-col items-start">
+              <div className="gap-2 flex flex-col items-start max-lg:flex-row">
                 <Image
                   src="/image/home/footer/app-store.png"
                   alt="App Store"
                   width={100}
                   height={33}
-                  className="cursor-pointer w-[100px] sm:w-[120px] h-auto"
+                  className="cursor-pointer w-[120px] h-auto"
                 />
                 <Image
                   src="/image/home/footer/play-store.png"
                   alt="Google Play"
                   width={100}
                   height={33}
-                  className="cursor-pointer w-[100px] sm:w-[120px] h-auto"
+                  className="cursor-pointer w-[120px] h-auto"
                 />
               </div>
             </div>
@@ -268,9 +268,9 @@ export default function Footer() {
                     <Image
                       src="/image/navbar/navimg1.png"
                       alt="How Flower Brings Happiness"
-                      width={40}
-                      height={32}
-                      className="rounded object-cover flex-shrink-0 w-[40px] h-[32px] sm:w-[50px] sm:h-[40px]"
+                      width={50}
+                      height={42}
+                      className="rounded w-[60px] sm:h-[50px]"
                     />
                     <div className="min-w-0 flex-1">
                       <h5 className="text-xs sm:text-sm font-medium text-gray-900 mb-1 line-clamp-2">
@@ -287,9 +287,9 @@ export default function Footer() {
                     <Image
                       src="/image/navbar/navimg2.png"
                       alt="The Blooming Business of GardenSewa"
-                      width={40}
-                      height={32}
-                      className="rounded object-cover flex-shrink-0 w-[40px] h-[32px] sm:w-[50px] sm:h-[40px]"
+                      width={50}
+                      height={42}
+                      className="rounded w-[60px] sm:h-[52px]"
                     />
                     <div className="min-w-0 flex-1">
                       <h5 className="text-xs sm:text-sm font-medium text-gray-900 mb-1 line-clamp-2">
@@ -306,7 +306,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Footer */}
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 border-t border-secondary pt-4 pb-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 border-t border-secondary pt-4 pb-4 mt-auto">
             <div className="text-xs sm:text-sm text-gray-600 text-center sm:text-left">
               Copyright © SRIYOG Consulting Pvt. Ltd. All Rights Reserved.
             </div>

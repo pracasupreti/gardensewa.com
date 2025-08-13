@@ -258,7 +258,7 @@ const ServicesAndPlants: React.FC = () => {
           <h2 className="text-2xl lg:text-4xl font-bold text-secondary">
             Our Services
           </h2>
-          <a className="border border-secondary py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
+          <a className="border border-secondary max-sm:py-1 max-sm:px-3 py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
             View All <ArrowRight />
           </a>
         </div>

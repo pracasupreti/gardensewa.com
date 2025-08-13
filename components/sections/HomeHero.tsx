@@ -62,7 +62,7 @@ const HomeHero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden bg-gradient-to-l from-[#1F1F1F] via-[#39393980] to-[#39393900]">
+    <div className="relative w-full h-[80vh] overflow-hidden bg-gradient-to-l from-[#1F1F1F] via-[#39393980] to-[#39393900] mb-30">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div

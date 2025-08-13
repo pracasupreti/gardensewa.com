@@ -79,37 +79,13 @@ export default function Header() {
             : "h-auto py-1 sm:py-1.5 md:py-2 opacity-100 transform translate-y-0"
         }`}
       >
-        <div className="container max-w-[1250px] mx-auto flex flex-col sm:flex-row items-center justify-between px-3 sm:px-4 md:px-5 lg:px-6 text-white">
-          <div className="contact flex items-center gap-1 text-xs sm:text-sm md:text-[14px] mb-1 sm:mb-0">
+        <div className="container max-w-[1250px] mx-auto flex flex-col sm:flex-row justify-between px-3 sm:px-4 md:px-5 lg:px-6 text-white">
+          <div className="contact flex gap-1 text-xs sm:text-sm md:text-[14px] mb-1 sm:mb-0">
             <a
               className="hover:text-green-200 transition-colors duration-200"
               href="tel:+977-9852025735"
             >
-              Call Support: +977-9852025735
-            </a>
-          </div>
-
-          <div className="flex items-center space-x-2 sm:space-x-3">
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="hover:scale-110 hover:text-green-200 transition-all duration-200"
-            >
-              <FaFacebook className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-            </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="hover:scale-110 hover:text-green-200 transition-all duration-200"
-            >
-              <FaInstagram className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-            </a>
-            <a
-              href="#"
-              aria-label="LinkedIn"
-              className="hover:scale-110 hover:text-green-200 transition-all duration-200"
-            >
-              <FaLinkedinIn className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+              Helpline Number: +977-9852025735
             </a>
           </div>
         </div>

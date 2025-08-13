@@ -13,7 +13,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   title,
   description,
 }) => (
-  <div className="flex w-full sm:w-[280px] md:w-[300px] h-auto min-h-[200px] sm:min-h-[220px] md:h-[248px] flex-col items-center p-4 sm:p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
+  <div className="flex w-full sm:w-[280px] md:w-[300px] h-auto min-h-[200px] sm:min-h-[220px] md:h-[248px] flex-col items-center justify-center p-4 sm:p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
     <div className="bg-white p-3 sm:p-4 rounded-2xl mb-3 sm:mb-4 w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[76px] md:h-[76px]">
       <img
         src={icon}
@@ -23,9 +23,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-title mb-2 text-center">
       {title}
     </h3>
-    <p className="text-center text-light-body text-sm sm:text-base">
-      {description}
-    </p>
   </div>
 );
 
@@ -88,7 +85,7 @@ const ChooseUs: React.FC = () => {
         <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[52px] font-bold text-secondary text-center mb-8 sm:mb-10 lg:mb-12 px-2">
           Why Choose Us?
         </h2>
-        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4 sm:gap-6">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-6">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -101,53 +98,48 @@ const ChooseUs: React.FC = () => {
       </section>
 
       {/* Our Clients Section */}
-      <section className="mx-auto flex flex-col gap-6 mb-20 sm:mb-25">
-        <h2 className="flex flex-col sm:flex-row w-full justify-between items-start sm:items-center gap-4">
-          <div className="text-secondary font-bold text-xl sm:text-2xl lg:text-4xl">
-            Our Clients
-          </div>
-          <a className="border border-secondary py-2 sm:py-2.5 px-4 sm:px-6 rounded-md flex items-center justify-center text-secondary text-base sm:text-lg gap-1.5 hover:bg-secondary hover:text-white transition-colors self-start sm:self-auto">
-            View All <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+      <section className="mx-auto flex flex-col gap-6 mb-20 sm:mb-25 p-4">
+        <div className="flex flex-row justify-between items-center mb-10">
+          <h2 className="text-2xl lg:text-4xl font-bold text-secondary">
+            Our clients
+          </h2>
+          <a className="border border-secondary max-sm:py-1 max-sm:px-3 py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
+            View All <ArrowRight />
           </a>
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+        </div>
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
           {clients.map((client, index) => {
             const [isHovered, setIsHovered] = useState(false);
             return (
               <div
                 key={index}
-                className="bg-white border-[3px] border-[#C9EDC5] rounded-3xl p-4 sm:p-6 flex flex-col items-start text-left relative overflow-hidden cursor-pointer"
+                className="bg-white border-[3px] border-[#C9EDC5] h-[427px] w-[290px] rounded-3xl p-4 sm:p-6 flex flex-col justify-between items-start text-left relative overflow-hidden cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
                 {/* Logo - hidden on hover */}
                 <div
-                  className={`w-full flex justify-center mb-4 transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
+                  className={`w-full flex justify-center h-full items-center transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
                 >
                   <img
                     src={client.image}
                     alt={client.name}
-                    className="h-24 sm:h-28 md:h-32 w-auto object-contain"
+                    className="h-64 w-auto object-contain"
                   />
                 </div>
 
-                {/* Original text - hidden on hover */}
-                <p
-                  className={`text-black text-xs sm:text-sm text-left leading-relaxed mt-4 mb-4 pb-2 flex-1 transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
-                >
-                  {client.text}
-                </p>
-
                 {/* Divider line - always visible */}
-                <span className="border-t-2 border-t-card w-full p-2"></span>
+                <div className="flex w-full flex-col">
+                  <span className="border-t-2 border-t-card w-full p-2"></span>
 
-                {/* Button - always in same position */}
-                <a
-                  href={client.link}
-                  className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
-                >
-                  Browse More
-                </a>
+                  {/* Button - always in same position */}
+                  <a
+                    href={client.link}
+                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
+                  >
+                    Browse More
+                  </a>
+                </div>
 
                 {/* Hover text content - positioned in the text area */}
                 <div

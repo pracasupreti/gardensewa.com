@@ -1,7 +1,8 @@
 // pages/contact.tsx
-import React from 'react';
-import Head from 'next/head';
-import { ArrowRight, Mail, Phone, User } from 'lucide-react';
+import React from "react";
+import Head from "next/head";
+import { User, Mail, Phone, ArrowRight, Globe, MapPin } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 interface Expert {
   name: string;
@@ -10,147 +11,243 @@ interface Expert {
 }
 
 const experts: Expert[] = [
-  { name: "Niranjan Sharma", role: "Project Manager", imageUrl: "/image/navbar/contact/Niranjan Sharma.png" },
-  { name: "Pracas Upreti", role: "CTO", imageUrl: "/image/navbar/contact/Pracas Upreti.png" },
-  { name: "Nadan Tamang", role: "Information Manager", imageUrl: "/image/navbar/contact/Madan Tamang.png" },
+  {
+    name: "Niranjan Sharma",
+    role: "Project Manager",
+    imageUrl: "/image/navbar/contact/Niranjan Sharma.png",
+  },
+  {
+    name: "Pracas Upreti",
+    role: "CTO",
+    imageUrl: "/image/navbar/contact/Pracas Upreti.png",
+  },
+  {
+    name: "Nadan Tamang",
+    role: "Information Manager",
+    imageUrl: "/image/navbar/contact/Madan Tamang.png",
+  },
 ];
 
 const ContactPage = () => {
   return (
     <>
-      <Head>
-        <title>Contact Us | GardenSewa</title>
-      </Head>
-
-      <div className="bg-white min-h-screen">
+      <div className="bg-white min-h-screen flex flex-col gap-27 items-center justify-center w-full">
         {/* Header Section */}
-        <div className="relative w-full h-[300px] sm:h-[350px] flex items-center justify-center text-white">
+
+        <div
+          className={`relative w-full h-[360px] flex items-center justify-center text-white mb-20`}
+        >
           <img
-            src="/image/gallery/galleryBg.jpg"
-            alt="Green plant background"
-            className="absolute inset-0 z-0 object-cover w-full h-full"
+            src="/image/navbar/contact/contactImag.png"
+            alt="A large green plant"
+            height={400}
+            width={400}
+            className="absolute inset-0 z-0 object-cover h-90 w-full"
           />
           <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
-          <div className="relative z-10 max-w-3xl text-center px-4">
-            <div className="mb-3 text-sm text-gray-300">
-              Home &gt; <span className="text-green-400">Contact Us</span>
+
+          <div className="relative z-10 max-w-4xl text-center px-4">
+            <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
+              {/* Breadcrumb navigation */}
+              <div className="mb-4 text-sm w-full">
+                <span className="text-light flex items-center justify-center text-[#616161] text-base">
+                  Home <ChevronRight width={20} height={20} />
+                  <span className="text-primary ml-2 font-semibold">
+                    Contact Us
+                  </span>
+                </span>
+              </div>
+
+              {/* Section title */}
+              <h1 className="mb-4 text-5xl font-bold text-white md:text- [52px]">
+                Contact Us
+              </h1>
+
+              {/* Section description */}
+              <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
+                We’re here to help your garden grow smoothly. Whether you have
+                questions, feedback, or want to partner with us, feel free to
+                reach out.
+              </p>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">Contact Us</h1>
-            <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-              We’re here to help your garden grow smoothly. Whether you have questions,
-              feedback, or want to partner with us, feel free to reach out.
-            </p>
           </div>
         </div>
 
         {/* Contact Section */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 -mt-12 sm:-mt-20 relative z-10">
-          <div className="bg-[#F3FFF2] rounded-3xl shadow-lg flex flex-col lg:flex-row overflow-hidden border border-gray-100">
+        <div className="bg-white min-h-screen flex items-center justify-center p-4">
+          <div className="flex w-full max-w-7xl bg-white">
+            {/* Left Column - Contact Information */}
+            <div className="w-1/2 pr-16 py-8 mt-10 flex flex-col">
+              <h1 className="text-5xl font-bold text-secondary mb-8">
+                Contact Information
+              </h1>
+              <p className="text-gray-600 text-lg leading-relaxed mb-12">
+                If you have any questions or need further assistance, please
+                feel free to reach out to us. We are committed to providing you
+                with the best service and support. Your satisfaction is our
+                priority.
+              </p>
 
-            {/* Left Column - Contact Info */}
-    <div className="bg-gradient-to-r from-[#43963A] to-[#009000] text-white p-8 sm:p-8 lg:p-8 m-4 sm:m-6 rounded-3xl w-full lg:w-1/2 flex flex-col justify-center items-center">
-      <h2 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-centers">Contact Information</h2>
-              <div className="space-y-6">
-                {[
-                  { title: 'Email', value: 'support@gardensewa.com', icon: '/image/icons/email.png' },
-                  { title: 'Phone', value: '+977 97XXXXXXXX', icon: '/image/icons/phone.png' },
-                  { title: 'Office Hours', value: 'Mon - Fri\n9:00 AM - 5:00 PM', icon: '/image/icons/calendar.svg' },
-                  { title: 'Location', value: 'Maitidevi, Kathmandu', icon: '/image/icons/location.png' },
-                ].map((item, idx) => (
-                  <div className="flex items-start" key={idx}>
-                    <div className="bg-white text-black rounded-full p-3 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center mr-4">
-                      <img src={item.icon} alt={item.title} className="w-5 h-5 sm:w-6 sm:h-6" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">{item.title}</h3>
-                      <p className="text-sm whitespace-pre-line">{item.value}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Column - Contact Form */}
-            <div className="bg-white text-light p-8 sm:p-8 lg:p-8 m-4 sm:m-6 w-full lg:w-2/3 rounded-3xl flex justify-center items-center">
-              <form className="space-y-6 w-full max-w-md">
-                {/* Name */}
-                <div>
-                  <label htmlFor="name" className="text-sm font-medium text-gray-700">
-                    Name
-                  </label>
-                  <div className="relative mt-1">
-                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <User className="h-5 w-5 text-gray-400" />
-                    </div>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="Enter your full name..."
-                      className="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500"
-                    />
-                  </div>
-                </div>
-
+              <div className="space-y-8">
                 {/* Email */}
-                <div>
-                  <label htmlFor="email" className="text-sm font-medium text-gray-700">
-                    Email
-                  </label>
-                  <div className="relative mt-1">
-                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <Mail className="h-5 w-5 text-gray-400" />
-                    </div>
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="Enter your email address..."
-                      className="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500"
-                    />
+                <div className="flex items-start">
+                  <div className="bg-green-100 rounded-full p-4 mr-6">
+                    <Mail className="w-8 h-8 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      Email
+                    </h3>
+                    <p className="text-gray-600 text-lg">
+                      gardensewa@sriyog.com
+                    </p>
                   </div>
                 </div>
 
                 {/* Phone */}
-                <div>
-                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">
-                    Phone Number
-                  </label>
-                  <div className="relative mt-1">
-                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <Phone className="h-5 w-5 text-gray-400" />
-                    </div>
-                    <input
-                      type="tel"
-                      id="phone"
-                      placeholder="Enter your phone number..."
-                      className="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500"
-                    />
+                <div className="flex items-start">
+                  <div className="bg-green-100 rounded-full p-4 mr-6">
+                    <Phone className="w-8 h-8 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      Phone
+                    </h3>
+                    <p className="text-gray-600 text-lg">9852025735</p>
                   </div>
                 </div>
 
-                {/* Message */}
-                <div>
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    placeholder="Write your message here..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-green-500 focus:ring-green-500 mt-1"
-                  ></textarea>
+                {/* Website */}
+                <div className="flex items-start">
+                  <div className="bg-green-100 rounded-full p-4 mr-6">
+                    <Globe className="w-8 h-8 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      Website Link
+                    </h3>
+                    <a
+                      href="https://gardensewa.com"
+                      className="text-body hover:underline text-lg"
+                    >
+                      https://gardensewa.com
+                    </a>
+                  </div>
                 </div>
 
-                {/* Submit Button */}
-                <div className="flex justify-end">
-                  <button
-                    type="submit"
-                    className="px-6 sm:px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-secondary transition shadow-md flex items-center space-x-2"
-                  >
-                    <span>Send Message</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </button>
+                {/* Location */}
+                <div className="flex items-start">
+                  <div className="bg-green-100 rounded-full p-4 mr-6">
+                    <MapPin className="w-8 h-8 text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      Location
+                    </h3>
+                    <p className="text-gray-600 text-lg">
+                      Kamalpokhari, Kathmandu, Nepal
+                    </p>
+                  </div>
                 </div>
-              </form>
+              </div>
+            </div>
+
+            {/* Right Column - Contact Form */}
+            <div className="w-[638px] flex justify-center items-center py-8">
+              <div className="rounded-3xl p-12 w-full  border border-card-stroke-light ">
+                <div className="space-y-3">
+                  {/* Name */}
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-lg font-semibold text-body mb-3"
+                    >
+                      Name
+                    </label>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                        <User className="h-6 w-6 text-body" />
+                      </div>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name..."
+                        className="w-full h-14 pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-lg"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-lg font-semibold text-body mb-3"
+                    >
+                      Email
+                    </label>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                        <Mail className="h-6 w-6 text-body" />
+                      </div>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address..."
+                        className="w-full h-14 pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-lg"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Phone Number */}
+                  <div>
+                    <label
+                      htmlFor="phone"
+                      className="block text-lg font-semibold text-body mb-3"
+                    >
+                      Phone Number
+                    </label>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                        <Phone className="h-6 w-6 text-body" />
+                      </div>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number..."
+                        className="w-full h-14 pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-lg"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <label
+                      htmlFor="message"
+                      className="block text-lg font-semibold text-body mb-3"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={6}
+                      placeholder="Write your message here..."
+                      className="w-full px-4 py-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors resize-none text-lg"
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <div className="flex justify-end pt-4">
+                    <button className="px-10 py-4  bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold rounded-full transition-colors duration-200 flex items-center space-x-3 shadow-lg hover:shadow-xl text-lg">
+                      <span>Send Message</span>
+                      <ArrowRight className="w-6 h-6" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
