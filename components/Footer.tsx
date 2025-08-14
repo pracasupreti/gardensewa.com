@@ -95,7 +95,7 @@ export default function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap max-md:flex-col gap-4">
               <div className="w-[150px]">
                 <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
                   Quick Links
