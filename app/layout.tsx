@@ -11,8 +11,9 @@ const alef = AlefFont({
 });
 
 export const metadata: Metadata = {
-  title: "My Website",
-  description: "Description here",
+  title: "Gardensewa | Your Trusted Gardening & Nursery Partner",
+  description: "gardensewa.com",
+  icons: "/gardensewa.png",
 };
 
 export default function RootLayout({
