@@ -70,7 +70,7 @@ export default function App() {
           <div className="mb-4 text-sm w-full">
             <span className="text-light flex items-center justify-center text-[#616161] text-base">
               Home <ChevronRight width={20} height={20} />
-              <span className="text-primary ml-2 font-semibold"> About Us</span>
+              <span className="text-primary ml-2 font-semibold"> Book a Service </span>
             </span>
           </div>
 
@@ -278,7 +278,7 @@ export default function App() {
                   name="termsAccepted"
                   checked={formData.termsAccepted}
                   onChange={handleChange}
-                  className="mt-1 accent-green-600"
+                  className="mt-1 accent-primary"
                 />
 
                 <label
@@ -291,7 +291,7 @@ export default function App() {
               </div>
               <button
                 type="submit"
-                className="flex items-center space-x-2 bg-primary text-white py-2 px-6 rounded-md font-semibold hover:bg-[#257849] transition-colors"
+                className="flex items-center space-x-2 bg-primary text-white py-2 px-6 rounded-md font-semibold hover:bg-secondary transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
