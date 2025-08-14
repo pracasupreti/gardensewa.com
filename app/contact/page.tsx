@@ -14,17 +14,17 @@ const experts: Expert[] = [
   {
     name: "Niranjan Sharma",
     role: "Project Manager",
-    imageUrl: "/image/navbar/contact/Niranjan Sharma.png",
+    imageUrl: "/image/navbar/contact/Niranjan-Sharma.png",
   },
   {
     name: "Pracas Upreti",
     role: "CTO",
-    imageUrl: "/image/navbar/contact/Pracas Upreti.png",
+    imageUrl: "/image/navbar/contact/Pracas-Upreti.png",
   },
   {
     name: "Madan Tamang",
     role: "Information Manager",
-    imageUrl: "/image/navbar/contact/Madan Tamang.png",
+    imageUrl: "/image/navbar/contact/Madan-Tamang.png",
   },
 ];
 
@@ -282,7 +282,7 @@ const ContactPage = () => {
               {experts.map((expert, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 lg:py-12 bg-white rounded-xl lg:rounded-2xl transition-transform transform hover:scale-105 border-2 sm:border-3 border-[#C9EDC5]"
+                  className="flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 lg:py-12 bg-white "
                 >
                   <img
                     src={expert.imageUrl}
@@ -297,6 +297,9 @@ const ContactPage = () => {
                       {expert.name}
                     </p>
                   </div>
+                  <button className="border rounded px-4 py-2 border-primary text-primary mt-4 hover:bg-primary hover:text-white">
+                    WhatsApp
+                  </button>
                 </div>
               ))}
             </div>

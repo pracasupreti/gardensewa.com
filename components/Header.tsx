@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect, useCallback } from "react";
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaTimes } from "react-icons/fa";
 
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
@@ -79,13 +81,47 @@ export default function Header() {
             : "h-auto py-1 sm:py-1.5 md:py-2 opacity-100 transform translate-y-0"
         }`}
       >
-        <div className="container max-w-[1250px] mx-auto flex flex-col sm:flex-row justify-between px-3 sm:px-4 md:px-5 lg:px-6 text-white">
-          <div className="contact flex gap-1 text-xs sm:text-sm md:text-[14px] mb-1 sm:mb-0">
+        <div className="container max-w-[1250px] mx-auto flex flex-col sm:flex-row justify-between items-center px-3 sm:px-4 md:px-5 lg:px-6 text-white">
+          <div className="contact flex gap-1 text-xs sm:text-sm md:text-[14px] mb-2 sm:mb-0">
             <a
               className="hover:text-green-200 transition-colors duration-200"
               href="tel:+977-9852025735"
             >
               Helpline Number: +977-9852025735
+            </a>
+          </div>
+
+          <div className="flex gap-3 items-center">
+            <a
+              href="#"
+              className="group p-2 rounded-full bg-white/10 hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg backdrop-blur-sm"
+              aria-label="Follow us on Facebook"
+            >
+              <Facebook className="w-4 h-4 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
+
+            <a
+              href="#"
+              className="group p-2 rounded-full bg-white/10 hover:bg-red-600 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg backdrop-blur-sm"
+              aria-label="Subscribe to our YouTube channel"
+            >
+              <Youtube className="w-4 h-4 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
+
+            <a
+              href="#"
+              className="group p-2 rounded-full bg-white/10 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg backdrop-blur-sm"
+              aria-label="Follow us on Instagram"
+            >
+              <Instagram className="w-4 h-4 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
+
+            <a
+              href="#"
+              className="group p-2 rounded-full bg-white/10 hover:bg-blue-700 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg backdrop-blur-sm"
+              aria-label="Connect with us on LinkedIn"
+            >
+              <Linkedin className="w-4 h-4 text-white group-hover:text-white transition-colors duration-300" />
             </a>
           </div>
         </div>

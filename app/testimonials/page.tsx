@@ -67,59 +67,99 @@ const testimonials: Testimonial[] = [
 
 const PartnersTestimonials: React.FC = () => {
   return (
-    <div className="mb-40">
-      <div className="text-center mb-12 bg-green-50 p-12">
-        <p className="text-sm text-gray-500 mb-2">
-          Home &gt; <span className="ml-2 text-primary">Testimonials</span>
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-primary">
-          Testimonials
-        </h1>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          We’re here to help your garden grow smoothly. Whether you have
-          questions, feedback, or want to partner with us, feel free to reach
-          out.
-        </p>
+    <div className="min-h-screen bg-gradient-to-br mb-30">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-green-100 to-green-50 px-4 py-12 sm:py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto text-center">
+          <nav className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
+            Home <span className="mx-2">›</span>
+            <span className="text-green-600 font-medium">Testimonials</span>
+          </nav>
+
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-green-700 mb-4 sm:mb-6">
+            Testimonials
+          </h1>
+
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+            We're here to help your garden grow smoothly. Whether you have
+            questions, feedback, or want to partner with us, feel free to reach
+            out.
+          </p>
+        </div>
       </div>
-      <div className="min-h-screen p-16">
+
+      {/* Main Content */}
+      <div className="px-4 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
-          {/* Main heading section */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-secondary">
+          {/* Section Header */}
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-2 sm:mb-4">
               What Our Partners Say About
             </h2>
-            <h1 className="text-3xl md:text-3xl font-bold text-primary mt-2">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-green-600">
               GardenSewa
-            </h1>
+            </h3>
           </div>
 
-          {/* Testimonial grid container */}
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8">
+          {/* Testimonials Grid */}
+          <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
             {testimonials.map((testimonial, index) => (
-              // Individual testimonial card
               <div
                 key={index}
-                className="flex flex-col items-center bg-white p-6 rounded-2xl border-3 border-[#87C181] shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+                className="group bg-white  flex flex-col justify-center items-center rounded-2xl h-[500px] sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-green-100 hover:border-green-200 relative overflow-hidden"
               >
-                {/* Profile image */}
-                <div className="relative w-34 h-34 mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="rounded-full object-cover w-full h-full shadow-lg"
-                  />
+                {/* Decorative background element */}
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-100 to-transparent rounded-full transform translate-x-6 -translate-y-6 group-hover:scale-110 transition-transform duration-500"></div>
+
+                {/* Quote Icon */}
+                <div className="absolute top-4 right-4 text-green-200 group-hover:text-green-300 transition-colors duration-300">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
                 </div>
 
-                {/* Name */}
-                <h3 className="text-2xl font-bold text-dark">
-                  {testimonial.name}
-                </h3>
+                {/* Content Container */}
+                <div className="relative z-10 ">
+                  {/* Profile Image */}
+                  <div className="flex justify-center items-center mb-4 sm:mb-6">
+                    <div className="relative">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white group-hover:border-green-100 transition-all duration-300 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 rounded-full bg-green-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                  </div>
 
-                {/* Quote section */}
-                <div className=" text-gray-600 p-4">
-                  <p className="text-md text-light text-left">
-                    {testimonial.quote}
-                  </p>
+                  {/* Name */}
+                  <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 text-center mb-4 sm:mb-6">
+                    {testimonial.name}
+                  </h4>
+
+                  {/* Quote */}
+                  <blockquote className="text-sm sm:text-base text-gray-600 leading-relaxed text-center relative">
+                    <p className="italic">"{testimonial.quote}"</p>
+                  </blockquote>
+
+                  {/* Rating Stars */}
+                  <div className="flex justify-center mt-4 sm:mt-6 space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 group-hover:text-yellow-500 transition-colors duration-300"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

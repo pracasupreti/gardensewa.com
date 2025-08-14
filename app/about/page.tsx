@@ -213,7 +213,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-4 md:mt-0">
               <button className="rounded-full px-6 py-3 font-semibold text-white transition duration-300 ease-in-out bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400]">
-                Start Selling
+                Become a Partner
               </button>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function AboutPage() {
             {/* Left Image - Cactus */}
             <div className="relative h-64 w-full overflow-hidden rounded-b-none rounded-xl md:h-auto md:w-1/2 mt-20">
               <img
-                src="/image/navbar/about/cactus.jpg"
+                src="/image/navbar/contact/img1.png"
                 alt="Cactus growing by the sea"
                 className="h-full w-full object-cover"
               />
@@ -231,9 +231,9 @@ export default function AboutPage() {
             {/* Right Image - Potted Plants */}
             <div className="relative h-64 w-full overflow-hidden rounded-t-none rounded-xl md:h-auto md:w-1/2">
               <img
-                src="/image/navbar/about/two-plants.jpg"
+                src="/image/navbar/contact/img2.png"
                 alt="Two plants in wooden vases"
-                className="h-90 w-full object-cover"
+                className="h-64 w-full object-cover rounded-b-xl"
               />
             </div>
           </div>

@@ -117,26 +117,31 @@ const topServices: Service[] = [
 
 // Reusable Service Card component
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
-  <div className="flex flex-col items-center justify-center px-4 sm:px-5 md:px-6 py-6 sm:py-7 md:py-8 border-2 sm:border-[3px] border-[#C9EDC5] rounded-xl w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
-    <div className="relative w-[150px] h-[150px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] lg:w-[230px] lg:h-[230px] rounded-full overflow-hidden mb-3 sm:mb-4 flex-shrink-0">
+  <div className="flex flex-col items-center w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+    <div className="relative w-full h-1/2 overflow-hidden mb-3 sm:mb-4 flex-shrink-0">
       <img
         src={service.imageUrl}
         alt={service.altText}
         className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+        style={{
+          clipPath: "ellipse(100% 95% at 50% 0%)",
+        }}
       />
     </div>
 
-    <h3 className="text-base sm:text-lg md:text-xl font-bold text-dark text-center mb-3 sm:mb-4 md:mb-6 leading-tight px-2">
-      {service.title}
-    </h3>
+    <div className=" flex flex-col items-center justify-center">
+      <h3 className="text-base sm:text-lg md:text-xl font-bold text-dark text-center mb-3 sm:mb-4 md:mb-6 leading-tight px-2">
+        {service.title}
+      </h3>
 
-    <p className="text-dark text-center text-xs sm:text-sm md:text-sm mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2 flex-grow">
-      {service.description}
-    </p>
+      <p className="text-dark text-center text-xs sm:text-sm md:text-sm mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2 flex-grow">
+        {service.description}
+      </p>
 
-    <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
-      Explore More
-    </button>
+      <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
+        Explore More
+      </button>
+    </div>
   </div>
 );
 
