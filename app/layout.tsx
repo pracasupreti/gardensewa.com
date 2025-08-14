@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
- import { Mulish } from 'next/font/google';
+import { Alef as AlefFont } from 'next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-
-    const mulish = Mulish({
-      subsets: ['latin'],
-      display: 'swap',
-    });
+const alef = AlefFont({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700'], // required for Alef
+});
 
 export const metadata: Metadata = {
-  title: "Gardensewa | Your Trusted Gardening & Nursery Partner ",
-  description: "gardensewa.com",
-  icons: "/images/logo/gardensewa.png",
+  title: "My Website",
+  description: "Description here",
 };
 
 export default function RootLayout({
@@ -22,10 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={mulish.className}
-      >
+    <html lang="en" className={alef.className}>
+      <body>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
