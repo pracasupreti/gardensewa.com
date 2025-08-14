@@ -103,7 +103,7 @@ const ChooseUs: React.FC = () => {
       <section className="mx-auto flex flex-col gap-6 mb-20 sm:mb-25 p-4">
         <div className="flex flex-row justify-between items-center mb-10">
           <h2 className="text-2xl lg:text-4xl font-bold text-secondary">
-            Our clients
+            Our Clients
           </h2>
           <a className="border border-secondary max-sm:py-1 max-sm:px-3 py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white">
             View All <ArrowRight />

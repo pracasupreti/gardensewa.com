@@ -81,7 +81,7 @@ const plants: Plant[] = [
   },
   {
     imageUrl: "/image/home/plants/pothas.png",
-    name: "pothas",
+    name: "Pothas",
     price: "1500",
     tags: ["Pet Safe", "Low Light", "Indoor"],
     difficulty: "bg-red-500",
