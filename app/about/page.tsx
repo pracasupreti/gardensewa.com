@@ -100,7 +100,7 @@ export default function AboutPage() {
               <div className="bg-green-100 w-[125%] -ml-4 rounded-xl p-4 md:p-5 grid grid-cols-3 text-start gap-x-10 z-10 skew-x-6">
                 <div className="-skew-x-6">
                   <p className="text-3xl md:text-[52px] font-bold text-primary">
-                    2+
+                    25+
                   </p>
                   <p className="text-black text-sm md:text-base">
                     Years of Experience
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 </div>
                 <div className="-skew-x-6">
                   <p className="text-3xl md:text-[52px] font-bold text-primary">
-                    15+
+                    150+
                   </p>
                   <p className="text-black text-sm md:text-base">
                     Garden Transformed
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 </div>
                 <div className="-skew-x-6">
                   <p className="text-3xl md:text-[52px] font-bold text-primary">
-                    100+
+                    175 +
                   </p>
                   <p className="text-black text-sm md:text-base">
                     Happy Customers

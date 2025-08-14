@@ -22,7 +22,7 @@ const experts: Expert[] = [
     imageUrl: "/image/navbar/contact/Pracas Upreti.png",
   },
   {
-    name: "Nadan Tamang",
+    name: "Madan Tamang",
     role: "Information Manager",
     imageUrl: "/image/navbar/contact/Madan Tamang.png",
   },
