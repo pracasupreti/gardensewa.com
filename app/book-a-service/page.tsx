@@ -1,131 +1,72 @@
 "use client";
-import React, { useState } from "react";
-import Head from "next/head";
-import { ChevronRight } from "lucide-react";
 
-// Type definitions for form state
+import { ChevronRight } from "lucide-react";
+import React, { useState } from "react";
+
 interface FormData {
   email: string;
   phone: string;
   scheduledDate: string;
   province: string;
   city: string;
-  wardNo: string;
+  ward: string;
   detailedAddress: string;
   price: string;
   customPrice: string;
   serviceType: string;
   notes: string;
-  isConfidential: boolean;
+  termsAccepted: boolean;
 }
 
-// A reusable component for a text input field
-const FormInput: React.FC<{
-  label: string;
-  name: keyof FormData;
-  type?: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  required?: boolean;
-}> = ({ label, name, type = "text", value, onChange, required = false }) => (
-  <div className="flex flex-col space-y-1">
-    <label htmlFor={name} className="text-sm font-medium text-gray-700">
-      {label}
-      {required && <span className="text-red-500">*</span>}
-    </label>
-    <input
-      type={type}
-      id={name}
-      name={name}
-      value={value}
-      onChange={onChange}
-      required={required}
-      className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
-    />
-  </div>
-);
-
-// A reusable component for a select dropdown
-const FormSelect: React.FC<{
-  label: string;
-  name: keyof FormData;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  options: string[];
-  required?: boolean;
-}> = ({ label, name, value, onChange, options, required = false }) => (
-  <div className="flex flex-col space-y-1">
-    <label htmlFor={name} className="text-sm font-medium text-gray-700">
-      {label}
-      {required && <span className="text-red-500">*</span>}
-    </label>
-    <select
-      id={name}
-      name={name}
-      value={value}
-      onChange={onChange}
-      required={required}
-      className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors bg-white"
-    >
-      <option value="" disabled>
-        Select...
-      </option>
-      {options.map((option, index) => (
-        <option key={index} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
-  </div>
-);
-
-// Main page component
-const BookingPage: React.FC = () => {
+export default function App() {
   const [formData, setFormData] = useState<FormData>({
     email: "",
     phone: "",
     scheduledDate: "",
     province: "",
     city: "",
-    wardNo: "",
+    ward: "",
     detailedAddress: "",
-    price: "3452",
+    price: "",
     customPrice: "",
     serviceType: "",
     notes: "",
-    isConfidential: false,
+    termsAccepted: false,
   });
 
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >,
+    >
   ) => {
-    const { name, value, type } = e.target;
-    if (type === "checkbox") {
-      const checked = (e.target as HTMLInputElement).checked;
-      setFormData((prev) => ({ ...prev, [name]: checked }));
-    } else {
-      setFormData((prev) => ({ ...prev, [name]: value }));
-    }
+    const { name, value, type, checked } = e.target as HTMLInputElement;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form data submitted:", formData);
-    // In a real app, you would send this data to an API
-    alert("Form submitted successfully! Check the console for the data.");
+    console.log("Form Submitted:", formData);
   };
+
+  const sectionTitleStyle =
+    "text-[#0E3A0E] font-semibold text-lg pb-2 border-b border-gray-200 mb-6";
+  const labelStyle =
+    "text-sm font-medium text-gray-700 mb-1 block";
+  const inputStyle =
+    "w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#2E8B57]";
+      const inputStyle1 =
+    "w-full p-2 bg-[#F5F5F5] border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#2E8B57]";
+
+
+  const RequiredMark = () => <span className="text-red-500">*</span>;
 
   return (
     <div className="mb-40">
-      {" "}
-      {/* Header section */}
       <div className="flex flex-col items-center justify-center h-[209] px-4 py-12 text-center bg-[#F6F9F6]">
-        {/* Breadcrumb navigation */}
-
-        <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center ">
-          {/* Breadcrumb navigation */}
+        <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           <div className="mb-4 text-sm w-full">
             <span className="text-light flex items-center justify-center text-[#616161] text-base">
               Home <ChevronRight width={20} height={20} />
@@ -133,204 +74,237 @@ const BookingPage: React.FC = () => {
             </span>
           </div>
 
-          {/* Section title */}
-          <h1 className="mb-4 text-5xl font-bold text-[#008000] md:text- [52px]">
+          <h1 className="mb-4 text-5xl font-bold text-[#008000] md:text-[52px]">
             Book a Gardening Service
           </h1>
         </div>
       </div>
-      <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans">
-        <Head>
-          <title>Book a Service</title>
-        </Head>
-        <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-xl shadow-lg border border-gray-200">
-          {/* Form container */}
-          <form onSubmit={handleSubmit} className="space-y-8">
-            {/* Contact Information section */}
-            <section className="space-y-4">
-              <h2 className="text-xl font-bold text-gray-800">
-                Contact Information
-              </h2>
-              <FormInput
-                label="Email Address"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-              <FormInput
-                label="Phone Number"
-                name="phone"
-                type="tel"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </section>
 
-            {/* Scheduled Date section */}
-            <section className="space-y-4">
-              <h2 className="text-xl font-bold text-gray-800">
-                Scheduled Date
-              </h2>
-              <FormInput
-                label="Scheduled Date"
-                name="scheduledDate"
-                type="date"
-                value={formData.scheduledDate}
-                onChange={handleChange}
-                required
-              />
-            </section>
-
-            {/* Location Details section */}
-            <section className="space-y-4">
-              <h2 className="text-xl font-bold text-gray-800">
-                Location Details
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <FormSelect
-                  label="Province"
-                  name="province"
-                  value={formData.province}
-                  onChange={handleChange}
-                  options={["Province 1", "Province 2", "Province 3"]}
-                  required
-                />
-                <FormSelect
-                  label="City"
-                  name="city"
-                  value={formData.city}
-                  onChange={handleChange}
-                  options={["Kathmandu", "Janakpur", "Pokhara"]}
-                  required
-                />
-                <FormInput
-                  label="Ward No"
-                  name="wardNo"
-                  value={formData.wardNo}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <FormInput
-                label="Detailed Address"
-                name="detailedAddress"
-                value={formData.detailedAddress}
-                onChange={handleChange}
-                required
-              />
-            </section>
-
-            {/* Service Details section */}
-            <section className="space-y-4">
-              <h2 className="text-xl font-bold text-gray-800">
-                Service Details
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <main className="min-h-screen bg-[#FFFFFF] p-4 flex justify-center items-start pt-10 font-[Poppins]">
+        <div className="bg-white p-8 rounded-lg w-full max-w-4xl">
+          <form onSubmit={handleSubmit}>
+            {/* Contact Information Section */}
+            <section className="mb-8">
+              <h2 className={sectionTitleStyle}>Contact Information</h2>
+              <div className="space-y-4">
                 <div>
-                  <label
-                    htmlFor="price"
-                    className="text-sm font-medium text-gray-700"
-                  >
-                    Price<span className="text-red-500">*</span>
+                  <label htmlFor="email" className={labelStyle}>
+                    Email Address <RequiredMark />
                   </label>
-                  <div className="flex items-center mt-1">
-                    <div className="relative flex-grow">
-                      <input
-                        type="range"
-                        id="price"
-                        name="price"
-                        min="1000"
-                        max="10000"
-                        value={formData.price}
-                        onChange={handleChange}
-                        className="w-full h-2 bg-primary rounded-lg appearance-none cursor-pointer"
-                      />
-                      <span className="absolute -bottom-6 left-0 text-xs text-gray-500">
-                        NPR. 1000
-                      </span>
-                      <span className="absolute -bottom-6 right-0 text-xs text-gray-500">
-                        NPR. 10000
-                      </span>
-                      <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-sm font-medium text-primary">
-                        NPR. {formData.price}
-                      </span>
-                    </div>
-                  </div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={inputStyle}
+                    required
+                  />
                 </div>
-                <FormInput
-                  label="Custom Price"
-                  name="customPrice"
-                  type="number"
-                  value={formData.customPrice}
-                  onChange={handleChange}
-                />
+                <div>
+                  <label htmlFor="phone" className={labelStyle}>
+                    Phone Number <RequiredMark />
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={inputStyle}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="scheduledDate" className={labelStyle}>
+                    Scheduled Date <RequiredMark />
+                  </label>
+                  <input
+                    type="date"
+                    id="scheduledDate"
+                    name="scheduledDate"
+                    value={formData.scheduledDate}
+                    onChange={handleChange}
+                    className={inputStyle1}
+                    required
+                  />
+                </div>
               </div>
-              <FormSelect
-                label="Service Type"
-                name="serviceType"
-                value={formData.serviceType}
-                onChange={handleChange}
-                options={["Lawn Care", "Gardening", "Landscaping"]}
-                required
-              />
             </section>
 
-            {/* Additional Details section */}
-            <section className="space-y-4">
-              <h2 className="text-xl font-bold text-gray-800">
-                Additional Details
-              </h2>
-              <div className="flex flex-col space-y-1">
-                <label
-                  htmlFor="notes"
-                  className="text-sm font-medium text-gray-700"
+            {/* Location Details Section */}
+            <section className="mb-8">
+              <h2 className={sectionTitleStyle}>Location Details</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <div>
+                  <label htmlFor="province" className={labelStyle}>
+                    Province <RequiredMark />
+                  </label>
+                  <select
+                    id="province"
+                    name="province"
+                    value={formData.province}
+                    onChange={handleChange}
+                    className={inputStyle1}
+                    required
+                  >
+                    <option value="">Select Province</option>
+                    <option value="province-1">Province 1</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="city" className={labelStyle}>
+                    City <RequiredMark />
+                  </label>
+                  <select
+                    id="city"
+                    name="city"
+                    value={formData.city}
+                    onChange={handleChange}
+                    className={inputStyle1}
+                    required
+                  >
+                    <option value="">Select City</option>
+                    <option value="city-a">City A</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="ward" className={labelStyle}>
+                    Ward No <RequiredMark />
+                  </label>
+                  <input
+                    type="text"
+                    id="ward"
+                    name="ward"
+                    value={formData.ward}
+                    onChange={handleChange}
+                    className={inputStyle}
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="detailedAddress" className={labelStyle}>
+                  Detailed Address
+                </label>
+                <input
+                  type="text"
+                  id="detailedAddress"
+                  name="detailedAddress"
+                  value={formData.detailedAddress}
+                  onChange={handleChange}
+                  className={inputStyle}
+                />
+              </div>
+            </section>
+
+            {/* Service Details Section */}
+            <section className="mb-8">
+              <h2 className={sectionTitleStyle}>Service Details</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label htmlFor="price" className={labelStyle}>
+                    Price <RequiredMark />
+                  </label>
+                  <select
+                    id="price"
+                    name="price"
+                    value={formData.price}
+                    onChange={handleChange}
+                    className={inputStyle1}
+                    required
+                  >
+                    <option value="">Select Price</option>
+                    <option value="standard">Standard</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="customPrice" className={labelStyle}>
+                    Custom Price
+                  </label>
+                  <input
+                    type="text"
+                    id="customPrice"
+                    name="customPrice"
+                    value={formData.customPrice}
+                    onChange={handleChange}
+                    className={inputStyle}
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="serviceType" className={labelStyle}>
+                  Service Type <RequiredMark />
+                </label>
+                <select
+                  id="serviceType"
+                  name="serviceType"
+                  value={formData.serviceType}
+                  onChange={handleChange}
+                  className={inputStyle1}
+                  required
                 >
+                  <option value="">Select Service Type</option>
+                  <option value="gardening">Gardening</option>
+                </select>
+              </div>
+            </section>
+
+            {/* Additional Details Section */}
+            <section className="mb-8">
+              <h2 className={sectionTitleStyle}>Additional Details</h2>
+              <div>
+                <label htmlFor="notes" className={labelStyle}>
                   Notes or Special Requests
                 </label>
                 <textarea
                   id="notes"
                   name="notes"
+                  rows={4}
                   value={formData.notes}
                   onChange={handleChange}
-                  rows={4}
+                  className={inputStyle}
                   placeholder="Mention tools required, preferred gardener, plant types, etc."
-                  className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
                 />
               </div>
             </section>
 
-            {/* Confirmation and Submit button */}
-            <div className="flex flex-col items-start space-y-4 pt-4">
-              <label className="flex items-center space-x-2 text-sm text-gray-600 cursor-pointer">
+            {/* Footer and Submit Button */}
+            <div className="flex flex-col md:flex-row justify-between items-center mt-6">
+              <div className="flex items-start mb-4 md:mb-0">
                 <input
                   type="checkbox"
-                  name="isConfidential"
-                  checked={formData.isConfidential}
+                  id="termsAccepted"
+                  name="termsAccepted"
+                  checked={formData.termsAccepted}
                   onChange={handleChange}
-                  className="h-4 w-4 text-white focus:ring-primary border-gray-300 rounded accent-primary"
+                  className="mt-1 accent-green-600"
                 />
-                <span>
+
+                <label
+                  htmlFor="termsAccepted"
+                  className="ml-2 text-xs text-gray-500"
+                >
                   Your details are kept confidential. We use your information
                   only to coordinate your gardening service.
-                </span>
-              </label>
+                </label>
+              </div>
               <button
                 type="submit"
-                className="w-full sm:w-auto px-6 py-3 bg-primary text-white font-semibold rounded-full shadow-lg hover:bg-primary focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors duration-300 flex items-center justify-center space-x-2"
+                className="flex items-center space-x-2 bg-primary text-white py-2 px-6 rounded-md font-semibold hover:bg-[#257849] transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
                 >
                   <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
                   />
                 </svg>
                 <span>Submit</span>
@@ -338,9 +312,7 @@ const BookingPage: React.FC = () => {
             </div>
           </form>
         </div>
-      </div>
+      </main>
     </div>
   );
-};
-
-export default BookingPage;
+}
