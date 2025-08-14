@@ -74,7 +74,7 @@ export default function App() {
             </span>
           </div>
 
-          <h1 className="mb-4 text-5xl font-bold text-[#008000] md:text-[52px]">
+          <h1 className="mb-4 text-3xl md:text-5xl font-bold text-[#008000] md:text-[52px]">
             Book a Gardening Service
           </h1>
         </div>
@@ -149,7 +149,13 @@ export default function App() {
                     required
                   >
                     <option value="">Select Province</option>
-                    <option value="province-1">Province 1</option>
+                    <option value="Koshi Province">Koshi Province</option>
+                    <option value="Madhesh Province">Madhesh Province</option>
+                    <option value="Bagmati Province">Bagmati Province</option>
+                    <option value="Gandaki Province">Gandaki Province</option>
+                    <option value="Lumbini Province">Lumbini Province</option>
+                    <option value="Karnali Province">Karnali Province</option>
+                    <option value="Sudurpaschim Province">Sudurpaschim Province</option>
                   </select>
                 </div>
                 <div>
@@ -165,7 +171,11 @@ export default function App() {
                     required
                   >
                     <option value="">Select City</option>
-                    <option value="city-a">City A</option>
+                    <option value="Kathmandu">Kathmandu</option>
+                    <option value="Janakpur">Janakpur</option>
+                    <option value="Biratnagar">Biratnagar</option>
+                    <option value="Pokhara">Pokhara</option>
+                    <option value="Birgunj">Birgunj</option>
                   </select>
                 </div>
                 <div>
@@ -215,7 +225,9 @@ export default function App() {
                     required
                   >
                     <option value="">Select Price</option>
-                    <option value="standard">Standard</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="2000-5000">2000-5000</option>
                   </select>
                 </div>
                 <div>
@@ -245,7 +257,11 @@ export default function App() {
                   required
                 >
                   <option value="">Select Service Type</option>
-                  <option value="gardening">Gardening</option>
+                  <option value="Gardening Service">Gardening Service</option>
+                    <option value="Lawn Care">Lawn Care</option>
+                    <option value="Seasonal Service">Seasonal Service</option>
+                    <option value="Turfing Service">Turfing Service</option>
+                    <option value="Landscaping Services">Landscaping Services</option>
                 </select>
               </div>
             </section>
