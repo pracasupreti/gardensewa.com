@@ -80,10 +80,9 @@ const plants: Plant[] = [
     difficulty: "bg-red-500",
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1459156212016-c812468e2115?w=400&h=300&fit=crop",
-    name: "Succulent",
-    price: "890",
+    imageUrl: "/image/home/plants/pothas.png",
+    name: "pothas",
+    price: "1500",
     tags: ["Pet Safe", "Low Light", "Indoor"],
     difficulty: "bg-red-500",
   },
@@ -234,7 +233,7 @@ const PlantCard: React.FC<Plant> = ({
           <div className="mt-auto space-y-3">
             <button
               onClick={() => setIsFavorite(!isFavorite)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-gray-300 text-white bg-green-600 hover:bg-green-700 transition-colors duration-200"
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 bg-gray-50 hover:bg-green-700 hover:text-white transition-colors duration-200"
             >
               Add to Favorite
             </button>

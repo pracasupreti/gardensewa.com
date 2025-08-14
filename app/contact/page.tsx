@@ -275,7 +275,7 @@ const ContactPage = () => {
 
           {/* Our Experts */}
           <section className="container mx-auto max-w-7xl px-4 sm:px-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-primary mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-secondary mb-6 sm:mb-8">
               Our Experts
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
