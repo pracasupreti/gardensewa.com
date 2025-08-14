@@ -63,10 +63,6 @@ const topServices: Service[] = [
     imageUrl: "/image/navbar/services/service6.jpg",
     altText: "Nursery Services",
   },
-];
-
-// Data for the "Recent Services" section
-const recentServices: Service[] = [
   {
     id: 1,
     title: "Lawn Care Services",
@@ -116,6 +112,8 @@ const recentServices: Service[] = [
     altText: "Turfing Services",
   },
 ];
+
+// Data for the "Recent Services" section
 
 // Reusable Service Card component
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
@@ -181,28 +179,15 @@ const ServicesPage: React.FC = () => {
 
       <div className="w-full max-w-[1440px] px-4 sm:px-6 md:px-8">
         {/* Main content sections */}
-        <div className="container mx-auto py-8 sm:py-10 md:py-12 space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32 xl:space-y-40">
+        <div className="container mx-auto py-8 sm:py-10 md:py-12 space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32 xl:space-y-40 mb-30">
           {/* Top Services Section */}
           <main>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[52px] font-semibold text-secondary text-center mb-6 sm:mb-8 md:mb-10 leading-tight px-4">
               Common Services
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
               {topServices.map((service) => (
-                <ServiceCard key={service.id} service={service} />
-              ))}
-            </div>
-          </main>
-
-          {/* Recent Services Section */}
-          <main>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[52px] font-semibold text-secondary text-center mb-6 sm:mb-8 md:mb-10 leading-tight px-4">
-              Nursery Owner Services
-            </h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center mb-16 sm:mb-24 md:mb-32 lg:mb-40">
-              {recentServices.map((service) => (
                 <ServiceCard key={service.id} service={service} />
               ))}
             </div>
