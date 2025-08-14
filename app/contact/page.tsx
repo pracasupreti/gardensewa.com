@@ -31,27 +31,27 @@ const experts: Expert[] = [
 const ContactPage = () => {
   return (
     <>
-      <div className="bg-white min-h-screen flex flex-col gap-27 items-center justify-center w-full">
+      <div className="bg-white min-h-screen flex flex-col items-center justify-center w-full gap-30 mb-30">
         {/* Header Section */}
-
-        <div
-          className={`relative w-full h-[360px] flex items-center justify-center text-white mb-20`}
-        >
+        <div className="relative w-full h-[280px] sm:h-[320px] lg:h-[360px] flex items-center justify-center text-white mb-8 sm:mb-12 lg:mb-20">
           <img
             src="/image/navbar/contact/contactImag.png"
             alt="A large green plant"
-            height={400}
-            width={400}
-            className="absolute inset-0 z-0 object-cover h-90 w-full"
+            className="absolute inset-0 z-0 object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
-          <div className="relative z-10 max-w-4xl text-center px-4">
-            <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
+          <div className="relative z-10 max-w-4xl text-center px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center justify-center h-full py-8">
               {/* Breadcrumb navigation */}
               <div className="mb-4 text-sm w-full">
-                <span className="text-light flex items-center justify-center text-[#616161] text-base">
-                  Home <ChevronRight width={20} height={20} />
+                <span className="text-light flex items-center justify-center text-[#616161] text-sm sm:text-base">
+                  Home{" "}
+                  <ChevronRight
+                    width={16}
+                    height={16}
+                    className="sm:w-5 sm:h-5"
+                  />
                   <span className="text-primary ml-2 font-semibold">
                     Contact Us
                   </span>
@@ -59,13 +59,13 @@ const ContactPage = () => {
               </div>
 
               {/* Section title */}
-              <h1 className="mb-4 text-5xl font-bold text-white md:text- [52px]">
+              <h1 className="mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
                 Contact Us
               </h1>
 
               {/* Section description */}
-              <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
-                We’re here to help your garden grow smoothly. Whether you have
+              <p className="max-w-[858px] mb-8 text-sm sm:text-base lg:text-lg leading-relaxed text-white px-2">
+                We're here to help your garden grow smoothly. Whether you have
                 questions, feedback, or want to partner with us, feel free to
                 reach out.
               </p>
@@ -74,31 +74,31 @@ const ContactPage = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-white min-h-screen flex items-center justify-center p-4">
-          <div className="flex w-full max-w-7xl bg-white">
+        <div className="bg-white w-full flex items-center justify-center p-4 sm:p-6 lg:p-8">
+          <div className="flex flex-col lg:flex-row w-full max-w-7xl bg-white gap-8 lg:gap-16">
             {/* Left Column - Contact Information */}
-            <div className="w-1/2 pr-16 py-8 mt-10 flex flex-col">
-              <h1 className="text-5xl font-bold text-secondary mb-8">
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-6 lg:mb-8">
                 Contact Information
               </h1>
-              <p className="text-gray-600 text-lg leading-relaxed mb-12">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 lg:mb-12">
                 If you have any questions or need further assistance, please
                 feel free to reach out to us. We are committed to providing you
                 with the best service and support. Your satisfaction is our
                 priority.
               </p>
 
-              <div className="space-y-8">
+              <div className="space-y-6 lg:space-y-8">
                 {/* Email */}
                 <div className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-4 mr-6">
-                    <Mail className="w-8 h-8 text-secondary" />
+                  <div className="bg-green-100 rounded-full p-3 sm:p-4 mr-4 sm:mr-6 flex-shrink-0">
+                    <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
                       Email
                     </h3>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600 text-base sm:text-lg break-all">
                       gardensewa@sriyog.com
                     </p>
                   </div>
@@ -106,29 +106,31 @@ const ContactPage = () => {
 
                 {/* Phone */}
                 <div className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-4 mr-6">
-                    <Phone className="w-8 h-8 text-secondary" />
+                  <div className="bg-green-100 rounded-full p-3 sm:p-4 mr-4 sm:mr-6 flex-shrink-0">
+                    <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
                       Phone
                     </h3>
-                    <p className="text-gray-600 text-lg">9852025735</p>
+                    <p className="text-gray-600 text-base sm:text-lg">
+                      9852025735
+                    </p>
                   </div>
                 </div>
 
                 {/* Website */}
                 <div className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-4 mr-6">
-                    <Globe className="w-8 h-8 text-secondary" />
+                  <div className="bg-green-100 rounded-full p-3 sm:p-4 mr-4 sm:mr-6 flex-shrink-0">
+                    <Globe className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
                       Website Link
                     </h3>
                     <a
                       href="https://gardensewa.com"
-                      className="text-body hover:underline text-lg"
+                      className="text-body hover:underline text-base sm:text-lg break-all"
                     >
                       https://gardensewa.com
                     </a>
@@ -137,14 +139,14 @@ const ContactPage = () => {
 
                 {/* Location */}
                 <div className="flex items-start">
-                  <div className="bg-green-100 rounded-full p-4 mr-6">
-                    <MapPin className="w-8 h-8 text-secondary" />
+                  <div className="bg-green-100 rounded-full p-3 sm:p-4 mr-4 sm:mr-6 flex-shrink-0">
+                    <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-secondary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
                       Location
                     </h3>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600 text-base sm:text-lg">
                       Kamalpokhari, Kathmandu, Nepal
                     </p>
                   </div>
@@ -153,27 +155,27 @@ const ContactPage = () => {
             </div>
 
             {/* Right Column - Contact Form */}
-            <div className="w-[638px] flex justify-center items-center py-8">
-              <div className="rounded-3xl p-12 w-full  border border-card-stroke-light ">
-                <div className="space-y-3">
+            <div className="w-full lg:w-1/2 flex justify-center items-start">
+              <div className="rounded-2xl lg:rounded-3xl p-6 sm:p-8 lg:p-12 w-full border border-card-stroke-light">
+                <div className="space-y-4 lg:space-y-3">
                   {/* Name */}
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-lg font-semibold text-body mb-3"
+                      className="block text-base sm:text-lg font-semibold text-body mb-2 lg:mb-3"
                     >
                       Name
                     </label>
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-                        <User className="h-6 w-6 text-body" />
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-3 sm:pl-4 pointer-events-none">
+                        <User className="h-5 w-5 sm:h-6 sm:w-6 text-body" />
                       </div>
                       <input
                         type="text"
                         id="name"
                         name="name"
                         placeholder="Enter your full name..."
-                        className="w-full h-14 pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-lg"
+                        className="w-full h-12 sm:h-14 pl-10 sm:pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-base sm:text-lg"
                       />
                     </div>
                   </div>
@@ -182,20 +184,20 @@ const ContactPage = () => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-lg font-semibold text-body mb-3"
+                      className="block text-base sm:text-lg font-semibold text-body mb-2 lg:mb-3"
                     >
                       Email
                     </label>
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-                        <Mail className="h-6 w-6 text-body" />
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-3 sm:pl-4 pointer-events-none">
+                        <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-body" />
                       </div>
                       <input
                         type="email"
                         id="email"
                         name="email"
                         placeholder="Enter your email address..."
-                        className="w-full h-14 pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-lg"
+                        className="w-full h-12 sm:h-14 pl-10 sm:pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-base sm:text-lg"
                       />
                     </div>
                   </div>
@@ -204,20 +206,20 @@ const ContactPage = () => {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-lg font-semibold text-body mb-3"
+                      className="block text-base sm:text-lg font-semibold text-body mb-2 lg:mb-3"
                     >
                       Phone Number
                     </label>
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-                        <Phone className="h-6 w-6 text-body" />
+                      <div className="absolute inset-y-0 left-0 flex items-center pl-3 sm:pl-4 pointer-events-none">
+                        <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-body" />
                       </div>
                       <input
                         type="tel"
                         id="phone"
                         name="phone"
                         placeholder="Enter your phone number..."
-                        className="w-full h-14 pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-lg"
+                        className="w-full h-12 sm:h-14 pl-10 sm:pl-12 pr-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors text-base sm:text-lg"
                       />
                     </div>
                   </div>
@@ -226,24 +228,24 @@ const ContactPage = () => {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-lg font-semibold text-body mb-3"
+                      className="block text-base sm:text-lg font-semibold text-body mb-2 lg:mb-3"
                     >
                       Message
                     </label>
                     <textarea
                       id="message"
                       name="message"
-                      rows={6}
+                      rows={5}
                       placeholder="Write your message here..."
-                      className="w-full px-4 py-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors resize-none text-lg"
+                      className="w-full px-3 sm:px-4 py-3 sm:py-4 border border-[#2F4F2F] rounded-xl focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors resize-none text-base sm:text-lg"
                     ></textarea>
                   </div>
 
                   {/* Submit Button */}
                   <div className="flex justify-end pt-4">
-                    <button className="px-10 py-4  bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold rounded-full transition-colors duration-200 flex items-center space-x-3 shadow-lg hover:shadow-xl text-lg">
+                    <button className="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold rounded-full transition-colors duration-200 flex items-center space-x-2 sm:space-x-3 shadow-lg hover:shadow-xl text-base sm:text-lg">
                       <span>Send Message</span>
-                      <ArrowRight className="w-6 h-6" />
+                      <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
                     </button>
                   </div>
                 </div>
@@ -252,20 +254,21 @@ const ContactPage = () => {
           </div>
         </div>
 
-        {/* Our Location */}
-        <div className="bg-gray-50 py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-          <section className="container mx-auto max-w-7xl mb-12 sm:mb-16 px-0 sm:px-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-primary mb-6 sm:mb-8">
+        {/* Our Location & Experts Section */}
+        <div className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 w-full flex flex-col gap-16 sm:gap-24 lg:gap-40">
+          {/* Our Location */}
+          <section className="container mx-auto px-0 sm:px-8 max-w-7xl">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-secondary mb-6 sm:mb-8">
               Our Location
             </h2>
-            <div className="relative w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden border border-gray-200">
+            <div className="relative w-full h-[250px] sm:h-[350px] lg:h-[400px] rounded-xl lg:rounded-2xl overflow-hidden border border-gray-200">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0493883767512!2d85.3226278695138!3d27.711186085795504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef740a066ed089%3A0xaf7934e44a7b1e17!2sSRIYOG!5e0!3m2!1sen!2snp!4v1754747091169!5m2!1sen!2snp"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                className="absolute top-0 left-0 w-full h-full rounded-xl lg:rounded-2xl"
               ></iframe>
             </div>
           </section>
@@ -279,18 +282,18 @@ const ContactPage = () => {
               {experts.map((expert, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center px-4 py-8 sm:py-12 bg-white rounded-2xl transition-transform transform hover:scale-105 border border-gray-200"
+                  className="flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 lg:py-12 bg-white rounded-xl lg:rounded-2xl transition-transform transform hover:scale-105 border-2 sm:border-3 border-[#C9EDC5]"
                 >
                   <img
                     src={expert.imageUrl}
                     alt={expert.name}
-                    className="lg:w-44 lg:h-44 sm:w-32 sm:h-32 rounded-full object-cover mb-4"
+                    className="w-24 h-24 sm:w-32 sm:h-32 lg:w-44 lg:h-44 rounded-full object-cover mb-4"
                   />
                   <div className="text-center">
-                    <p className="text-sm text-dark bg-green-50 rounded-lg p-2 font-medium mb-2 sm:mb-4">
+                    <p className="text-xs sm:text-sm text-dark bg-green-50 rounded-lg p-2 font-medium mb-2 sm:mb-4">
                       {expert.role}
                     </p>
-                    <p className="text-lg sm:text-xl font-semibold text-dark">
+                    <p className="text-base sm:text-lg lg:text-xl font-semibold text-dark">
                       {expert.name}
                     </p>
                   </div>

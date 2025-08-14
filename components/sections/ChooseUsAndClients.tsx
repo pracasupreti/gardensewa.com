@@ -55,25 +55,27 @@ const ChooseUs: React.FC = () => {
     {
       image: "/image/home/client/soaltee.png",
       name: "Bajeko Sekuwa",
-      text: "Alfot Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture right in the heart of Thamel...",
+      text: "GardenSewa transformed our exterior into a vibrant, inviting space. Their regular maintenance and seasonal updates keep our hotel frontage always looking fresh and lush.",
       link: "https://www.bajekosekuwa.com/",
     },
     {
       image: "/image/home/client/british.png",
       name: "British Embassy Kathmandu",
-      text: "Alfot Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture right in the heart of Thamel...",
+      text: "We were impressed by GardenSewa's professionalism and discretion during the embassy’s landscaping project. Their team delivered a refined and elegant garden space that reflects our institutional values.",
+
       link: "https://www.gov.uk/world/organisations/british-embassy-kathmandu",
     },
     {
       image: "/image/home/client/bajekosekuwa.png",
       name: "Aloft",
-      text: "Alfot Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture right in the heart of Thamel...",
+      text: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
       link: "https://www.marriott.com/en-us/hotels/ktmal-aloft-kathmandu-thamel/overview/?nst=paid&cid=PAI_GLB0004YFY_GLE000BHOR_GLF000OCGE&nst=paid&gclsrc=aw.ds&gad_source=1&gad_campaignid=22178666619&gbraid=0AAAAADilnidqVZJVxY377ZINfb9DlsduA&gclid=CjwKCAjw49vEBhAVEiwADnMbbB2ExULZAhvCxIRIOMKWNlEMTC0Sg2F8FSSBwc4FAzV_04N6yDk9qxoCpUIQAvD_BwE",
     },
     {
       image: "/image/home/client/aloft.png",
       name: "Yak & Yeti",
-      text: "Alfot Kathmandu Thamel offers a unique blend of modern hospitality and authentic Nepali culture right in the heart of Thamel...",
+      text: "GardenSewa’s team turned our hotel courtyard into a lively urban oasis. The vertical gardens and curated plant selections blend beautifully with our brand’s modern aesthetic.",
+
       link: "https://www.yakandyeti.com/",
     },
   ];
