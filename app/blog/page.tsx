@@ -29,7 +29,7 @@ const postData: BlogPost[] = [
     snippet:
       "Gardening is more than just planting flowers or vegetables — it is a full-fledged industry. From selling indoor plants to setting up home gardens, vertical gardens, rooftop greenery, and landscape designing, the gardening business offers multiple income sources. People today are more health-conscious, environmentally aware, and interested in aesthetic living. As a result, ...",
     imageUrl: "/image/navbar/blog/Blog-1.png",
-    photo: "/image/navbar/contact/Niranjan Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png"
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const postData: BlogPost[] = [
     snippet:
       "In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, ...",
     imageUrl: "/image/navbar/blog/Blog-2.png",
-    photo: "/image/navbar/contact/Pracas Upreti.png"
+    photo: "/image/navbar/contact/Pracas-Upreti.png"
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const postData: BlogPost[] = [
     snippet:
       "Flowers have been part of human life for thousands of years. They are used in celebrations, rituals, decorations, and even in medicine. But did you know ...",
     imageUrl: "/image/navbar/blog/Blog-3.png",
-    photo: "/image/navbar/contact/Madan Tamang.png"
+    photo: "/image/navbar/contact/Madan-Tamang.png"
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ const postData: BlogPost[] = [
     snippet:
       "Detoxing isn’t just about green juices and diets. A real detox involves cleansing your environment, ...",
     imageUrl: "/image/navbar/blog/Blog-4.jpg",
-    photo: "/image/navbar/contact/Pracas Upreti.png"
+    photo: "/image/navbar/contact/Pracas-Upreti.png"
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const postData: BlogPost[] = [
     snippet:
       "True happiness often lies in simple joys — like seeing a seed sprout, harvesting your own vegetables, ...",
     imageUrl: "/image/navbar/blog/Blog-5.jpg",
-    photo: "/image/navbar/contact/Niranjan Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png"
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ const postData: BlogPost[] = [
     snippet:
       "In a fast-paced world, mindfulness is the anchor that brings us back to the present. And there’s no better place ...",
     imageUrl: "/image/navbar/blog/Blog-6.jpg",
-    photo: "/image/navbar/contact/Niranjan Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png"
   },
   {
     id: 7,
@@ -95,7 +95,7 @@ const postData: BlogPost[] = [
     snippet:
       "With shrinking open spaces and busier schedules, urban dwellers are turning to gardening professionals ...",
     imageUrl: "/image/navbar/blog/Blog-7.jpg",
-    photo: "/image/navbar/contact/Niranjan Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png"
   },
   {
     id: 8,
@@ -106,7 +106,7 @@ const postData: BlogPost[] = [
     snippet:
       "Gardening is more than a weekend activity — it’s a lifestyle choice. It's about living closer to nature, ...",
     imageUrl: "/image/navbar/blog/Blog-8.jpg",
-    photo: "/image/navbar/contact/Pracas Upreti.png"
+    photo: "/image/navbar/contact/Pracas-Upreti.png"
   },
   {
     id: 9,
@@ -117,7 +117,7 @@ const postData: BlogPost[] = [
     snippet:
       "Plants are more than just decorative green companions — they’re living tools for a healthier, ...",
     imageUrl: "/image/navbar/blog/Blog-9.jpg",
-    photo: "/image/navbar/contact/Madan Tamang.png"
+    photo: "/image/navbar/contact/Madan-Tamang.png"
   },
 ];
 
