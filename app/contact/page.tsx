@@ -35,7 +35,7 @@ const ContactPage = () => {
         {/* Header Section */}
         <div className="relative w-full h-[280px] sm:h-[320px] lg:h-[360px] flex items-center justify-center text-white mb-8 sm:mb-12 lg:mb-20">
           <img
-            src="/image/navbar/contact/contactImag.png"
+            src="/image/navbar/contact/contactbg.jpg"
             alt="A large green plant"
             className="absolute inset-0 z-0 object-cover w-full h-full"
           />
