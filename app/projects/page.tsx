@@ -175,6 +175,7 @@ export default function ClientPage() {
                   </p>
                 </div>
               </div>
+              
             );
           })}
         </div>
