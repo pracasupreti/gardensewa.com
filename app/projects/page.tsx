@@ -113,10 +113,10 @@ export default function ClientPage() {
     {clients.map((client, index) => (
       <div
         key={index}
-        className="bg-white border-[2px] border-[#C9EDC5] shadow-md rounded-3xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl duration-300"
+        className="bg-white border-[2px] border-[#C9EDC5] rounded-3xl overflow-hidden transform transition-transform hover:scale-105 duration-300"
       >
         {/* Image section */}
-        <div className="w-full h-[220px] relative">
+        <div className="w-full h-[300px] relative">
           <img
             src={client.image}
             alt={client.name}
