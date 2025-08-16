@@ -1,69 +1,80 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaQuoteLeft } from "react-icons/fa";
 import { ChevronRight, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const clients = [
   {
-    image: "/image/home/client/bajekosekuwa.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa1.jpg",
     name: "Bajeko Sekuwa, Kathmandu",
-    text: "GardenSewa did an exceptional job revamping our outdoor dining space. The greenery and landscaping they added have created a fresh, natural vibe that our customers absolutely love.",
+    text: "Maintained a lush green lawn at a residential villa, ensuring every blade of grass stayed healthy through regular mowing, precise watering schedules, and nutrient-rich fertilizing to keep it vibrant all year.",
     link: "https://www.bajekosekuwa.com/",
   },
   {
-    image: "/image/home/client/british.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa2.jpg",
     name: "The British Embassy, Kathmandu",
-    text: "We were impressed by GardenSewa's professionalism and discretion during the embassy’s landscaping project. Their team delivered a refined and elegant garden space that reflects our institutional values.",
+    text: "Designed and planted a vibrant flower garden at a corporate office, combining seasonal blooms, creative color patterns, and low-maintenance greenery to provide a visually stunning and professional outdoor space.",
     link: "https://www.gov.uk/world/organisations/british-embassy-kathmandu",
   },
   {
-    image: "/image/home/client/aloft.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa3.jpg",
     name: "Aloft Hotel, Thamel",
-    text: "GardenSewa’s team turned our hotel courtyard into a lively urban oasis. The vertical gardens and curated plant selections blend beautifully with our brand’s modern aesthetic.",
+    text: "Revitalized a backyard vegetable patch, enriching the soil with organic compost, planting fresh seedlings, and installing proper irrigation to ensure a consistent and healthy supply of homegrown produce.",
     link: "https://www.marriott.com/en-us/hotels/ktmal-aloft-kathmandu-thamel/overview/?nst=paid&cid=PAI_GLB0004YFY_GLE000BHOR_GLF000OCGE&nst=paid&gclsrc=aw.ds&gad_source=1&gad_campaignid=22178666619&gbraid=0AAAAADilnidqVZJVxY377ZINfb9DlsduA&gclid=CjwKCAjw49vEBhAVEiwADnMbbB2ExULZAhvCxIRIOMKWNlEMTC0Sg2F8FSSBwc4FAzV_04N6yDk9qxoCpUIQAvD_BwE",
   },
   {
-    image: "/image/project/yakandyeti.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa4.jpg",
     name: "Hotel Yak and Yeti",
-    text: "Our heritage property required careful landscaping to match its historical charm. GardenSewa managed to enhance the natural beauty of our grounds while preserving the cultural ambiance.",
+    text: "Installed an automatic irrigation system for a farmhouse, using water-saving technology, adjustable timers, and strategic placement to optimize coverage while maintaining plant health in all weather conditions.",
     link: "https://www.yakandyeti.com/",
   },
   {
-    image: "/image/home/client/soaltee.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa5.jpg",
     name: "Soltee Westend, Itahari",
-    text: "GardenSewa transformed our exterior into a vibrant, inviting space. Their regular maintenance and seasonal updates keep our hotel frontage always looking fresh and lush.",
+    text: "Landscaped a beachfront garden with tropical plants, carefully selecting salt-tolerant species, adding decorative pathways, and incorporating shaded seating areas to create a relaxing coastal retreat.",
     link: "https://soaltee.com/",
   },
   {
-    image: "/image/project/hotel.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa81.jpg",
     name: "Metropolis Hotel",
-    text: "We’ve received countless compliments on our rooftop garden and entrance greenery, all thanks to GardenSewa. Their creativity and attention to detail are top-notch.",
+    text: "Pruned and shaped decorative hedges at a luxury hotel, creating artistic patterns, removing overgrowth, and enhancing curb appeal to maintain a polished and inviting outdoor environment for guests.",
     link: "#",
   },
   {
-    image: "/image/project/nepal_med.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa7.jpg",
     name: "Mediciti Hospital",
-    text: "Healing environments matter, and GardenSewa helped us create tranquil green spaces around the hospital. Their low-maintenance, therapeutic garden designs make a real difference for our patients and staff.",
+    text: "Created a rooftop herb garden for an apartment, using vertical planters, organic soil blends, and smart sun positioning to maximize growth while keeping fresh herbs within easy reach for daily use.",
     link: "https://www.nepalmediciti.com/",
   },
   {
-    image: "/image/project/grande.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa82.jpg",
     name: "Grande Hospital",
-    text: "GardenSewa’s landscaping around our hospital has significantly improved the outdoor ambiance for visitors and staff. Their team is efficient, responsive, and highly professional.",
+    text: "Renovated a school playground with safe, eco-friendly greenery, replacing worn-out turf, planting soft grass varieties, and adding shaded plant areas to create a healthy and child-friendly outdoor learning space.",
     link: "https://www.grandehospital.com/en",
   },
   {
-    image: "/image/project/Mercure.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa9.jpg",
     name: "Mercure Hotel",
-    text: "We entrusted GardenSewa with the landscaping for both our lobby and outdoor areas. Their elegant plant styling and modern approach to greenery matched our global brand standards perfectly.",
+    text: "Planted palm trees along a villa driveway, arranging them for symmetrical balance, adding decorative ground cover, and integrating lighting to highlight their beauty both day and night.",
     link: "#",
   },
   {
-    image: "/image/project/hilton.png",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa10.jpg",
     name: "Hilton Hotel, Kathmandu",
-    text: "GardenSewa’s work at our property was exceptional. From consultation to installation and upkeep, their team demonstrated world-class service. The gardens they’ve created now complement the Hilton experience beautifully.",
+    text: "Restored a community park’s flower beds, removing old and faded plants, introducing fresh seasonal flowers, and enriching the soil to promote long-lasting, healthy blooms throughout the year.",
+    link: "https://www.hilton.com/en/",
+  },
+   {
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa11.jpg",
+    name: "Hilton Hotel, Kathmandu",
+    text: "Added seasonal blooms to a shopping mall entrance, arranging vibrant floral displays, matching colors to brand themes, and ensuring a fresh, welcoming look for shoppers and visitors alike.",
+    link: "https://www.hilton.com/en/",
+  },
+   {
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa12.jpg",
+    name: "Hilton Hotel, Kathmandu",
+    text: "Built a Zen-style garden at a wellness retreat, incorporating smooth river stones, calming water features, and minimalistic greenery to create a peaceful space for relaxation and meditation.",
     link: "https://www.hilton.com/en/",
   },
 ];
@@ -110,64 +121,37 @@ export default function ClientPage() {
         </div>
       </div>
       {/* Cards */}
-      <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25 max-w-[1440px] flex-warp">
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-          {clients.map((client, index) => {
-            const [isHovered, setIsHovered] = useState(false);
-            return (
-              <div
-                key={index}
-                className="bg-white border-[3px] border-[#C9EDC5] h-[427px] w-[290px] rounded-3xl p-4 sm:p-6 flex flex-col justify-between items-start text-left relative overflow-hidden cursor-pointer"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                {/* Logo - hidden on hover */}
-                <div
-                  className={`w-full flex justify-center h-full items-center transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
-                >
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    className="h-64 w-auto object-contain"
-                  />
-                </div>
+     <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25 max-w-[1440px] flex-wrap">
+      <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+        {clients.map((client, index) => (
+          <div
+            key={index}
+            className="bg-white border-[3px] border-[#C9EDC5] h-[427px] w-[290px] rounded-3xl flex flex-col justify-start items-start text-left relative overflow-hidden cursor-pointer"
+          >
+            {/* Image section */}
+            <div className="w-full flex justify-center h-80 items-center">
+              <img
+                src={client.image}
+                alt={client.name}
+                className="h-full w-full object-contain rounded-b-4xl"
+              />
+            </div>
 
-                {/* Divider line - always visible */}
-                <div className="flex w-full flex-col">
-                  <span className="border-t-2 border-t-card w-full p-2"></span>
-
-                  {/* Button - always in same position */}
-                  <a
-                    href={client.link}
-                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
-                  >
-                    Browse More
-                  </a>
-                </div>
-
-                {/* Hover text content - positioned in the text area */}
-                <div
-                  className={`absolute left-4 sm:left-6 right-4 sm:right-6 flex flex-col justify-center transition-all duration-500 ease-in-out ${
-                    isHovered
-                      ? "opacity-100 transform translate-y-0"
-                      : "opacity-0 transform translate-y-8"
-                  }`}
-                  style={{
-                    bottom: "150px",
-                  }}
-                >
-                  <div className="text-green-600 text-4xl sm:text-5xl font-bold leading-none mb-2">
-                    "
-                  </div>
-                  <p className="text-black text-sm sm:text-base leading-relaxed">
-                    {client.text}
-                  </p>
-                </div>
+            {/* Content section */}
+            <div className="flex w-full flex-col mt-0 p-8 sm:p-6">
+              <div className="flex flex-col items-start w-full">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-black">
+                  {client.name}
+                </h3>
+                <p className="text-xs sm:text-sm leading-relaxed text-gray-600 mb-4">
+                  {client.text}
+                </p>
               </div>
-            );
-          })}
-        </div>
-      </section>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
       {/*image bg */}
       <div className="mb-30 py-12">
         <div
