@@ -23,66 +23,63 @@ const services: Service[] = [
   {
     id: "1",
     title: "Gardening Service",
-    imageUrl: "/image/home/top-services/1.jpg",
+    imageUrl: "/image/home/top-services/services/1.png",
   },
   {
     id: "2",
     title: "Landscaping Services",
-    imageUrl: "/image/home/top-services/Landscaping.jpg",
+    imageUrl: "/image/home/top-services/services/2.png",
   },
   {
     id: "3",
     title: "Turfing Service",
-    imageUrl: "/image/home/top-services/Tufring-Services.jpg",
+    imageUrl: "/image/home/top-services/services/3.png",
   },
   {
     id: "4",
     title: "Gardening Makeovers",
-    imageUrl: "/image/home/top-services/4.jpg",
+    imageUrl: "/image/home/top-services/services/4.png",
   },
   {
     id: "5",
     title: "Seasonal Service",
-    imageUrl: "/image/home/top-services/Seasonal.jpg",
+    imageUrl: "/image/home/top-services/services/5.png",
   },
   {
     id: "6",
     title: "Lawn Care",
-    imageUrl: "/image/home/top-services/Lawn Care.jpg",
+    imageUrl: "/image/home/top-services/services/6.png",
   },
 ];
 
 // Dummy data for plants updated to match the image
 const plants: Plant[] = [
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1509587584298-0f3b3a3a1797?w=400&h=300&fit=crop",
-    name: "Fiddle Leaf Fig",
-    price: "890",
+    imageUrl: "/image/home/top-services/services/plants/1.png",
+    name: "Rubber Plant",
+    price: "1000",
     oldPrice: "1289",
     tags: ["Low Light", "Outdoor", "Indoor"],
     difficulty: "bg-green-500",
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop",
-    name: "Monstera Deliciosa",
-    price: "680",
+    imageUrl: "/image/home/top-services/services/plants/2.png",
+    name: "Jasmine Plant",
+    price: "990",
     tags: ["Air Purifier", "Pet Safe", "Outdoor"],
     difficulty: "bg-yellow-500",
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1459156212016-c812468e2115?w=400&h=300&fit=crop",
-    name: "Succulent",
-    price: "890",
+    imageUrl: "/image/home/top-services/services/plants/3.png",
+    name: "Red Rose Plant",
+    price: "1700",
     tags: ["Pet Safe", "Low Light", "Indoor"],
     difficulty: "bg-red-500",
   },
   {
-    imageUrl: "/image/home/plants/pothas.png",
-    name: "Pothas",
-    price: "1500",
+    imageUrl: "/image/home/top-services/services/plants/4.png",
+    name: "Daisy Plant",
+    price: "1200",
     tags: ["Pet Safe", "Low Light", "Indoor"],
     difficulty: "bg-red-500",
   },
@@ -150,9 +147,9 @@ const PlantCard: React.FC<Plant> = ({
       </div>
 
       {/* Content Section */}
-      <div className="relative" style={{ height: "149px" }}>
+      <div className="relative">
         {/* Default Content */}
-        <div className="p-4 relative h-full">
+        <div className="p-4 relative">
           {/* Difficulty Indicators */}
           <div className="absolute top-4 right-4 flex space-x-1">
             <div className={`w-3 h-3 rounded-full ${color1}`}></div>
@@ -185,6 +182,9 @@ const PlantCard: React.FC<Plant> = ({
               </span>
             ))}
           </div>
+          {/*<button className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 px-4 rounded-lg font-medium transition-colors duration-200 sm:hidden">
+            Add to Cart
+          </button>*/}
         </div>
       </div>
 

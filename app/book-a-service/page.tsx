@@ -37,7 +37,7 @@ export default function App() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) => {
     const { name, value, type, checked } = e.target as HTMLInputElement;
     setFormData((prevData) => ({
@@ -53,13 +53,11 @@ export default function App() {
 
   const sectionTitleStyle =
     "text-[#0E3A0E] font-semibold text-lg pb-2 border-b border-gray-200 mb-6";
-  const labelStyle =
-    "text-sm font-medium text-gray-700 mb-1 block";
+  const labelStyle = "text-sm font-medium text-gray-700 mb-1 block";
   const inputStyle =
     "w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#2E8B57]";
-      const inputStyle1 =
+  const inputStyle1 =
     "w-full p-2 bg-[#F5F5F5] border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#2E8B57]";
-
 
   const RequiredMark = () => <span className="text-red-500">*</span>;
 
@@ -70,7 +68,10 @@ export default function App() {
           <div className="mb-4 text-sm w-full">
             <span className="text-light flex items-center justify-center text-[#616161] text-base">
               Home <ChevronRight width={20} height={20} />
-              <span className="text-primary ml-2 font-semibold"> Book a Service </span>
+              <span className="text-primary ml-2 font-semibold">
+                {" "}
+                Book a Service{" "}
+              </span>
             </span>
           </div>
 
@@ -155,7 +156,9 @@ export default function App() {
                     <option value="Gandaki Province">Gandaki Province</option>
                     <option value="Lumbini Province">Lumbini Province</option>
                     <option value="Karnali Province">Karnali Province</option>
-                    <option value="Sudurpaschim Province">Sudurpaschim Province</option>
+                    <option value="Sudurpaschim Province">
+                      Sudurpaschim Province
+                    </option>
                   </select>
                 </div>
                 <div>
@@ -258,10 +261,12 @@ export default function App() {
                 >
                   <option value="">Select Service Type</option>
                   <option value="Gardening Service">Gardening Service</option>
-                    <option value="Lawn Care">Lawn Care</option>
-                    <option value="Seasonal Service">Seasonal Service</option>
-                    <option value="Turfing Service">Turfing Service</option>
-                    <option value="Landscaping Services">Landscaping Services</option>
+                  <option value="Lawn Care">Lawn Care</option>
+                  <option value="Seasonal Service">Seasonal Service</option>
+                  <option value="Turfing Service">Turfing Service</option>
+                  <option value="Landscaping Services">
+                    Landscaping Services
+                  </option>
                 </select>
               </div>
             </section>

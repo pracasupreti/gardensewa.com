@@ -14,11 +14,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => (
   <div className="flex w-full sm:w-[280px] md:w-[300px] h-auto min-h-[200px] sm:min-h-[220px] md:h-[248px] flex-col items-center justify-center p-4 sm:p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
-    <div className="bg-white p-3 sm:p-4 rounded-2xl mb-3 sm:mb-4 w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[76px] md:h-[76px]">
-      <img
-        src={icon}
-        className="w-[36px] h-[36px] sm:w-[42px] sm:h-[42px] md:w-[50px] md:h-[50px]"
-      />
+    <div className="bg-white p-3 sm:p-4 rounded-2xl mb-3 sm:mb-4 w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[76px] md:h-[76px] flex items-center justify-center">
+      <img src={icon} />
     </div>
     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-title mb-2 text-center">
       {title}

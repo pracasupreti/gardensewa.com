@@ -60,11 +60,11 @@ const topServices: Service[] = [
     title: "Nursery Services",
     description:
       "Supplying potted plants, trees, gardening tools, and offering expert advice to landscape projects...",
-    imageUrl: "/image/navbar/services/service6.jpg",
+    imageUrl: "/image/navbar/services/service13.jpg",
     altText: "Nursery Services",
   },
   {
-    id: 1,
+    id: 7,
     title: "Lawn Care Services",
     description:
       "At Gardenservs, we believe in regular maintenance of grass areas including mowing,...",
@@ -72,7 +72,7 @@ const topServices: Service[] = [
     altText: "Lawn Care Services",
   },
   {
-    id: 2,
+    id: 8,
     title: "Hard Scaping Services",
     description:
       "Construction of non-living elements like patios, walkways, retaining walls, stone features,...",
@@ -80,7 +80,7 @@ const topServices: Service[] = [
     altText: "Hard Scaping Services",
   },
   {
-    id: 3,
+    id: 9,
     title: "Gardening Services",
     description:
       "Planting, pruning, mulching, weeding, and maintaining flower beds, shrubs, and...",
@@ -88,7 +88,7 @@ const topServices: Service[] = [
     altText: "Gardening Services",
   },
   {
-    id: 4,
+    id: 10,
     title: "Landscape Services",
     description:
       "Designing and modifying outdoor spaces with elements like plants, trees, pathways, lighting,...",
@@ -96,7 +96,7 @@ const topServices: Service[] = [
     altText: "Landscape Services",
   },
   {
-    id: 5,
+    id: 11,
     title: "Seasonal Services",
     description:
       "Specialized services based on season such as spring clean-ups, leaf removal in fall, snow...",
@@ -104,7 +104,7 @@ const topServices: Service[] = [
     altText: "Seasonal Services",
   },
   {
-    id: 6,
+    id: 12,
     title: "Turfing Services",
     description:
       "Installation and replacement of natural or artificial turf to create lush green lawns or sports...",
