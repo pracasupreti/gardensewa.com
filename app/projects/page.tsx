@@ -36,7 +36,7 @@ const clients = [
     link: "https://soaltee.com/",
   },
   {
-    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa6.jpg",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa81.jpg",
     name: "Metropolis Hotel",
     text: "Pruned and shaped decorative hedges at a luxury hotel, creating artistic patterns, removing overgrowth, and enhancing curb appeal to maintain a polished and inviting outdoor environment for guests.",
     link: "#",
@@ -48,7 +48,7 @@ const clients = [
     link: "https://www.nepalmediciti.com/",
   },
   {
-    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa8.jpg",
+    image: "/image/gallery/gardensewa-gallery/gardensewa-gallery/gardensewa82.jpg",
     name: "Grande Hospital",
     text: "Renovated a school playground with safe, eco-friendly greenery, replacing worn-out turf, planting soft grass varieties, and adding shaded plant areas to create a healthy and child-friendly outdoor learning space.",
     link: "https://www.grandehospital.com/en",
@@ -121,65 +121,37 @@ export default function ClientPage() {
         </div>
       </div>
       {/* Cards */}
-      <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25 max-w-[1440px] flex-warp">
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-          {clients.map((client, index) => {
-            const [isHovered, setIsHovered] = useState(false);
-            return (
-              <div
-                key={index}
-                className="bg-white border-[3px] border-[#C9EDC5] h-[427px] w-[290px] rounded-3xl p-4 sm:p-6 flex flex-col justify-between items-start text-left relative overflow-hidden cursor-pointer"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                {/* Logo - hidden on hover */}
-                <div
-                  className={`w-full flex justify-center h-full items-center transition-opacity duration-500 ${isHovered ? "opacity-0" : "opacity-100"}`}
-                >
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    className="h-64 w-auto object-contain"
-                  />
-                </div>
+     <section className="mx-auto px-8 py-4 flex flex-col gap-6 mb-25 max-w-[1440px] flex-wrap">
+      <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+        {clients.map((client, index) => (
+          <div
+            key={index}
+            className="bg-white border-[3px] border-[#C9EDC5] h-[427px] w-[290px] rounded-3xl flex flex-col justify-start items-start text-left relative overflow-hidden cursor-pointer"
+          >
+            {/* Image section */}
+            <div className="w-full flex justify-center h-80 items-center">
+              <img
+                src={client.image}
+                alt={client.name}
+                className="h-full w-full object-contain rounded-b-4xl"
+              />
+            </div>
 
-                {/* Divider line - always visible */}
-                <div className="flex w-full flex-col">
-                  <span className="border-t-2 border-t-card w-full p-2"></span>
-
-                  {/* Button - always in same position */}
-                  <a
-                    href={client.link}
-                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
-                  >
-                    Browse More
-                  </a>
-                </div>
-
-                {/* Hover text content - positioned in the text area */}
-                <div
-                  className={`absolute left-4 sm:left-6 right-4 sm:right-6 flex flex-col justify-center transition-all duration-500 ease-in-out ${
-                    isHovered
-                      ? "opacity-100 transform translate-y-0"
-                      : "opacity-0 transform translate-y-8"
-                  }`}
-                  style={{
-                    bottom: "150px",
-                  }}
-                >
-                  <div className="text-green-600 text-4xl sm:text-5xl font-bold leading-none mb-2">
-                    "
-                  </div>
-                  <p className="text-black text-sm sm:text-base leading-relaxed">
-                    {client.text}
-                  </p>
-                </div>
+            {/* Content section */}
+            <div className="flex w-full flex-col mt-0 p-8 sm:p-6">
+              <div className="flex flex-col items-start w-full">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-black">
+                  {client.name}
+                </h3>
+                <p className="text-xs sm:text-sm leading-relaxed text-gray-600 mb-4">
+                  {client.text}
+                </p>
               </div>
-              
-            );
-          })}
-        </div>
-      </section>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
       {/*image bg */}
       <div className="mb-30 py-12">
         <div
