@@ -277,7 +277,7 @@ const DesktopLayout = memo(() => (
     {/* Get the Latest News */}
     <div className="col-span-1 sm:col-span-2 lg:col-span-1">
       <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
-        Get the Latest News
+        Latest Updates
       </h4>
       <div className="space-y-3">
         {NEWS_ITEMS.map((item) => (

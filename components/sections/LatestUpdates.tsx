@@ -23,7 +23,7 @@ const articles: Article[] = [
     id: "1",
     image: "/image/navbar/blog/blog1.jpg",
     title: "How Flower Brings Happiness",
-    author: "Author Name",
+    author: "Rohan Upreti",
     img: "/image/home/latest-update/author.png",
     date: "July 31, 2025",
     readTime: "5 min",
@@ -36,7 +36,7 @@ const articles: Article[] = [
     // Placeholder image URL.
     image: "/image/navbar/blog/blog2.jpg",
     title: "How to Start Gardening Business",
-    author: "Author Name",
+    author: "Ina Adhikari",
     img: "/image/home/latest-update/author.png",
     date: "July 30, 2025",
     readTime: "5 min",
@@ -47,7 +47,7 @@ const articles: Article[] = [
     // Placeholder image URL.
     image: "/image/navbar/blog/blog3.jpg",
     title: " Impact of Flower in Mental Health",
-    author: "Author Name",
+    author: "Sanjana Yadav",
     img: "/image/home/latest-update/author.png",
     date: "July 29, 2025",
     readTime: "5 min",

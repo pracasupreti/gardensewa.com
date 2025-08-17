@@ -91,7 +91,7 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="flex gap-3 items-center">
+          <div className="gap-3 items-center hidden sm:flex">
             <a
               href="#"
               className="group p-2 rounded-full bg-white/10 hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg backdrop-blur-sm"
