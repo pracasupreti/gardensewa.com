@@ -1,7 +1,14 @@
 "use client";
 import { useState } from "react";
 import Head from "next/head";
-import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  Wrench,
+  Sprout,
+  Package,
+  PhoneIncoming,
+} from "lucide-react";
 
 // Data for the FAQ section
 const faqData = [
@@ -41,25 +48,25 @@ const navigationItems = [
   {
     id: 1,
     label: "Services",
-    icon: "/icons/cart - icon.svg",
+    icon: Wrench,
     color: "bg-primary hover:bg-secondary",
   },
   {
     id: 2,
     label: "Plants",
-    icon: "/icons/cart - icon.svg",
+    icon: Sprout,
     color: "bg-primary hover:bg-secondary",
   },
   {
     id: 3,
     label: "Delivery",
-    icon: "/icons/cart - icon.svg",
+    icon: Package,
     color: "bg-primary hover:bg-secondary",
   },
   {
     id: 4,
     label: "Support",
-    icon: "/icons/cart - icon.svg",
+    icon: PhoneIncoming,
     color: "bg-primary hover:bg-secondary",
   },
 ];
@@ -75,7 +82,7 @@ const FAQPage = () => {
     <>
       {" "}
       {/* Header Section */}
-      <div className="text-center mb-12 bg-green-50 p-12">
+      <div className="text-center mb-12 bg-[#F6F9F6] p-12">
         <p className="text-sm text-gray-500 mb-2">
           Home &gt; <span className="ml-2 text-primary"> FAQ's</span>
         </p>
@@ -86,11 +93,11 @@ const FAQPage = () => {
           Answers to your most common questions - all in one place. Need more
           help? Contact us anytime or chat with a specialist below.
         </p>
-        <button className="mt-8 px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors duration-300">
+        <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] mt-8 px-8 py-3 bg-primary text-white font-semibold rounded-lg transition-colors duration-300">
           Contact Us
         </button>
       </div>
-      <div className="bg-gray-50 min-h-screen font-sans text-gray-800">
+      <div className="min-h-screen font-sans text-gray-800">
         <Head>
           <title>FAQ's</title>
           <meta name="description" content="Frequently Asked Questions" />
@@ -100,15 +107,18 @@ const FAQPage = () => {
         <main className="container mx-auto px-4 py-12">
           {/* Navigation Bar */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 mb-12">
-            {navigationItems.map((item) => (
-              <div
-                key={item.id}
-                className={`flex flex-col px-16 py-8 items-center justify-center space-x-2 p-4 w-full md:w-auto rounded-lg cursor-pointer transition-transform transform hover:scale-105 ${item.color} text-white`}
-              >
-                <img src={item.icon} />
-                <span className="text-lg font-semibold">{item.label}</span>
-              </div>
-            ))}
+            {navigationItems.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.id}
+                  className={`flex flex-col px-16 py-8 items-center justify-center space-x-2 p-4 w-full md:w-auto rounded-lg cursor-pointer transition-transform transform hover:scale-105 ${item.color} text-white`}
+                >
+                  <Icon size={28} />
+                  <span className="text-lg font-semibold">{item.label}</span>
+                </div>
+              );
+            })}
           </div>
 
           {/* FAQ List Section */}
