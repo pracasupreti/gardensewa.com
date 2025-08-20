@@ -117,12 +117,12 @@ const topServices: Service[] = [
 
 // Reusable Service Card component
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
-  <div className="flex flex-col items-center w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+  <div className="flex flex-col items-center w-full rounded-2xl max-w-[280px] sm:max-w-[320px] md:max-w-[380px] border-[3px] border-[#C9EDC5]  lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
     <div className="relative w-full h-1/2 overflow-hidden mb-3 sm:mb-4 flex-shrink-0">
       <img
         src={service.imageUrl}
         alt={service.altText}
-        className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+        className="w-full h-full object-cover transition-transform duration-300 hover:scale-110 rounded-2xl"
         style={{
           clipPath: "ellipse(100% 95% at 50% 0%)",
         }}

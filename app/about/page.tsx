@@ -144,7 +144,7 @@ export default function AboutPage() {
         {/* Section Title */}
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-5xl font-extrabold text-secondary tracking-tight leading-tight">
-            Description of Products & Services
+            Making Garden of Dreams
           </h2>
         </div>
 
@@ -200,7 +200,7 @@ export default function AboutPage() {
       <main className="flex items-center justify-center bg-green-50 mb-40">
         <div className="flex w-full max-w-7xl flex-col items-center px-10 md:flex-row md:items-stretch">
           {/* Left Section */}
-          <div className="flex flex-1 flex-col justify-center text-center md:text-left">
+          <div className="flex flex-1 flex-col py-10 justify-center text-center md:text-left">
             <h1 className=" text-4xl font-bold text-secondary md:text-5xl mb-8">
               Got Plants to <br className="hidden md:block" /> Share?
             </h1>
@@ -212,9 +212,12 @@ export default function AboutPage() {
               Nepal!
             </p>
             <div className="mt-4 md:mt-0">
-              <button className="rounded-full px-6 py-3 font-semibold text-white transition duration-300 ease-in-out bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400]">
+              <a
+                href="/partner"
+                className="rounded-full px-6 py-3 font-semibold text-white transition duration-300 ease-in-out bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400]"
+              >
                 Become a Partner
-              </button>
+              </a>
             </div>
           </div>
 

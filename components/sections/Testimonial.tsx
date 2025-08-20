@@ -61,7 +61,7 @@ const Testimonial: React.FC = () => {
     <div className="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 flex flex-col items-center mb-30">
       <div className="w-full max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary text-center mb-8 sm:mb-10 md:mb-12 leading-tight px-4">
-          What Our Users Say
+          Testimonials
         </h2>
 
         {/* Responsive Grid */}
