@@ -69,12 +69,9 @@ const navigationItems = [
     icon: PhoneIncoming,
     color: "bg-primary hover:bg-secondary",
   },
-<<<<<<< HEAD
   { id: 2, label: '', icon: "/icons/cart - icon.svg", color: 'bg-primary hover:bg-secondary' },
   { id: 3, label: 'Delivery', icon: "/icons/cart - icon.svg", color: 'bg-primary hover:bg-secondary' },
   { id: 4, label: 'Support', icon: "/icons/cart - icon.svg", color: 'bg-primary hover:bg-secondary' },
-=======
->>>>>>> 0be91f27a92e466d3cc56ea0dd552514140a7c0b
 ];
 
 const FAQPage = () => {
