@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 
 // Define a TypeScript interface for a single testimonial
@@ -68,6 +69,16 @@ const testimonials: Testimonial[] = [
 const PartnersTestimonials: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br mb-30">
+       <Head>
+      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
+      <meta property="og:url" content="https://www.gardensewa.com/" />
+      <meta property="og:title" content="Gardening Services in Nepal" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!" />
+      <meta property="og:image" content="/images/og/testimonials.jpg" />
+      <meta property="og:image:alt" content="Gardening Services in Nepal" />
+
+    </Head>
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-100 to-green-50 px-4 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto text-center">

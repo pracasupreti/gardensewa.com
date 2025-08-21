@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronRight } from "lucide-react";
+import Head from "next/head";
 import React, { useState } from "react";
 
 interface FormData {
@@ -63,6 +64,16 @@ export default function App() {
 
   return (
     <div className="mb-40">
+       <Head>
+      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
+      <meta property="og:url" content="https://www.gardensewa.com/" />
+      <meta property="og:title" content="Gardening Services in Nepal" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!" />
+      <meta property="og:image" content="/images/og/book-a-service.jpg" />
+      <meta property="og:image:alt" content="Gardening Services in Nepal" />
+
+    </Head>
       <div className="flex flex-col items-center justify-center h-[209] px-4 py-12 text-center bg-[#F6F9F6]">
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           <div className="mb-4 text-sm w-full">

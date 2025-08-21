@@ -64,6 +64,13 @@ const PrivacyPolicyPage = () => {
         <title>Privacy Policy | Garden Seva</title>
         <meta name="description" content="Garden Seva Privacy Policy" />
         <link rel="icon" href="/favicon.ico" />
+      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
+      <meta property="og:url" content="https://www.gardensewa.com/" />
+      <meta property="og:title" content="Gardening Services in Nepal" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!" />
+      <meta property="og:image" content="/images/og/privacy.jpg" />
+      <meta property="og:image:alt" content="Gardening Services in Nepal" />
       </Head>
 
       <div className="flex flex-col md:flex-row min-h-screen max-w-7xl mx-auto p-8">
