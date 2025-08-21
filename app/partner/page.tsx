@@ -28,7 +28,7 @@ const partners = [
 export default function App() {
   return (
     <div className="flex flex-col gap-30">
-      <div className="flex flex-col items-center justify-center h-full px-4 py-8 text-center bg-[#F6F9F6]">
+      <div className="flex flex-col items-center justify-center h-full px-4 py-8 text-center bg-card-stroke-light">
         {/* Breadcrumb navigation */}
         <div className="mb-4 text-sm w-full">
           <span className="text-light">
@@ -71,7 +71,7 @@ export default function App() {
               </div>
               <p className="mb-6 text-left p-2">{partner.description}</p>
               <Link href={partner.link} passHref>
-                <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] mt-auto px-6 py-3 font-semibold text-white rounded-xl hover:bg-secondary transition-colors duration-200 text-sm">
+                <button className="buttonColorFill mt-auto px-6 py-3 font-semibold text-white rounded-xl hover:bg-secondary transition-colors duration-200 text-sm">
                   Visit Site
                 </button>
               </Link>

@@ -69,14 +69,14 @@ const PartnersTestimonials: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br mb-30">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-100 to-green-50 px-4 py-12 sm:py-16 lg:py-20">
+      <div className="bg-card-stroke-light px-4 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto text-center">
           <nav className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
             Home <span className="mx-2">›</span>
-            <span className="text-green-600 font-medium">Testimonials</span>
+            <span className="text-primary font-medium">Testimonials</span>
           </nav>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-green-700 mb-4 sm:mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary mb-4 sm:mb-6">
             Testimonials
           </h1>
 
@@ -96,7 +96,7 @@ const PartnersTestimonials: React.FC = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-2 sm:mb-4">
               What Our Partners Say About
             </h2>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-green-600">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">
               GardenSewa
             </h3>
           </div>
@@ -106,13 +106,13 @@ const PartnersTestimonials: React.FC = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="group bg-white  flex flex-col justify-center items-center rounded-2xl h-[500px] sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-green-100 hover:border-green-200 relative overflow-hidden"
+                className="group bg-white  flex flex-col justify-center items-center rounded-2xl h-[500px] sm:rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-border relative overflow-hidden"
               >
                 {/* Decorative background element */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-100 to-transparent rounded-full transform translate-x-6 -translate-y-6 group-hover:scale-110 transition-transform duration-500"></div>
+                <div className="absolute top-0 right-0 w-20 h-20  rounded-full transform translate-x-6 -translate-y-6 group-hover:scale-110 transition-transform duration-500"></div>
 
                 {/* Quote Icon */}
-                <div className="absolute top-4 right-4 text-green-200 group-hover:text-green-300 transition-colors duration-300">
+                <div className="absolute top-4 right-4 text-primary transition-colors duration-300">
                   <svg
                     width="24"
                     height="24"
@@ -146,20 +146,6 @@ const PartnersTestimonials: React.FC = () => {
                   <blockquote className="text-sm sm:text-base text-gray-600 leading-relaxed text-center relative">
                     <p className="italic">"{testimonial.quote}"</p>
                   </blockquote>
-
-                  {/* Rating Stars */}
-                  <div className="flex justify-center mt-4 sm:mt-6 space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <svg
-                        key={i}
-                        className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 group-hover:text-yellow-500 transition-colors duration-300"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
                 </div>
               </div>
             ))}

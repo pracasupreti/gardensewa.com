@@ -84,7 +84,7 @@ const FAQPage = () => {
     <>
       {" "}
       {/* Header Section */}
-      <div className="text-center mb-12 bg-[#F6F9F6] p-12">
+      <div className="text-center mb-12 bg-card-stroke-light p-12">
         <p className="text-sm text-gray-500 mb-2">
           Home &gt; <span className="ml-2 text-primary"> FAQ's</span>
         </p>
@@ -128,14 +128,16 @@ const FAQPage = () => {
             {faqData.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-xl shadow-md overflow-hidden border border-green-200"
+                className="bg-white rounded-xl shadow-md overflow-hidden"
               >
                 <div
-                  className="flex items-center justify-between p-5 cursor-pointer bg-green-50 hover:bg-green-100 transition-colors duration-300"
+                  className="flex items-center justify-between p-5 cursor-pointer bg-card hover:bg-green-100 transition-colors duration-300"
                   onClick={() => toggleFAQ(item.id)}
                 >
-                  <span className="font-semibold text-lg">{item.question}</span>
-                  <span className="text-green-700">
+                  <span className="font-semibold text-lg text-primary">
+                    {item.question}
+                  </span>
+                  <span className="text-primary">
                     {openFAQ === item.id ? (
                       <ChevronUpIcon className="h-6 w-6 transition-transform transform" />
                     ) : (

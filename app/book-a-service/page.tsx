@@ -63,7 +63,7 @@ export default function App() {
 
   return (
     <div className="mb-40">
-      <div className="flex flex-col items-center justify-center h-[209] px-4 py-12 text-center bg-[#F6F9F6]">
+      <div className="flex flex-col items-center justify-center h-[209] px-4 py-12 text-center bg-card-stroke-light">
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           <div className="mb-4 text-sm w-full">
             <span className="text-light flex items-center justify-center text-[#616161] text-base">
@@ -75,13 +75,13 @@ export default function App() {
             </span>
           </div>
 
-          <h1 className="mb-4 text-3xl md:text-5xl font-bold text-[#008000] md:text-[52px]">
+          <h1 className="mb-4 text-3xl md:text-5xl font-bold text-primary md:text-[52px]">
             Book a Gardening Service
           </h1>
         </div>
       </div>
 
-      <main className="min-h-screen bg-[#FFFFFF] p-4 flex justify-center items-start pt-10 font-[Poppins]">
+      <main className="min-h-screen bg-[#FFFFFF] p-4 flex justify-center items-start pt-10">
         <div className="bg-white p-8 rounded-lg w-full max-w-4xl">
           <form onSubmit={handleSubmit}>
             {/* Contact Information Section */}
