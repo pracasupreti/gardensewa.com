@@ -143,7 +143,7 @@ export default function Header() {
                   sizes="(max-width: 640px) 40px, (max-width: 768px) 50px, 75px"
                   priority
                 />
-                <p className="cursor-pointer text-[#008000] ml-2 text-base sm:text-lg md:text-xl lg:text-[28px] font-semibold">
+                <p className="cursor-pointer text-text ml-2 text-base sm:text-lg md:text-xl lg:text-[28px] font-semibold">
                   GardenSewa
                 </p>
               </Link>
@@ -157,8 +157,8 @@ export default function Header() {
                   href={item.link}
                   className={`transition-all duration-200 rounded-md px-2 xl:px-[14px] py-1 xl:py-[2px] text-sm xl:text-lg font-medium ${
                     isActive(item.link)
-                      ? "bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold shadow-md"
-                      : "hover:text-[#009000] text-gray-700 hover:bg-green-50"
+                      ? "buttonColorFill text-white"
+                      : "hover:text-white text-gray-700 hover:bg-primary"
                   }`}
                 >
                   {item.name}
@@ -169,7 +169,7 @@ export default function Header() {
             <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
               {/* Desktop Book Service Button */}
               <Link href="/book-a-service" className="hidden lg:block">
-                <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:shadow-lg text-white py-2 px-3 xl:px-4 rounded-md font-bold text-sm xl:text-base transition-all duration-200 hover:scale-105">
+                <button className="buttonColorFill hover:shadow-lg text-white py-2 px-3 xl:px-4 rounded-md font-bold text-sm xl:text-base transition-all duration-200 hover:scale-105">
                   Book a Service
                 </button>
               </Link>

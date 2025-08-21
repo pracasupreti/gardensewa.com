@@ -7,26 +7,16 @@ import { ArrowRight } from "lucide-react";
 // Constants
 const QUICK_LINKS = [
   { href: "/plants", label: "Plants" },
-  { href: "/blog", label: "Blog" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/partner", label: "Our Partner" },
   { href: "/become-client", label: "Become a Client" },
 ];
 
-const PLANT_CATEGORIES = [
-  { href: "#", label: "Indoor Plants" },
-  { href: "#", label: "Outdoor Plants" },
-  { href: "#", label: "Pet-Friendly Plants" },
-  { href: "#", label: "Air-Purifying Plants" },
-  { href: "#", label: "Low Maintenance" },
-];
-
 const HELP_LINKS = [
-  { href: "/book-a-service", label: "Book a Service" },
+  { href: "/conditions", label: "Terms and Conditions" },
   { href: "/faq", label: "FAQs" },
   { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy Policy" },
-  { href: "/conditions", label: "Terms and Conditions" },
 ];
 
 const NEWS_ITEMS = [
@@ -116,13 +106,16 @@ type LinksListProps = {
 
 const LinksList = memo(({ title, links, className = "" }: LinksListProps) => (
   <div className={className}>
-    <h4 className="font-semibold text-base mb-4 text-gray-900 lg:text-sm lg:mb-3">
+    <h4 className="font-semibold text-base mb-4 text-body lg:text-[18px] lg:mb-3">
       {title}
     </h4>
     <ul className="space-y-2 lg:space-y-0.5">
       {links.map((link) => (
         <li key={link.href}>
-          <LinkWithArrow href={link.href} className="text-sm lg:text-xs">
+          <LinkWithArrow
+            href={link.href}
+            className="text-sm lg:text-[18px] text-text"
+          >
             {link.label}
           </LinkWithArrow>
         </li>
@@ -193,7 +186,7 @@ const NewsletterSection = memo(() => (
     style={{ transform: "translateY(-90.5px)" }}
   >
     <div
-      className="bg-[#00AA00] text-white px-4 sm:px-8 mx-2 sm:mx-4 md:mx-28 rounded-2xl shadow-2xl"
+      className="bg-primary text-white px-4 sm:px-8 mx-2 sm:mx-4 md:mx-28 rounded-2xl shadow-2xl"
       style={{ minHeight: "141px", height: "auto" }}
     >
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 py-4 sm:py-6 md:h-full">
@@ -215,7 +208,7 @@ const NewsletterSection = memo(() => (
           />
           <button
             type="submit"
-            className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white w-[70px] sm:w-[85px] px-3 sm:px-4 py-2 rounded-full my-1 mx-1 flex items-center justify-center transition-all duration-300"
+            className="buttonColorFill text-white w-[70px] sm:w-[85px] px-3 sm:px-4 py-2 rounded-full my-1 mx-1 flex items-center justify-center transition-all duration-300"
             aria-label="Subscribe to newsletter"
           >
             <ArrowRight className="w-[20px] h-[20px] sm:w-[26px] sm:h-[26px]" />
@@ -247,7 +240,6 @@ const MobileLayout = memo(() => (
       {/* Left Column */}
       <div className="space-y-6">
         <LinksList title="Quick Links" links={QUICK_LINKS} />
-        <LinksList title="Explore Plants" links={PLANT_CATEGORIES} />
       </div>
 
       {/* Right Column */}
@@ -255,7 +247,7 @@ const MobileLayout = memo(() => (
         <div className="flex flex-col gap-3 h-full w-full justify-center">
           <AppStoreButtons isMobile />
         </div>
-        <LinksList title="Product Help" links={HELP_LINKS} />
+        <LinksList title="Browse More" links={HELP_LINKS} />
       </div>
     </div>
   </div>
@@ -267,16 +259,12 @@ const DesktopLayout = memo(() => (
   <div className="hidden lg:flex flex-wrap justify-between">
     <BrandInfo />
     <LinksList title="Quick Links" links={QUICK_LINKS} className="w-[150px]" />
-    <LinksList
-      title="Explore Plants"
-      links={PLANT_CATEGORIES}
-      className="col-span-1"
-    />
-    <LinksList title="Product Help" links={HELP_LINKS} className="col-span-2" />
+
+    <LinksList title="Browse More" links={HELP_LINKS} className="col-span-2" />
 
     {/* Get the Latest News */}
     <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-      <h4 className="font-semibold text-sm sm:text-base mb-3 text-gray-900">
+      <h4 className="font-semibold text-sm sm:text-xl mb-3 text-body">
         Latest Updates
       </h4>
       <div className="space-y-3">
@@ -329,8 +317,8 @@ const Footer = memo(() => {
           </div>
 
           {/* Bottom Footer */}
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 border-t border-secondary pt-4 pb-4 mt-auto">
-            <div className="text-xs sm:text-sm text-gray-600 text-center md:text-left w-full">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 border-t border-border pt-4 pb-4 mt-auto">
+            <div className="text-xs sm:text-sm text-text text-center md:text-left w-full">
               Copyright © SRIYOG Consulting Pvt. Ltd. All Rights Reserved.
             </div>
             <SocialIcons />

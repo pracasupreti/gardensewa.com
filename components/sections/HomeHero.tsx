@@ -98,7 +98,7 @@ const HomeHero: React.FC = () => {
 
                 {/* Responsive button layout */}
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <button className="font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-3.5 rounded-lg transition bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white text-sm sm:text-base w-full sm:w-auto">
+                  <button className="buttonColorFill font-semibold px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-3.5 rounded-lg transition text-white text-sm sm:text-base w-full sm:w-auto">
                     {slide.button}
                   </button>
 

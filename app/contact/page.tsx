@@ -253,7 +253,7 @@ const ContactPage = () => {
 
                   {/* Submit Button */}
                   <div className="flex justify-end pt-4">
-                    <button className="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold rounded-full transition-colors duration-200 flex items-center space-x-2 sm:space-x-3 shadow-lg hover:shadow-xl text-base sm:text-lg">
+                    <button className="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 buttonColorFill text-white font-semibold rounded-full transition-colors duration-200 flex items-center space-x-2 sm:space-x-3 shadow-lg hover:shadow-xl text-base sm:text-lg">
                       <span>Send Message</span>
                       <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
                     </button>

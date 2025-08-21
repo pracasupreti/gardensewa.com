@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 'use client';
 import { ArrowRight, Clock } from 'lucide-react';
 import Head from 'next/head';
 import { useState } from 'react';
+=======
+"use client";
+import { ArrowRight, Clock } from "lucide-react";
+import { useState } from "react";
+>>>>>>> 7f3e91f103fb8e733c6be296e3ea2f68b4fb7dd1
 
 // -----------------------
 // Blog Post Interface
@@ -30,7 +36,7 @@ const postData: BlogPost[] = [
     snippet:
       "Gardening is more than just planting flowers or vegetables — it is a full-fledged industry. From selling indoor plants to setting up home gardens, vertical gardens, rooftop greenery, and landscape designing, the gardening business offers multiple income sources. People today are more health-conscious, environmentally aware, and interested in aesthetic living. As a result, ...",
     imageUrl: "/image/navbar/blog/Blog-1.png",
-    photo: "/image/navbar/contact/Niranjan-Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png",
   },
   {
     id: 2,
@@ -41,7 +47,7 @@ const postData: BlogPost[] = [
     snippet:
       "In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, ...",
     imageUrl: "/image/navbar/blog/Blog-2.png",
-    photo: "/image/navbar/contact/Pracas-Upreti.png"
+    photo: "/image/navbar/contact/Pracas-Upreti.png",
   },
   {
     id: 3,
@@ -52,7 +58,7 @@ const postData: BlogPost[] = [
     snippet:
       "Flowers have been part of human life for thousands of years. They are used in celebrations, rituals, decorations, and even in medicine. But did you know ...",
     imageUrl: "/image/navbar/blog/Blog-3.png",
-    photo: "/image/navbar/contact/Madan-Tamang.png"
+    photo: "/image/navbar/contact/Madan-Tamang.png",
   },
   {
     id: 4,
@@ -63,7 +69,7 @@ const postData: BlogPost[] = [
     snippet:
       "Detoxing isn’t just about green juices and diets. A real detox involves cleansing your environment, ...",
     imageUrl: "/image/navbar/blog/Blog-4.jpg",
-    photo: "/image/navbar/contact/Pracas-Upreti.png"
+    photo: "/image/navbar/contact/Pracas-Upreti.png",
   },
   {
     id: 5,
@@ -74,7 +80,7 @@ const postData: BlogPost[] = [
     snippet:
       "True happiness often lies in simple joys — like seeing a seed sprout, harvesting your own vegetables, ...",
     imageUrl: "/image/navbar/blog/Blog-5.jpg",
-    photo: "/image/navbar/contact/Niranjan-Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png",
   },
   {
     id: 6,
@@ -85,7 +91,7 @@ const postData: BlogPost[] = [
     snippet:
       "In a fast-paced world, mindfulness is the anchor that brings us back to the present. And there’s no better place ...",
     imageUrl: "/image/navbar/blog/Blog-6.jpg",
-    photo: "/image/navbar/contact/Niranjan-Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png",
   },
   {
     id: 7,
@@ -96,7 +102,7 @@ const postData: BlogPost[] = [
     snippet:
       "With shrinking open spaces and busier schedules, urban dwellers are turning to gardening professionals ...",
     imageUrl: "/image/navbar/blog/Blog-7.jpg",
-    photo: "/image/navbar/contact/Niranjan-Sharma.png"
+    photo: "/image/navbar/contact/Niranjan-Sharma.png",
   },
   {
     id: 8,
@@ -107,7 +113,7 @@ const postData: BlogPost[] = [
     snippet:
       "Gardening is more than a weekend activity — it’s a lifestyle choice. It's about living closer to nature, ...",
     imageUrl: "/image/navbar/blog/Blog-8.jpg",
-    photo: "/image/navbar/contact/Pracas-Upreti.png"
+    photo: "/image/navbar/contact/Pracas-Upreti.png",
   },
   {
     id: 9,
@@ -118,38 +124,55 @@ const postData: BlogPost[] = [
     snippet:
       "Plants are more than just decorative green companions — they’re living tools for a healthier, ...",
     imageUrl: "/image/navbar/blog/Blog-9.jpg",
-    photo: "/image/navbar/contact/Madan-Tamang.png"
+    photo: "/image/navbar/contact/Madan-Tamang.png",
   },
 ];
 
 // -----------------------
 // PostCard Component
 // -----------------------
-const PostCard = ({ post, isLarge = false }: { post: BlogPost; isLarge?: boolean }) => (
+const PostCard = ({
+  post,
+  isLarge = false,
+}: {
+  post: BlogPost;
+  isLarge?: boolean;
+}) => (
   <div className="flex flex-col overflow-hidden">
-    <img src={post.imageUrl} alt={post.title} className="w-full h-56 object-cover rounded-t-2xl" />
+    <img
+      src={post.imageUrl}
+      alt={post.title}
+      className="w-full h-56 object-cover rounded-t-2xl"
+    />
     <div className="flex flex-col p-4">
       <div className="self-stretch inline-flex justify-between items-center mb-2">
-                        <div className="flex justify-start items-center gap-2">
-                          <img className="w-8 h-8 rounded-full" src={post.photo} />
-                          <div className="text-sm">{post.author}</div>
-                          <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
-                          <div className="text-sm sm:ml-2 lg:ml-0">{post.date}</div>
-                        </div>
-                        <div className="flex justify-start items-center gap-2.5">
-                          <div className="text-sm flex flex-row gap-2 mt-1"> <Clock className='h-4 w-4'/> {post.readTime}</div>
-                        </div>
-                      </div>
-      <h3 className={`font-bold text-secondary transition-colors ${isLarge ? 'text-2xl' : 'text-lg'}`}>
+        <div className="flex justify-start items-center gap-2">
+          <img className="w-8 h-8 rounded-full" src={post.photo} />
+          <div className="text-sm">{post.author}</div>
+          <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
+          <div className="text-sm sm:ml-2 lg:ml-0">{post.date}</div>
+        </div>
+        <div className="flex justify-start items-center gap-2.5">
+          <div className="text-sm flex flex-row gap-2 mt-1">
+            {" "}
+            <Clock className="h-4 w-4" /> {post.readTime}
+          </div>
+        </div>
+      </div>
+      <h3
+        className={`font-bold text-secondary transition-colors ${isLarge ? "text-2xl" : "text-lg"}`}
+      >
         {post.title}
       </h3>
-      <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3 mb-4">{post.snippet}</p>
+      <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3 mb-4">
+        {post.snippet}
+      </p>
       <a
-                      href="#"
-                      className="px-2 w-40 py-2.5 bg-white border-1 border-secondary text-secondary rounded-lg inline-flex justify-center items-center gap-1.5 hover:text-white text-lg font-semibold hover:bg-secondary transition-all duration:900"
-                    >
-                      Read More <ArrowRight/>
-                    </a>
+        href="#"
+        className="px-2 w-40 py-2.5 bg-white border-1 border-secondary text-secondary rounded-lg inline-flex justify-center items-center gap-1.5 hover:text-white text-lg font-semibold hover:bg-secondary transition-all duration:900"
+      >
+        Read More <ArrowRight />
+      </a>
     </div>
   </div>
 );
@@ -159,6 +182,7 @@ const PostCard = ({ post, isLarge = false }: { post: BlogPost; isLarge?: boolean
 // -----------------------
 export default function BlogPage() {
   return (
+<<<<<<< HEAD
     <>{/* Header */}
      <Head>
       <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
@@ -171,6 +195,11 @@ export default function BlogPage() {
 
     </Head>
       <div className="w-full py-12 bg-[#F6F9F6] flex flex-col justify-start items-center gap-8">
+=======
+    <>
+      {/* Header */}
+      <div className="w-full py-12 bg-card-stroke-light flex flex-col justify-start items-center gap-8">
+>>>>>>> 7f3e91f103fb8e733c6be296e3ea2f68b4fb7dd1
         {/* Breadcrumb */}
         <div className="w-full flex flex-col justify-start items-center gap-6 px-4 sm:px-8 md:px-16">
           <div className="w-full flex flex-col justify-start items-center gap-2.5">
@@ -200,7 +229,7 @@ export default function BlogPage() {
           <input
             type="text"
             placeholder="Search..."
-            className="pl-12 pr-4 py-3 w-full h-14 bg-white rounded-[30px] outline outline-1 outline-offset-[-1px] outline-green-800"
+            className="pl-12 pr-4 py-3 w-full h-14 bg-white rounded-[30px] outline-1 outline-offset-[-1px] outline-green-800"
           />
           <div className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400">
             <svg
@@ -221,95 +250,123 @@ export default function BlogPage() {
           </div>
         </div>
       </div>
-    <div className="min-h-screen bg-[#FFFFFF] text-gray-800">
-      
+      <div className="min-h-screen bg-[#FFFFFF] text-gray-800">
+        {/* Blog Sections */}
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-20 space-y-16 mb-20">
+          {/* Popular Post */}
+          <section>
+            <h2 className="self-stretch h-7 text-primary text-2xl font-semibold leading-loose mb-12">
+              Popular Post
+            </h2>
+            <div className="flex flex-col rounded-2xl overflow-hidden mt-4">
+              <img
+                src={postData[0].imageUrl}
+                alt={postData[0].title}
+                className="w-full h-64 sm:h-[485px] object-cover rounded-2xl"
+              />
+              <div className="py-6 px-1 rounded-2xl">
+                <div className="flex flex-wrap justify-between items-center mb-4 text-sm text-gray-500">
+                  <div className="flex items-center text-dark gap-1">
+                    <img
+                      src={postData[0].photo}
+                      className="w-10 h-10 rounded-full"
+                    />
+                    <span>{postData[0].author}</span>
 
-      {/* Blog Sections */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-8 lg:py-20 space-y-16 mb-20">
-
-        {/* Popular Post */}
-        <section>
-          <h2 className="self-stretch h-7 text-green-700 text-2xl font-semibold leading-loose mb-12">Popular Post</h2>
-          <div className="flex flex-col rounded-2xl overflow-hidden mt-4">
-            <img src={postData[0].imageUrl} alt={postData[0].title} className="w-full h-64 sm:h-[485px] object-cover rounded-2xl" />
-            <div className="py-6 px-1 rounded-2xl">
-              <div className="flex flex-wrap justify-between items-center mb-4 text-sm text-gray-500">
-                <div className="flex items-center text-dark gap-1">
-                  <img src={postData[0].photo} className="w-10 h-10 rounded-full" />
-                  <span>{postData[0].author}</span>
-                  
-        <span className="text-dark">•</span>
-                  <span>{postData[0].date}</span>
+                    <span className="text-dark">•</span>
+                    <span>{postData[0].date}</span>
+                  </div>
+                  <span className="flex gap-2 sm:ml-2 lg:ml-0">
+                    <Clock className="h-5 w-5" /> {postData[0].readTime}
+                  </span>
                 </div>
-                <span className='flex gap-2 sm:ml-2 lg:ml-0'><Clock className='h-5 w-5'/> {postData[0].readTime}</span>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-secondary mb-3">
+                  {postData[0].title}
+                </h2>
+                <p className="text-dark mb-6 line-clamp-4">
+                  {postData[0].snippet}
+                </p>
+                <a
+                  href="#"
+                  className="px-6 py-2.5 bg-white text-secondary rounded-lg inline-flex justify-center items-center gap-1.5 border-1 border-secondary hover:text-white text-lg font-semibold hover:bg-secondary transition-all duration-900"
+                >
+                  Read More <ArrowRight />
+                </a>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-semibold text-secondary mb-3">{postData[0].title}</h2>
-              <p className="text-dark mb-6 line-clamp-4">{postData[0].snippet}</p>
-              <a
-                      href="#"
-                      className="px-6 py-2.5 bg-white text-secondary rounded-lg inline-flex justify-center items-center gap-1.5 border-1 border-secondary hover:text-white text-lg font-semibold hover:bg-secondary transition-all duration-900"
-                    >
-                      Read More <ArrowRight/>
-                    </a>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Featured Posts (Custom Layout) */}
-        <section className="w-full inline-flex flex-col justify-start items-start gap-7">
-          <div className="self-stretch h-7 text-green-700 text-2xl font-semibold leading-loose mb-4">
-            Featured Posts
-          </div>
-          <div className="self-stretch inline-flex justify-start items-center gap-6 flex-wrap lg:flex-nowrap">
-            {[postData[1], postData[2]].map((post, index) => (
-              <div key={post.id} className="flex-1 inline-flex flex-col justify-start items-start">
-                <img
-                  className="self-stretch h-64 lg:h-96 object-cover rounded-2xl"
-                  src={post.imageUrl}
-                  alt={post.title}
-                />
-                <div className="self-stretch py-5 rounded-2xl flex flex-col justify-start items-start gap-2.5">
-                  <div className="self-stretch flex flex-col justify-start items-start gap-6">
-                    <div className="self-stretch flex flex-col justify-start items-center gap-4">
-                      <div className="self-stretch inline-flex justify-between items-center">
-                        <div className="flex justify-start items-center gap-1">
-                          <img className="w-8 h-8 rounded-full" src={post.photo} />
-                          <div className="text-sm">{post.author}</div>
-                          <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
-                          <div className="text-sm sm:ml-2 lg:ml-0">{post.date}</div>
+          {/* Featured Posts (Custom Layout) */}
+          <section className="w-full inline-flex flex-col justify-start items-start gap-7">
+            <div className="self-stretch h-7 text-primary text-2xl font-semibold leading-loose mb-4">
+              Featured Posts
+            </div>
+            <div className="self-stretch inline-flex justify-start items-center gap-6 flex-wrap lg:flex-nowrap">
+              {[postData[1], postData[2]].map((post, index) => (
+                <div
+                  key={post.id}
+                  className="flex-1 inline-flex flex-col justify-start items-start"
+                >
+                  <img
+                    className="self-stretch h-64 lg:h-96 object-cover rounded-2xl"
+                    src={post.imageUrl}
+                    alt={post.title}
+                  />
+                  <div className="self-stretch py-5 rounded-2xl flex flex-col justify-start items-start gap-2.5">
+                    <div className="self-stretch flex flex-col justify-start items-start gap-6">
+                      <div className="self-stretch flex flex-col justify-start items-center gap-4">
+                        <div className="self-stretch inline-flex justify-between items-center">
+                          <div className="flex justify-start items-center gap-1">
+                            <img
+                              className="w-8 h-8 rounded-full"
+                              src={post.photo}
+                            />
+                            <div className="text-sm">{post.author}</div>
+                            <div className="w-1.5 h-1.5 bg-neutral-500 rounded-full" />
+                            <div className="text-sm sm:ml-2 lg:ml-0">
+                              {post.date}
+                            </div>
+                          </div>
+                          <span className="flex gap-2 sm:ml-2 lg:ml-0">
+                            <Clock className="h-4 w-4 mt-1" />{" "}
+                            {postData[0].readTime}
+                          </span>
                         </div>
-                       <span className='flex gap-2 sm:ml-2 lg:ml-0'><Clock className='h-4 w-4 mt-1'/> {postData[0].readTime}</span>
+                        <div className="self-stretch flex flex-col justify-start items-start gap-4">
+                          <div className="text-2xl text-secondary font-semibold leading-loose">
+                            {post.title}
+                          </div>
+                          <div className="text-base text-dark leading-normal line-clamp-3">
+                            {post.snippet}
+                          </div>
+                        </div>
                       </div>
-                      <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                        <div className="text-2xl text-secondary font-semibold leading-loose">{post.title}</div>
-                        <div className="text-base text-dark leading-normal line-clamp-3">{post.snippet}</div>
-                      </div>
+                      <a
+                        href="#"
+                        className="px-6 py-2.5 bg-white text-secondary border-1 border-secondary rounded-lg inline-flex justify-center items-center gap-1.5 hover:text-white text-lg font-semibold hover:bg-secondary transition-all duration-900"
+                      >
+                        Read More <ArrowRight />
+                      </a>
                     </div>
-                    <a
-                      href="#"
-                      className="px-6 py-2.5 bg-white text-secondary border-1 border-secondary rounded-lg inline-flex justify-center items-center gap-1.5 hover:text-white text-lg font-semibold hover:bg-secondary transition-all duration-900"
-                    >
-                      Read More <ArrowRight/>
-                    </a>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
 
-        {/* Recent Posts */}
-        <section>
-          <h2 className="text-xl font-bold text-green-700 mb-6">Recent Posts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {postData.slice(3).map(post => (
-              <PostCard key={post.id} post={post} />
-            ))}
-          </div>
-        </section>
-
-      </main>
-    </div>
+          {/* Recent Posts */}
+          <section>
+            <h2 className="text-xl font-bold text-primary mb-6">
+              Recent Posts
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {postData.slice(3).map((post) => (
+                <PostCard key={post.id} post={post} />
+              ))}
+            </div>
+          </section>
+        </main>
+      </div>
     </>
   );
 }

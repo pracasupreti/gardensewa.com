@@ -9,7 +9,6 @@ const clients = [
     image: "/image/project/project1.jpg",
     name: "Jorpati Project",
     text: "Built a Zen-style garden at a wellness retreat, incorporating smooth river stones, calming water features, and minimalistic greenery to create a peaceful space for relaxation and meditation.",
- 
   },
   {
     image: "/image/project/project2.jpg",
@@ -56,12 +55,12 @@ const clients = [
     name: "Kamalpokhari Project",
     text: "Landscaped a beachfront garden with tropical plants, carefully selecting salt-tolerant species, adding decorative pathways, and incorporating shaded seating areas to create a relaxing coastal retreat.",
   },
-   {
+  {
     image: "/image/project/project11.jpg",
     name: "Banepa Project",
     text: "Planted palm trees along a villa driveway, arranging them for symmetrical balance, adding decorative ground cover, and integrating lighting to highlight their beauty both day and night.",
   },
-   {
+  {
     image: "/image/project/project12.jpg",
     name: "Naxal Project",
     text: "Added seasonal blooms to a shopping mall entrance, arranging vibrant floral displays, matching colors to brand themes, and ensuring a fresh, welcoming look for shoppers and visitors alike.",
@@ -87,11 +86,9 @@ export default function ClientPage() {
           <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
             {/* Breadcrumb navigation */}
             <div className="mb-4 text-sm w-full">
-              <span className="text-light flex items-center justify-center text-[#616161] text-base">
+              <span className="text-light flex items-center justify-center text-card text-base">
                 Home <ChevronRight width={20} height={20} />
-                <span className="text-primary ml-2 font-semibold">
-                  Projects
-                </span>
+                <span className="text-text ml-2 font-semibold">Projects</span>
               </span>
             </div>
 
@@ -102,44 +99,46 @@ export default function ClientPage() {
 
             {/* Section description */}
             <p className="max-w-[858px] mb-8 text-base leading-relaxed md:text-lg text-white">
-              Showcasing our finest gardening and landscaping works — from home gardens to corporate spaces, each project is a step towards greener living.
+              Showcasing our finest gardening and landscaping works — from home
+              gardens to corporate spaces, each project is a step towards
+              greener living.
             </p>
           </div>
         </div>
       </div>
       {/* Cards */}
-     <section className="px-4 lg:px-16 py-10 max-w-7xl mx-auto">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    {clients.map((client, index) => (
-      <div
-        key={index}
-        className="bg-white border-[2px] border-[#C9EDC5] rounded-3xl overflow-hidden transform transition-transform hover:scale-105 duration-300"
-      >
-        {/* Image section */}
-        <div className="w-full h-[300px] relative">
-          <img
-            src={client.image}
-            alt={client.name}
-            className="w-full h-full object-cover"
-            style={{
-              clipPath: 'ellipse(100% 85% at 50% 0%)',
-            }}
-          />
-        </div>
+      <section className="px-4 lg:px-16 py-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {clients.map((client, index) => (
+            <div
+              key={index}
+              className="bg-white border-2 border-border rounded-3xl overflow-hidden transform transition-transform hover:scale-105 duration-300"
+            >
+              {/* Image section */}
+              <div className="w-full h-[300px] relative">
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  className="w-full h-full object-cover"
+                  style={{
+                    clipPath: "ellipse(100% 85% at 50% 0%)",
+                  }}
+                />
+              </div>
 
-        {/* Content section */}
-        <div className="px-6 py-5 flex flex-col">
-          <h3 className="text-lg md:text-xl font-semibold text-black mb-2">
-            {client.name}
-          </h3>
-          <p className="text-sm text-gray-600 leading-relaxed">
-            {client.text}
-          </p>
+              {/* Content section */}
+              <div className="px-6 py-5 flex flex-col">
+                <h3 className="text-lg md:text-xl font-semibold text-black mb-2">
+                  {client.name}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {client.text}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    ))}
-  </div>
-</section>
+      </section>
 
       {/*image bg */}
       <div className="mb-30 py-12">
@@ -164,7 +163,7 @@ export default function ClientPage() {
               Join our growing network of satisfied clients.
             </p>
             <Link href="book-a-service">
-              <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-4xl hover:bg-secondary transition">
+              <button className="buttonColorFill text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded-4xl hover:bg-secondary transition">
                 Become a client
               </button>
             </Link>

@@ -15,9 +15,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   icon,
 }) => (
-  <div className="flex flex-col items-center p-8  m-2 rounded-2xl border border-green-200 bg-white">
+  <div className="flex flex-col items-center p-8  m-2 rounded-2xl border border-border bg-white">
     {/* Icon Container */}
-    <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-100 text-green-700 overflow-hidden">
+    <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-card text-green-700 overflow-hidden">
       <img src={icon} alt={title} width={40} height={40} />
     </div>
     {/* Card Title */}
@@ -51,6 +51,7 @@ const features = [
 export default function AboutPage() {
   return (
     <main className="flex flex-col gap-30">
+<<<<<<< HEAD
        <Head>
       <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
       <meta property="og:url" content="https://www.gardensewa.com/" />
@@ -62,6 +63,9 @@ export default function AboutPage() {
 
     </Head>
       <div className="h-full bg-[#F6F9F6]">
+=======
+      <div className="h-full bg-[#F4FFFE]">
+>>>>>>> 7f3e91f103fb8e733c6be296e3ea2f68b4fb7dd1
         {/* Main content container */}
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           {/* Breadcrumb navigation */}
@@ -73,7 +77,7 @@ export default function AboutPage() {
           </div>
 
           {/* Section title */}
-          <h1 className="mb-4 text-5xl font-bold text-[#008000] md:text- [52px]">
+          <h1 className="mb-4 text-5xl font-bold text-text md:text- [52px]">
             About Us
           </h1>
 
@@ -108,7 +112,7 @@ export default function AboutPage() {
 
             {/* Stats Section */}
             <div className="relative ">
-              <div className="bg-green-100 w-[125%] -ml-4 rounded-xl p-4 md:p-5 grid grid-cols-3 text-start gap-x-10 z-10 skew-x-6">
+              <div className="bg-card w-[125%] -ml-4 rounded-xl p-4 md:p-5 grid grid-cols-3 text-start gap-x-10 z-10 skew-x-6">
                 <div className="-skew-x-6">
                   <p className="text-3xl md:text-[52px] font-bold text-primary">
                     25+
@@ -225,7 +229,7 @@ export default function AboutPage() {
             <div className="mt-4 md:mt-0">
               <a
                 href="/partner"
-                className="rounded-full px-6 py-3 font-semibold text-white transition duration-300 ease-in-out bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400]"
+                className="rounded-full px-6 py-3 font-semibold text-white transition duration-300 ease-in-out buttonColorFill"
               >
                 Become a Partner
               </a>
