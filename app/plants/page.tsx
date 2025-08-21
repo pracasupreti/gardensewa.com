@@ -274,7 +274,17 @@ const PlantCard: React.FC<Plant> = ({
   );
 };
 
-const PlantFilter = ({ onFilterChange, onApply, onClear }) => {
+interface PlantFilterProps {
+  onFilterChange?: (filters: Record<string, string>) => void;
+  onApply?: (filters: Record<string, string>) => void;
+  onClear?: (filters: Record<string, string>) => void;
+}
+
+const PlantFilter: React.FC<PlantFilterProps> = ({
+  onFilterChange,
+  onApply,
+  onClear,
+}) => {
   const [filters, setFilters] = useState({
     category: "",
     size: "",
@@ -307,13 +317,13 @@ const PlantFilter = ({ onFilterChange, onApply, onClear }) => {
     ],
   };
 
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const toggleDropdown = (filterName) => {
+  const toggleDropdown = (filterName: string) => {
     setOpenDropdown(openDropdown === filterName ? null : filterName);
   };
 
-  const selectOption = (filterName, option) => {
+  const selectOption = (filterName: string, option: string) => {
     const newFilters = { ...filters, [filterName]: option };
     setFilters(newFilters);
     setOpenDropdown(null);
@@ -338,7 +348,17 @@ const PlantFilter = ({ onFilterChange, onApply, onClear }) => {
     onApply?.(filters);
   };
 
-  const FilterButton = ({ name, label, value }) => (
+  interface FilterButtonProps {
+    name: keyof typeof filterOptions;
+    label: string;
+    value: string;
+  }
+
+  const FilterButton: React.FC<FilterButtonProps> = ({
+    name,
+    label,
+    value,
+  }) => (
     <div className="relative">
       <button
         onClick={() => toggleDropdown(name)}

@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Head from "next/head";
 import {
@@ -10,40 +11,41 @@ import {
   PhoneIncoming,
 } from "lucide-react";
 
-// Data for the FAQ section
+// FAQ Data
 const faqData = [
   {
-    id: 1,
+    id: "faq-1",
     question: "What kind of services do you provide ?",
     answer:
       "We provide a comprehensive range of gardening and landscaping services, including lawn care, plant maintenance, garden design, and pest control. Our specialists are trained to handle a variety of needs to keep your garden looking its best.",
   },
   {
-    id: 2,
+    id: "faq-2",
     question: "How can I book a Garden Service ?",
     answer:
       'Booking a service is easy! You can either use our online booking form on the "Contact Us" page, or you can call our support team directly. We will schedule a specialist to visit your location at your convenience.',
   },
   {
-    id: 3,
+    id: "faq-3",
     question: "Do I need to prepare anything before the gardener arrives ?",
     answer:
       "We recommend clearing any personal items or obstacles from the garden area to allow our specialists easy access. If you have any specific instructions or concerns, please let us know during the booking process.",
   },
   {
-    id: 4,
+    id: "faq-4",
     question: "Can I cancel or reschedule a booking ?",
     answer:
       "Yes, you can. We understand that plans can change. You can cancel or reschedule your booking by contacting our customer support team at least 24 hours in advance without any cancellation fees.",
   },
   {
-    id: 5,
+    id: "faq-5",
     question: "Are your gardeners trained and verified ?",
     answer:
       "Absolutely. All our gardeners are highly trained, experienced professionals. They undergo a thorough background check and are fully verified to ensure the safety and quality of our services.",
   },
 ];
 
+// Navigation Items (unique IDs)
 const navigationItems = [
   {
     id: 1,
@@ -69,15 +71,12 @@ const navigationItems = [
     icon: PhoneIncoming,
     color: "bg-primary hover:bg-secondary",
   },
-  { id: 2, label: '', icon: "/icons/cart - icon.svg", color: 'bg-primary hover:bg-secondary' },
-  { id: 3, label: 'Delivery', icon: "/icons/cart - icon.svg", color: 'bg-primary hover:bg-secondary' },
-  { id: 4, label: 'Support', icon: "/icons/cart - icon.svg", color: 'bg-primary hover:bg-secondary' },
 ];
 
 const FAQPage = () => {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [openFAQ, setOpenFAQ] = useState<string | null>(null);
 
-  const toggleFAQ = (id: number) => {
+  const toggleFAQ = (id: string) => {
     setOpenFAQ(openFAQ === id ? null : id);
   };
 
@@ -96,7 +95,7 @@ const FAQPage = () => {
           Answers to your most common questions - all in one place. Need more
           help? Contact us anytime or chat with a specialist below.
         </p>
-        <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] mt-8 px-8 py-3 bg-primary text-white font-semibold rounded-lg transition-colors duration-300">
+        <button className="buttonColorFill mt-8 px-8 py-3 bg-primary text-white font-semibold rounded-lg transition-colors duration-300">
           Contact Us
         </button>
       </div>
