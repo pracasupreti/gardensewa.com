@@ -17,99 +17,107 @@ interface Service {
 const topServices: Service[] = [
   {
     id: 1,
-    title: "Lawn Care Services",
+    title: "Lawn Care",
     description:
-      "At Greenera, we believe in regular maintenance of grass areas including mowing,...",
-    imageUrl: "/image/navbar/services/service1.jpg",
+      "Professional lawn maintenance including mowing, edging, fertilizing, and regular upkeep to keep your grass healthy and green year-round.",
+    imageUrl: "/image/navbar/services/1.png",
     altText: "Lawn Care Services",
   },
   {
     id: 2,
-    title: "Landscaping Services",
+    title: "Planting and Transplanting",
     description:
-      "Designing and modifying outdoor spaces with elements like plants, trees, pathways, lighting,...",
-    imageUrl: "/image/navbar/services/service2.jpg",
-    altText: "Landscaping Services",
+      "Expert planting services for trees, shrubs, flowers, and vegetables, including transplanting existing plants to new locations for optimal growth.",
+    imageUrl: "/image/navbar/services/2.png",
+    altText: "Planting and Transplanting Services",
   },
   {
     id: 3,
-    title: "Gardening Services",
+    title: "Garden Maintenance",
     description:
-      "Planting, cleaning, mulching, weeding, and maintaining flower beds, shrubs, and...",
-    imageUrl: "/image/navbar/services/service3.jpg",
-    altText: "Gardening Services",
+      "Comprehensive garden care including weeding, pruning, mulching, and seasonal maintenance to keep your garden flourishing throughout the year.",
+    imageUrl: "/image/navbar/services/3.png",
+    altText: "Garden Maintenance Services",
   },
   {
     id: 4,
-    title: "Soiling Services",
+    title: "Soil Improvement",
     description:
-      "Testing, improving, and preparing soil for optimal plant growth through amendments,...",
-    imageUrl: "/image/navbar/services/service4.jpg",
-    altText: "Soiling Services",
+      "Soil testing, amendment, and preparation services to ensure optimal growing conditions for all your plants and landscaping projects.",
+    imageUrl: "/image/navbar/services/4.png",
+    altText: "Soil Improvement Services",
   },
   {
     id: 5,
     title: "Irrigation Services",
     description:
-      "Installation, repair, and maintenance of irrigation systems and drip to improve landscape plant...",
-    imageUrl: "/image/navbar/services/service5.jpg",
+      "Installation, repair, and maintenance of irrigation systems including sprinklers and drip systems to ensure efficient water distribution.",
+    imageUrl: "/image/navbar/services/5.png",
     altText: "Irrigation Services",
   },
   {
     id: 6,
-    title: "Nursery Services",
+    title: "Pest and Disease Control",
     description:
-      "Supplying potted plants, trees, gardening tools, and offering expert advice to landscape projects...",
-    imageUrl: "/image/navbar/services/service13.jpg",
-    altText: "Nursery Services",
+      "Integrated pest management and disease prevention services to protect your plants and maintain a healthy landscape environment.",
+    imageUrl: "/image/navbar/services/6.png",
+    altText: "Pest and Disease Control Services",
   },
   {
     id: 7,
-    title: "Lawn Care Services",
+    title: "Hardscaping",
     description:
-      "At Gardenservs, we believe in regular maintenance of grass areas including mowing,...",
-    imageUrl: "/image/navbar/services/service7.jpg",
-    altText: "Lawn Care Services",
+      "Installation of patios, walkways, retaining walls, stone features, and other non-living landscape elements to enhance outdoor spaces.",
+    imageUrl: "/image/navbar/services/7.png",
+    altText: "Hardscaping Services",
   },
   {
     id: 8,
-    title: "Hard Scaping Services",
-    description:
-      "Construction of non-living elements like patios, walkways, retaining walls, stone features,...",
-    imageUrl: "/image/navbar/services/service8.jpg",
-    altText: "Hard Scaping Services",
-  },
-  {
-    id: 9,
-    title: "Gardening Services",
-    description:
-      "Planting, pruning, mulching, weeding, and maintaining flower beds, shrubs, and...",
-    imageUrl: "/image/navbar/services/service9.jpg",
-    altText: "Gardening Services",
-  },
-  {
-    id: 10,
-    title: "Landscape Services",
-    description:
-      "Designing and modifying outdoor spaces with elements like plants, trees, pathways, lighting,...",
-    imageUrl: "/image/navbar/services/service10.jpg",
-    altText: "Landscape Services",
-  },
-  {
-    id: 11,
     title: "Seasonal Services",
     description:
-      "Specialized services based on season such as spring clean-ups, leaf removal in fall, snow...",
-    imageUrl: "/image/navbar/services/service11.jpg",
+      "Season-specific maintenance including spring cleanups, fall leaf removal, winter preparation, and holiday decoration services.",
+    imageUrl: "/image/navbar/services/8.png",
     altText: "Seasonal Services",
   },
   {
-    id: 12,
-    title: "Turfing Services",
+    id: 9,
+    title: "Landscape Design",
     description:
-      "Installation and replacement of natural or artificial turf to create lush green lawns or sports...",
-    imageUrl: "/image/navbar/services/service12.jpg",
-    altText: "Turfing Services",
+      "Professional landscape design and planning services to create beautiful, functional outdoor spaces tailored to your needs and preferences.",
+    imageUrl: "/image/navbar/services/9.png",
+    altText: "Landscape Design Services",
+  },
+  {
+    id: 10,
+    title: "Tree Sales",
+    description:
+      "Wide selection of quality trees for sale including shade trees, ornamental trees, and fruit trees with expert advice on selection and care.",
+    imageUrl: "/image/navbar/services/10.png",
+    altText: "Tree Sales Services",
+  },
+  {
+    id: 11,
+    title: "Plant Propagation",
+    description:
+      "Professional plant propagation services including seed starting, cutting propagation, and grafting to expand your plant collection.",
+    imageUrl: "/image/navbar/services/11.png",
+    altText: "Plant Propagation Services",
+  },
+  {
+    id: 12,
+    title: "Soil and Fertilizers",
+    description:
+      "Premium soil blends, compost, fertilizers, and soil amendments to nourish your plants and improve growing conditions.",
+    imageUrl: "/image/navbar/services/12.png",
+    altText: "Soil and Fertilizers Services",
+  },
+  {
+    id: 13,
+    title: "Consultation Services",
+    description:
+      "Expert consultation on landscape planning, plant selection, garden design, and maintenance strategies for optimal results.",
+    imageUrl: "/image/navbar/services/13.png",
+    altText: "Consultation Services",
   },
 ];
 
@@ -117,7 +125,7 @@ const topServices: Service[] = [
 
 // Reusable Service Card component
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
-  <div className="flex flex-col items-center w-full rounded-2xl max-w-[280px] sm:max-w-[320px] md:max-w-[380px] border-[3px] border-[#C9EDC5]  lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
+  <div className="flex flex-col items-center w-full rounded-2xl max-w-[280px] sm:max-w-[320px] md:max-w-[380px] border-2 border-border lg:max-w-[412px] h-auto min-h-[400px] sm:min-h-[450px] md:min-h-[480px] lg:h-[509px] shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white">
     <div className="relative w-full h-1/2 overflow-hidden mb-3 sm:mb-4 flex-shrink-0">
       <img
         src={service.imageUrl}
@@ -138,7 +146,7 @@ const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
         {service.description}
       </p>
 
-      <button className="bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] hover:from-[#007000] hover:via-[#007800] hover:to-[#00A400] text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
+      <button className="buttonColorFill text-white py-2 sm:py-2.5 md:py-3 px-4 sm:px-5 md:px-6 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
         Explore More
       </button>
     </div>
@@ -154,7 +162,7 @@ const ServicesPage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       {/* Header section */}
-      <div className="w-full bg-[#F6F9F6]">
+      <div className="w-full bg-card-stroke-light">
         {/* Main content container */}
         <div className="flex flex-col items-center justify-center min-h-[200px] sm:min-h-[240px] md:min-h-[277px] px-4 sm:px-6 md:px-8 py-6 sm:py-7 md:py-8 text-center">
           {/* Breadcrumb navigation */}
@@ -167,7 +175,7 @@ const ServicesPage: React.FC = () => {
           </div>
 
           {/* Section title */}
-          <h1 className="mb-4 sm:mb-5 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-[#008000] leading-tight">
+          <h1 className="mb-4 sm:mb-5 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold text-text leading-tight">
             Our Services
           </h1>
 

@@ -94,7 +94,7 @@ const ServiceCard: React.FC<Service> = ({ title, imageUrl }) => (
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-xl"></div>
-    <div className="absolute top-3 left-3 bg-white bg-opacity-80 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
+    <div className="absolute top-3 left-3 bg-card bg-opacity-80 text-black text-sm font-semibold px-3 py-1 rounded-full">
       {title}
     </div>
   </div>
@@ -128,7 +128,7 @@ const PlantCard: React.FC<Plant> = ({
 
   return (
     <div
-      className="bg-white rounded-2xl overflow-hidden border-[3px] border-gray-200 hover:border-green-300 transition-all duration-300 cursor-pointer hover:shadow-lg relative"
+      className="bg-white rounded-2xl overflow-hidden border-[3px] border-gray-200 hover:border-border transition-all duration-300 cursor-pointer hover:shadow-lg relative"
       style={{ width: "306px", height: "469px" }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -176,7 +176,7 @@ const PlantCard: React.FC<Plant> = ({
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-1 rounded-full border border-green-200"
+                className="bg-card text-text text-xs font-medium px-2.5 py-1 rounded-full border border-green-200"
               >
                 {tag}
               </span>
@@ -222,7 +222,7 @@ const PlantCard: React.FC<Plant> = ({
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-green-100 text-green-700 text-xs font-medium px-2.5 py-1 rounded-full border border-green-200"
+                className="bg-card text-text text-xs font-medium px-2.5 py-1 rounded-full border border-green-200"
               >
                 {tag}
               </span>

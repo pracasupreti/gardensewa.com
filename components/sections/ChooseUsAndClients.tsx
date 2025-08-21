@@ -13,13 +13,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   title,
   description,
 }) => (
-  <div className="flex w-full sm:w-[280px] md:w-[300px] h-auto min-h-[200px] sm:min-h-[220px] md:h-[248px] flex-col items-center justify-center p-4 sm:p-6 bg-[#D1F5CB] rounded-xl transition-shadow duration-300">
+  <div className="flex w-full sm:w-[280px] md:w-[300px] h-auto min-h-[200px] sm:min-h-[220px] md:h-[248px] flex-col items-center justify-center p-4 sm:p-6 bg-card rounded-xl transition-shadow duration-300">
     <div className="bg-white p-3 sm:p-4 rounded-2xl mb-3 sm:mb-4 w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[76px] md:h-[76px] flex items-center justify-center">
       <img src={icon} />
     </div>
     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-title mb-2 text-center">
       {title}
     </h3>
+    <p className="text-center text-text">{description}</p>
   </div>
 );
 
@@ -104,7 +105,7 @@ const ChooseUs: React.FC = () => {
           </h2>
           <a
             href="/projects"
-            className="border border-secondary max-sm:py-1 max-sm:px-3 py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white"
+            className="border border-border max-sm:py-1 max-sm:px-3 py-2.5 px-6 rounded-md flex items-center justify-center text-secondary text-lg gap-1.5 hover:bg-secondary hover:text-white"
           >
             View All <ArrowRight />
           </a>
@@ -115,7 +116,7 @@ const ChooseUs: React.FC = () => {
             return (
               <div
                 key={index}
-                className="bg-white border-[3px] border-[#C9EDC5] h-[427px] w-[290px] rounded-3xl p-4 sm:p-6 flex flex-col justify-between items-start text-left relative overflow-hidden cursor-pointer"
+                className="bg-white border-2 border-border h-[427px] w-[290px] rounded-3xl p-4 sm:p-6 flex flex-col justify-between items-start text-left relative overflow-hidden cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
@@ -132,12 +133,12 @@ const ChooseUs: React.FC = () => {
 
                 {/* Divider line - always visible */}
                 <div className="flex w-full flex-col">
-                  <span className="border-t-2 border-t-card w-full p-2"></span>
+                  <span className="border-t-2 border-t-[#C7E9E7] w-full p-2"></span>
 
                   {/* Button - always in same position */}
                   <a
                     href={client.link}
-                    className="w-full bg-gradient-to-l from-[#009000] via-[#009800] to-[#00C400] text-white font-semibold px-4 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
+                    className="w-full border  text-text font-semibold px-3 sm:px-6 py-3 rounded-lg hover:opacity-90 transition text-sm sm:text-base text-center relative z-10"
                   >
                     Browse More
                   </a>
