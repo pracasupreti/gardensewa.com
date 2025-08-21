@@ -51,7 +51,6 @@ const features = [
 export default function AboutPage() {
   return (
     <main className="flex flex-col gap-30">
-<<<<<<< HEAD
        <Head>
       <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
       <meta property="og:url" content="https://www.gardensewa.com/" />
@@ -62,10 +61,7 @@ export default function AboutPage() {
       <meta property="og:image:alt" content="Gardening Services in Nepal" />
 
     </Head>
-      <div className="h-full bg-[#F6F9F6]">
-=======
       <div className="h-full bg-[#F4FFFE]">
->>>>>>> 7f3e91f103fb8e733c6be296e3ea2f68b4fb7dd1
         {/* Main content container */}
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           {/* Breadcrumb navigation */}

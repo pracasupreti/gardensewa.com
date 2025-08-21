@@ -1,13 +1,7 @@
-<<<<<<< HEAD
+
 'use client';
 import { ArrowRight, Clock } from 'lucide-react';
 import Head from 'next/head';
-import { useState } from 'react';
-=======
-"use client";
-import { ArrowRight, Clock } from "lucide-react";
-import { useState } from "react";
->>>>>>> 7f3e91f103fb8e733c6be296e3ea2f68b4fb7dd1
 
 // -----------------------
 // Blog Post Interface
@@ -182,8 +176,7 @@ const PostCard = ({
 // -----------------------
 export default function BlogPage() {
   return (
-<<<<<<< HEAD
-    <>{/* Header */}
+    <>
      <Head>
       <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
       <meta property="og:url" content="https://www.gardensewa.com/" />
@@ -194,12 +187,9 @@ export default function BlogPage() {
       <meta property="og:image:alt" content="Gardening Services in Nepal" />
 
     </Head>
-      <div className="w-full py-12 bg-[#F6F9F6] flex flex-col justify-start items-center gap-8">
-=======
-    <>
+
       {/* Header */}
       <div className="w-full py-12 bg-card-stroke-light flex flex-col justify-start items-center gap-8">
->>>>>>> 7f3e91f103fb8e733c6be296e3ea2f68b4fb7dd1
         {/* Breadcrumb */}
         <div className="w-full flex flex-col justify-start items-center gap-6 px-4 sm:px-8 md:px-16">
           <div className="w-full flex flex-col justify-start items-center gap-2.5">
