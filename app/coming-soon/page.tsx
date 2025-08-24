@@ -9,6 +9,14 @@ const ComingSoon = () => {
         <title>Coming Soon | Garden Sewa</title>
         <meta name="description" content="This page is coming soon!" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa" />
+        <meta property="og:url" content="https://www.gardensewa.com/" />
+        <meta property="og:title" content="Gardening Services in Nepal" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!" />
+        <meta property="og:image" content="https://www.gardensewa.com/og/default.jpg" />
+        <meta property="og:image:alt" content="Gardening Services in Nepal" />
+
       </Head>
 
       <div className="flex items-center justify-center min-h-screen bg-gray-50 font-sans p-4">
@@ -20,7 +28,7 @@ const ComingSoon = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold text-secondary mb-8">
             SOON
           </h1>
-          
+
           {/* Main content container */}
           <div className="max-w-xl mx-auto px-12 py-8 border-4 border-primary rounded-2xl bg-white shadow-xl">
             <h2 className="text-lg md:text-xl font-semibold text-gray-400 mb-6">
