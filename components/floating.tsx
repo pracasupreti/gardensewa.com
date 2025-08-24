@@ -2,7 +2,7 @@ import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const Floating: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="flex flex-col items-center justify-center">
      {/* Floating Action Buttons */}
       <div className="fixed bottom-4 right-4 flex flex-col space-y-3 z-50">
         {/* Call Button */}
