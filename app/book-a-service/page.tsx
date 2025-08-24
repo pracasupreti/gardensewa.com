@@ -64,7 +64,6 @@ export default function App() {
 
   return (
     <div className="mb-40">
-<<<<<<< HEAD
        <Head>
       <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
       <meta property="og:url" content="https://www.gardensewa.com/" />
@@ -75,7 +74,6 @@ export default function App() {
       <meta property="og:image:alt" content="Gardening Services in Nepal" />
 
     </Head>
-=======
       <Head>
         <meta
           name="keywords"
@@ -91,7 +89,6 @@ export default function App() {
         <meta property="og:image" content="/images/og/book-a-service.jpg" />
         <meta property="og:image:alt" content="Gardening Services in Nepal" />
       </Head>
->>>>>>> 63818fe047e103340d27d8a9e975a313c213d331
       <div className="flex flex-col items-center justify-center h-[209] px-4 py-12 text-center bg-[#F6F9F6]">
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           <div className="mb-4 text-sm w-full">
