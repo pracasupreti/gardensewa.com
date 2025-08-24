@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={alef.className}>
       <head>
-      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
+      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa, garden, plants"/>
       <meta property="og:url" content="https://www.gardensewa.com/" />
       <meta property="og:title" content="Gardening Services in Nepal" />
       <meta property="og:type" content="website" />
