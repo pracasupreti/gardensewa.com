@@ -2,10 +2,20 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { User, Calendar, Clock, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
+import Head from 'next/head';
 
 const BlogPage: React.FC = () => {
   return (
     <div className="antialiased text-gray-800 bg-gray-50">
+      <Head>
+      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
+      <meta property="og:url" content="https://www.gardensewa.com/" />
+      <meta property="og:title" content="Gardening Services in Nepal" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!" />
+      <meta property="og:image" content="https://www.gardensewa.com/og/default.jpg" />
+      <meta property="og:image:alt" content="Gardening Services in Nepal" />
+    </Head>
       {/* Blog Post Header */}
       <div className="relative">
         <Image

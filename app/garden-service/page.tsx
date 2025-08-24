@@ -1,8 +1,18 @@
+import Head from "next/head";
 import React from "react";
 
 function Gardenservice() {
   return (
     <section className="agricultureservice my-16">
+       <Head>
+      <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
+      <meta property="og:url" content="https://www.gardensewa.com/" />
+      <meta property="og:title" content="Gardening Services in Nepal" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!" />
+      <meta property="og:image" content="https://www.gardensewa.com/og/default.jpg" />
+      <meta property="og:image:alt" content="Gardening Services in Nepal" />
+    </Head>
       <div className="container mx-auto max-w-[1200px] px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="sm:col-span-2 lg:col-span-1">
