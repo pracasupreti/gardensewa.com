@@ -27,7 +27,7 @@ const articles: Article[] = [
     img: "/image/userimage/rohan.png",
     date: "July 31, 2025",
     readTime: "5 min",
-    Link: "/how-flower-brings-happiness",
+    Link: "/flowersblog",
     description:
       "In today’s fast-paced and digitally driven world, finding moments of peace and happiness can feel challenging. We are constantly surrounded by screens, deadlines, and daily pressures. But sometimes, the simplest things can bring the greatest joy. One of those beautiful, natural sources of happiness is flowers.",
   },
@@ -40,7 +40,7 @@ const articles: Article[] = [
     img: "/image/userimage/ina.png",
     date: "July 30, 2025",
     readTime: "5 min",
-    Link: "/how-to-start-gardening-business",
+    Link: "/flowersblog",
   },
   {
     id: "3",
@@ -51,7 +51,7 @@ const articles: Article[] = [
     img: "/image/userimage/sanjana.png",
     date: "July 29, 2025",
     readTime: "5 min",
-    Link: "#",
+    Link: "/flowersblog",
   },
 ];
 
