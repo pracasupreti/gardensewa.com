@@ -48,12 +48,12 @@ const HomePage = () => {
       <meta property="og:image:alt" content="Gardening Services in Nepal" />
     </Head>
       {" "}
-      <div className="flex flex-col items-center justify-center h-full px-4 py-12 text-center bg-green-50">
+      <div className="flex flex-col items-center justify-center h-full px-4 py-12 text-center bg-card-stroke-light ">
         {/* Breadcrumb navigation */}
         <div className="mb-4 text-sm w-full">
           <span className="text-light">
             Home &gt;
-            <span className="text-primary">Become a client</span>
+            <span className="text-primary">Become a Partner</span>
           </span>
         </div>
 
@@ -71,7 +71,7 @@ const HomePage = () => {
             We are looking for competent partners
           </h1>
           <div className="flex flex-wrap gap-6 items-center justify-center">
-            <div className="h-[293px] w-[417px] bg-[#D1F5CB] rounded-4xl flex flex-col items-center justify-center gap-4 px-4 py-8">
+            <div className="h-[293px] w-[417px] bg-card rounded-4xl flex flex-col items-center justify-center gap-4 px-4 py-8">
               <div className="h-[76px] w-[76px] bg-white flex items-center justify-center rounded-full shadow-2xl">
                 <img
                   src={"/image/becomeClient/1.png"}
@@ -84,7 +84,7 @@ const HomePage = () => {
                 planning to help clients create thriving green environments.
               </p>
             </div>
-            <div className="h-[293px] w-[417px] bg-[#D1F5CB] rounded-4xl flex flex-col items-center justify-center gap-4 px-4 py-8">
+            <div className="h-[293px] w-[417px] bg-card rounded-4xl flex flex-col items-center justify-center gap-4 px-4 py-8">
               <div className="h-[76px] w-[76px] bg-white flex items-center justify-center rounded-full shadow-2xl">
                 <img
                   src={"/image/becomeClient/3.png"}
@@ -99,7 +99,7 @@ const HomePage = () => {
                 gardens, and greenery into modern living and working spaces.
               </p>
             </div>
-            <div className="h-[293px] w-[417px] bg-[#D1F5CB] rounded-4xl flex flex-col items-center justify-center gap-4 px-4 py-8">
+            <div className="h-[293px] w-[417px] bg-card rounded-4xl flex flex-col items-center justify-center gap-4 px-4 py-8">
               <div className="h-[76px] w-[76px] bg-white flex items-center justify-center rounded-full shadow-2xl">
                 <img
                   src={"/image/becomeClient/2.png"}
@@ -276,7 +276,7 @@ export default HomePage;
 // Reusable Components
 const FormSectionTitle = ({ title }: { title: string }) => (
   <div className="text-center justify-center px-60 mx-20">
-    <h3 className="text-lg font-medium text-secondary border-b-2 border-green-500 pb-2 mb-6">
+    <h3 className="text-lg font-medium text-secondary border-b-2 border-border pb-2 mb-6">
       {title}
     </h3>
   </div>

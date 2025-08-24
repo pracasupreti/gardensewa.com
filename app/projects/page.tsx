@@ -71,7 +71,7 @@ export default function ClientPage() {
   return (
     <main>
       <div
-        className={`relative w-full h-[360px] flex items-center justify-center text-white mb-20`}
+        className={`relative max-w-6xl h-[360px] overflow-hidden flex items-center justify-center text-white mb-20`}
       >
         <img
           src="/image/project/projectImage.png"

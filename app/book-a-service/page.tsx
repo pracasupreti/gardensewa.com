@@ -64,6 +64,7 @@ export default function App() {
 
   return (
     <div className="mb-40">
+<<<<<<< HEAD
        <Head>
       <meta name="keywords" content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"/>
       <meta property="og:url" content="https://www.gardensewa.com/" />
@@ -74,6 +75,23 @@ export default function App() {
       <meta property="og:image:alt" content="Gardening Services in Nepal" />
 
     </Head>
+=======
+      <Head>
+        <meta
+          name="keywords"
+          content="gardening services Nepal, garden maintenance, landscaping Nepal, plant care, hotel landscaping, resort garden services, indoor plants Nepal, outdoor plants Nepal, garden cleanup, regular garden maintenance, Nepal gardeners, GardenSewa"
+        />
+        <meta property="og:url" content="https://www.gardensewa.com/" />
+        <meta property="og:title" content="Gardening Services in Nepal" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Gardensewa.com offers expert gardening services, plant care, landscaping, and garden maintenance to help transform your outdoor spaces into beautiful, vibrant gardens. Get professional assistance with lawn care, tree trimming, and more!"
+        />
+        <meta property="og:image" content="/images/og/book-a-service.jpg" />
+        <meta property="og:image:alt" content="Gardening Services in Nepal" />
+      </Head>
+>>>>>>> 63818fe047e103340d27d8a9e975a313c213d331
       <div className="flex flex-col items-center justify-center h-[209] px-4 py-12 text-center bg-[#F6F9F6]">
         <div className="flex flex-col items-center justify-center h-[277px] px-4 py-8 text-center">
           <div className="mb-4 text-sm w-full">
@@ -86,13 +104,13 @@ export default function App() {
             </span>
           </div>
 
-          <h1 className="mb-4 text-3xl md:text-5xl font-bold text-[#008000] md:text-[52px]">
+          <h1 className="mb-4 text-3xl md:text-5xl font-bold text-primary md:text-[52px]">
             Book a Gardening Service
           </h1>
         </div>
       </div>
 
-      <main className="min-h-screen bg-[#FFFFFF] p-4 flex justify-center items-start pt-10 font-[Poppins]">
+      <main className="min-h-screen bg-[#FFFFFF] p-4 flex justify-center items-start pt-10">
         <div className="bg-white p-8 rounded-lg w-full max-w-4xl">
           <form onSubmit={handleSubmit}>
             {/* Contact Information Section */}

@@ -1,5 +1,4 @@
 "use client";
-import Floating from "@/components/floating";
 import Homepage from "@/components/Homepage";
 import Head from "next/head";
 
@@ -17,7 +16,6 @@ export default function Home() {
     </Head>
     <section className="mx-auto lg:w-full max-md:p-3">
       <Homepage />
-      <Floating />
     </section>
     </>
   );
