@@ -8,7 +8,7 @@ const Floating: React.FC = () => {
         {/* Call Button */}
         <a
           href=" +977-9852025735"
-          className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-200"
+          className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-200 animate-ringing"
           aria-label="Call Us"
         >
           <FaPhoneAlt size={24} />
@@ -19,7 +19,7 @@ const Floating: React.FC = () => {
           href=" https://d.sriyog.com/gSewa"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary transition duration-200"
+          className="bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary transition duration-200 animate-bounce mt-2"
           aria-label="Chat on WhatsApp"
         >
           <FaWhatsapp size={24} />
